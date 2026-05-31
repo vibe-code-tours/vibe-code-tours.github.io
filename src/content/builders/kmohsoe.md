@@ -1,13 +1,13 @@
 
 
 name: Khin Moh Moh Soe
-github: your-github-username
+github: (https://github.com/kmohsoe)
 cohort: 1
 role: builder
 skills: ["Cloud", "Kubernetes", "Terraform"]
-repo: https://github.com/your-username/your-project
-x: your-x-handle
-linkedin: khin-moh-moh-soe
+repo: https://github.com/kmohsoe/ec-vibe-code-tours.github.io
+x: KMohsoe
+linkedin: www.linkedin.com/in/khin-moh-moh-soe
 website: https://your-site.com
 ------------------------------
 
