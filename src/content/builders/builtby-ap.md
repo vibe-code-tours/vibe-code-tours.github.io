@@ -6,8 +6,8 @@ role: builder
 skills: ["Web design", "Business Management"]
 repo: https://github.com/builtby-ap
 x: your-x-handle
-linkedin: your-linkedin-username
-website: https://your-site.com
+linkedin: Aye Pyae Wai Khin Soe
+website: https://apyae-dev.vercel.app/
 ---
 
 Hi! I'm a new learner to vibe-code with AI. My goal is to build and ship something
