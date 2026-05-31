@@ -3,7 +3,7 @@ name: Aung Khine
 github: rover-aungkhine
 cohort: 1
 role: builder
-skills: ["JavaScript", "Python", "Claude Code"]
+skills: ["Cursor"]
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
