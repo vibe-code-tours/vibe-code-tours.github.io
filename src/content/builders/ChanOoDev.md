@@ -4,7 +4,7 @@ github: ChanOoDev
 cohort: 1
 role: builder
 skills: ["JavaScript", "Python", "Claude Code"]
-repo: https://github.com/your-github-username/your-project
+repo: https://github.com/ChanOoDev/vibe-code-tours.github.io.git
 x: your-x-handle
 linkedin: www.linkedin.com/in/chanoonyein
 website: https://google.com
