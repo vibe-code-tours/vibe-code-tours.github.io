@@ -50,8 +50,8 @@ Edit `src/content/builders/<your-username>.md`:
 
 ```markdown
 ---
-name: Your Name
-github: your-username
+name: Htet Lin Lin Naing
+github: [htetlinlinnaing@git](https://github.com/HtetLinLinNaing)
 cohort: 1
 role: builder
 skills: ["JavaScript", "Python", "Claude Code"]
@@ -61,7 +61,7 @@ linkedin: your-linkedin-username
 website: https://your-site.com
 ---
 
-Hi! 2–3 sentences about you — why you're here, what you want to build.
+Hi! I am a developer....
 ```
 
 Only `name`, `github`, `cohort` are required. `skills`, `repo`, `x`,
