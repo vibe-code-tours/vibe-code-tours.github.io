@@ -4,10 +4,10 @@ github: myominlin
 cohort: 1
 role: builder
 skills: ["JavaScript", "C#", "Claude Code","Codex"]
-repo: https://github.com/your-github-username/your-project
+repo: https://github.com/MyoMinLin/vibe-code-tours.github.io
 x: your-x-handle
 linkedin: https://www.linkedin.com/in/myo-min-lin
-website: https://your-site.com
+website:
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
