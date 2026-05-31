@@ -10,8 +10,8 @@ linkedin: https://www.linkedin.com/in/bhone-wai-73a13139a/
 website: https://bhonewai.cc.cd/
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+I enjoy learning about software architecture, system design, and modern development practices. 
+I also like building toy projects to apply what I learn and explore new technologies.
 
 <!--
 HOW TO ADD YOURSELF:
