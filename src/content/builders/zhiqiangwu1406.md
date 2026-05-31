@@ -3,7 +3,7 @@ name: Myo Lin Tun
 github: zhiqiangwu1406
 cohort: 1
 role: builder
-skills: ["JavaScript", "Python", "Claude Code"]e
+skills: ["JavaScript", "Python", "Claude Code"]
 
 ---
 
