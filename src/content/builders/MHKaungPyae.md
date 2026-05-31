@@ -1,13 +1,11 @@
 ---
-name: Your Name
-github: your-github-username
+name: Min Htet Kaung Pyae
+github: MHKaungPyae
 cohort: 1
 role: builder
-skills: ["JavaScript", "Python", "Claude Code"]
-repo: https://github.com/your-github-username/your-project
-x: your-x-handle
-linkedin: your-linkedin-username
-website: https://your-site.com
+skills: ["Flutter", "Python", "Claude Code"]
+repo: https://github.com/MHKaungPyae/MHKaungPyae_
+linkedin: MH Kaung Pyae
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
