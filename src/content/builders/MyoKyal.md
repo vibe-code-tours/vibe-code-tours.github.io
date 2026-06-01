@@ -1,8 +1,10 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Myo Kyal
+github: MyoKyal
 cohort: 1
 role: builder
+skills: ["JavaScript", "Python", "React"]
+repo: https://github.com/MyoKyal/
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

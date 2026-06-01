@@ -1,11 +1,16 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Si Thu Tun
+github: SiThuTun-mdy
 cohort: 1
 role: builder
+skills: ["Java", "JavaScript", "React", "Claude Code"]
+linkedin: si-thu-tun-87b5b2b9
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
+Hi there, Here's Si Thu Tun, Learning and coding.
+Love to watch anime while relaxing.
+
+Currently learning to vibe-code with AI. My goal is to build and ship something
 real by Demo Day. Excited to be part of the Tour.
 
 <!--

@@ -1,12 +1,17 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Han Min Myat
+github: hanminmyat
 cohort: 1
 role: builder
+skills: ["DevOps", "C#", "Cloud Infrastructure", "Container"]
+repo: https://github.com/hanminmyat/hanminmyat
+# x: your-x-handle
+mail: mr.hanminmyat@gmail.com
+linkedin: han-min-myat
+# website: https://your-site.com
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+Hi! I am Han Min Myat, and currently working as DevOps Engineer. I'm learning to expore the experience in vibe-coding with AI. Nice to meet u all builders!
 
 <!--
 HOW TO ADD YOURSELF:

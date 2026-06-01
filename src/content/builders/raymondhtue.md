@@ -1,8 +1,13 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: raymondhtue 
+github: RaymondHtue
 cohort: 1
 role: builder
+skills: ["Kubernetes", "AWS", "Linux", "GitLab"]
+repo: https://github.com/RaymondHtue/vibe-code-tours.github.io
+x: your-x-handle
+linkedin: https://www.linkedin.com/in/maung-htoo
+website: https://www.linkedin.com/in/maung-htoo
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

@@ -1,8 +1,11 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Thet Naing Lin
+github: thet-naing-lin
 cohort: 1
 role: builder
+skills: ["JavaScript", "HTML", "CSS", "Tailwind", "React JS", "PHP", "Laravel"]
+repo: https://github.com/thet-naing-lin/resume-screening-api
+linkedin: Thet Naing Lin
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

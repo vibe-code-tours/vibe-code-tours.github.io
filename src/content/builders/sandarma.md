@@ -1,8 +1,12 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Sandar Min Aye
+github: sandarma
 cohort: 1
 role: builder
+skills: ["JavaScript", "TypeScript", "ReactJS", "React Native", "Claude Code"]
+repo: https://github.com/sandarma?tab=repositories
+linkedin: sandar-min-aye
+website: coming-soon
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

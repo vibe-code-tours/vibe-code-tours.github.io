@@ -1,6 +1,6 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Thuyein Thet
+github: Thuyein-Thet
 cohort: 1
 role: builder
 ---

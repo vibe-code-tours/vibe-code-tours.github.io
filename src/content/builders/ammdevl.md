@@ -1,8 +1,11 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Aung Myint Myat
+github: ammdevl
 cohort: 1
 role: builder
+skills: ["Still Learning"]
+x: amm1106_
+linkedin: ammdevl
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

@@ -1,8 +1,9 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Kaung Htet
+github: kokaunghtet
 cohort: 1
 role: builder
+skills: ["JavaScript", "Python", "Claude Code"]
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

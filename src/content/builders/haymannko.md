@@ -1,12 +1,15 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: haymann
+github: haymannko
 cohort: 1
 role: builder
+skills: ["JavaScript", "Python", "Claude Code"]
+repo: https://github.com/haymannko/haymannko
+linkedin: haymannko
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+Hi! I'm learning to vibe-code with AI. My goal is to use VibeTour knowledge in my career development.
+Thank your sayar.
 
 <!--
 HOW TO ADD YOURSELF:

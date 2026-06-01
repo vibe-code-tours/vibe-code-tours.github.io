@@ -1,12 +1,14 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Naw Naw
+github: naw2
 cohort: 1
 role: builder
+skills: ["Java", "Python", "Claude Code"]
+linkedin: naw-naw-7b660870
+
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+Hi! I'm learning AI vibe coding. I want to build real-world projects and improve my coding skills.
 
 <!--
 HOW TO ADD YOURSELF:

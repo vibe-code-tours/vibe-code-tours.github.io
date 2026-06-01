@@ -1,12 +1,16 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Thet Zin Soe
+github: thetzinsoe
 cohort: 1
 role: builder
+skills: ["JavaScript", "PHP", "Kilo"]
+repo: https://github.com/thetzinsoe/vibe-code-tours.github.io.git
+x: ""
+linkedin: ""
+website: ""
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+Hi! I'm learning to vibe-code with AI. My goal is to apply vibe-code in daily routine.
 
 <!--
 HOW TO ADD YOURSELF:

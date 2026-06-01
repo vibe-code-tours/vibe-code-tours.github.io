@@ -1,8 +1,13 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Aye Gaday Htun
+github: GadayHtun
 cohort: 1
 role: builder
+skills: ["JavaScript", "Python", "Claude Code"]
+repo: https://github.com/GadayHtun/vibe-code-tours-kky
+x: your-x-handle
+linkedin: Kaday Htun
+website: no-website
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

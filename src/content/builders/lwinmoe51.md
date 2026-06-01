@@ -1,12 +1,14 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Lwin Moe
+github: FurryForWhat
 cohort: 1
 role: builder
+skills: ["JavaScript", "Python", "React", "Copilot"]
+linkedin: linkedin.com/in/lwin-moe-13918519a
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+real FINE SHIT PROJECT. Excited to be part of the Tour. I've learned and developed some simple projects using Java , SpringBoot , and IOT weather project.
 
 <!--
 HOW TO ADD YOURSELF:

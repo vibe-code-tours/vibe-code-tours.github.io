@@ -1,12 +1,14 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Han Paing Htoo
+github: hanpainghtoo
 cohort: 1
 role: builder
+skills: ["NodeJS", "SQL"]
+repo: https://github.com/hanpainghtoo/hanpainghtoo
+website: https://github.com/hanpainghtoo/Portfolio
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+Hi! I'm Han Paing Htoo. I enjoy building web applications and exploring how AI can accelerate development. I'm looking forward to learning alongside everyone in the Tour.
 
 <!--
 HOW TO ADD YOURSELF:

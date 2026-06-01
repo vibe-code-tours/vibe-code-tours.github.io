@@ -1,12 +1,13 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Sei Thu Naing 
+github: FancyPhoenix
 cohort: 1
 role: builder
+skills: ["Claude Code"]
+repo: https://github.com/FancyPhoenix/vibecode.tour.repo
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+Hi! I'm currently learning mern stack web dev and an absolute beginner. I'm here to learn something about vibe coding and I want to build a blind date app.
 
 <!--
 HOW TO ADD YOURSELF:

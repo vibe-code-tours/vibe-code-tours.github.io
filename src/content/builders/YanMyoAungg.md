@@ -1,8 +1,19 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Yan Myo Aung
+github: YanMyoAungg
 cohort: 1
 role: builder
+skills:
+  [
+    "JavaScript",
+    "Typescript",
+    "Node.js",
+    "React",
+    "Next.js",
+    "AWS Basic",
+    "Github Actions",
+  ]
+linkedin: yan-myo-aung-3111b830a
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

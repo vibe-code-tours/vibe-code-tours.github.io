@@ -1,8 +1,10 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Phone Thit Min Tun
+github: PhoneMoMoHtet
 cohort: 1
 role: builder
+skills: ["C#", "Python", "Claude Code"]
+repo: https://github.com/PhoneMoMoHtet
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

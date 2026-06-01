@@ -1,11 +1,14 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Hsu Pyae Thu
+github: hsupyae04-95
 cohort: 1
 role: builder
+skills: ["Java", "Python"]
+repo: https://github.com/hsupyae04-95
+linkedin: Hsu Pyae Thu
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
+Hi! there, Here, I'm Hsu Pyae. I'm learning to vibe-code with AI. My goal is to build and ship something
 real by Demo Day. Excited to be part of the Tour.
 
 <!--

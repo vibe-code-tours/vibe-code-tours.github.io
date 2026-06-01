@@ -1,8 +1,10 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Zin Ko Lin
+github: ZinKoLin
 cohort: 1
 role: builder
+skills: ["JavaScript", "Python", "Claude Code"]
+repo: https://github.com/ZinKoLin/vibe-code-tours.github.io
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

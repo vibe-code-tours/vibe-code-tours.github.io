@@ -1,8 +1,10 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Myat Thaw Maung
+github: NoobFromMM
 cohort: 1
 role: builder
+skills: ["Laravel", "Server", "Claude Code"]
+repo: https://github.com/NoobFromMM/NoobFromMM
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

@@ -1,8 +1,10 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Htet Aung Hlaing (ting)
+github: tinghah
 cohort: 1
 role: builder
+skills: ["will add later"]
+website: https://tinghah.github.io
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

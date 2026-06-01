@@ -1,12 +1,14 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Kaung Myat Paing
+github: kaung-myat-code
 cohort: 1
 role: builder
+skills: ["React,Node.js,Vue.js"]
+linkedin: https://www.linkedin.com/in/kmpeg/
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+Hi, I’m a web developer currently diving deep into AI. My goal is to combine the power of modern web technologies with artificial intelligence to engineer
+creative solutions for everyday challenges.
 
 <!--
 HOW TO ADD YOURSELF:

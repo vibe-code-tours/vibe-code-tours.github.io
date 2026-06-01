@@ -1,11 +1,15 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Aye Pyae Wai Khin Soe
+github: builtby-ap
 cohort: 1
 role: builder
+skills: ["Web design", "Business Management"]
+repo: https://github.com/builtby-ap
+linkedin: Aye Pyae Wai Khin Soe
+website: https://apyae-dev.vercel.app/
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
+Hi! I'm a new learner to vibe-code with AI. My goal is to build and ship something
 real by Demo Day. Excited to be part of the Tour.
 
 <!--

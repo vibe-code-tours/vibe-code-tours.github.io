@@ -1,8 +1,9 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Christopher Lone Toe
+github: AlexJoker5
 cohort: 1
 role: builder
+skills: ["JavaScript", "Java", "Spring Boot", "Claude Code"]
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

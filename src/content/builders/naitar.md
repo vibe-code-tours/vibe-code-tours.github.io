@@ -1,8 +1,12 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Naing Tar yu
+github: naitar
 cohort: 1
 role: builder
+skills: ["JavaScript", "Python", "Claude Code", "PHP"]
+repo: https://github.com/naitar/
+linkedin: naingtaryu
+website: https://naitaryu.blogspot.com/
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

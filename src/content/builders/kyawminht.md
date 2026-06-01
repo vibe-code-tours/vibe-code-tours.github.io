@@ -1,8 +1,13 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Kyaw Min Htwe
+github: kyawminht
 cohort: 1
 role: builder
+skills: ["JavaScript", "Python", "React", "Express js"]
+repo: https://github.com/kyawminht/Data-visualization-generator
+
+linkedin: https://www.linkedin.com/in/kyaw-min-htwe-99839b244/
+website: https://kyawminhtwe.vercel.app/
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

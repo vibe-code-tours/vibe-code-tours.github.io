@@ -1,8 +1,10 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Thin Thu Naing
+github: thinthunaing
 cohort: 1
 role: builder
+skills: ["JavaScript"]
+repo: https://github.com/thinthunaing/vibe-code-tours.github.io
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

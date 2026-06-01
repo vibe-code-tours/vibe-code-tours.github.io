@@ -1,8 +1,13 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Htet Aung Kyaw
+github: htetaungkyaw-gicjp
 cohort: 1
 role: builder
+skills: ["JavaScript", "Python", "Claude Code"]
+repo: https://github.com/htetaungkyaw-gicjp/htetaungkyaw-gicjp
+x: HtetAungKyaw512
+linkedin: your-linkedin-username
+website: https://your-site.com
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

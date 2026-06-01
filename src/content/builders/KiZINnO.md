@@ -1,8 +1,10 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Saw Kapaw Say (KP)
+github: KiZINnO
 cohort: 1
 role: builder
+skills: ["JavaScript", "Python", "Claude Code"]
+repo: https://github.com/KiZINnO/vibe-code-tours
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

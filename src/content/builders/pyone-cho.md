@@ -1,8 +1,13 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Pyone Cho
+github: pyone-cho
 cohort: 1
 role: builder
+skills: ["JavaScript", "Python", "Claude Code"]
+repo: https://github.com/pyone-cho/pyone-cho
+x: your-x-handle
+linkedin: your-linkedin-username
+website: https://your-site.com
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

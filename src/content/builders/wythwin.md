@@ -1,8 +1,13 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Wai Yan
+github: wythwin
 cohort: 1
 role: builder
+skills: ["MarTech", "Wordpress", "Claude"]
+repo: https://github.com/wythwin
+x: waiyanthwin
+linkedin: waiyanthwin
+website: https://blog.waiyanthwin.com
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

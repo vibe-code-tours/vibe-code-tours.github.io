@@ -1,12 +1,13 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Chit Nan Ko
+github: CHTNANKO
 cohort: 1
 role: builder
+skills: ["JavaScript", "Python", "Claude Code", "Angular"]
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+Hi! I'm learning to vibe-code with AI. My goal is to improve AI vibe coding and workflow Skill. 
+Excited to be part of the Tour.
 
 <!--
 HOW TO ADD YOURSELF:

@@ -1,8 +1,13 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Zin Zin Thin Zaw
+github: 6rose9
 cohort: 1
 role: builder
+skills: ["JavaScript","Node.js", "Laravel", "Claude Code","Express.js"]
+x: zinzinthinzaw
+repo: https://github.com/6rose9/vibe-code-tours
+linkedin: https://www.linkedin.com/in/zin-zin-thin-zaw-1979a7196
+website: https://zinzinthinzaw.vercel.app
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

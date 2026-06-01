@@ -1,6 +1,6 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Wint Theingi Aung
+github: Wint-Theingi-Aung
 cohort: 1
 role: builder
 ---

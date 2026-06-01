@@ -1,12 +1,15 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Myint Myat Aung
+github: MrMyintMyatAung
 cohort: 1
 role: builder
+skills: ["Machine Learning:noob", "Python", "Script Kiddie:3"]
+repo: https://github.com/ML-Summer-School-by-WAI/Practical-ML-by-WAI/tree/main/8_final_proj/team_mdy
+linkedin: https://www.linkedin.com/in/myatgyee/
+website: https://github.com/MrMyintMyatAung
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+Hi! I'm learning to vibe-code with AI and Cyber Security. My goal is to build and ship something real by Demo Day. Excited to be part of the Tour. Also want to build new skills and projects with AI and Other Cohort Participants. I am still a learner.
 
 <!--
 HOW TO ADD YOURSELF:

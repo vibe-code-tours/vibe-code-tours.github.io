@@ -1,8 +1,11 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Myo Min Lin
+github: myominlin
 cohort: 1
 role: builder
+skills: ["JavaScript", "C#", "Claude Code", "Codex"]
+repo: https://github.com/MyoMinLin/vibe-code-tours.github.io
+linkedin: https://www.linkedin.com/in/myo-min-lin
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

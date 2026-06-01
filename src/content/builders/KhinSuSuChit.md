@@ -1,11 +1,16 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Khin Su Su Chit
+github: KhinSuSuChit
 cohort: 1
 role: builder
+skills: ["JavaScript", "Python", "Java", "MongoDB"]
+repo: https://github.com/KhinSuSuChit/PaintApp
+x: your-x-handle
+linkedin: Khin Su Su Chit
+website: https://your-site.com
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
+Hi! I'm learning to vibe-code with AI. My goal is to build and ship useful applications
 real by Demo Day. Excited to be part of the Tour.
 
 <!--

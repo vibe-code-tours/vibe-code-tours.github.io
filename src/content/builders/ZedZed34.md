@@ -1,12 +1,26 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Htet Lin Aung
+github: ZedZed34
 cohort: 1
 role: builder
+skills:
+  [
+    "JavaScript",
+    "Python",
+    "Claude Code",
+    "Django",
+    "Svelte",
+    "Node.js",
+    "Express.js",
+    "PostgreSQL",
+  ]
+repo: https://github.com/ZedZed34/vibe-code-tours.github.io.git
+x: zedzed
+linkedin: https://www.linkedin.com/in/htet-lin-aung-5159491a0
+website: https://hla-portfolio.vercel.app
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+Hi, Just call me Billy. Currently residing in BKK and working on freelance software projects. Looking forward to connecting with you guys.
 
 <!--
 HOW TO ADD YOURSELF:

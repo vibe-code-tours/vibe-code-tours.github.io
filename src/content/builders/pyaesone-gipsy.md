@@ -1,8 +1,13 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Pyae Sone@Gipsy
+github: pyaesone-gipsy
 cohort: 1
 role: builder
+skills: ["JavaScript", "Python", "Claude Code"]
+repo: https://github.com/pyaesone-gipsy/vibe-code-tours.github.io
+x: gipsy3
+linkedin: gipsy3
+website: https://gipsypyaesone.blogspot.com/
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

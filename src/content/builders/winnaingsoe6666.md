@@ -1,8 +1,12 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devrun
+name: Win Naing Soe
+github: winnaingsoe6666
 cohort: 1
 role: builder
+skills: ["JavaScript", "Java", "Python", "Claude Code"]
+x: winnaingsoe
+linkedin: winnaigsoe
+website: winnaingsoe.dev.io
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
