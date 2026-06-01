@@ -1,6 +1,6 @@
 ---
 name: Eaint Pyae Phyo
-github: luna-devrun
+github: luna-devhub
 cohort: 1
 role: builder
 ---
