@@ -4,8 +4,7 @@ github: SiThuTun-mdy
 cohort: 1
 role: builder
 skills: ["Java", "JavaScript", "React", "Claude Code"]
-repo: https://github.com/SiThuTun-mdy/vibe-code-tours.github.io
-linkedin: Si Thu Tun
+linkedin: si-thu-tun-87b5b2b9
 ---
 
 Hi there, Here's Si Thu Tun, Learning and coding.
