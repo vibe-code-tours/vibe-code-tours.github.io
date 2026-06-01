@@ -1,7 +1,7 @@
 ---
 name: Si Thu Tun
 github: [SiThuTun-mdy](https://github.com/SiThuTun-mdy)
-cohort: 1
+cohort: sithutun293
 role: builder
 skills: ["Java", "JavaScript", "React", "Claude Code"]
 repo: https://github.com/your-github-username/your-project
