@@ -15,7 +15,7 @@ const problems = [];
 const seenGithub = new Map();
 
 for (const f of files) {
-  const src = fs.readFileSync(path.join(dir, f), "utf8");
+  const src = fs.readFileSync(path.join(dir, f), "utf8").replace(/\r\n/g, "\n");
   const m = src.match(/^---\n([\s\S]*?)\n---/);
   if (!m) {
     problems.push(`${f}: missing YAML frontmatter (--- block at top)`);
