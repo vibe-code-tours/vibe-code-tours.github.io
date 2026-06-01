@@ -1,5 +1,5 @@
 ---
-name:Myo Aung 
+name: Myo Aung 
 github: myoaung
 cohort: 1
 role: builder
