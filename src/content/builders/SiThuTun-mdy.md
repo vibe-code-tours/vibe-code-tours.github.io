@@ -12,7 +12,6 @@ website: https://your-site.com
 
 Hi there, Here's Si Thu Tun, Learning and coding.
 Love to watch anime while relaxing.
-
 Currently learning to vibe-code with AI. My goal is to build and ship something
 real by Demo Day. Excited to be part of the Tour.
 
