@@ -1,12 +1,12 @@
 ---
-name: Your Name
-github: your-github-username
+name: Hein Htet Zaw
+github: https://github.com/heinhtet-zaw12
 cohort: 1
 role: builder
-skills: ["JavaScript", "Python", "Claude Code"]
+skills: ["Flutter", "Dart", "Claude Code","swift" ,"swift Ui"]
 repo: https://github.com/your-github-username/your-project
 x: your-x-handle
-linkedin: your-linkedin-username
+linkedin: https://www.linkedin.com/in/hein-htet-zaw-8422413b5
 website: https://your-site.com
 ---
 
