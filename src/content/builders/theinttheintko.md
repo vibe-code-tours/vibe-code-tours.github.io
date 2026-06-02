@@ -8,7 +8,7 @@ repo: https://github.com/theinttheintko/theinttheintko_61
 linkedin: https://www.linkedin.com/in/theint-theint-ko-039121294
 ---
 
-Hi! My name is Theint Theint Ko. My currently work with software engineer position. I'm learning to vibe-code with AI. My goal is to build and ship something
+Hi! Nice to meet you. My name is Theint Theint Ko. My currently work with software engineer position. I'm learning to vibe-code with AI. My goal is to build and ship something
 real by Demo Day. Excited to be part of the Tour.
 
 <!--
