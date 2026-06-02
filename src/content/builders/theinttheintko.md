@@ -3,14 +3,12 @@ name: Theint Theint Ko
 github: theinttheintko
 cohort: 1
 role: builder
-skills: ["JavaScript", "Python", "Claude Code"]
-repo: https://github.com/your-github-username/your-project
-x: your-x-handle
-linkedin: your-linkedin-username
-website: https://your-site.com
+skills: ["Java", "Claude Code"]
+repo: https://github.com/theinttheintko/theinttheintko_61
+linkedin: https://www.linkedin.com/in/theint-theint-ko-039121294
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
+Hi! My name is Theint Theint Ko. My currently work with software engineer position. I'm learning to vibe-code with AI. My goal is to build and ship something
 real by Demo Day. Excited to be part of the Tour.
 
 <!--
