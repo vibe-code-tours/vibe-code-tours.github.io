@@ -1,0 +1,93 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07111F"/>
+      <stop offset="0.55" stop-color="#0B162A"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <radialGradient id="cyanGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 100) rotate(90) scale(180 180)">
+      <stop offset="0" stop-color="#8BE9FD" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#8BE9FD" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="roseGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1060 260) rotate(90) scale(150 150)">
+      <stop offset="0" stop-color="#FF6863" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FF6863" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violetGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 90) rotate(90) scale(160 160)">
+      <stop offset="0" stop-color="#7C8CFF" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#7C8CFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#18253B"/>
+      <stop offset="1" stop-color="#0E1728"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <rect x="24" y="24" width="1152" height="312" rx="22" stroke="rgba(255,255,255,0.06)"/>
+
+  <circle cx="180" cy="92" r="165" fill="url(#violetGlow)">
+    <animate attributeName="r" values="150;178;150" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="964" cy="104" r="180" fill="url(#cyanGlow)">
+    <animate attributeName="r" values="166;188;166" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1080" cy="262" r="150" fill="url(#roseGlow)">
+    <animate attributeName="r" values="136;156;136" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <path d="M65 273C170 238 279 238 384 273C489 308 599 308 704 273C809 238 918 238 1023 273C1076 291 1127 297 1175 293" stroke="rgba(139,233,253,0.20)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M65 286C170 251 279 251 384 286C489 321 599 321 704 286C809 251 918 251 1023 286C1076 304 1127 310 1175 306" stroke="rgba(255,104,99,0.14)" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="72" y="116" fill="#E5EEF8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" letter-spacing="3">PORTFOLIO</text>
+  <text x="72" y="188" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="44" font-weight="700">Aung Kyaw Min Htet</text>
+  <text x="72" y="226" fill="#B7C6DB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18">Software Engineering Student • Full-stack Developer • Real-time Systems Builder</text>
+  <text x="72" y="252" fill="#8FA4C7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15">Clean interfaces, reliable systems, and product-focused software.</text>
+
+  <g transform="translate(72 278)">
+    <rect width="116" height="34" rx="17" fill="url(#chip)" stroke="rgba(139,233,253,0.24)"/>
+    <text x="58" y="22" text-anchor="middle" fill="#8BE9FD" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Next.js</text>
+  </g>
+  <g transform="translate(198 278)">
+    <rect width="116" height="34" rx="17" fill="url(#chip)" stroke="rgba(255,104,99,0.24)"/>
+    <text x="58" y="22" text-anchor="middle" fill="#FFB4B0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Node.js</text>
+  </g>
+  <g transform="translate(324 278)">
+    <rect width="132" height="34" rx="17" fill="url(#chip)" stroke="rgba(124,140,255,0.24)"/>
+    <text x="66" y="22" text-anchor="middle" fill="#C9D1FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14">Real-time UI</text>
+  </g>
+
+  <g transform="translate(846 86)">
+    <rect x="0" y="0" width="244" height="188" rx="24" fill="rgba(7,17,31,0.62)" stroke="rgba(255,255,255,0.08)"/>
+    <rect x="20" y="18" width="204" height="10" rx="5" fill="rgba(255,255,255,0.08)"/>
+    <rect x="20" y="38" width="134" height="8" rx="4" fill="rgba(139,233,253,0.35)"/>
+
+    <g transform="translate(38 66)">
+      <rect x="0" y="70" width="14" height="24" rx="7" fill="#8BE9FD">
+        <animate attributeName="height" values="24;76;24" dur="1.2s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="70;18;70" dur="1.2s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="28" y="48" width="14" height="46" rx="7" fill="#7C8CFF">
+        <animate attributeName="height" values="46;92;46" dur="1.05s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="48;2;48" dur="1.05s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="56" y="32" width="14" height="62" rx="7" fill="#FF6863">
+        <animate attributeName="height" values="62;104;62" dur="1.35s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="32;-10;32" dur="1.35s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="84" y="58" width="14" height="36" rx="7" fill="#8BE9FD">
+        <animate attributeName="height" values="36;78;36" dur="1.15s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="58;16;58" dur="1.15s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="112" y="22" width="14" height="72" rx="7" fill="#C9D1FF">
+        <animate attributeName="height" values="72;112;72" dur="1.3s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="22;-18;22" dur="1.3s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <circle cx="202" cy="142" r="12" fill="#0F172A" stroke="rgba(139,233,253,0.55)">
+      <animate attributeName="r" values="10;14;10" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="202" cy="142" r="4" fill="#8BE9FD"/>
+  </g>
+</svg>
