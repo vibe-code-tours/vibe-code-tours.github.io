@@ -1,77 +1,163 @@
-# Vibe Code Tours — public site
+# Hey, I'm Aung Kyaw Min Htet 👋
 
-Bilingual (English + Burmese) static site for **Vibe Code Tours**, a Myanmar AI
-coding tour. Tagline: _"A guided journey into AI-paired coding."_
+<p align="center">
+  <img src="assets/profile-hero.svg" alt="Dark modern portfolio banner" width="100%" />
+</p>
 
-Built with **Astro 5 + Tailwind CSS**, zero client JS by default, output is a
-static site that deploys free to GitHub Pages.
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1200&color=8BE9FD&center=true&vCenter=true&width=720&lines=Software+Engineering+Student;Full-stack+Developer;Real-time+Systems+Builder;Cloud+and+AI+Explorer" alt="Typing animation" />
+</p>
 
-## Quick start
+<p align="center">
+  <img src="https://img.shields.io/badge/Focus-Real--time%20Systems-0F172A?style=for-the-badge" alt="Focus real-time systems" />
+  <img src="https://img.shields.io/badge/Stack-Next.js%20%2B%20Node.js-0F172A?style=for-the-badge" alt="Stack Next.js and Node.js" />
+  <img src="https://img.shields.io/badge/Mode-Minimal%20%2B%20Sharp-0F172A?style=for-the-badge" alt="Minimal and sharp" />
+</p>
 
-```bash
-npm install        # install dependencies
-npm run dev        # local dev server at http://localhost:4321/vibe-code-tours-site
-npm run build      # static build into dist/
-npm run preview    # preview the built dist/ locally
-```
+<p align="center">
+  <a href="https://www.linkedin.com/in/aung-kyaw-min-htet-3b359b23b/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://www.facebook.com/aungkyawminhtet.sbo">
+    <img src="https://img.shields.io/badge/Facebook-Follow-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
+  </a>
+  <a href="https://github.com/aungkyawminhtet">
+    <img src="https://img.shields.io/badge/GitHub-Profile-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="mailto:aungkyawminhtet.sbo@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact-FF6863?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+</p>
 
-## Project layout
+---
 
-```
-src/
-  i18n/
-    en.json        # English copy (source of truth for UI strings)
-    my.json        # Burmese copy — values prefixed "[MY] " need translation
-    utils.ts       # locale detection + base-aware link helpers
-  data/
-    chapters.ts    # curriculum card data (Ch0-Ch8)
-  layouts/Base.astro      # <head>, SEO/OG meta, header + footer wrapper
-  components/             # Header, Footer, ChapterCard + one *Body per page
-  pages/                  # routes (English at /, Burmese mirrored under /my)
-public/            # favicon.svg, og-default.svg, robots.txt
-scripts/gen-my.mjs # regenerates my.json skeleton from en.json
-```
+## About
 
-Each page is a thin route file that renders a shared `*Body.astro` component, so
-the English and Burmese routes never duplicate markup — only the active locale
-differs.
+I build web applications, real-time monitoring systems, and dashboard products that focus on clarity, speed, and practical outcomes.
 
-## Internationalization
+I am a Software Engineering student at Mae Fah Luang University, Thailand, with experience across full-stack development, IoT integration, and embedded systems.
 
-- Astro i18n routing: English is the default at `/`, Burmese lives under `/my/`.
-- UI copy comes from JSON locale files (`src/i18n/en.json`, `src/i18n/my.json`).
-- A language switcher in the header toggles EN / မြန်မာ, preserving the sub-path.
-- Burmese text uses the **Noto Sans Myanmar** webfont (via `@fontsource`),
-  applied automatically on `html[lang="my"]`.
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,mongodb,mysql,flutter,dart,python,docker,git,github,vscode,linux" alt="Tech stack icons" />
+</p>
 
-To add or improve Burmese translations, see **[TRANSLATION.md](./TRANSLATION.md)**.
-Short version: edit `src/i18n/my.json`, replace each `[MY] <English>` value with
-Burmese, and delete the `[MY] ` prefix.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>Currently focused on</strong><br>
+      <br>
+      - Hospital transport real-time monitoring<br>
+      - Next.js, Node.js, and React workflows<br>
+      - Cloud-ready system design<br>
+      - AI exploration with Python
+    </td>
+    <td width="50%" valign="top">
+      <strong>Open to</strong><br>
+      <br>
+      - Full-stack applications<br>
+      - Dashboard systems
+      - Real-time products
+      - Collaboration with practical teams
+    </td>
+  </tr>
+</table>
 
-## Deploying to GitHub Pages (when the org exists)
+---
 
-The repo is **local-only** for now (the `vibe-code-tours` GitHub org doesn't exist
-yet). When ready:
+## Selected Work
 
-1. Create the `vibe-code-tours` org + a repo named `vibe-code-tours-site`.
-2. Push this repo to `main`.
-3. In repo **Settings → Pages**, set **Source = GitHub Actions**.
-4. The included workflow [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml)
-   builds and deploys on every push to `main`.
+<p align="center">
+  A more visual showcase of the work I want to be known for.
+</p>
 
-The site will be served at `https://vibe-code-tours.github.io/vibe-code-tours-site/`.
+<table>
+  <tr>
+    <td width="62%" valign="top" rowspan="2">
+      <img src="projects/oxytracker.svg" alt="Hospital transport monitoring project" width="100%" />
+      <br><br>
+      <strong>01 / Hospital Transport Real-Time Monitoring System</strong>
+      <br>
+      Real-time platform for improving transport visibility and operational efficiency.
+      <br><br>
+      <strong>Highlights</strong>
+      <br>
+      - Live operational monitoring<br>
+      - Faster issue detection<br>
+      - Clean dashboard workflow
+      <br><br>
+      <strong>Stack</strong>
+      <br>
+      <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+      <img src="https://img.shields.io/badge/Next.js-111827?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" />
+      <img src="https://img.shields.io/badge/Node.js-0F172A?style=flat-square&logo=node.js&logoColor=339933" alt="Node.js" />
+    </td>
+    <td width="38%" valign="top">
+      <img src="projects/sheetsdatabase.svg" alt="Oil management dashboard project" width="100%" />
+      <br><br>
+      <strong>02 / Oil Management System Dashboard</strong>
+      <br>
+      Dashboard for monitoring wells, tanks, workers, and expenses.
+      <br><br>
+      <strong>Stack</strong>
+      <br>
+      <img src="https://img.shields.io/badge/Next.js-111827?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" />
+      <img src="https://img.shields.io/badge/Docker-0F172A?style=flat-square&logo=docker&logoColor=2496ED" alt="Docker" />
+      <img src="https://img.shields.io/badge/MySQL-0F172A?style=flat-square&logo=mysql&logoColor=4479A1" alt="MySQL" />
+    </td>
+  </tr>
+  <tr>
+    <td width="38%" valign="top">
+      <img src="projects/artistify.svg" alt="Admin dashboard project" width="100%" />
+      <br><br>
+      <strong>03 / Admin Dashboard & Real-Time Data Platform</strong>
+      <br>
+      Scalable dashboard for monitoring, analytics, and operational control.
+      <br><br>
+      <strong>Stack</strong>
+      <br>
+      <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+      <img src="https://img.shields.io/badge/Next.js-111827?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" />
+      <img src="https://img.shields.io/badge/MongoDB-0F172A?style=flat-square&logo=mongodb&logoColor=47A248" alt="MongoDB" />
+    </td>
+  </tr>
+</table>
 
-### Switching to a custom domain (vibecode.tours)
+---
+name: Aung Kyaw Min Htet
+github: aungkyawminhtet
+cohort: 1
+---
 
-When the domain is purchased and pointed at GitHub Pages:
+## Achievements
 
-1. In `astro.config.mjs`, set `site: 'https://vibecode.tours'` and `base: '/'`.
-2. Add a `public/CNAME` file containing `vibecode.tours`.
-3. Rebuild. All internal links and the sitemap adapt automatically (they read
-   `BASE_URL`).
+- Fighting Robot Competition — First Prize, MakerFest Myanmar 2019
+- On-Water Robot Competition — First Runner-Up
+- Automatic Fire Fighting Robot Project — APT Young Professionals Program
+- MediHack Hackathon 2026 — AI for Healthcare Solutions
 
-## Licenses
+---
 
-- Curriculum content: CC-BY-SA 4.0
-- Code: MIT
-- Logo + visuals: CC-BY-SA 4.0
+## GitHub Stats
+
+<p align="center">
+  A quick snapshot of the work I ship and the tools I use most.
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aungkyawminhtet&theme=dark&hide_border=true&background=0B162A&ring=8BE9FD&fire=FF6863&currStreakLabel=E5EEF8" alt="GitHub streak" />
+</p>
+
+---
+
+## Connect
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/aung-kyaw-min-htet-3b359b23b/">LinkedIn</a> ·
+  <a href="https://www.facebook.com/aungkyawminhtet.sbo">Facebook</a> ·
+  <a href="https://github.com/aungkyawminhtet">GitHub</a> ·
+  <a href="mailto:aungkyawminhtet.sbo@gmail.com">Email</a>
+</p>
+
+<p align="center">
+  Always learning, building, and shipping software that feels fast and useful.
+</p>
