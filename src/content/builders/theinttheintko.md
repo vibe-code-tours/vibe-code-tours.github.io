@@ -3,7 +3,7 @@ name: Theint Theint Ko
 github: theinttheintko
 cohort: 1
 role: builder
-skills: ["Java", "Claude Code"]
+skills: ["Java", "HTML", "CSS", "Angular", "Claude Code"]
 repo: https://github.com/theinttheintko/theinttheintko_61
 linkedin: https://www.linkedin.com/in/theint-theint-ko-039121294
 ---
