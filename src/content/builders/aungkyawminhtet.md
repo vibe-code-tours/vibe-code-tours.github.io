@@ -6,8 +6,9 @@ role: builder
 skills: ["JavaScript", "Python", "Java", "Claude Code"]
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+Hi! I'm Aung Kyaw Min Htet, and I enjoy learning by building things with AI.
+I'm using this tour to sharpen my coding skills and turn ideas into real
+projects by Demo Day. Excited to meet everyone and keep growing along the way.
 
 <!--
 HOW TO ADD YOURSELF
