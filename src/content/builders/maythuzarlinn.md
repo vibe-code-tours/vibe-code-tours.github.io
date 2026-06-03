@@ -5,7 +5,7 @@ cohort: 1
 role: builder
 skills: ["JavaScript","React Native","Laravel","Python", "Claude Code"]
 repo: https://github.com/maythuzarlinn/LINCODE_PORTFOLIO 
-x: @bellamy_linn
+x: https://x.com/bellamy_linn
 linkedin: https://www.linkedin.com/in/may-thu-zar-lin-20b396191/
 website: https://portfolio-website-maythuzarlin.netlify.app/
 ---
