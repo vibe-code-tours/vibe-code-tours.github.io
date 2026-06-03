@@ -50,14 +50,14 @@ Edit `src/content/builders/<your-username>.md`:
 
 ```markdown
 ---
-name: Your Name
-github: your-username
+name: Nyein Chan Oo
+github: ChanOoDev
 cohort: 1
 role: builder
 skills: ["JavaScript", "Python", "Claude Code"]
 repo: https://github.com/your-username/your-project
 x: your-x-handle
-linkedin: your-linkedin-username
+linkedin: www.linkedin.com/in/chanoonyein
 website: https://your-site.com
 ---
 

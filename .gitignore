@@ -26,3 +26,6 @@ Thumbs.db
 # Agent skills (local only)
 .agents/
 skills-lock.json
+
+# Superpowers planning artifacts (local only)
+docs/superpowers/
