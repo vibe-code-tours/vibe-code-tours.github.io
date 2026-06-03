@@ -5,7 +5,8 @@ const locale: Locale = getLocale(Astro.url.pathname);
 const s = t(locale).setup;
 
 const REPO = "https://github.com/vibe-code-tours/vibecode-setup";
-const RAW = "https://raw.githubusercontent.com/vibe-code-tours/vibecode-setup/main";
+const RAW =
+  "https://raw.githubusercontent.com/vibe-code-tours/vibecode-setup/main";
 const SCRIPT = `${RAW}/student-setup.sh`;
 const GIST = REPO;
 const oneLiner = `curl -fsSL ${SCRIPT} | bash`;
