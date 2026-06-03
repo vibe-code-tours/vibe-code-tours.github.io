@@ -4,7 +4,6 @@ github: zinmar2626
 cohort: 1
 role: builder
 skills: ["JavaScript", "React", "Vue", "NodeJs"]
-x: kokoye2007
 linkedin: zinmarwin2626
 ---
 
