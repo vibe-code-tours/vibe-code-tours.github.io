@@ -1,13 +1,12 @@
 ---
-name: Your Name
-github: githubusername
+name: Bryan
+github: yannaingaung31
 cohort: 1
-role: builder
-skills: ["JavaScript", "Python", "Java", "Claude Code"]
+role: builder 
+skills: ["Vibe Coding", "Business Strategy",  "Claude Code"]
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+Hi! I'm Bryan and  currently riding the AI wave as an active learner. I'm deeply passionate about exploring the intersection of business intelligence, AI-powered development, and vibe-coding to quickly bring innovative ideas to life. Excited to connect with fellow makers and build something cool!
 
 <!--
 HOW TO ADD YOURSELF

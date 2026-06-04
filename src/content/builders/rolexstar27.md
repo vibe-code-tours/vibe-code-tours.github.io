@@ -1,8 +1,10 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devhub
+name: Hay Mar Maw
+github: rolexstar27
 cohort: 1
 role: builder
+skills: ["JavaScript", "JQuery", "Vue", "UI/UX", "Photoshop"]
+linkedin: Hay Mar Maw
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
@@ -19,3 +21,4 @@ HOW TO ADD YOURSELF:
 Roles: builder (default) | mentor | instructor
 Remove any optional field you don't want to show.
 -->
+

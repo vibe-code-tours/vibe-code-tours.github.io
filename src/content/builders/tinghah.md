@@ -1,23 +1,16 @@
 ---
-name: Htet Aung Hlaing (ting)
+name: ( 霆 | Ting ) Htet Aung Hlaing
 github: tinghah
 cohort: 1
 role: builder
-skills: ["will add later"]
+skills: ["AI Agents", "DevOps", "PostgreSQL", "Automation", "TypeScript", "Python", "Linux", "GCP", "Cloud", "Fortinet"]
 website: https://tinghah.github.io
+repo: https://github.com/tinghah/vibe-code-tours.github.io
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+I build and secure systems. As a Cybersecurity Engineer & System Admin with 6 years of experience across IT infrastructure and network environments, I specialize in designing fault-tolerant architectures—whether they live on bare metal or scale in the cloud.
 
-<!--
-HOW TO ADD YOURSELF:
-1. Copy this file to src/content/builders/<your-github-username>.md
-2. Edit `name`, `github`, `cohort` (required). Everything else is optional.
-3. skills: list a few (array). repo/x/linkedin/website: handle OR full URL.
-4. Write 2-3 sentences below the --- about yourself.
-5. Your photo is pulled automatically from your GitHub avatar — no upload.
-6. Commit, push to your fork, open a Pull Request.
-Roles: builder (default) | mentor | instructor
-Remove any optional field you don't want to show.
--->
+[blog](https://www.learndevopsnow-mm.blog/en/authors/tinghah/).
+
+Right now, I am exploring the boundaries of AI-assisted software engineering (vibe-coding). My objective for the Tour is simple: leverage AI agents to accelerate my development cycle and ship a functional, secure product by Demo Day.
+

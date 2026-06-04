@@ -1,8 +1,13 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devhub
+name: Myo Aung 
+github: myoaung
 cohort: 1
 role: builder
+skills: ["JavaScript", "Python", "Claude Code"]
+repo: https://github.com/myoaung/your-project
+x: your-x-handle
+linkedin: linkedin.com/myoaung21
+website: https://your-site.com
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

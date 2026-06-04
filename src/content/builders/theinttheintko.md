@@ -3,11 +3,12 @@ name: Theint Theint Ko
 github: theinttheintko
 cohort: 1
 role: builder
-skills: ["JavaScript", "Python", "Claude Code"]
+skills: ["Java", "HTML", "CSS", "Angular", "Claude Code"]
+repo: https://github.com/theinttheintko/theinttheintko_61
+linkedin: https://www.linkedin.com/in/theint-theint-ko-039121294
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+Hi! Nice to meet you. My name is Theint Theint Ko. I currently work with Java. These projects helped me improve my programming skills, problem-solving ability, and teamwork experience. My goal is to become a professional software developer and contribute to meaningful projects in the IT industry. I'm learning to vibe-code with AI. My goal is to build and ship something real by Demo Day. Excited to be part of the Tour.
 
 <!--
 HOW TO ADD YOURSELF:

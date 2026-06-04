@@ -1,13 +1,12 @@
 ---
-name: Your Name
-github: githubusername
+name: Samuel Bawi Nei Lian
+github: Samm24TT
 cohort: 1
 role: builder
-skills: ["JavaScript", "Python", "Java", "Claude Code"]
+skills: ["JavaScript", "Python", "Java", "Claude Code", "Tailwind", "HTML", "CSS", "REACTJS"]
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+I'm a computer science student with a strong focus on full-stack web development. I'm excited to be here to collaborate on open-source, refine my skills, and build some interesting projects with the cohort!
 
 <!--
 HOW TO ADD YOURSELF

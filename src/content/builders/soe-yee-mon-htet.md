@@ -1,8 +1,13 @@
 ---
-name: Eaint Pyae Phyo
-github: luna-devhub
+name: Soe Yee Mon Htet
+github: Soe-Yee-Mon-Htet
 cohort: 1
 role: builder
+skills: ["JavaScript", "Reactjs"]
+repo: 
+x:
+linkedin: 
+website: 
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
