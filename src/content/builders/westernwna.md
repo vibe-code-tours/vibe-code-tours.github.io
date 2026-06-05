@@ -1,17 +1,12 @@
 ---
-name: Your Name
-github: your-github-username
+name: Wunna Aung
+github: westernwna
 cohort: 1
 role: builder
-skills: ["JavaScript", "Python", "Claude Code"]
-repo: https://github.com/your-github-username/your-project
-x: your-x-handle
-linkedin: your-linkedin-username
-website: https://your-site.com
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+Hi! I'm learning to vibe-code with AI.
+My goal is to explore what I could do using this skills as a tool.
 
 <!--
 HOW TO ADD YOURSELF:
