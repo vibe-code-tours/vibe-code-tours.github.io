@@ -33,5 +33,8 @@ jobs:
       - name: Type-check (astro check)
         run: npm run check
 
+      - name: Validate builder profiles
+        run: npm run validate:builders
+
       - name: Build
         run: npm run build
