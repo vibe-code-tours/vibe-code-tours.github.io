@@ -5,8 +5,12 @@ cohort: 1
 role: builder
 skills: ["AWS", "Docker", "DevOps"]
 repo: https://github.com/haymannko/haymannko
+<<<<<<< HEAD
 linkedin: www.linkedin.com/in/hay-mann-ko-40a111277
 
+=======
+linkedin: https://www.linkedin.com/in/hay-mann-ko-40a111277
+>>>>>>> 8f021a1 (linkedin link repair)
 ---
 
 Hi! I'm very happy to contribute in Vibe Code Tours of Cohort 1. My goal is to use VibeTour knowledge in my career development.
