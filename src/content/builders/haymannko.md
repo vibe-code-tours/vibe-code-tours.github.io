@@ -6,9 +6,10 @@ role: builder
 skills: ["AWS", "Docker", "DevOps"]
 repo: https://github.com/haymannko/haymannko
 linkedin: www.linkedin.com/in/hay-mann-ko-40a111277
+
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to use VibeTour knowledge in my career development.
+Hi! I'm very happy to contribute in Vibe Code Tours of Cohort 1. My goal is to use VibeTour knowledge in my career development.
 Thank your sayar.
 
 <!--

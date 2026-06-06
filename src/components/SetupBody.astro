@@ -4,11 +4,14 @@ import { t, getLocale, localizedPath, type Locale } from "../i18n/utils";
 const locale: Locale = getLocale(Astro.url.pathname);
 const s = t(locale).setup;
 
-const SCRIPT =
-  "https://gist.githubusercontent.com/kokoye2007/e8d30985faca6292a50bdd3b0409105f/raw/student-setup.sh";
-const GIST =
-  "https://gist.github.com/kokoye2007/e8d30985faca6292a50bdd3b0409105f";
+const REPO = "https://github.com/vibe-code-tours/vibecode-setup";
+const RAW =
+  "https://raw.githubusercontent.com/vibe-code-tours/vibecode-setup/main";
+const SCRIPT = `${RAW}/student-setup.sh`;
+const GIST = REPO;
 const oneLiner = `curl -fsSL ${SCRIPT} | bash`;
+const API_SETUP = `${RAW}/api-setup.sh`;
+const KEYFILE = `${RAW}/vibe-key.env.example`;
 ---
 
 <article
@@ -95,6 +98,22 @@ opencode --version`}</code></pre>
     class="mt-3 rounded-lg border-l-4 border-accent-300 bg-accent-50 px-4 py-2 text-sm text-gray-700"
   >
     {s.s5opCost}
+  </p>
+
+  <h2>{s.pxH}</h2>
+  <p>{s.pxIntro}</p>
+  <pre
+    class="mt-3 overflow-x-auto rounded-lg bg-gray-900 p-4 text-sm text-gray-100"><code>{`curl -fsSL ${API_SETUP} -o api-setup.sh
+curl -fsSL ${KEYFILE} -o vibe-key.env
+# open vibe-key.env, paste VIBE_PROXY + VIBE_KEY from the bot, save, then:
+source api-setup.sh`}</code></pre>
+  <p>{s.pxAfter}</p>
+  <pre
+    class="mt-2 overflow-x-auto rounded-lg bg-gray-900 p-4 text-sm text-gray-100"><code>claude        # or:  opencode</code></pre>
+  <p
+    class="mt-3 rounded-lg border-l-4 border-accent-300 bg-accent-50 px-4 py-2 text-sm text-gray-700"
+  >
+    {s.pxNote}
   </p>
 
   <h2>{s.s5H}</h2>

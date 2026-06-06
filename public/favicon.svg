@@ -1,8 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Vibe Code Tours">
-  <rect width="48" height="48" rx="11" fill="#1f2937"/>
-  <path d="M9 33 Q19 13 24 22 T39 16" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
-  <circle cx="9" cy="33" r="3.4" fill="#fde68a"/>
-  <circle cx="24" cy="22" r="2.8" fill="#fde68a"/>
-  <circle cx="39" cy="16" r="3.4" fill="#fde68a"/>
-  <text x="9" y="44" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="700" fill="#f59e0b">&gt;_</text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 48 48"
+   role="img"
+   aria-label="Vibe Code Tours"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="favicon.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs18" />
+  <sodipodi:namedview
+     id="namedview16"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="16.779661"
+     inkscape:cy="24.101695"
+     inkscape:window-width="1878"
+     inkscape:window-height="1009"
+     inkscape:window-x="1962"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14" />
+  <rect
+     width="48"
+     height="48"
+     rx="11"
+     fill="#1f2937"
+     id="rect2" />
+  <path
+     d="M9 33 Q19 13 24 22 T39 16"
+     fill="none"
+     stroke="#f59e0b"
+     stroke-width="3"
+     stroke-linecap="round"
+     opacity="0.85"
+     id="path4" />
+  <circle
+     cx="9"
+     cy="33"
+     r="3.4"
+     fill="#fde68a"
+     id="circle6" />
+  <circle
+     cx="24"
+     cy="22"
+     r="2.8"
+     fill="#fde68a"
+     id="circle8" />
+  <circle
+     cx="39"
+     cy="16"
+     r="3.4"
+     fill="#fde68a"
+     id="circle10" />
 </svg>
