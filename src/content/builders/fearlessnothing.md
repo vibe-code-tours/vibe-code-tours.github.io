@@ -1,11 +1,8 @@
 ---
-name: Min Hein Zaw
+name: Min Heinzaw
 github: fearlessnothing
-cohort: 1
-role: builder
-skills: ["JavaScript", "Python", "Claude Code", "Copilot", "ChatGPT"]
-repo: https://github.com/fearlessnothing/vibe-code-tours.github.io
+skills:
+  - Python
+  - JavaScript
+bio: Myanmar developer learning AI-assisted coding with Vibe Code Tours.
 ---
-
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
