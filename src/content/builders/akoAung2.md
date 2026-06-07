@@ -1,6 +1,6 @@
 ---
 name: AungZawPaing
-github: Akoaung2
+github: akoAung2
 cohort: 1
 role: builder
 skills: ["JavaScript", "Python", "Java", "Claude Code"]
