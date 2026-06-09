@@ -5,9 +5,8 @@ cohort: 2
 role: builder
 skills: ["Python"]
 repo: https://github.com/absolute-aungkomyint/
-x: your-x-handle
-linkedin: your-linkedin-username
-website: https://your-site.com
+
+
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
