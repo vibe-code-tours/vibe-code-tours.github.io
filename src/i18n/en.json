@@ -455,5 +455,58 @@
     "intro": "The people building with AI on this Tour. Each forked the repo, added their intro, and opened a real PR.",
     "empty": "No builders yet. Be the first — fork the repo and add yourself.",
     "addYourself": "Add yourself → (fork + PR)"
+  },
+  "repoAccess": {
+    "title": "Get Your Team Repo — Vibe Code Tours",
+    "description": "How to access your team's private GitHub repo: who can join, the /repo-access command, and what's inside.",
+    "heading": "Get your team repo",
+    "intro": "Every team has its own private GitHub repo — team-01 to team-20. It holds your proposals, your team spec, and an automatic assignment check. Only your team and the mentors can see it.",
+    "gate": {
+      "heading": "Who can get in",
+      "items": [
+        "You're placed in a team (T01–T20).",
+        "You've passed Chapter 1 — that's when your GitHub account gets verified and linked."
+      ]
+    },
+    "steps": {
+      "heading": "How to get access",
+      "items": [
+        "Open your #team-NN channel in Discord.",
+        "Run the command /repo-access.",
+        "The bot replies with your private repo link (only you can see the reply).",
+        "Accept the GitHub invite — check your email or your GitHub notifications."
+      ]
+    },
+    "inside": {
+      "heading": "What's inside",
+      "items": [
+        "member-proposals/ — your Vibe Code Spec (Gist, Story, Why, Why Not, Tech Spec, Definition of Done).",
+        "spec.md — your team's consolidated spec.",
+        "working-agreement.md, decision.md, interview-notes.md.",
+        "An automatic check on every push — green means your assignment is structurally complete."
+      ]
+    },
+    "trouble": {
+      "heading": "If it doesn't work",
+      "items": [
+        {
+          "q": "\"No team yet\"",
+          "a": "You're not assigned to a team. Ask a mentor in your channel."
+        },
+        {
+          "q": "\"Pass Chapter 1 first\"",
+          "a": "Submit Chapter 1 with /ch1 and your gist URL. Once it passes, run /repo-access again."
+        },
+        {
+          "q": "\"No GitHub linked\"",
+          "a": "Your Chapter 1 submission is what links your GitHub. Submit with /ch1 <your gist URL>."
+        },
+        {
+          "q": "Invite is pending",
+          "a": "Accept it in your GitHub email or notifications. After that you can push to the repo."
+        }
+      ]
+    },
+    "cta": "Stuck? Ask in your team channel or #help."
   }
 }
