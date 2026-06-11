@@ -1,6 +1,6 @@
 ---
 name: Aung Kaung Myat
-github: akm97akm
+github: A-K-M
 cohort: 1
 role: builder
 skills: [“JavaScript”, “Python”, “Java”, “Node.js”, “Angular”, “.NET”, “AI Coding”]
