@@ -8,7 +8,8 @@ skills: ["JavaScript", "Python", "React", "React Native", "Firebase", "Django", 
 
 repo: https://github.com/khinmyatthu2193
 linkedin: https://www.linkedin.com/in/khin-myat-thu-837892352/
----------------------------------------------------------------------------------------------
+
+---
 
 Hi! I'm Khin Myat Thu, a final-year student from Myanmar Institute of Information Technology (MIIT).
 
