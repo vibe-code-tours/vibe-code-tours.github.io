@@ -1,4 +1,4 @@
-`---
+---
 name: Thatoe
 github: thatoe
 cohort: 1
