@@ -10,7 +10,7 @@ website: https://vibecode-ting.github.io
 certs:
   claude_101: https://verify.skilljar.com/c/b8n2bf78rpsv
   claude_code_101: https://verify.skilljar.com/c/oja8u8vh2dpk
-  Claude with Google Cloud's Vertex AI: https://verify.skilljar.com/c/4276xvu3on5r
+  claude_vertex: https://verify.skilljar.com/c/4276xvu3on5r
 ---
 IT 工程師｜ERP 與 MES 系統支援｜自動化流程與跨國資料視覺化｜RPA 與 AI 工具愛好者｜n8n 開發者
 Right now, I am exploring the boundaries of AI-assisted software engineering (vibe-coding). My objective for the Tour is simple: leverage AI agents to accelerate my development cycle and ship a functional, secure product by Demo Day.
