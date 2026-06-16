@@ -3,11 +3,11 @@ name: Bhone Wai
 github: bhonewai-bot
 cohort: 1
 role: builder
-skills: ["TypeScript", "C#", "Open Code"]
+skills: ["TypeScript", "Next.js", "Claude Code"]
 repo: https://github.com/bhonewai-bot
-x: https://x.com/Madao_Haisha
-linkedin: https://www.linkedin.com/in/bhone-wai-73a13139a/
 website: https://bhonewai.cc.cd/
+claude_101:      qyz5vwojckf4
+claude_code_101: d8x44hhiarrm
 ---
 
 I enjoy learning about software architecture, system design, and modern development practices. 
