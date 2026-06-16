@@ -295,7 +295,7 @@
     "fastH": "Fast path (one command)",
     "fastIntro": "Comfortable in a terminal? This installs everything + verifies:",
     "fastTarget": "Safe to re-run. At the end you want: Passed: 6, Failed: 0.",
-    "fastGist": "Source and this guide live on the gist.",
+    "fastGist": "Source and this guide live in the GitHub repo.",
     "fastWindows": "Windows: install WSL first (Step 0), then run that inside Ubuntu. The script doesn't do the editor (Step 5) or GitHub SSH (Step 6) — do those manually.",
     "s0H": "Step 0 — Windows only: install WSL",
     "s0Body": "Native Windows isn't supported directly — you run everything inside WSL (real Linux inside Windows). In PowerShell (Admin):",
@@ -307,7 +307,7 @@
     "s4H": "Step 4 — Claude Code",
     "s4Login": "Logging in is a one-time step on first launch. Once you land in the chat, type your first message and press Enter — your “first contact”:",
     "s4Note": "A friendly reply means your install, network, and account all work.",
-    "s5H": "Step 6 — Code editor",
+    "s5H": "Step 7 — Code editor",
     "s5Intro": "Pick one (both free, both VS Code-based, so the same extensions work in either):",
     "s5VsCode": "the standard",
     "s5Antigravity": "Google's AI-first editor (VS Code fork)",
@@ -321,10 +321,10 @@
     "colNeeds": "Needs",
     "colSymptom": "Symptom",
     "colFix": "Fix",
-    "s6H": "Step 7 — GitHub account + SSH",
+    "s6H": "Step 8 — GitHub account + SSH",
     "s6Intro": "The riskiest step — don't skip the verification.",
     "s6Never": "Never share the private key (~/.ssh/id_ed25519, the file without .pub).",
-    "s7H": "Step 8 — Verify everything",
+    "s7H": "Step 9 — Verify everything",
     "s7Intro": "Run the verifier (the fast-path script does this automatically):",
     "s7Target": "Target: Passed: 6, Failed: 0.",
     "troubleH": "Troubleshooting",
@@ -429,6 +429,10 @@
     "s5opPathB": "If the official installer fails, use the npm fallback:",
     "s5opAfter": "First run opens an interactive picker for provider/model. We will publish a config snippet for our shared endpoint when it is live — drop it into ~/.config/opencode/opencode.json.",
     "s5opCost": "Cost — opencode itself is free; you pay whatever model you point it at. Cheapest free path day 1: opencode + a Google AI Studio API key (free Gemini Flash-Lite quota ~1,500 req/day).",
+    "pxH": "Step 6 — Connect to the Vibe proxy",
+    "pxIntro": "Claude Code and opencode reach our shared proxy with your personal key. Get your key from the cohort bot (Telegram or Discord — send /mykey), then run the setup script: it downloads, applies your key, and points both tools at the proxy.",
+    "pxAfter": "Done — both tools now route through the Vibe proxy. Start coding:",
+    "pxNote": "source applies it to your current shell. To undo later and restore your personal Claude login: bash api-setup.sh --restore",
     "pricingLinkLabel": "Pricing + free-tier quotas:",
     "pricingLinkUrl": "https://gist.github.com/kokoye2007/e8d30985faca6292a50bdd3b0409105f#file-pricing-md",
     "pricingLinkText": "PRICING.md (cheat sheet)"
@@ -451,5 +455,58 @@
     "intro": "The people building with AI on this Tour. Each forked the repo, added their intro, and opened a real PR.",
     "empty": "No builders yet. Be the first — fork the repo and add yourself.",
     "addYourself": "Add yourself → (fork + PR)"
+  },
+  "repoAccess": {
+    "title": "Get Your Team Repo — Vibe Code Tours",
+    "description": "How to access your team's private GitHub repo: who can join, the /repo-access command, and what's inside.",
+    "heading": "Get your team repo",
+    "intro": "Every team has its own private GitHub repo — team-01 to team-20. It holds your proposals, your team spec, and an automatic assignment check. Only your team and the mentors can see it.",
+    "gate": {
+      "heading": "Who can get in",
+      "items": [
+        "You're placed in a team (T01–T20).",
+        "You've passed Chapter 1 — that's when your GitHub account gets verified and linked."
+      ]
+    },
+    "steps": {
+      "heading": "How to get access",
+      "items": [
+        "Open your #team-NN channel in Discord.",
+        "Run the command /repo-access.",
+        "The bot replies with your private repo link (only you can see the reply).",
+        "Accept the GitHub invite — check your email or your GitHub notifications."
+      ]
+    },
+    "inside": {
+      "heading": "What's inside",
+      "items": [
+        "member-proposals/ — your Vibe Code Spec (Gist, Story, Why, Why Not, Tech Spec, Definition of Done).",
+        "spec.md — your team's consolidated spec.",
+        "working-agreement.md, decision.md, interview-notes.md.",
+        "An automatic check on every push — green means your assignment is structurally complete."
+      ]
+    },
+    "trouble": {
+      "heading": "If it doesn't work",
+      "items": [
+        {
+          "q": "\"No team yet\"",
+          "a": "You're not assigned to a team. Ask a mentor in your channel."
+        },
+        {
+          "q": "\"Pass Chapter 1 first\"",
+          "a": "Submit Chapter 1 with /ch1 and your gist URL. Once it passes, run /repo-access again."
+        },
+        {
+          "q": "\"No GitHub linked\"",
+          "a": "Your Chapter 1 submission is what links your GitHub. Submit with /ch1 <your gist URL>."
+        },
+        {
+          "q": "Invite is pending",
+          "a": "Accept it in your GitHub email or notifications. After that you can push to the repo."
+        }
+      ]
+    },
+    "cta": "Stuck? Ask in your team channel or #help."
   }
 }
