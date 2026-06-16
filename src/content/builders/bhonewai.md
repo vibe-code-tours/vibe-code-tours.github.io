@@ -6,7 +6,6 @@ role: builder
 
 skills: ["TypeScript", "Next.js", "Claude Code"]
 repo: https://github.com/bhonewai-bot
-website: https://bhonewai.cc.cd/
 certs:
   claude_101: https://verify.skilljar.com/c/qyz5vwojckf4
   claude_code_101: https://verify.skilljar.com/c/d8x44hhiarrm
