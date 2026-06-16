@@ -11,7 +11,7 @@ claude_101:      qyz5vwojckf4
 claude_code_101: d8x44hhiarrm
 ---
 
-I also like building toy projects to apply what I learn and explore new technologies.
+I enjoy learning about software architecture, system design, and modern development practices. I also like building toy projects to apply what I learn and explore new technologies.
 
 <!--
 HOW TO ADD YOURSELF:
