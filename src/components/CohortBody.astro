@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import { t, getLocale, type Locale } from "../i18n/utils";
 import BuilderCard from "./BuilderCard.astro";
+import { isPlaceholderIdentity } from "../lib/builder-identity.mjs";
 
 interface Props {
   cohort: number;
@@ -12,7 +13,11 @@ const locale: Locale = getLocale(Astro.url.pathname);
 const s = t(locale).cohortPage;
 
 // All builders for this cohort. Render each markdown body to HTML for the card.
-const all = await getCollection("builders", (b) => b.data.cohort === cohort);
+// Reject placeholder identities — a profile with no real name/github is not shown.
+const all = await getCollection(
+  "builders",
+  (b) => b.data.cohort === cohort && !isPlaceholderIdentity(b.data),
+);
 
 // Instructors/mentors first, then builders; stable by name within group.
 const order = { instructor: 0, mentor: 1, builder: 2 } as const;
@@ -28,6 +33,15 @@ const builders = await Promise.all(
     return { entry, Content };
   }),
 );
+
+// Skill tags for the filter bar: unique skills, most common first.
+const skillCounts = new Map<string, number>();
+for (const { entry } of builders)
+  for (const sk of entry.data.skills ?? [])
+    skillCounts.set(sk, (skillCounts.get(sk) ?? 0) + 1);
+const skills = [...skillCounts.entries()].sort(
+  (a, b) => b[1] - a[1] || a[0].localeCompare(b[0]),
+);
 ---
 
 <section class="mx-auto max-w-5xl px-5 py-12 sm:px-6">
@@ -41,22 +55,58 @@ const builders = await Promise.all(
     builders.length === 0 ? (
       <p class="mt-10 text-center text-gray-600">{s.empty}</p>
     ) : (
-      <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {builders.map(({ entry, Content }) => (
-          <BuilderCard
-            name={entry.data.name}
-            github={entry.data.github}
-            role={entry.data.role}
-            skills={entry.data.skills}
-            repo={entry.data.repo}
-            x={entry.data.x}
-            linkedin={entry.data.linkedin}
-            website={entry.data.website}
+      <>
+        {skills.length > 1 && (
+          <div
+            id="skill-filter"
+            class="mx-auto mt-8 flex max-w-3xl flex-wrap justify-center gap-2"
           >
-            <Content />
-          </BuilderCard>
-        ))}
-      </div>
+            <button
+              type="button"
+              data-filter="*"
+              aria-pressed="true"
+              class="rounded-full border border-white/10 bg-white/5 px-3 py-1 font-mono text-xs font-semibold text-gray-400 transition hover:text-white aria-pressed:border-accent-500 aria-pressed:bg-accent-500 aria-pressed:text-white"
+            >
+              All <span class="opacity-60">{builders.length}</span>
+            </button>
+            {skills.map(([sk, n]) => (
+              <button
+                type="button"
+                data-filter={sk}
+                aria-pressed="false"
+                class="rounded-full border border-white/10 bg-white/5 px-3 py-1 font-mono text-xs font-semibold text-gray-400 transition hover:text-white aria-pressed:border-accent-500 aria-pressed:bg-accent-500 aria-pressed:text-white"
+              >
+                {sk} <span class="opacity-60">{n}</span>
+              </button>
+            ))}
+          </div>
+        )}
+
+        <div
+          id="builder-grid"
+          class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          {builders.map(({ entry, Content }) => (
+            <BuilderCard
+              name={entry.data.name}
+              github={entry.data.github}
+              role={entry.data.role}
+              skills={entry.data.skills}
+              repo={entry.data.repo}
+              x={entry.data.x}
+              linkedin={entry.data.linkedin}
+              website={entry.data.website}
+              certs={entry.data.certs}
+            >
+              <Content />
+            </BuilderCard>
+          ))}
+        </div>
+
+        <p id="builder-empty" hidden class="mt-10 text-center text-gray-600">
+          {s.empty}
+        </p>
+      </>
     )
   }
 
@@ -71,3 +121,32 @@ const builders = await Promise.all(
     </a>
   </div>
 </section>
+
+<script>
+  // Client-side skill filter. Toggles cards by their data-skills list.
+  const bar = document.getElementById("skill-filter");
+  const empty = document.getElementById("builder-empty");
+  if (bar) {
+    const cells = Array.from(
+      document.querySelectorAll<HTMLElement>("#builder-grid .builder-cell"),
+    );
+    bar.addEventListener("click", (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLElement>(
+        "[data-filter]",
+      );
+      if (!btn) return;
+      const filter = btn.dataset.filter ?? "*";
+      bar
+        .querySelectorAll<HTMLElement>("[data-filter]")
+        .forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
+      let shown = 0;
+      for (const cell of cells) {
+        const list = (cell.dataset.skills ?? "").split("|");
+        const show = filter === "*" || list.includes(filter);
+        cell.classList.toggle("hidden", !show);
+        if (show) shown++;
+      }
+      if (empty) empty.toggleAttribute("hidden", shown !== 0);
+    });
+  }
+</script>

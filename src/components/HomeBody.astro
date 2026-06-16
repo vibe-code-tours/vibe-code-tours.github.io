@@ -129,6 +129,13 @@ const stats = [
     background-size: 200% auto;
     animation: shimmer 6s ease-in-out infinite;
   }
+  /* h1 carries both classes; combine entrance + shimmer so opacity reaches 1
+     (a lone "animation: shimmer" would override the fade and leave it at 0). */
+  .hero-h1.shimmer-text {
+    animation:
+      fadeScaleUp 800ms var(--ease-out) 100ms forwards,
+      shimmer 6s ease-in-out infinite;
+  }
 
   .reveal {
     opacity: 0;
@@ -225,10 +232,65 @@ const stats = [
       transform: rotateY(180deg);
     }
   }
+
+  /* ---- Hero avatar mosaic (single composite WebP, see scripts/hero) ---- */
+  .hero-mosaic {
+    position: absolute;
+    inset: -6%;
+    background: url("/hero-mosaic.webp") center / cover no-repeat;
+    opacity: 0.22;
+    filter: saturate(0.85);
+    will-change: transform;
+    animation: heroDrift 40s ease-in-out infinite alternate;
+  }
+  .hero-mosaic-veil {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(
+        820px 460px at 50% 42%,
+        #09090bf2 0%,
+        #09090b80 56%,
+        transparent 80%
+      ),
+      linear-gradient(
+        180deg,
+        #09090bd9 0%,
+        #09090b99 32%,
+        #09090be6 70%,
+        #09090b 100%
+      );
+  }
+  @keyframes heroDrift {
+    from {
+      transform: scale(1.06) translate(-1%, -1%);
+    }
+    to {
+      transform: scale(1.12) translate(1%, 1%);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-mosaic {
+      animation: none;
+      transform: scale(1.06);
+    }
+    /* show hero content without entrance motion */
+    .hero-badge,
+    .hero-h1,
+    .hero-stat,
+    .hero-sub,
+    .hero-btns,
+    .hero-tags {
+      opacity: 1;
+      animation: none;
+    }
+  }
 </style>
 
 <!-- Hero -->
 <section id="hero" class="relative overflow-hidden py-20 text-center sm:py-28">
+  <div class="hero-mosaic" aria-hidden="true"></div>
+  <div class="hero-mosaic-veil" aria-hidden="true"></div>
   <div
     class="pointer-events-none absolute left-1/2 top-0 h-[400px] w-[600px] -translate-x-1/2 rounded-full"
     style="background: radial-gradient(circle, #f59e0b0d, transparent 70%)"
@@ -237,7 +299,7 @@ const stats = [
   <span class="aurora aurora-1 hidden sm:block" aria-hidden="true"></span>
   <span class="aurora aurora-2 hidden sm:block" aria-hidden="true"></span>
   <div id="cursor-glow" class="cursor-glow hidden sm:block"></div>
-  <div class="relative mx-auto max-w-3xl px-5 sm:px-6">
+  <div class="relative z-10 mx-auto max-w-3xl px-5 sm:px-6">
     <div
       class="hero-badge mb-6 inline-flex items-center gap-2 rounded-full border border-accent-500/30 bg-accent-500/10 px-4 py-1.5 text-sm font-semibold text-accent-500"
     >
