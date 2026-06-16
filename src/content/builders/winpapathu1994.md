@@ -1,17 +1,16 @@
 ---
-name: Bhone Wai
-github: bhonewai-bot
+name: Win Pa Pa Thu
+github: winpapathu1994
 cohort: 1
 role: builder
+skills: ["PHP", "Laravel", "Node.js", "React", "Javasctipt"]
+repo: https://github.com/winpapathu1994
+linkedin: https://www.linkedin.com/in/win-pa-pa-thu/
 
-skills: ["TypeScript", "Next.js", "Claude Code"]
-repo: https://github.com/bhonewai-bot
-certs:
-  claude_101: https://verify.skilljar.com/c/qyz5vwojckf4
-  claude_code_101: https://verify.skilljar.com/c/d8x44hhiarrm
 ---
 
-I enjoy learning about software architecture, system design, and modern development practices. I also like building toy projects to apply what I learn and explore new technologies.
+
+I'm currently learning how to vibe-code with AI and exploring agentic development workflows to build software faster and more effectively.
 
 <!--
 HOW TO ADD YOURSELF:

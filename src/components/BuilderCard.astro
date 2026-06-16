@@ -14,10 +14,9 @@ interface Props {
 const { name, github, role, skills, repo, x, linkedin, website, certs } =
   Astro.props;
 
-import { certDisplayList } from "../lib/certs.mjs";
-const certList = certDisplayList(certs);
-const earnedCerts = certList.filter((c) => c.earned);
-const hasCert = earnedCerts.length > 0;
+import { certProgressList } from "../lib/certs.mjs";
+const certList = certProgressList(certs); // earned (amber) + next 2 unearned (grey)
+const hasCert = certList.some((c) => c.earned);
 
 const avatar = `https://github.com/${github}.png?size=160`;
 const roleClass =
@@ -100,33 +99,55 @@ const links = [
     </div>
 
     {
-      hasCert && (
+      certList.length > 0 && (
         <div
           class="mt-3 flex flex-wrap items-center gap-2"
           aria-label="Claude certifications"
         >
-          {earnedCerts.map((c) => (
-            <a
-              href={c.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="cert-ico-link"
-              title={`${c.label} — verified`}
-              aria-label={c.label}
-            >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.9"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="cert-ico"
+          {certList.map((c) =>
+            c.earned ? (
+              <a
+                href={c.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cert-ico-link"
+                style={`color:${c.color}`}
+                title={`${c.label} — verified`}
+                aria-label={`${c.label} — verified`}
               >
-                <Fragment set:html={c.icon} />
-              </svg>
-            </a>
-          ))}
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="cert-ico"
+                >
+                  <Fragment set:html={c.icon} />
+                </svg>
+              </a>
+            ) : (
+              <span
+                class="cert-ico-link is-locked"
+                style={`color:${c.color}`}
+                title={`${c.label} — not yet earned`}
+                aria-label={`${c.label} — not yet earned`}
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="cert-ico"
+                >
+                  <Fragment set:html={c.icon} />
+                </svg>
+              </span>
+            ),
+          )}
         </div>
       )
     }
@@ -211,6 +232,15 @@ const links = [
   .cert-ico-link:hover {
     transform: scale(1.25);
     filter: drop-shadow(0 0 6px currentColor);
+  }
+  /* Locked (not-yet-earned) targets: dim, non-interactive. */
+  .cert-ico-link.is-locked {
+    opacity: 0.4;
+    cursor: default;
+  }
+  .cert-ico-link.is-locked:hover {
+    transform: none;
+    filter: none;
   }
   .cert-ico {
     width: 1.15rem;

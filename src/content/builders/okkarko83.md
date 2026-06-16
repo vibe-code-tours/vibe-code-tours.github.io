@@ -1,13 +1,12 @@
 ---
-name: Your Name
-github: githubusername
+name: Okkar Ko
+github: okkarko83
 cohort: 1
 role: builder
-skills: ["JavaScript", "Python", "Java", "Claude Code"]
+skills: ["Kubernetes", "GitOps", "Terraform", "AWS"]
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+I am a Senior Platform Engineer / DevOps Specialist with over 15 years of experience designing, building, and scaling resilient cloud infrastructure. I specialize in cloud-native technologies, automation, and fostering strong DevOps cultures to bridge the gap between development and operations.
 
 <!--
 HOW TO ADD YOURSELF
@@ -23,9 +22,8 @@ HOW TO ADD YOURSELF
 
    CLAUDE CERTIFICATIONS (optional) — add a `certs:` block with the ones you
    earned. Value = the Skilljar code OR the full verify URL. Known ids:
-     claude_101, claude_code_101, agent_skills_intro, subagents_intro,
-     mcp_intro, claude_code_in_action, building_claude_api, claude_platform_101,
-     claude_cowork, mcp_advanced, claude_bedrock, claude_vertex, ai_fluency
+     claude_101, claude_code_101, mcp_intro, agent_skills_intro,
+     subagents_intro, claude_code_in_action, building_claude_api
    Example:
      certs:
        claude_101:      293x3v9qydhx

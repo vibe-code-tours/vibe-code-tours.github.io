@@ -7,6 +7,9 @@ skills: ["JavaScript", "Python", "Claude Code", "PHP"]
 repo: https://github.com/naitar/
 linkedin: naingtaryu
 website: https://naitaryu.blogspot.com/
+certs:
+  claude_101: x3r4tyqum6qx
+  claude_code_101: zqxy55aiha2q
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

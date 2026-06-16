@@ -6,7 +6,6 @@ role: builder
 skills: ["DevOps", "C#", "Cloud Infrastructure", "Container"]
 repo: https://github.com/hanminmyat/hanminmyat
 # x: your-x-handle
-mail: mr.hanminmyat@gmail.com
 linkedin: han-min-myat
 # website: https://your-site.com
 ---
