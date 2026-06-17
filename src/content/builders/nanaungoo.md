@@ -6,7 +6,7 @@ role: builder
 skills: ["antigravity"]
 website:  https://ud.me/nanaungoo.brave
 certs:
-  claude_101: https://verify.skilljar.com/c/rsdbx9pzikkk
+  claude_101: rsdbx9pzikkk
   claude_code_101: https://verify.skilljar.com/c/sovo9xx54xaz
 ---
 
