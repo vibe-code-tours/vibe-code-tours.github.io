@@ -28,8 +28,8 @@ HOW TO ADD YOURSELF
      claude_cowork, mcp_advanced, claude_bedrock, claude_vertex, ai_fluency
    Example:
      certs:
-       claude_101:      293x3v9qydhx
-       claude_code_101: https://verify.skilljar.com/c/sbdx5cwzjhec
+       claude_101:      <skilljar-code>
+       claude_code_101: <verify-url>
    Earned certs light up as colored stars on your card (grey = not yet).
    ⚠ Cert ids go UNDER `certs:` (indented). At the top level they're ignored.
      skills:   ["Python", "React", "MCP"]
