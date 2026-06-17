@@ -15,6 +15,9 @@ certs:
   subagents_intro: https://verify.skilljar.com/c/z7njv6i5oqec
   claude_code_action: https://verify.skilljar.com/c/7k4nubdc57jz
   mcp_intro: https://verify.skilljar.com/c/4d5o5wfjnjiy
+---
+IT 工程師｜ERP 與 MES 系統支援｜自動化流程與跨國資料視覺化｜RPA 與 AI 工具愛好者｜n8n 開發者
+Right now, I am exploring the boundaries of AI-assisted software engineering (vibe-coding). My objective for the Tour is simple: leverage AI agents to accelerate my development cycle and ship a functional, secure product by Demo Day.
 
   <!-- 
   # Core Platform & Workflows
@@ -31,6 +34,3 @@ certs:
   # teaching_ai_fluency:
   
 -->
----
-IT 工程師｜ERP 與 MES 系統支援｜自動化流程與跨國資料視覺化｜RPA 與 AI 工具愛好者｜n8n 開發者
-Right now, I am exploring the boundaries of AI-assisted software engineering (vibe-coding). My objective for the Tour is simple: leverage AI agents to accelerate my development cycle and ship a functional, secure product by Demo Day.
