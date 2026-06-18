@@ -1,7 +1,8 @@
+# Build output
 dist/
 .astro/
-node_modules/
-package-lock.json
-public/fonts/
-docs/
-.agents/
+
+# Student-contributed builder profiles — don't fail CI on their formatting.
+# The content schema (src/content.config.ts) cleans/validates these at build.
+src/content/builders/*.md
+!src/content/builders/_example.md

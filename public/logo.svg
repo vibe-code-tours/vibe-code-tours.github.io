@@ -1,9 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" role="img" aria-label="Vibe Code Tours">
-  <rect x="4" y="8" width="48" height="48" rx="11" fill="#1f2937"/>
-  <path d="M13 41 Q23 21 28 30 T43 24" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
-  <circle cx="13" cy="41" r="3.4" fill="#fde68a"/>
-  <circle cx="28" cy="30" r="2.8" fill="#fde68a"/>
-  <circle cx="43" cy="24" r="3.4" fill="#fde68a"/>
-  <text x="13" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="700" fill="#f59e0b">&gt;_</text>
-  <text x="66" y="40" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="26" font-weight="800" fill="#1f2937">Vibe Code Tours</text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 320 64"
+   role="img"
+   aria-label="Vibe Code Tours"
+   version="1.1"
+   id="svg84"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs88" />
+  <sodipodi:namedview
+     id="namedview86"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.6875"
+     inkscape:cx="150.37288"
+     inkscape:cy="32.135593"
+     inkscape:window-width="1878"
+     inkscape:window-height="1009"
+     inkscape:window-x="1962"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg84" />
+  <rect
+     x="4"
+     y="8"
+     width="48"
+     height="48"
+     rx="11"
+     fill="#1f2937"
+     id="rect70" />
+  <path
+     d="M13 41 Q23 21 28 30 T43 24"
+     fill="none"
+     stroke="#f59e0b"
+     stroke-width="3"
+     stroke-linecap="round"
+     opacity="0.85"
+     id="path72" />
+  <circle
+     cx="13"
+     cy="41"
+     r="3.4"
+     fill="#fde68a"
+     id="circle74" />
+  <circle
+     cx="28"
+     cy="30"
+     r="2.8"
+     fill="#fde68a"
+     id="circle76" />
+  <circle
+     cx="43"
+     cy="24"
+     r="3.4"
+     fill="#fde68a"
+     id="circle78" />
+  <text
+     x="66"
+     y="40"
+     font-family="system-ui, -apple-system, Segoe UI, sans-serif"
+     font-size="26"
+     font-weight="800"
+     fill="#1f2937"
+     id="text82">Vibe Code Tours</text>
 </svg>

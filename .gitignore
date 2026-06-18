@@ -26,3 +26,12 @@ Thumbs.db
 # Agent skills (local only)
 .agents/
 skills-lock.json
+
+# Superpowers planning artifacts (local only)
+docs/superpowers/
+
+# AI agent knowledge (lazy-loaded, not for publish)
+knowledge/
+
+# hero mosaic avatar cache (regenerable)
+scripts/hero/avatars/
