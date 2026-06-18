@@ -1,0 +1,73 @@
+---
+import { t, getLocale, type Locale } from "../i18n/utils";
+
+const locale: Locale = getLocale(Astro.url.pathname);
+const s = t(locale).repoAccess;
+---
+
+<article class="container-prose py-12">
+  <h1 class="text-3xl sm:text-4xl">{s.heading}</h1>
+  <p class="mt-4 text-gray-400">{s.intro}</p>
+
+  <h2 class="mt-10 text-xl font-semibold text-white">{s.gate.heading}</h2>
+  <ul class="mt-4 space-y-2 text-gray-400">
+    {
+      s.gate.items.map((it) => (
+        <li class="flex gap-2">
+          <>
+            <span>✅</span>
+            <span>{it}</span>
+          </>
+        </li>
+      ))
+    }
+  </ul>
+
+  <h2 class="mt-10 text-xl font-semibold text-white">{s.steps.heading}</h2>
+  <ol class="mt-4 space-y-3 text-gray-400">
+    {
+      s.steps.items.map((it, i) => (
+        <li class="flex gap-3">
+          <span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/10 text-sm font-semibold text-white">
+            {i + 1}
+          </span>
+          <span
+            set:html={it.replace(
+              /\/repo-access|\/ch1/g,
+              (m) =>
+                `<code class="rounded bg-white/10 px-1.5 py-0.5 font-mono text-sm text-white">${m}</code>`,
+            )}
+          />
+        </li>
+      ))
+    }
+  </ol>
+
+  <h2 class="mt-10 text-xl font-semibold text-white">{s.inside.heading}</h2>
+  <ul class="mt-4 space-y-2 text-gray-400">
+    {
+      s.inside.items.map((it) => (
+        <li class="flex gap-2">
+          <>
+            <span class="text-gray-600">›</span>
+            <span>{it}</span>
+          </>
+        </li>
+      ))
+    }
+  </ul>
+
+  <h2 class="mt-10 text-xl font-semibold text-white">{s.trouble.heading}</h2>
+  <dl class="mt-4 space-y-4">
+    {
+      s.trouble.items.map((item) => (
+        <div class="border-b border-white/10 pb-4">
+          <dt class="font-semibold text-white">{item.q}</dt>
+          <dd class="mt-1 text-gray-400">{item.a}</dd>
+        </div>
+      ))
+    }
+  </dl>
+
+  <p class="mt-10 text-gray-400">{s.cta}</p>
+</article>

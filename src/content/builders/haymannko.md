@@ -1,15 +1,15 @@
 ---
-name: haymann
+name: Hay Mann Ko
 github: haymannko
 cohort: 1
 role: builder
-skills: ["JavaScript", "Python", "Claude Code"]
+skills: ["AWS", "Docker", "DevOps"]
 repo: https://github.com/haymannko/haymannko
-linkedin: haymannko
+linkedin: https://www.linkedin.com/in/hay-mann-ko-40a111277
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to use VibeTour knowledge in my career development.
-Thank your sayar.
+Hi! I'm enjoyable to contribute in Vibe Code Tours of Cohort 1. My goal is to use VibeTour knowledge in my career development.
+Thank you Sayar
 
 <!--
 HOW TO ADD YOURSELF:
