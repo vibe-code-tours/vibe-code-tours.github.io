@@ -10,6 +10,8 @@ website: https://sandarminaye.github.io
 certs:
   claude_101: c35gcb5oarzc
   claude_code_101: ksw4c8jkzifc
+  agent_skills_intro: kqm5wzgpgier
+  subagents_intro: 6tep49aft278
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
