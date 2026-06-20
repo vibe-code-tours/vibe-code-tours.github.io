@@ -3,7 +3,7 @@ name: Shin Thant Kyaw
 github: shinnThantKyaw
 cohort: 1
 role: builder
-skills: ["JavaScript","React","Nodejs"]
+skills: ["JavaScript","React","Nodejs","Claude","Claude Code"]
 certs:
   claude_101: https://verify.skilljar.com/c/vws6pxjvcx8x
   claude_code_101: https://verify.skilljar.com/c/qz6auzqhe723
