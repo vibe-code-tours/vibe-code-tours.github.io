@@ -6,3 +6,6 @@ dist/
 # The content schema (src/content.config.ts) cleans/validates these at build.
 src/content/builders/*.md
 !src/content/builders/_example.md
+
+# HyperFrames render compositions (authored as video comps, not prettier-domain)
+scripts/chapter/comp/
