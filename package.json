@@ -15,7 +15,9 @@
     "format:check": "prettier --check .",
     "validate:builders": "node scripts/validate-builders.mjs",
     "verify:certs": "node scripts/verify-certs.mjs",
-    "hero:mosaic": "node scripts/hero/build-mosaic.mjs"
+    "hero:mosaic": "node scripts/hero/build-mosaic.mjs",
+    "chapter:dump": "npx tsx scripts/chapter/dump.mts",
+    "chapter:render": "node scripts/chapter/render.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.2.1",

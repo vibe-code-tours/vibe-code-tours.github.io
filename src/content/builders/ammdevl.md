@@ -4,8 +4,12 @@ github: ammdevl
 cohort: 1
 role: builder
 skills: ["Still Learning"]
+repo: https://github.com/vibe-code-tours/team-12
 x: amm1106_
 linkedin: ammdevl
+certs:
+  claude_101: https://verify.skilljar.com/c/ix73n6aqfno8
+  claude_code_101: https://verify.skilljar.com/c/qd9atonpwzya
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

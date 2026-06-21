@@ -8,10 +8,13 @@ repo: https://github.com/KiZINnO/vibe-code-tours
 x: KiZINnO
 linkedin: Saw Kapaw Say
 website: https://github.com/KiZINnO
+certs: 
+  claude_code_101: https://verify.skilljar.com/c/7uprzmdpbbo4
+  subagents_intro: https://verify.skilljar.com/c/x6433o6wrtnx
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+real by Demo Day. Excited to be part of the Tour. 
 
 <!--
 HOW TO ADD YOURSELF:

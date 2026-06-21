@@ -18,16 +18,16 @@ export const SKILLJAR_VERIFY_BASE = "https://verify.skilljar.com/c/";
 export const CERT_CATALOG = {
   claude_101: { label: "Claude 101", level: "beginner", order: 1 },
   claude_code_101: { label: "Claude Code 101", level: "beginner", order: 2 },
-  mcp_intro: { label: "Intro to MCP", level: "beginner", order: 3 },
+  mcp_intro: { label: "Intro to MCP", level: "beginner", order: 5 },
   agent_skills_intro: {
     label: "Intro to Agent Skills",
     level: "intermediate",
-    order: 4,
+    order: 3,
   },
   subagents_intro: {
     label: "Intro to Subagents",
     level: "intermediate",
-    order: 5,
+    order: 4,
   },
   claude_code_in_action: {
     label: "Claude Code in Action",
@@ -38,6 +38,36 @@ export const CERT_CATALOG = {
     label: "Building with the Claude API",
     level: "advanced",
     order: 7,
+  },
+  claude_platform_101: {
+    label: "Claude Platform 101",
+    level: "beginner",
+    order: 8,
+  },
+  claude_cowork: {
+    label: "Intro to Claude Cowork",
+    level: "beginner",
+    order: 9,
+  },
+  mcp_advanced: {
+    label: "MCP: Advanced Topics",
+    level: "advanced",
+    order: 10,
+  },
+  claude_bedrock: {
+    label: "Claude with Amazon Bedrock",
+    level: "intermediate",
+    order: 11,
+  },
+  claude_vertex: {
+    label: "Claude with Vertex AI",
+    level: "intermediate",
+    order: 12,
+  },
+  ai_fluency: {
+    label: "AI Fluency: Foundations",
+    level: "beginner",
+    order: 13,
   },
 };
 
@@ -64,6 +94,23 @@ export const CERT_ICONS = {
   // Building with the Claude API — braces
   building_claude_api:
     '<path d="M8 3c-2 0-2.5 1.5-2.5 4S5 13 3 13c2 0 2.5 1.5 2.5 4S6 21 8 21M16 3c2 0 2.5 1.5 2.5 4S19 13 21 13c-2 0-2.5 1.5-2.5 4S18 21 16 21"/>',
+  // Claude Platform 101 — layered stack
+  claude_platform_101:
+    '<path d="M12 3l9 4-9 4-9-4zM3 12l9 4 9-4M3 17l9 4 9-4"/>',
+  // Intro to Claude Cowork — two people
+  claude_cowork:
+    '<circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.2"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5M15.5 20c0-2 1.8-3.3 3.5-3.3"/>',
+  // MCP Advanced — plug with a plus
+  mcp_advanced:
+    '<path d="M9 3v5M15 3v5M7 8h10v3a5 5 0 0 1-10 0zM12 16v5"/><path d="M17.5 18h3.5M19.25 16.25v3.5"/>',
+  // Claude with Amazon Bedrock — cloud
+  claude_bedrock:
+    '<path d="M7 18h9a4 4 0 0 0 0-8 5 5 0 0 0-9.6-1.5A3.5 3.5 0 0 0 7 18z"/>',
+  // Claude with Vertex AI — triangle (vertex)
+  claude_vertex: '<path d="M12 3l9 16H3z"/>',
+  // AI Fluency — open book
+  ai_fluency:
+    '<path d="M4 5a2 2 0 0 1 2-2h6v16H6a2 2 0 0 0-2 2zM20 5a2 2 0 0 0-2-2h-6v16h6a2 2 0 0 1 2 2z"/>',
 };
 // Fallback — medal/seal for any unknown cert id.
 export const DEFAULT_ICON =

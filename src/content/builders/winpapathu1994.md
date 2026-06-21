@@ -1,16 +1,16 @@
 ---
-name: Thazin Aung
-github: thaz1naung
+name: Win Pa Pa Thu
+github: winpapathu1994
 cohort: 1
 role: builder
-skills:  [".Net", "C#", "Angular","MSSQL","MySQL"]
-certs:
-  claude_101: ittuo4fqj4hq
-  claude_code_101: fyav2toct6u8
+skills: ["PHP", "Laravel", "Node.js", "React", "Javasctipt"]
+repo: https://github.com/winpapathu1994
+linkedin: https://www.linkedin.com/in/win-pa-pa-thu/
+
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+
+I'm currently learning how to vibe-code with AI and exploring agentic development workflows to build software faster and more effectively.
 
 <!--
 HOW TO ADD YOURSELF:
