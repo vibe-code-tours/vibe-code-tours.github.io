@@ -8,9 +8,10 @@ interface Props {
   title: string;
   description: string;
   ogImage?: string;
+  noindex?: boolean;
 }
 
-const { title, description, ogImage } = Astro.props;
+const { title, description, ogImage, noindex } = Astro.props;
 const locale: Locale = getLocale(Astro.url.pathname);
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "") + "/";
 
@@ -28,6 +29,7 @@ const ogImageUrl = new URL(
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href={`${baseUrl}favicon.svg`} type="image/svg+xml" />
     <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

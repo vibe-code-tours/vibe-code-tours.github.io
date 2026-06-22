@@ -455,5 +455,58 @@
     "intro": "ဒီ Tour မှာ AI နဲ့ တည်ဆောက်နေသူတွေ။ တစ်ယောက်စီ repo ကို fork လုပ်၊ ကိုယ့်အကြောင်း ထည့်၊ တကယ့် PR ဖွင့်ခဲ့ကြတယ်။",
     "empty": "Builders မရှိသေးပါ။ ပထမဆုံးသူ ဖြစ်ပါ — repo ကို fork လုပ်ပြီး ကိုယ့်ကိုယ်ကို ထည့်ပါ။",
     "addYourself": "မိမိပရိုဖိုင်ထည့်ရန် → (fork + PR)"
+  },
+  "repoAccess": {
+    "title": "သင့်အသင်း Repo ရယူရန် — Vibe Code Tours",
+    "description": "သင့်အသင်း၏ private GitHub repo ကို ဘယ်လိုရယူမလဲ — ဘယ်သူဝင်နိုင်လဲ၊ /repo-access command နဲ့ ထဲမှာ ဘာတွေပါလဲ။",
+    "heading": "သင့်အသင်း Repo ရယူပါ",
+    "intro": "အသင်းတိုင်းမှာ ကိုယ်ပိုင် private GitHub repo (team-01 မှ team-20) ရှိပါတယ်။ သင့် proposal များ၊ အသင်း spec နဲ့ assignment စစ်ဆေးမှု အလိုအလျောက် ပါဝင်ပါတယ်။ သင့်အသင်းနဲ့ mentor များသာ မြင်နိုင်ပါတယ်။",
+    "gate": {
+      "heading": "ဘယ်သူဝင်နိုင်လဲ",
+      "items": [
+        "အသင်း (T01–T20) တစ်ခုထဲ သတ်မှတ်ခံထားရသူ ဖြစ်ရမယ်။",
+        "Chapter 1 အောင်ပြီးသူ ဖြစ်ရမယ် — အဲဒီအချိန်မှာ သင့် GitHub account ကို စစ်ဆေး၍ ချိတ်ဆက်ပေးပါတယ်။"
+      ]
+    },
+    "steps": {
+      "heading": "ဘယ်လိုရယူမလဲ",
+      "items": [
+        "Discord ထဲက သင့် #team-NN channel ကိုဖွင့်ပါ။",
+        "/repo-access command ကို ရိုက်ပါ။",
+        "Bot က သင့် private repo link ကို ပြန်ပေးပါမယ် (သင်တစ်ယောက်တည်းသာ မြင်ရပါမယ်)။",
+        "GitHub invite ကို လက်ခံပါ — သင့် email သို့မဟုတ် GitHub notifications မှာ စစ်ပါ။"
+      ]
+    },
+    "inside": {
+      "heading": "ထဲမှာ ဘာပါလဲ",
+      "items": [
+        "member-proposals/ — သင့် Vibe Code Spec (Gist, Story, Why, Why Not, Tech Spec, Definition of Done)။",
+        "spec.md — အသင်း၏ ပေါင်းစပ် spec။",
+        "working-agreement.md, decision.md, interview-notes.md။",
+        "push တိုင်း အလိုအလျောက် စစ်ဆေးမှု — အစိမ်းရောင်ဆို သင့် assignment ဖွဲ့စည်းပုံ ပြည့်စုံပြီ။"
+      ]
+    },
+    "trouble": {
+      "heading": "အဆင်မပြေရင်",
+      "items": [
+        {
+          "q": "\"No team yet\"",
+          "a": "အသင်းမသတ်မှတ်ရသေးပါ။ သင့် channel ထဲက mentor ကို မေးပါ။"
+        },
+        {
+          "q": "\"Pass Chapter 1 first\"",
+          "a": "/ch1 နဲ့ သင့် gist URL ကို တင်ပါ။ အောင်ပြီးရင် /repo-access ကို ပြန်ရိုက်ပါ။"
+        },
+        {
+          "q": "\"No GitHub linked\"",
+          "a": "Chapter 1 တင်ခြင်းက သင့် GitHub ကို ချိတ်ပေးတာပါ။ /ch1 <သင့် gist URL> နဲ့ တင်ပါ။"
+        },
+        {
+          "q": "Invite pending ဖြစ်နေရင်",
+          "a": "သင့် GitHub email သို့မဟုတ် notifications မှာ လက်ခံပါ။ ပြီးရင် repo ထဲ push လုပ်နိုင်ပါပြီ။"
+        }
+      ]
+    },
+    "cta": "အခက်အခဲရှိရင် သင့်အသင်း channel သို့မဟုတ် #help မှာ မေးပါ။"
   }
 }

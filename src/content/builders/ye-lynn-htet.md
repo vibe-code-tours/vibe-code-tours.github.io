@@ -1,6 +1,6 @@
 ---
 name: Ye Lynn Htet
-github: RaeLilDev
+github: ye-lynn-htet
 cohort: 1
 role: builder
 skills: ["Swift", "UIKit", "SwiftUI", "Dart", "Flutter", "Python"]

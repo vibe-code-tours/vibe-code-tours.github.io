@@ -5,6 +5,44 @@ import fs from "node:fs";
 import path from "node:path";
 import yaml from "js-yaml";
 import { identityProblems } from "../src/lib/builder-identity.mjs";
+import { CERT_CATALOG } from "../src/lib/certs.mjs";
+
+// Schema-recognized top-level keys. Anything else is silently dropped by the
+// tolerant content schema — we WARN (never fail) so contributors notice.
+const SCHEMA_KEYS = new Set([
+  "name",
+  "github",
+  "cohort",
+  "role",
+  "skills",
+  "repo",
+  "x",
+  "linkedin",
+  "website",
+  "certs",
+]);
+// Curated near-miss aliases -> correct field (no fuzzy matching = no false positives).
+const FIELD_ALIASES = {
+  web: "website",
+  site: "website",
+  url: "website",
+  homepage: "website",
+  portfolio: "website",
+  git: "github",
+  gh: "github",
+  twitter: "x",
+  tw: "x",
+  linkedln: "linkedin",
+  "linked-in": "linkedin",
+  skill: "skills",
+  tags: "skills",
+  repository: "repo",
+  project: "repo",
+  cert: "certs",
+  certifications: "certs",
+  certs_list: "certs",
+};
+const CERT_IDS = new Set(Object.keys(CERT_CATALOG));
 
 const dir = "src/content/builders";
 const files = fs
@@ -12,6 +50,7 @@ const files = fs
   .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
 
 const problems = [];
+const warnings = [];
 const seenGithub = new Map();
 
 for (const f of files) {
@@ -52,6 +91,45 @@ for (const f of files) {
       );
     else if (key) seenGithub.set(key, f);
   }
+
+  // --- Non-fatal warnings: schema-valid but likely-misplaced data (silent-loss guard) ---
+  for (const key of Object.keys(data)) {
+    if (SCHEMA_KEYS.has(key)) continue;
+    const lc = key.toLowerCase();
+    if (CERT_IDS.has(key))
+      warnings.push(
+        `${f}: '${key}' is a Claude cert id at the TOP LEVEL — it won't show. ` +
+          `Nest it under a 'certs:' block (certs: then indented '${key}: <code>').`,
+      );
+    else if (FIELD_ALIASES[lc])
+      warnings.push(
+        `${f}: unknown key '${key}' — did you mean '${FIELD_ALIASES[lc]}'? (ignored as written)`,
+      );
+    else
+      warnings.push(`${f}: unrecognized key '${key}' — this field is ignored.`);
+  }
+  // certs present but a child id is not in the catalog → likely typo (still renders w/ default label)
+  if (
+    data.certs &&
+    typeof data.certs === "object" &&
+    !Array.isArray(data.certs)
+  ) {
+    for (const cid of Object.keys(data.certs))
+      if (!CERT_IDS.has(cid))
+        warnings.push(
+          `${f}: cert id '${cid}' not in catalog — check spelling (renders with a default label).`,
+        );
+  }
+}
+
+if (warnings.length) {
+  console.warn(
+    `\n⚠ ${warnings.length} builder profile warning(s) — non-blocking, but this data may not display:\n`,
+  );
+  for (const w of warnings) console.warn("  - " + w);
+  console.warn(
+    `\nFix nesting/spelling if these fields were intended. The build still succeeds.\n`,
+  );
 }
 
 if (problems.length) {

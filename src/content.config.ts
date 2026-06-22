@@ -5,6 +5,7 @@ import {
   normalizeGithub,
   normalizeRole,
 } from "./lib/builder-identity.mjs";
+import { normalizeCerts } from "./lib/certs.mjs";
 
 // Builders = students. One Markdown file per builder in src/content/builders/.
 // Files starting with `_` (e.g. _example.md) are ignored by the [^_] pattern.
@@ -70,6 +71,10 @@ const builders = defineCollection({
     x: optText, // X/Twitter handle or URL
     linkedin: optText, // LinkedIn handle or URL
     website: optUrl, // personal site
+    certs: z.preprocess(
+      normalizeCerts,
+      z.record(z.string(), z.string()).optional(),
+    ), // Skilljar certs map
   }),
 });
 
