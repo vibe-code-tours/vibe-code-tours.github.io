@@ -8,6 +8,9 @@ repo: https://github.com/your-github-username/your-project
 x: your-x-handle
 linkedin: your-linkedin-username
 website: https://your-site.com
+# certs:                          # optional — earned Skilljar certs
+#   claude_101: https://verify.skilljar.com/c/XXXXXXXX
+#   claude_code_101: https://verify.skilljar.com/c/YYYYYYYY
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
@@ -18,6 +21,7 @@ HOW TO ADD YOURSELF:
 1. Copy this file to src/content/builders/<your-github-username>.md
 2. Edit `name`, `github`, `cohort` (required). Everything else is optional.
 3. skills: list a few (array). repo/x/linkedin/website: handle OR full URL.
+   certs: add claude_101 / claude_code_101 etc. with your Skilljar verify URL.
 4. Write 2-3 sentences below the --- about yourself.
 5. Your photo is pulled automatically from your GitHub avatar — no upload.
 6. Commit, push to your fork, open a Pull Request.

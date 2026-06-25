@@ -1,4 +1,7 @@
 ---
+// Canonical cert order — each maps to its Skilljar verify URL (or undefined).
+type Certs = Record<string, string> | undefined;
+
 interface Props {
   name: string;
   github: string;
@@ -8,9 +11,61 @@ interface Props {
   x?: string;
   linkedin?: string;
   website?: string;
+  certs?: Certs;
 }
 
-const { name, github, role, skills, repo, x, linkedin, website } = Astro.props;
+const { name, github, role, skills, repo, x, linkedin, website, certs } =
+  Astro.props;
+
+// Ordered list of known cert ids.  The first two the builder hasn't earned
+// yet are shown as grey "targets" — their path forward.
+const CERT_ORDER = [
+  "claude_101",
+  "claude_code_101",
+  "mcp_intro",
+  "agent_skills_intro",
+  "subagents_intro",
+  "claude_code_in_action",
+  "building_claude_api",
+];
+
+const CERT_LABELS: Record<string, string> = {
+  claude_101: "Claude 101",
+  claude_code_101: "Claude Code 101",
+  mcp_intro: "MCP Intro",
+  agent_skills_intro: "Agent Skills",
+  subagents_intro: "Subagents",
+  claude_code_in_action: "CC in Action",
+  building_claude_api: "Claude API",
+};
+
+function certUrl(raw: string) {
+  return raw.startsWith("http") ? raw : `https://verify.skilljar.com/c/${raw}`;
+}
+
+// Build display list: earned certs first (in canonical order), then the next
+// two unearned as grey targets.
+const earned = certs
+  ? CERT_ORDER.filter((id) => certs[id]).map((id) => ({
+      id,
+      label: CERT_LABELS[id] ?? id,
+      href: certUrl(certs[id]),
+      earned: true as const,
+    }))
+  : [];
+
+const nextTargets = certs
+  ? CERT_ORDER.filter((id) => !certs[id])
+      .slice(0, 2)
+      .map((id) => ({
+        id,
+        label: CERT_LABELS[id] ?? id,
+        href: undefined,
+        earned: false as const,
+      }))
+  : [];
+
+const allCerts = [...earned, ...nextTargets];
 
 const avatar = `https://github.com/${github}.png?size=160`;
 const roleClass =
@@ -78,6 +133,33 @@ const links = [
   <div class="prose-builder mt-3 line-clamp-3 text-sm text-gray-400">
     <slot />
   </div>
+
+  {
+    allCerts.length > 0 && (
+      <div class="mt-3 flex flex-wrap gap-1.5" aria-label="Certifications">
+        {allCerts.map((c) =>
+          c.earned ? (
+            <a
+              href={c.href}
+              target="_blank"
+              rel="noopener"
+              title={`${c.label} — verified`}
+              class="inline-flex items-center gap-1 rounded-full border border-amber-400/40 bg-amber-400/15 px-2 py-0.5 font-mono text-[10px] font-semibold text-amber-300 hover:border-amber-300/70 hover:text-amber-200"
+            >
+              ✓ {c.label}
+            </a>
+          ) : (
+            <span
+              title={`${c.label} — not yet earned`}
+              class="inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-0.5 font-mono text-[10px] font-semibold text-gray-600"
+            >
+              ◇ {c.label}
+            </span>
+          ),
+        )}
+      </div>
+    )
+  }
 
   <div
     class="mt-4 flex flex-wrap gap-x-4 gap-y-1 border-t border-white/5 pt-3 text-xs font-semibold"

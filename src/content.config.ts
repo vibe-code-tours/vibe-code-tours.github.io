@@ -16,6 +16,7 @@ const builders = defineCollection({
     x: z.string().optional(), // X/Twitter handle or URL
     linkedin: z.string().optional(), // LinkedIn handle or URL
     website: z.string().url().optional(), // personal site
+    certs: z.record(z.string()).optional(), // {claude_101: "https://verify.skilljar.com/c/…"}
     // team: z.string().optional(),     // DEFERRED — teams not formed yet
     // project: z.string().optional(),  // DEFERRED — no projects yet
   }),

@@ -8,6 +8,8 @@ repo: https://github.com/kyawminht/Data-visualization-generator
 
 linkedin: https://www.linkedin.com/in/kyaw-min-htwe-99839b244/
 website: https://kyawminhtwe.vercel.app/
+certs:
+  claude_101: https://verify.skilljar.com/c/4t9r9nqio6b2
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
