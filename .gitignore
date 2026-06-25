@@ -35,3 +35,7 @@ knowledge/
 
 # hero mosaic avatar cache (regenerable)
 scripts/hero/avatars/
+
+# chapter intro render artifacts
+scripts/chapter/out/
+scripts/chapter/chapters.json
