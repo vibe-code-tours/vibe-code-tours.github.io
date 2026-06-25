@@ -6,9 +6,8 @@ role: builder
 skills: ["JavaScript", "TypeScripit", "React","ReactNative","Nodejs","Express","Next.js","Prisma","TypeORM","docker","Git&Github"]
 repo: https://github.com/kaungmyatshwe1397/vibe-code-tours.github.io
 certs:
-  claude_101: https://verify.skilljar.com/c/XXXXXXXX
   claude_code_101: https://verify.skilljar.com/c/gxdussn42sso
-  introduction-to-subagents: https://verify.skilljar.com/c/zx84nhjv5ker
+  subagents_intro: https://verify.skilljar.com/c/zx84nhjv5ker
 ---
 
 Hi! I'm joining this tour to learn how to work with AI in a more systematic way and improve my workflow.
