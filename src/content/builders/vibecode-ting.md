@@ -16,23 +16,22 @@ certs:
   claude_code_in_action: https://verify.skilljar.com/c/7k4nubdc57jz
   mcp_intro: https://verify.skilljar.com/c/4d5o5wfjnjiy
   building_claude_api: https://verify.skilljar.com/c/n65xikp6qrdg
-
+  <!--
   claude_platform_101: https://verify.skilljar.com/c/n65xikp6qrdg
   claude_cowork: https://verify.skilljar.com/c/n65xikp6qrdg
   mcp_advanced: https://verify.skilljar.com/c/n65xikp6qrdg
   claude_bedrock: https://verify.skilljar.com/c/n65xikp6qrdg
-  ai_fluency: https://verify.skilljar.com/c/n65xikp6qrdg
+  ai_fluency: https://verify.skilljar.com/c/n65xikp6qrdg    -->
 ---
 IT 工程師｜ERP 與 MES 系統支援｜自動化流程與跨國資料視覺化｜RPA 與 AI 工具愛好者｜n8n 開發者
 
 Right now, I am exploring the boundaries of AI-assisted software engineering (vibe-coding).
 
-> ### **"I don't debug errors. I negotiate with the LLM."**
+---
 
-> ### **"Vibe coding is 10% typing and 90% manifestation."**
-
-> ### **"If it works, it works. Don't look under the hood."**
-
-> ### **"If the vibe is right, the app just materializes."**
-
-> ### **"Coding used to be chess. Now it is jazz."**
+**Vibe-Coding Philosophy:**
+* *"I don't debug errors. I negotiate with the LLM."*
+* *"Vibe coding is 10% typing and 90% manifestation."*
+* *"If it works, it works. Don't look under the hood."*
+* *"If the vibe is right, the app just materializes."*
+* *"Coding used to be chess. Now it is jazz."*
