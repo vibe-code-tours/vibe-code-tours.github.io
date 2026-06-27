@@ -295,7 +295,7 @@
     "fastH": "အမြန်လမ်းကြောင်း (command တစ်ခုတည်း)",
     "fastIntro": "Terminal အသုံးပြုရတာ အဆင်ပြေပါသလား? ဤအရာသည် အားလုံးကို ထည့်သွင်းပေးပြီး စစ်ဆေးပေးပါမည် -",
     "fastTarget": "ထပ်ခါတလဲလဲ run နိုင်ပါသည်။ အဆုံးတွင် Passed: 6, Failed: 0 ဖြစ်ရန် လိုအပ်ပါသည်။",
-    "fastGist": "အရင်းအမြစ်နှင့် ဤလမ်းညွှန်ကို gist တွင် ကြည့်ရှုနိုင်သည်။",
+    "fastGist": "အရင်းအမြစ်နှင့် ဤလမ်းညွှန်ကို GitHub repo တွင် ကြည့်ရှုနိုင်သည်။",
     "fastWindows": "Windows: WSL ကို အရင်ထည့်သွင်းပါ (အဆင့် ၀)၊ ထို့နောက် Ubuntu ထဲတွင် ၎င်းကို run ပါ။ script သည် editor (အဆင့် ၅) သို့မဟုတ် GitHub SSH (အဆင့် ၆) တို့ကို လုပ်ဆောင်ပေးမည်မဟုတ်ပါ — ၎င်းတို့ကို ကိုယ်တိုင်လုပ်ဆောင်ပါ။",
     "s0H": "အဆင့် ၀ — Windows အတွက်သာ- WSL ထည့်သွင်းပါ",
     "s0Body": "Windows ကို တိုက်ရိုက်မပံ့ပိုးပါ — သင်သည် အရာအားလုံးကို WSL (Windows ထဲရှိ တကယ့် Linux) ထဲတွင် run ရပါမည်။ PowerShell (Admin) တွင်-",
@@ -307,7 +307,7 @@
     "s4H": "အဆင့် ၄ — Claude Code",
     "s4Login": "ပထမဆုံးအကြိမ် စတင်အသုံးပြုချိန်တွင် လော့ဂ်အင်ဝင်ခြင်းသည် တစ်ကြိမ်သာ လုပ်ဆောင်ရမည့် အဆင့်ဖြစ်သည်။ သင် ချတ်ထဲသို့ ရောက်ရှိသည်နှင့် သင်၏ ပထမဆုံး မက်ဆေ့ဂျ်ကို ရိုက်ထည့်ပြီး Enter ကို နှိပ်ပါ — သင်၏ “first contact”:",
     "s4Note": "အဆင်ပြေသော ပြန်လည်ဖြေကြားချက် ရရှိပါက သင်၏ ထည့်သွင်းမှု၊ ကွန်ရက်နှင့် အကောင့်အားလုံး အလုပ်လုပ်သည်ဟု ဆိုလိုသည်။",
-    "s5H": "အဆင့် ၆ — Code editor",
+    "s5H": "အဆင့် ၇ — Code editor",
     "s5Intro": "တစ်ခုရွေးပါ (နှစ်ခုလုံး အခမဲ့ဖြစ်ပြီး VS Code အပေါ် အခြေခံထားသဖြင့် extension များမှာလည်း နှစ်ခုလုံးတွင် အလုပ်လုပ်သည်)-",
     "s5VsCode": "စံနှုန်းသတ်မှတ်ချက်",
     "s5Antigravity": "Google ၏ AI-ဦးစားပေး editor (VS Code fork)",
@@ -321,10 +321,10 @@
     "colNeeds": "လိုအပ်ချက်များ",
     "colSymptom": "ရောဂါလက္ခဏာ",
     "colFix": "ပြုပြင်ရန်",
-    "s6H": "အဆင့် ၇ — GitHub အကောင့် + SSH",
+    "s6H": "အဆင့် ၈ — GitHub အကောင့် + SSH",
     "s6Intro": "အန္တရာယ်အရှိဆုံးအဆင့် — စစ်ဆေးမှုကို မကျော်ပါနှင့်။",
     "s6Never": "Private key (~/.ssh/id_ed25519, .pub မပါသောဖိုင်) ကို ဘယ်တော့မှ မျှဝေခြင်းမပြုပါနှင့်။",
-    "s7H": "အဆင့် ၈ — အားလုံးကို ပြန်လည်စစ်ဆေးပါ",
+    "s7H": "အဆင့် ၉ — အားလုံးကို ပြန်လည်စစ်ဆေးပါ",
     "s7Intro": "စစ်ဆေးပေးမည့် script ကို run ပါ (fast-path script က ၎င်းကို အလိုအလျောက် လုပ်ဆောင်ပေးပါမည်) -",
     "s7Target": "ရည်မှန်းချက် - Passed: 6, Failed: 0။",
     "troubleH": "ပြဿနာဖြေရှင်းခြင်း",
@@ -429,6 +429,10 @@
     "s5opPathB": "တရားဝင် installer အဆင်မပြေပါက npm fallback ကို အသုံးပြုပါ-",
     "s5opAfter": "ပထမဆုံးအကြိမ် အသုံးပြုချိန်တွင် provider/model ရွေးချယ်ရန် interactive picker ပေါ်လာမည်ဖြစ်သည်။ ကျွန်ုပ်တို့၏ shared endpoint လွှင့်တင်ပြီးပါက config snippet ကို ထုတ်ပြန်ပေးမည်ဖြစ်ပြီး ၎င်းကို ~/.config/opencode/opencode.json ထဲသို့ ထည့်သွင်းပေးပါ။",
     "s5opCost": "ကုန်ကျစရိတ် — opencode ကိုယ်တိုင်မှာ အခမဲ့ဖြစ်ပြီး သင်အသုံးပြုသည့် model အတွက်သာ ကျသင့်မည်ဖြစ်သည်။ ပထမနေ့အတွက် အသက်သာဆုံး အခမဲ့လမ်းကြောင်းမှာ- opencode + Google AI Studio API key (အခမဲ့ Gemini Flash-Lite quota ~1,500 req/day) ဖြစ်သည်။",
+    "pxH": "အဆင့် ၆ — Vibe proxy သို့ ချိတ်ဆက်ပါ",
+    "pxIntro": "Claude Code နှင့် opencode သည် သင်၏ ကိုယ်ပိုင် key ဖြင့် ကျွန်ုပ်တို့၏ shared proxy ကို ချိတ်ဆက်အသုံးပြုသည်။ သင်၏ key ကို cohort bot (Telegram သို့မဟုတ် Discord — /mykey ပို့ပါ) မှ ရယူပြီး setup script ကို run ပါ — ၎င်းသည် script ကို download လုပ်၊ သင်၏ key ကို အသုံးပြုပြီး tool နှစ်ခုလုံးကို proxy ဆီသို့ ချိန်ညှိပေးပါမည်။",
+    "pxAfter": "ပြီးပါပြီ — tool နှစ်ခုလုံးသည် Vibe proxy ကို ဖြတ်သန်းအသုံးပြုနေပါပြီ။ စတင် coding လုပ်ပါ -",
+    "pxNote": "source သုံးခြင်းသည် သင်၏ လက်ရှိ shell တွင် ချက်ချင်း သက်ရောက်စေသည်။ နောက်ပိုင်း ပြန်ဖျက်ပြီး ကိုယ်ပိုင် Claude login ပြန်ယူလိုပါက - bash api-setup.sh --restore",
     "pricingLinkLabel": "စျေးနှုန်း + အခမဲ့ tier quota များ-",
     "pricingLinkUrl": "https://gist.github.com/kokoye2007/e8d30985faca6292a50bdd3b0409105f#file-pricing-md",
     "pricingLinkText": "PRICING.md (အမြန်ကြည့်လမ်းညွှန်)"
@@ -451,5 +455,58 @@
     "intro": "ဒီ Tour မှာ AI နဲ့ တည်ဆောက်နေသူတွေ။ တစ်ယောက်စီ repo ကို fork လုပ်၊ ကိုယ့်အကြောင်း ထည့်၊ တကယ့် PR ဖွင့်ခဲ့ကြတယ်။",
     "empty": "Builders မရှိသေးပါ။ ပထမဆုံးသူ ဖြစ်ပါ — repo ကို fork လုပ်ပြီး ကိုယ့်ကိုယ်ကို ထည့်ပါ။",
     "addYourself": "မိမိပရိုဖိုင်ထည့်ရန် → (fork + PR)"
+  },
+  "repoAccess": {
+    "title": "သင့်အသင်း Repo ရယူရန် — Vibe Code Tours",
+    "description": "သင့်အသင်း၏ private GitHub repo ကို ဘယ်လိုရယူမလဲ — ဘယ်သူဝင်နိုင်လဲ၊ /repo-access command နဲ့ ထဲမှာ ဘာတွေပါလဲ။",
+    "heading": "သင့်အသင်း Repo ရယူပါ",
+    "intro": "အသင်းတိုင်းမှာ ကိုယ်ပိုင် private GitHub repo (team-01 မှ team-20) ရှိပါတယ်။ သင့် proposal များ၊ အသင်း spec နဲ့ assignment စစ်ဆေးမှု အလိုအလျောက် ပါဝင်ပါတယ်။ သင့်အသင်းနဲ့ mentor များသာ မြင်နိုင်ပါတယ်။",
+    "gate": {
+      "heading": "ဘယ်သူဝင်နိုင်လဲ",
+      "items": [
+        "အသင်း (T01–T20) တစ်ခုထဲ သတ်မှတ်ခံထားရသူ ဖြစ်ရမယ်။",
+        "Chapter 1 အောင်ပြီးသူ ဖြစ်ရမယ် — အဲဒီအချိန်မှာ သင့် GitHub account ကို စစ်ဆေး၍ ချိတ်ဆက်ပေးပါတယ်။"
+      ]
+    },
+    "steps": {
+      "heading": "ဘယ်လိုရယူမလဲ",
+      "items": [
+        "Discord ထဲက သင့် #team-NN channel ကိုဖွင့်ပါ။",
+        "/repo-access command ကို ရိုက်ပါ။",
+        "Bot က သင့် private repo link ကို ပြန်ပေးပါမယ် (သင်တစ်ယောက်တည်းသာ မြင်ရပါမယ်)။",
+        "GitHub invite ကို လက်ခံပါ — သင့် email သို့မဟုတ် GitHub notifications မှာ စစ်ပါ။"
+      ]
+    },
+    "inside": {
+      "heading": "ထဲမှာ ဘာပါလဲ",
+      "items": [
+        "member-proposals/ — သင့် Vibe Code Spec (Gist, Story, Why, Why Not, Tech Spec, Definition of Done)။",
+        "spec.md — အသင်း၏ ပေါင်းစပ် spec။",
+        "working-agreement.md, decision.md, interview-notes.md။",
+        "push တိုင်း အလိုအလျောက် စစ်ဆေးမှု — အစိမ်းရောင်ဆို သင့် assignment ဖွဲ့စည်းပုံ ပြည့်စုံပြီ။"
+      ]
+    },
+    "trouble": {
+      "heading": "အဆင်မပြေရင်",
+      "items": [
+        {
+          "q": "\"No team yet\"",
+          "a": "အသင်းမသတ်မှတ်ရသေးပါ။ သင့် channel ထဲက mentor ကို မေးပါ။"
+        },
+        {
+          "q": "\"Pass Chapter 1 first\"",
+          "a": "/ch1 နဲ့ သင့် gist URL ကို တင်ပါ။ အောင်ပြီးရင် /repo-access ကို ပြန်ရိုက်ပါ။"
+        },
+        {
+          "q": "\"No GitHub linked\"",
+          "a": "Chapter 1 တင်ခြင်းက သင့် GitHub ကို ချိတ်ပေးတာပါ။ /ch1 <သင့် gist URL> နဲ့ တင်ပါ။"
+        },
+        {
+          "q": "Invite pending ဖြစ်နေရင်",
+          "a": "သင့် GitHub email သို့မဟုတ် notifications မှာ လက်ခံပါ။ ပြီးရင် repo ထဲ push လုပ်နိုင်ပါပြီ။"
+        }
+      ]
+    },
+    "cta": "အခက်အခဲရှိရင် သင့်အသင်း channel သို့မဟုတ် #help မှာ မေးပါ။"
   }
 }
