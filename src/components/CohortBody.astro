@@ -42,6 +42,8 @@ for (const { entry } of builders)
 const skills = [...skillCounts.entries()].sort(
   (a, b) => b[1] - a[1] || a[0].localeCompare(b[0]),
 );
+const CHIP =
+  "cursor-pointer rounded-full border border-white/10 bg-white/5 px-3 py-1 font-mono text-xs font-semibold text-gray-400 transition hover:text-white aria-pressed:border-accent-500 aria-pressed:bg-accent-500 aria-pressed:text-white";
 ---
 
 <section class="mx-auto max-w-5xl px-5 py-12 sm:px-6">
@@ -56,31 +58,78 @@ const skills = [...skillCounts.entries()].sort(
       <p class="mt-10 text-center text-gray-600">{s.empty}</p>
     ) : (
       <>
-        {skills.length > 1 && (
-          <div
-            id="skill-filter"
-            class="mx-auto mt-8 flex max-w-3xl flex-wrap justify-center gap-2"
-          >
-            <button
-              type="button"
-              data-filter="*"
-              aria-pressed="true"
-              class="rounded-full border border-white/10 bg-white/5 px-3 py-1 font-mono text-xs font-semibold text-gray-400 transition hover:text-white aria-pressed:border-accent-500 aria-pressed:bg-accent-500 aria-pressed:text-white"
+        <div id="builder-tools" class="mx-auto mt-8 max-w-3xl">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <div class="relative flex-1">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-500"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.3-4.3" />
+              </svg>
+              <input
+                id="builder-search"
+                type="search"
+                placeholder="Search builders or skills…"
+                aria-label="Search builders"
+                class="w-full rounded-lg border border-white/10 bg-white/5 py-2 pl-9 pr-3 text-sm text-white placeholder:text-gray-500 focus:border-accent-500/40 focus:outline-none"
+              />
+            </div>
+            <span
+              id="builder-count"
+              class="shrink-0 text-center font-mono text-xs text-gray-500"
             >
-              All <span class="opacity-60">{builders.length}</span>
-            </button>
-            {skills.map(([sk, n]) => (
+              {builders.length} builders
+            </span>
+          </div>
+          {skills.length > 1 && (
+            <div
+              id="skill-filter"
+              class="mt-3 flex flex-wrap justify-center gap-2 sm:justify-start"
+            >
               <button
                 type="button"
-                data-filter={sk}
-                aria-pressed="false"
-                class="rounded-full border border-white/10 bg-white/5 px-3 py-1 font-mono text-xs font-semibold text-gray-400 transition hover:text-white aria-pressed:border-accent-500 aria-pressed:bg-accent-500 aria-pressed:text-white"
+                data-filter="*"
+                aria-pressed="true"
+                class={CHIP}
               >
-                {sk} <span class="opacity-60">{n}</span>
+                All <span class="opacity-60">{builders.length}</span>
               </button>
-            ))}
-          </div>
-        )}
+              {skills.slice(0, 8).map(([sk, n]) => (
+                <button
+                  type="button"
+                  data-filter={sk}
+                  aria-pressed="false"
+                  class={CHIP}
+                >
+                  {sk} <span class="opacity-60">{n}</span>
+                </button>
+              ))}
+              {skills.slice(8).map(([sk, n]) => (
+                <button
+                  type="button"
+                  data-filter={sk}
+                  aria-pressed="false"
+                  class={`${CHIP} skill-more hidden`}
+                >
+                  {sk} <span class="opacity-60">{n}</span>
+                </button>
+              ))}
+              {skills.length > 8 && (
+                <button type="button" id="more-toggle" class={CHIP}>
+                  +{skills.length - 8} more
+                </button>
+              )}
+            </div>
+          )}
+        </div>
 
         <div
           id="builder-grid"
@@ -123,30 +172,113 @@ const skills = [...skillCounts.entries()].sort(
 </section>
 
 <script>
-  // Client-side skill filter. Toggles cards by their data-skills list.
+  // People-first filter: search text + active skill chip + "more" expander.
   const bar = document.getElementById("skill-filter");
+  const search = document.getElementById(
+    "builder-search",
+  ) as HTMLInputElement | null;
   const empty = document.getElementById("builder-empty");
-  if (bar) {
-    const cells = Array.from(
-      document.querySelectorAll<HTMLElement>("#builder-grid .builder-cell"),
-    );
-    bar.addEventListener("click", (e) => {
-      const btn = (e.target as HTMLElement).closest<HTMLElement>(
-        "[data-filter]",
-      );
-      if (!btn) return;
-      const filter = btn.dataset.filter ?? "*";
-      bar
-        .querySelectorAll<HTMLElement>("[data-filter]")
-        .forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
-      let shown = 0;
-      for (const cell of cells) {
-        const list = (cell.dataset.skills ?? "").split("|");
-        const show = filter === "*" || list.includes(filter);
-        cell.classList.toggle("hidden", !show);
-        if (show) shown++;
-      }
-      if (empty) empty.toggleAttribute("hidden", shown !== 0);
-    });
+  const count = document.getElementById("builder-count");
+  const moreBtn = document.getElementById("more-toggle");
+  const cells = Array.from(
+    document.querySelectorAll<HTMLElement>("#builder-grid .builder-cell"),
+  );
+  let activeSkill = "*";
+  let query = "";
+
+  function apply() {
+    let shown = 0;
+    for (const cell of cells) {
+      const list = (cell.dataset.skills ?? "").split("|");
+      const okSkill = activeSkill === "*" || list.includes(activeSkill);
+      const okText =
+        query === "" || (cell.textContent ?? "").toLowerCase().includes(query);
+      const show = okSkill && okText;
+      cell.classList.toggle("hidden", !show);
+      if (show) shown++;
+    }
+    if (empty) empty.toggleAttribute("hidden", shown !== 0);
+    if (count)
+      count.textContent =
+        shown === cells.length
+          ? `${cells.length} builders`
+          : `${shown} of ${cells.length}`;
   }
+
+  bar?.addEventListener("click", (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLElement>("[data-filter]");
+    if (!btn) return;
+    activeSkill = btn.dataset.filter ?? "*";
+    bar
+      .querySelectorAll<HTMLElement>("[data-filter]")
+      .forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
+    apply();
+  });
+
+  search?.addEventListener("input", () => {
+    query = search.value.trim().toLowerCase();
+    apply();
+  });
+
+  moreBtn?.addEventListener("click", () => {
+    const hidden = document.querySelectorAll(".skill-more.hidden").length > 0;
+    document
+      .querySelectorAll(".skill-more")
+      .forEach((el) => el.classList.toggle("hidden", !hidden));
+    moreBtn.textContent = hidden
+      ? "less"
+      : `+${document.querySelectorAll(".skill-more").length} more`;
+  });
 </script>
+
+<style>
+  /* One-time staggered rise as the grid loads (settles before the skill filter runs). */
+  #builder-grid .builder-cell {
+    animation: cardRise 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+  @keyframes cardRise {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  #builder-grid .builder-cell:nth-child(1) {
+    animation-delay: 0s;
+  }
+  #builder-grid .builder-cell:nth-child(2) {
+    animation-delay: 0.04s;
+  }
+  #builder-grid .builder-cell:nth-child(3) {
+    animation-delay: 0.08s;
+  }
+  #builder-grid .builder-cell:nth-child(4) {
+    animation-delay: 0.12s;
+  }
+  #builder-grid .builder-cell:nth-child(5) {
+    animation-delay: 0.16s;
+  }
+  #builder-grid .builder-cell:nth-child(6) {
+    animation-delay: 0.2s;
+  }
+  #builder-grid .builder-cell:nth-child(7) {
+    animation-delay: 0.24s;
+  }
+  #builder-grid .builder-cell:nth-child(8) {
+    animation-delay: 0.28s;
+  }
+  #builder-grid .builder-cell:nth-child(9) {
+    animation-delay: 0.32s;
+  }
+  #builder-grid .builder-cell:nth-child(n + 10) {
+    animation-delay: 0.36s;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #builder-grid .builder-cell {
+      animation: none;
+    }
+  }
+</style>

@@ -1,0 +1,219 @@
+---
+// Live CSS chapter-intro banner — replaces the rendered mp4 clip. Recreates the
+// HyperFrames look (grid drift · amber glow pulse · diagonal light sweep · text
+// entrance) as pure CSS: crisp at any size, ~0 bytes, responsive, reduced-motion safe.
+interface Props {
+  num: number;
+  title: string;
+  outcome?: string;
+  duration?: string;
+  tiers?: string[];
+}
+const { num, title, outcome, duration, tiers = [] } = Astro.props;
+---
+
+<div class="ci" role="img" aria-label={`Chapter ${num}: ${title}`}>
+  <div class="ci-grid" aria-hidden="true"></div>
+  <div class="ci-glow" aria-hidden="true"></div>
+  <div class="ci-sweep" aria-hidden="true"></div>
+
+  <div class="ci-body">
+    <div class="ci-num-col">
+      <span class="ci-kicker">Chapter</span>
+      <span class="ci-num">{num}</span>
+    </div>
+    <div class="ci-text">
+      <h2 class="ci-title">{title}</h2>
+      {outcome && <p class="ci-outcome">{outcome}</p>}
+      <div class="ci-meta">
+        {duration && <span class="ci-dur">{duration}</span>}
+        {tiers.map((t) => <span class="ci-tier">{t}</span>)}
+      </div>
+    </div>
+  </div>
+
+  <div class="ci-foot">vibe code.tours · 8-WEEK TOUR</div>
+</div>
+
+<style>
+  .ci {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    min-height: 220px;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    border: 1px solid rgb(255 255 255 / 0.1);
+    background:
+      radial-gradient(120% 140% at 80% -10%, #1a1206 0%, #09090b 55%), #09090b;
+  }
+
+  /* drifting grid */
+  .ci-grid {
+    position: absolute;
+    inset: -56px;
+    background-image:
+      linear-gradient(#f59e0b14 1px, transparent 1px),
+      linear-gradient(90deg, #f59e0b14 1px, transparent 1px);
+    background-size: 56px 56px;
+    animation: ciGrid 4s linear infinite;
+    mask-image: radial-gradient(
+      120% 100% at 30% 40%,
+      #000 40%,
+      transparent 85%
+    );
+  }
+  @keyframes ciGrid {
+    to {
+      transform: translateY(-56px);
+    }
+  }
+
+  /* amber glow pulse */
+  .ci-glow {
+    position: absolute;
+    width: 60%;
+    height: 140%;
+    left: 8%;
+    top: -20%;
+    background: radial-gradient(closest-side, #f59e0b33, transparent 72%);
+    animation: ciGlow 3.2s ease-in-out infinite;
+    filter: blur(8px);
+  }
+  @keyframes ciGlow {
+    0%,
+    100% {
+      opacity: 0.55;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.14);
+    }
+  }
+
+  /* diagonal light sweep */
+  .ci-sweep {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      100deg,
+      transparent 40%,
+      #f59e0b18 50%,
+      transparent 60%
+    );
+    transform: translateX(-60%);
+    animation: ciSweep 6s ease-in-out infinite;
+  }
+  @keyframes ciSweep {
+    0% {
+      transform: translateX(-60%);
+    }
+    55%,
+    100% {
+      transform: translateX(120%);
+    }
+  }
+
+  /* content */
+  .ci-body {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    gap: clamp(16px, 4vw, 48px);
+    padding: clamp(20px, 5%, 56px);
+  }
+  .ci-num-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    animation: ciRise 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+  .ci-kicker {
+    font-family: "JetBrains Mono", monospace;
+    font-size: clamp(10px, 1.4vw, 15px);
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent-500, #f59e0b);
+    font-weight: 600;
+  }
+  .ci-num {
+    font-size: clamp(72px, 16vw, 168px);
+    font-weight: 900;
+    line-height: 0.9;
+    color: var(--accent-500, #f59e0b);
+    text-shadow: 0 0 40px #f59e0b66;
+  }
+  .ci-text {
+    min-width: 0;
+    animation: ciRise 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0.12s both;
+  }
+  .ci-title {
+    font-size: clamp(22px, 4.2vw, 52px);
+    font-weight: 800;
+    line-height: 1.05;
+    color: #fff;
+    letter-spacing: -0.02em;
+  }
+  .ci-outcome {
+    margin-top: clamp(6px, 1.5vw, 14px);
+    font-size: clamp(12px, 1.8vw, 20px);
+    color: #9aa4b3;
+  }
+  .ci-meta {
+    margin-top: clamp(8px, 1.8vw, 18px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: clamp(10px, 1.3vw, 14px);
+  }
+  .ci-dur {
+    color: #6b7686;
+    letter-spacing: 0.04em;
+  }
+  .ci-tier {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.5em;
+    padding: 0.1em 0.45em;
+    border-radius: 999px;
+    border: 1px solid #f59e0b40;
+    color: var(--accent-500, #f59e0b);
+    background: #f59e0b14;
+    font-weight: 700;
+  }
+  .ci-foot {
+    position: absolute;
+    left: clamp(20px, 5%, 56px);
+    bottom: clamp(12px, 3%, 26px);
+    font-family: "JetBrains Mono", monospace;
+    font-size: clamp(8px, 1.1vw, 12px);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #ffffff1f;
+  }
+  @keyframes ciRise {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ci-grid,
+    .ci-glow,
+    .ci-sweep,
+    .ci-num-col,
+    .ci-text {
+      animation: none;
+    }
+  }
+</style>

@@ -1,6 +1,6 @@
 ---
 name: Lwin Moe
-github: FurryForWhat
+github: lwinmoe51
 cohort: 1
 role: builder
 skills: ["JavaScript", "Python", "React", "Copilot"]
