@@ -4,8 +4,30 @@
 import fs from "node:fs";
 import path from "node:path";
 import yaml from "js-yaml";
-import { identityProblems } from "../src/lib/builder-identity.mjs";
+import {
+  identityProblems,
+  normalizeGithub,
+} from "../src/lib/builder-identity.mjs";
 import { CERT_CATALOG } from "../src/lib/certs.mjs";
+
+// Forward-only filename rule: a builder file MUST be named <github-handle>.md so
+// filename, frontmatter github, and the level key (levels.json is keyed by
+// github) are ONE identity — no drift (see lwinmoe51/FurryForWhat incident).
+// These 10 pre-date the rule and are verified self-authored (filename = display
+// name, github = their real account). Grandfathered so the gate never breaks
+// them; everything NEW must match. Do not extend this list — rename instead.
+const FILENAME_GRANDFATHERED = new Set([
+  "AungKyaw",
+  "Davd-Sang96",
+  "aungheinkyaw",
+  "bhonewai",
+  "kaykhaingmyint",
+  "kyawmyokhaing199",
+  "swezin.preciousai-sys",
+  "thirithansin",
+  "youuu19",
+  "zinmar",
+]);
 
 // Schema-recognized top-level keys. Anything else is silently dropped by the
 // tolerant content schema — we WARN (never fail) so contributors notice.
@@ -90,6 +112,21 @@ for (const f of files) {
         `${f}: duplicate github '${data.github}' (also in ${seenGithub.get(key)})`,
       );
     else if (key) seenGithub.set(key, f);
+  }
+
+  // Filename must equal the github handle (forward-only; grandfathered legacy).
+  if (typeof data.github === "string") {
+    const base = f.replace(/\.md$/, "");
+    const handle = normalizeGithub(data.github);
+    if (
+      handle &&
+      base.toLowerCase() !== handle.toLowerCase() &&
+      !FILENAME_GRANDFATHERED.has(base)
+    )
+      problems.push(
+        `${f}: filename must match your github handle — rename to '${handle}.md' ` +
+          `(file is '${base}', github is '${handle}'). Keeps your level badge linked.`,
+      );
   }
 
   // --- Non-fatal warnings: schema-valid but likely-misplaced data (silent-loss guard) ---
