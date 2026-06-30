@@ -6,6 +6,12 @@ role: builder
 skills: ["PHP", "React", "Javascript", "Nodejs"]
 repo: https://github.com/kaykhaingmyint6170/vibe-code-tours.github.io.git
 linkedin: https://www.linkedin.com/in/kay-khaing-myint
+certs:
+  claude_101: e34to36y3qog
+  claude_code_101: y5at4qrugtux
+  agent_skills_intro: v3kv59kb69e2
+  subagents_intro: nii85zjhppw7
+  mcp_intro: bg7rusyy4dri
 ---
 
-My goal is to learn Artificial Intelligence (AI) and develop practical skills that can be applied to real-world projects. Through this learning journey, I aim to understand AI fundamentals, work with modern AI tools and frameworks, and build intelligent solutions that improve business processes and user experiences. I am committed to continuous learning, hands-on practice, and staying up to date with the latest developments in AI technology.
+I aim to understand AI fundamentals, work with modern AI tools and frameworks, and build intelligent solutions that improve business processes and user experiences.
