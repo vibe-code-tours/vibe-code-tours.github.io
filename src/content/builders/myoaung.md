@@ -7,7 +7,11 @@ skills: ["JavaScript", "Python", "Claude Code"]
 repo: https://github.com/myoaung/your-project
 x: your-x-handle
 linkedin: linkedin.com/myoaung21
-website: https://your-site.com
+website: https://your-site.com](https://vibecode.tours/cohort/1/
+certs:
+  claude_101: hnttm3pihbd5
+  claude_code_101: 57iw49c3pbhg
+  agent_skills_intro: 8oqrryfmwznv
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
