@@ -7,6 +7,11 @@ skills: ["JavaScript", "Node.js", "Claude Code", "React.js", "TypeScript"]
 x: HtetLintz
 linkedin: https://www.linkedin.com/in/htet-lin-ko-411b02204
 website: https://www.htetlinko.com/
+certifications:
+  - name: Claude 101
+    url: https://verify.skilljar.com/c/qofoukq9isre
+  - name: Claude Code 101
+    url: https://verify.skilljar.com/c/fvxd7z36pdvf
 ---
 
 Hi! I'm Htet Lin Ko, a Senior Frontend Developer from Myanmar with experience building real-world HRMS products, including ATS, performance appraisal, job platforms, and payroll-related modules.
