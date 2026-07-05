@@ -1,0 +1,11 @@
+---
+// src/pages/my/gallery.astro
+import Base from "../../layouts/Base.astro";
+import GalleryBody from "../../components/GalleryBody.astro";
+import { t } from "../../i18n/utils";
+const s = t("my").gallery;
+---
+
+<Base title={s.title} description={s.description}>
+  <GalleryBody locale="my" />
+</Base>
