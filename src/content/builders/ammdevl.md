@@ -10,6 +10,18 @@ linkedin: ammdevl
 certs:
   claude_101: https://verify.skilljar.com/c/ix73n6aqfno8
   claude_code_101: https://verify.skilljar.com/c/qd9atonpwzya
+  #claude_vertex:
+  agent_skills_intro: https://verify.skilljar.com/c/dvi9jfhf99p6
+  subagents_intro: https: https://verify.skilljar.com/c/smw4fhfgk5bx
+  #claude_code_in_action:
+  mcp_intro: https://verify.skilljar.com/c/esdzzvmraivm
+  #building_claude_api:
+  #claude_platform_101:
+  #claude_cowork:
+  #mcp_advanced:
+  #claude_bedrock:
+  #ai_fluency:
+
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
