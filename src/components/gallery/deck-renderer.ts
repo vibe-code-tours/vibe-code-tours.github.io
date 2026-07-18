@@ -44,9 +44,9 @@ export async function renderDeck(
     const { html, css } = marp.render(md);
     // Bail if a newer renderDeck call started, or the lightbox was closed (deck-mount cleared), while we were fetching/rendering.
     if (mount.dataset.deckToken !== token) return;
-    // Marp emits a bespoke presenter <script>; the iframe is sandboxed (no
-    // allow-scripts) so it can't run and only logs a CSP error. Slides render
-    // static here — strip it.
+    // Marp emits a bespoke presenter <script>; the iframe already has
+    // sandbox="" (no allow-scripts) so it can't run regardless — stripping
+    // it here is defense-in-depth only, to avoid a benign CSP console error.
     const body = html.replace(/<script[\s\S]*?<\/script>/gi, "");
     const srcdoc = `<!doctype html><html><head><meta charset="utf8"><style>${css}
       html,body{margin:0;background:#0b0b0d} .marpit{transform-origin:top left}</style></head><body>${body}</body></html>`;

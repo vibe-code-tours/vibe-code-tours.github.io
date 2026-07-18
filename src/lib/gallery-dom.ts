@@ -166,3 +166,127 @@ export function wireSlider(rootId: string, opts: { intervalMs?: number } = {}) {
   show(0);
   start();
 }
+
+// Shared "open a link in a new tab" button used inside the lightbox detail
+// panel. `primary` renders the accent-filled variant (teams uses it for the
+// live-demo link); personal never passes it, so it stays the outline style.
+export function linkBtn(
+  label: string,
+  href: string,
+  primary = false,
+): HTMLAnchorElement {
+  const a = document.createElement("a");
+  a.href = href;
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+  a.textContent = label;
+  a.className = primary
+    ? "rounded-lg bg-accent-500 px-4 py-2 text-sm font-semibold text-black transition hover:bg-accent-600"
+    : "rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:border-accent-500 hover:bg-accent-500 hover:text-black";
+  return a;
+}
+
+const FOCUSABLE_SELECTOR =
+  'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
+
+// Owns the generic lightbox chrome (#lightbox / #lb-media / #lightbox-close)
+// shared by PersonalGallery and TeamsGallery: opening/closing, scroll lock,
+// grid-cell + hero-select wiring, and focus management. Callers supply a
+// `populate` callback that fills in the type-specific detail markup (avatar,
+// title, tags, links, and the deck/video mount).
+export function wireLightbox<T = any>(opts: {
+  heroId: string;
+  datasetKey: string;
+  populate: (media: HTMLElement, data: T) => void;
+}) {
+  const lb = document.getElementById("lightbox");
+  const media = document.getElementById("lb-media");
+  const closeBtn = document.getElementById("lightbox-close");
+  if (!lb || !media) return { open: () => {}, close: () => {} };
+
+  let opener: HTMLElement | null = null;
+
+  function open(data: T, triggerEl?: HTMLElement | null) {
+    if (!lb || !media) return;
+    opener = triggerEl ?? (document.activeElement as HTMLElement | null);
+    opts.populate(media, data);
+    lb.classList.remove("hidden");
+    lb.classList.add("flex");
+    lockScroll(true);
+    closeBtn?.focus();
+  }
+
+  function close() {
+    if (!lb || !media) return;
+    lb.classList.add("hidden");
+    lb.classList.remove("flex");
+    lockScroll(false);
+    media.innerHTML = "";
+    media.dataset.deckToken = "closed";
+    opener?.focus();
+    opener = null;
+  }
+
+  function trapTab(e: KeyboardEvent) {
+    if (!lb) return;
+    const focusable = Array.from(
+      lb.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR),
+    ).filter((el) => el.offsetParent !== null);
+    if (focusable.length === 0) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  }
+
+  document
+    .querySelectorAll<HTMLElement>("#gallery-grid .project-cell")
+    .forEach((cell) =>
+      cell.addEventListener("click", () => {
+        try {
+          open(JSON.parse(cell.dataset[opts.datasetKey] ?? "{}"), cell);
+        } catch (e) {
+          console.error(
+            `wireLightbox: failed to parse cell dataset.${opts.datasetKey}`,
+            e,
+          );
+        }
+      }),
+    );
+
+  document.getElementById(opts.heroId)?.addEventListener("hero-select", (e) => {
+    const i = (e as CustomEvent).detail as number;
+    const cells = document.querySelectorAll<HTMLElement>(
+      "#gallery-grid .project-cell",
+    );
+    const cell = cells[i];
+    if (!cell) return;
+    try {
+      const slide = document
+        .getElementById(opts.heroId)
+        ?.querySelectorAll<HTMLElement>(".hero-slide")[i];
+      open(JSON.parse(cell.dataset[opts.datasetKey] ?? "{}"), slide ?? cell);
+    } catch (e) {
+      console.error(
+        `wireLightbox: failed to parse hero-select cell dataset.${opts.datasetKey}`,
+        e,
+      );
+    }
+  });
+
+  closeBtn?.addEventListener("click", close);
+  lb.addEventListener("click", (e) => {
+    if (e.target === lb) close();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close();
+    else if (e.key === "Tab" && lb!.classList.contains("flex")) trapTab(e);
+  });
+
+  return { open, close };
+}

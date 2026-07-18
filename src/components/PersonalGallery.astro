@@ -99,15 +99,18 @@ const scriptI18n = JSON.stringify({
   import {
     wireFilter,
     fadeInOnScroll,
-    lockScroll,
     wireImageFallback,
+    wireLightbox,
+    linkBtn,
   } from "../lib/gallery-dom";
   import { renderDeck } from "./gallery/deck-renderer";
   const grid = document.getElementById("gallery-grid");
   let I18N: any = { types: {} };
   try {
     I18N = JSON.parse(grid?.dataset.i18n ?? "{}");
-  } catch {}
+  } catch (e) {
+    console.error("PersonalGallery: failed to parse grid dataset.i18n", e);
+  }
   fadeInOnScroll("#gallery-grid .project-cell");
   wireImageFallback("#personal-gallery");
   wireFilter({
@@ -118,90 +121,43 @@ const scriptI18n = JSON.stringify({
     countUnit: I18N.countUnit ?? "projects",
   });
 
-  const lb = document.getElementById("lightbox");
-  const media = document.getElementById("lb-media");
-  function linkBtn(label: string, href: string) {
-    const a = document.createElement("a");
-    a.href = href;
-    a.target = "_blank";
-    a.rel = "noopener noreferrer";
-    a.textContent = label;
-    a.className =
-      "rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:border-accent-500 hover:bg-accent-500 hover:text-black";
-    return a;
-  }
-  function open(c: any) {
-    if (!lb || !media) return;
-    (document.getElementById("lb-avatar") as HTMLImageElement).src =
-      `https://github.com/${c.github}.png`;
-    document.getElementById("lb-title")!.textContent = c.title;
-    const nm = document.getElementById("lb-name") as HTMLAnchorElement;
-    nm.textContent = `@${c.github}`;
-    nm.href = `https://github.com/${c.github}`;
-    document.getElementById("lb-desc")!.textContent = c.desc ?? "";
-    const tags = document.getElementById("lb-tags")!;
-    tags.innerHTML = "";
-    const ty = document.createElement("span");
-    ty.className =
-      "rounded-full bg-accent-500/15 px-2 py-0.5 font-mono text-[10px] font-semibold text-accent-300";
-    ty.textContent = I18N.types?.[c.type] ?? c.type;
-    tags.appendChild(ty);
-    for (const st of c.stack ?? []) {
-      const el = document.createElement("span");
-      el.className =
-        "rounded-full bg-white/5 px-2 py-0.5 font-mono text-[10px] text-gray-400";
-      el.textContent = st;
-      tags.appendChild(el);
-    }
-    const links = document.getElementById("lb-links")!;
-    links.innerHTML = "";
-    if (c.live_url) links.appendChild(linkBtn(I18N.liveBtn, c.live_url));
-    links.appendChild(linkBtn(I18N.repoBtn, c.repo_url));
-    if (c.slides_raw) links.appendChild(linkBtn(I18N.slidesBtn, c.slides_raw));
-    media.innerHTML = "";
-    renderDeck(media, c, {
-      loadingSlides: I18N.loadingSlides,
-      slidesUnavailable: I18N.slidesUnavailable,
-    });
-    lb.classList.remove("hidden");
-    lb.classList.add("flex");
-    lockScroll(true);
-  }
-  function close() {
-    if (!lb || !media) return;
-    lb.classList.add("hidden");
-    lb.classList.remove("flex");
-    lockScroll(false);
-    media.innerHTML = "";
-    media.dataset.deckToken = "closed";
-  }
-  document
-    .querySelectorAll<HTMLElement>("#gallery-grid .project-cell")
-    .forEach((cell) =>
-      cell.addEventListener("click", () => {
-        try {
-          open(JSON.parse(cell.dataset.project ?? "{}"));
-        } catch {}
-      }),
-    );
-  document
-    .getElementById("hero-personal")
-    ?.addEventListener("hero-select", (e) => {
-      const i = (e as CustomEvent).detail as number;
-      const c = document.querySelectorAll<HTMLElement>(
-        "#gallery-grid .project-cell",
-      )[i];
-      if (c)
-        try {
-          open(JSON.parse(c.dataset.project ?? "{}"));
-        } catch {}
-    });
-  document.getElementById("lightbox-close")?.addEventListener("click", close);
-  lb?.addEventListener("click", (e) => {
-    if (e.target === lb) close();
-  });
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") close();
+  wireLightbox({
+    heroId: "hero-personal",
+    datasetKey: "project",
+    populate(media, c: any) {
+      (document.getElementById("lb-avatar") as HTMLImageElement).src =
+        `https://github.com/${c.github}.png`;
+      document.getElementById("lb-title")!.textContent = c.title;
+      const nm = document.getElementById("lb-name") as HTMLAnchorElement;
+      nm.textContent = `@${c.github}`;
+      nm.href = `https://github.com/${c.github}`;
+      document.getElementById("lb-desc")!.textContent = c.desc ?? "";
+      const tags = document.getElementById("lb-tags")!;
+      tags.innerHTML = "";
+      const ty = document.createElement("span");
+      ty.className =
+        "rounded-full bg-accent-500/15 px-2 py-0.5 font-mono text-[10px] font-semibold text-accent-300";
+      ty.textContent = I18N.types?.[c.type] ?? c.type;
+      tags.appendChild(ty);
+      for (const st of c.stack ?? []) {
+        const el = document.createElement("span");
+        el.className =
+          "rounded-full bg-white/5 px-2 py-0.5 font-mono text-[10px] text-gray-400";
+        el.textContent = st;
+        tags.appendChild(el);
+      }
+      const links = document.getElementById("lb-links")!;
+      links.innerHTML = "";
+      if (c.live_url) links.appendChild(linkBtn(I18N.liveBtn, c.live_url));
+      links.appendChild(linkBtn(I18N.repoBtn, c.repo_url));
+      if (c.slides_raw)
+        links.appendChild(linkBtn(I18N.slidesBtn, c.slides_raw));
+      media.innerHTML = "";
+      renderDeck(media, c, {
+        loadingSlides: I18N.loadingSlides,
+        slidesUnavailable: I18N.slidesUnavailable,
+      });
+    },
   });
 </script>
 
