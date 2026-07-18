@@ -14,7 +14,12 @@ export const TEAM_TYPE_LABELS = {
 };
 
 function valid(t) {
-  return t && typeof t.repo_url === "string" && typeof t.title === "string" && TEAM_TYPE_LABELS[t.type];
+  return (
+    t &&
+    typeof t.repo_url === "string" &&
+    typeof t.title === "string" &&
+    TEAM_TYPE_LABELS[t.type]
+  );
 }
 
 export function hasVideo(t) {
@@ -37,7 +42,8 @@ export function typeBuckets(teams) {
 }
 
 export function statusBuckets(teams) {
-  let live = 0, done = 0;
+  let live = 0,
+    done = 0;
   for (const t of teams) {
     if (t.live_url) live++;
     if (t.uploaded === "Done") done++;

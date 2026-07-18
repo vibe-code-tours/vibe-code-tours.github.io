@@ -23,14 +23,12 @@ const ogFallback = (r: string) => {
   const m = r.match(/github\.com\/([^/]+)\/([^/#?]+)/i);
   return m ? `https://opengraph.githubassets.com/1/${m[1]}/${m[2]}` : "";
 };
-const slides = projects
-  .slice(0, 20)
-  .map((c) => ({
-    title: c.title,
-    subtitle: `@${c.name}`,
-    thumb: c.screenshot_url ?? ogFallback(c.repo_url),
-    hasVideo: false,
-  }));
+const slides = projects.slice(0, 20).map((c) => ({
+  title: c.title,
+  subtitle: `@${c.name}`,
+  thumb: c.screenshot_url ?? ogFallback(c.repo_url),
+  hasVideo: false,
+}));
 const scriptI18n = JSON.stringify({
   loadingSlides: s.loadingSlides,
   slidesUnavailable: s.slidesUnavailable,

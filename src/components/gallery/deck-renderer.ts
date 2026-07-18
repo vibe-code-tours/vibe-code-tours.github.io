@@ -12,18 +12,28 @@ function rewriteRelPaths(md: string, base: string) {
 
 let marpPromise: Promise<any> | null = null;
 async function getMarp() {
-  if (!marpPromise) marpPromise = import("@marp-team/marp-core").then(({ Marp }) => new Marp({ html: false }));
+  if (!marpPromise)
+    marpPromise = import("@marp-team/marp-core").then(
+      ({ Marp }) => new Marp({ html: false }),
+    );
   return marpPromise;
 }
 
 let deckCallToken = 0;
 
-export async function renderDeck(mount: HTMLElement, c: any, i18n: { loadingSlides: string; slidesUnavailable: string }) {
+export async function renderDeck(
+  mount: HTMLElement,
+  c: any,
+  i18n: { loadingSlides: string; slidesUnavailable: string },
+) {
   // Token lives on the DOM node so we can tell, after an await, whether a newer
   // call has started or the lightbox was closed in the meantime.
   const token = String(++deckCallToken);
   mount.dataset.deckToken = token;
-  if (!c.slides_raw) { mount.innerHTML = ""; return; }
+  if (!c.slides_raw) {
+    mount.innerHTML = "";
+    return;
+  }
   mount.innerHTML = `<p class="font-mono text-xs text-gray-500">${i18n.loadingSlides}</p>`;
   try {
     const res = await fetch(c.slides_raw);
@@ -42,7 +52,8 @@ export async function renderDeck(mount: HTMLElement, c: any, i18n: { loadingSlid
       html,body{margin:0;background:#0b0b0d} .marpit{transform-origin:top left}</style></head><body>${body}</body></html>`;
     const iframe = document.createElement("iframe");
     iframe.setAttribute("sandbox", "");
-    iframe.className = "h-[46vh] w-full rounded-lg border border-white/10 bg-black";
+    iframe.className =
+      "h-[46vh] w-full rounded-lg border border-white/10 bg-black";
     iframe.srcdoc = srcdoc;
     mount.innerHTML = "";
     mount.appendChild(iframe);

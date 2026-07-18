@@ -5,9 +5,15 @@ import { getTeams, typeBuckets, statusBuckets, hasVideo } from "./teams.mjs";
 test("getTeams returns validated, team_no-sorted list", () => {
   const teams = getTeams();
   assert.ok(Array.isArray(teams) && teams.length > 0);
-  for (const t of teams) { assert.equal(typeof t.repo_url, "string"); assert.equal(typeof t.title, "string"); }
+  for (const t of teams) {
+    assert.equal(typeof t.repo_url, "string");
+    assert.equal(typeof t.title, "string");
+  }
   const nos = teams.map((t) => t.team_no ?? 999);
-  assert.deepEqual(nos, [...nos].sort((a, b) => a - b));
+  assert.deepEqual(
+    nos,
+    [...nos].sort((a, b) => a - b),
+  );
 });
 
 test("statusBuckets counts live and done", () => {
