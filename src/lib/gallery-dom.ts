@@ -38,7 +38,7 @@ export function wireFilter(opts: {
         const v = active[b.attr];
         if (v === "*") continue;
         const cellVal = cell.dataset[b.attr] ?? "";
-        if (b.attr === "stack") { if (!cellVal.split("|").includes(v)) ok = false; }
+        if (b.attr === "stack" || b.attr === "status") { if (!cellVal.split("|").includes(v)) ok = false; }
         else if (cellVal !== v) ok = false;
       }
       if (ok && query && !(cell.textContent ?? "").toLowerCase().includes(query)) ok = false;
