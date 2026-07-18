@@ -1,0 +1,32 @@
+---
+// src/pages/projects/index.astro
+import Base from "../../layouts/Base.astro";
+import { t, localizedPath } from "../../i18n/utils";
+const s = t("en").projectsHub;
+---
+
+<Base title={s.title} description={s.description}>
+  <section class="mx-auto max-w-4xl px-5 py-16 sm:px-6">
+    <p class="section-label">{s.label}</p>
+    <h1 class="mt-2 text-center text-3xl font-extrabold sm:text-4xl">
+      {s.heading}
+    </h1>
+    <p class="mx-auto mt-3 max-w-xl text-center text-gray-400">{s.intro}</p>
+    <div class="mt-10 grid gap-5 sm:grid-cols-2">
+      <a
+        href={localizedPath("/projects/personal", "en")}
+        class="rounded-2xl border border-t-[3px] border-white/10 border-t-accent-500 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-accent-500/40"
+      >
+        <h2 class="text-xl font-bold text-white">{s.personalCard}</h2>
+        <p class="mt-2 text-sm text-gray-400">{s.personalDesc}</p>
+      </a>
+      <a
+        href={localizedPath("/projects/teams", "en")}
+        class="rounded-2xl border border-t-[3px] border-white/10 border-t-accent-500 bg-white/5 p-8 transition hover:-translate-y-1 hover:border-accent-500/40"
+      >
+        <h2 class="text-xl font-bold text-white">{s.teamsCard}</h2>
+        <p class="mt-2 text-sm text-gray-400">{s.teamsDesc}</p>
+      </a>
+    </div>
+  </section>
+</Base>
