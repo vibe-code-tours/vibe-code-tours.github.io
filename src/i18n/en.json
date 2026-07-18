@@ -20,7 +20,8 @@
     "setup": "Setup",
     "builders": "Builders",
     "cohort1": "Cohort 1",
-    "gallery": "Gallery"
+    "gallery": "Gallery",
+    "projects": "Projects"
   },
   "footer": {
     "rights": "© 2026 Vibe Code Tours",
