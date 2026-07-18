@@ -45,7 +45,7 @@ const scriptI18n = JSON.stringify({
 });
 ---
 
-<section class="mx-auto max-w-6xl px-5 py-12 sm:px-6">
+<section id="teams-gallery" class="mx-auto max-w-6xl px-5 py-12 sm:px-6">
   <p class="section-label">{s.label}</p>
   <h1 class="mt-2 text-center text-3xl font-extrabold sm:text-4xl">
     {s.heading}
@@ -110,7 +110,12 @@ const scriptI18n = JSON.stringify({
 </section>
 
 <script>
-  import { wireFilter, fadeInOnScroll, lockScroll } from "../lib/gallery-dom";
+  import {
+    wireFilter,
+    fadeInOnScroll,
+    lockScroll,
+    wireImageFallback,
+  } from "../lib/gallery-dom";
   import { mountPlayer } from "./gallery/video-player";
   const grid = document.getElementById("gallery-grid");
   let I18N: any = { types: {} };
@@ -118,6 +123,7 @@ const scriptI18n = JSON.stringify({
     I18N = JSON.parse(grid?.dataset.i18n ?? "{}");
   } catch {}
   fadeInOnScroll("#gallery-grid .project-cell");
+  wireImageFallback("#teams-gallery");
   wireFilter({
     gridId: "gallery-grid",
     countEl: document.getElementById("project-count"),

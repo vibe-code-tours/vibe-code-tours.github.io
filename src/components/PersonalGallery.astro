@@ -23,7 +23,7 @@ const ogFallback = (r: string) => {
   const m = r.match(/github\.com\/([^/]+)\/([^/#?]+)/i);
   return m ? `https://opengraph.githubassets.com/1/${m[1]}/${m[2]}` : "";
 };
-const slides = projects.slice(0, 20).map((c) => ({
+const slides = projects.map((c) => ({
   title: c.title,
   subtitle: `@${c.name}`,
   thumb: c.screenshot_url ?? ogFallback(c.repo_url),
@@ -40,7 +40,7 @@ const scriptI18n = JSON.stringify({
 });
 ---
 
-<section class="mx-auto max-w-6xl px-5 py-12 sm:px-6">
+<section id="personal-gallery" class="mx-auto max-w-6xl px-5 py-12 sm:px-6">
   <p class="section-label">{s.label}</p>
   <h1 class="mt-2 text-center text-3xl font-extrabold sm:text-4xl">
     {s.heading}
@@ -96,7 +96,12 @@ const scriptI18n = JSON.stringify({
 </section>
 
 <script>
-  import { wireFilter, fadeInOnScroll, lockScroll } from "../lib/gallery-dom";
+  import {
+    wireFilter,
+    fadeInOnScroll,
+    lockScroll,
+    wireImageFallback,
+  } from "../lib/gallery-dom";
   import { renderDeck } from "./gallery/deck-renderer";
   const grid = document.getElementById("gallery-grid");
   let I18N: any = { types: {} };
@@ -104,6 +109,7 @@ const scriptI18n = JSON.stringify({
     I18N = JSON.parse(grid?.dataset.i18n ?? "{}");
   } catch {}
   fadeInOnScroll("#gallery-grid .project-cell");
+  wireImageFallback("#personal-gallery");
   wireFilter({
     gridId: "gallery-grid",
     countEl: document.getElementById("project-count"),

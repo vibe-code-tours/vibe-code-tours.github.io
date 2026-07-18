@@ -14,6 +14,7 @@ const thumb = t.youtube_id
   ? `https://i.ytimg.com/vi/${t.youtube_id}/hqdefault.jpg`
   : ogFallback(t.repo_url);
 const video = hasVideo(t);
+const initial = (t.title || t.team || "?").trim().charAt(0).toUpperCase();
 const statuses = [
   t.live_url ? "live" : null,
   t.uploaded === "Done" ? "done" : null,
@@ -29,11 +30,17 @@ const statuses = [
   data-team={JSON.stringify(t)}
 >
   <div class="relative aspect-video overflow-hidden bg-black/40">
+    <div
+      class="gallery-fallback absolute inset-0 hidden items-center justify-center bg-surface-elevated text-gray-500"
+      aria-hidden="true"
+    >
+      <span class="font-mono text-3xl font-bold">{initial}</span>
+    </div>
     <img
       src={thumb}
       alt={`${t.title} demo`}
       loading="lazy"
-      class="h-full w-full object-cover transition duration-300 group-hover:scale-105 motion-reduce:transition-none"
+      class="gallery-img h-full w-full object-cover transition duration-300 group-hover:scale-105 motion-reduce:transition-none"
     />
     {
       t.live_url && (

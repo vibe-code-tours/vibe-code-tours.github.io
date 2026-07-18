@@ -10,6 +10,7 @@ const ogFallback = (repoUrl: string) => {
   return m ? `https://opengraph.githubassets.com/1/${m[1]}/${m[2]}` : "";
 };
 const shot = c.screenshot_url ?? ogFallback(c.repo_url);
+const initial = (c.title || c.name || "?").trim().charAt(0).toUpperCase();
 ---
 
 <button
@@ -19,13 +20,22 @@ const shot = c.screenshot_url ?? ogFallback(c.repo_url);
   data-project={JSON.stringify(c)}
 >
   <div class="relative aspect-video overflow-hidden bg-black/40">
+    <div
+      class:list={[
+        "gallery-fallback absolute inset-0 items-center justify-center bg-surface-elevated text-gray-500",
+        shot ? "hidden" : "flex",
+      ]}
+      aria-hidden="true"
+    >
+      <span class="font-mono text-3xl font-bold">{initial}</span>
+    </div>
     {
       shot && (
         <img
           src={shot}
           alt={`${c.title} screenshot`}
           loading="lazy"
-          class="h-full w-full object-cover transition duration-300 group-hover:scale-105 motion-reduce:transition-none"
+          class="gallery-img h-full w-full object-cover transition duration-300 group-hover:scale-105 motion-reduce:transition-none"
         />
       )
     }

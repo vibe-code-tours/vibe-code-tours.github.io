@@ -8,6 +8,32 @@ export function lockScroll(on: boolean) {
   document.body.style.overflow = on ? "hidden" : "";
 }
 
+// Gallery images (`.gallery-img`) that fail to load are hidden in favor of
+// their sibling `.gallery-fallback` placeholder, so teams/projects without a
+// working thumbnail still look presentable. Image `error` events do not
+// bubble, so this listens in the capture phase on a shared ancestor.
+export function wireImageFallback(rootSelector: string) {
+  const root = document.querySelector(rootSelector);
+  if (!root) return;
+  root.addEventListener(
+    "error",
+    (e) => {
+      const img = e.target;
+      if (
+        !(img instanceof HTMLImageElement) ||
+        !img.classList.contains("gallery-img")
+      )
+        return;
+      img.classList.add("hidden");
+      const fallback =
+        img.parentElement?.querySelector<HTMLElement>(".gallery-fallback");
+      fallback?.classList.remove("hidden");
+      fallback?.classList.add("flex");
+    },
+    true,
+  );
+}
+
 export function fadeInOnScroll(selector: string) {
   const cells = Array.from(document.querySelectorAll<HTMLElement>(selector));
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {

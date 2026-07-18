@@ -29,11 +29,19 @@ const { slides, prevLabel, nextLabel, id = "hero" } = Astro.props;
         data-hero-index={i}
         style={`background:radial-gradient(circle at 80% 20%, rgba(245,158,11,.28), transparent 55%), linear-gradient(120deg,#18181b,#09090b 70%)`}
       >
+        <div
+          class="gallery-fallback absolute inset-0 hidden items-center justify-center"
+          aria-hidden="true"
+        >
+          <span class="font-mono text-6xl font-black text-white/20">
+            {(s.title || "?").trim().charAt(0).toUpperCase()}
+          </span>
+        </div>
         <img
           src={s.thumb}
           alt=""
           loading="lazy"
-          class="absolute inset-0 h-full w-full object-cover opacity-70"
+          class="gallery-img absolute inset-0 h-full w-full object-cover opacity-70"
         />
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
         {s.hasVideo && (
