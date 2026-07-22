@@ -104,6 +104,7 @@ const scriptI18n = JSON.stringify({
     linkBtn,
   } from "../lib/gallery-dom";
   import { renderDeck } from "./gallery/deck-renderer";
+  import { renderShots } from "./gallery/shots-strip";
   const grid = document.getElementById("gallery-grid");
   let I18N: any = { types: {} };
   try {
@@ -153,7 +154,10 @@ const scriptI18n = JSON.stringify({
       if (c.slides_raw)
         links.appendChild(linkBtn(I18N.slidesBtn, c.slides_raw));
       media.innerHTML = "";
-      renderDeck(media, c, {
+      renderShots(media, c.screenshots ?? []);
+      const deckMount = document.createElement("div");
+      media.appendChild(deckMount);
+      renderDeck(deckMount, c, {
         loadingSlides: I18N.loadingSlides,
         slidesUnavailable: I18N.slidesUnavailable,
       });
