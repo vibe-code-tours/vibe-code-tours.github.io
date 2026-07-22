@@ -309,7 +309,14 @@ export function wireLightbox<T = any>(opts: {
     .querySelectorAll<HTMLElement>("#gallery-grid .project-cell")
     .forEach((cell) =>
       cell.addEventListener("click", (e) => {
-        if ((e.target as HTMLElement).closest("[data-nolightbox]")) return;
+        const nl = (e.target as HTMLElement).closest<HTMLElement>(
+          "[data-nolightbox]",
+        );
+        if (nl) {
+          const href = nl.dataset.href;
+          if (href) window.open(href, "_blank", "noopener");
+          return;
+        }
         try {
           open(JSON.parse(cell.dataset[opts.datasetKey] ?? "{}"), cell);
         } catch (err) {

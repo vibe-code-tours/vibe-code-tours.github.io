@@ -62,6 +62,7 @@ const CHIP =
     sortOptions && sortOptions.length > 0 && (
       <label class="flex items-center gap-2 font-mono text-xs text-gray-500">
         {sortLabel}
+        {/* id "project-sort" is the contract passed as sortSelectId to wireFilter */}
         <select
           id="project-sort"
           class="rounded-lg border border-white/10 bg-surface-elevated px-2 py-1 text-xs text-gray-300 focus:border-accent-500 focus:outline-none"

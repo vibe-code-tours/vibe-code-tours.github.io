@@ -62,6 +62,7 @@ const scriptI18n = JSON.stringify({
           nextLabel={s.heroNext}
           id="hero-teams"
         />
+        {/* "team" sort key => source order; getTeams() (teams.mjs) sorts by team_no, so this is team-number order. */}
         <FilterBar
           searchPlaceholder={s.searchPlaceholder}
           count={teams.length}

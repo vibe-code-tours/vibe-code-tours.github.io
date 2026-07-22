@@ -64,13 +64,11 @@ const dataAttrs = {
       />
       <span class="truncate font-semibold text-white">{c.title}</span>
     </div>
-    <a
-      href={`https://github.com/${c.github}`}
-      target="_blank"
-      rel="noopener noreferrer"
+    <span
       data-nolightbox
-      class="mt-1 block w-fit truncate text-sm text-gray-400 transition hover:text-accent-300 focus-visible:text-accent-300"
-      >@{c.name}</a
+      data-href={`https://github.com/${c.github}`}
+      class="mt-1 block w-fit cursor-pointer truncate text-sm text-gray-400 transition hover:text-accent-300"
+      >@{c.name}</span
     >
     {c.desc && <p class="mt-2 line-clamp-2 text-sm text-gray-500">{c.desc}</p>}
   </Fragment>
