@@ -36,6 +36,7 @@ const dataAttrs = {
   initial={initial}
   typeLabel={TEAM_TYPE_LABELS[t.type as keyof typeof TEAM_TYPE_LABELS]}
   stack={t.stack ?? []}
+  sortTitle={t.title}
 >
   <Fragment slot="thumb-overlay">
     {

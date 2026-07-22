@@ -9,13 +9,16 @@ interface Props {
   initial: string;
   typeLabel: string;
   stack: string[];
+  sortTitle: string;
 }
-const { dataAttrs, thumb, alt, initial, typeLabel, stack } = Astro.props;
+const { dataAttrs, thumb, alt, initial, typeLabel, stack, sortTitle } =
+  Astro.props;
 const { shown, extra } = stackDisplay(stack, 3);
 ---
 
 <button
   class="project-cell group relative overflow-hidden rounded-xl border border-t-[3px] border-white/10 border-t-accent-500 bg-surface-card text-left transition duration-200 hover:-translate-y-1 hover:border-accent-500/40 hover:shadow-[0_12px_40px_-12px_rgba(245,158,11,0.35)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+  data-title={sortTitle}
   {...dataAttrs}
 >
   <div class="relative aspect-video overflow-hidden bg-black/40">

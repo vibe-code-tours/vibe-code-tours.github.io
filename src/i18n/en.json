@@ -563,6 +563,7 @@
     "intro": "Twenty teams, twenty demos. Click any team to watch.",
     "searchPlaceholder": "Search teams…",
     "sortLabel": "Sort",
+    "sortTeam": "Team #",
     "sortAz": "A–Z",
     "allTypes": "All",
     "allStatus": "All",

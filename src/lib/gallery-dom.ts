@@ -90,7 +90,7 @@ export function wireFilter(opts: {
     if (!grid) return;
     const meta = cells.map((cell) => ({
       cell,
-      title: cell.textContent ?? "",
+      title: cell.dataset.title ?? cell.textContent ?? "",
       chapter: Number(cell.dataset.chapter ?? "-1"),
       order: Number(cell.dataset.order ?? "0"),
     }));
