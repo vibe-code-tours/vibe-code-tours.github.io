@@ -1,6 +1,10 @@
 // src/components/gallery/shots-strip.ts
 // Lazy multi-screenshot strip for the project lightbox. DOM-only, no deps.
-export function renderShots(mount: HTMLElement, screenshots: string[]): void {
+export function renderShots(
+  mount: HTMLElement,
+  screenshots: string[],
+  altPrefix = "Screenshot",
+): void {
   if (!Array.isArray(screenshots) || screenshots.length <= 1) return;
   const wrap = document.createElement("div");
   wrap.className = "mb-3";
@@ -8,7 +12,7 @@ export function renderShots(mount: HTMLElement, screenshots: string[]): void {
   const big = document.createElement("img");
   big.src = screenshots[0];
   big.loading = "lazy";
-  big.alt = "Screenshot 1";
+  big.alt = `${altPrefix} 1`;
   big.className =
     "mb-2 max-h-[46vh] w-full rounded-lg border border-white/10 object-contain bg-black";
   wrap.appendChild(big);
@@ -24,12 +28,12 @@ export function renderShots(mount: HTMLElement, screenshots: string[]): void {
     const im = document.createElement("img");
     im.src = src;
     im.loading = "lazy";
-    im.alt = `Screenshot ${i + 1}`;
+    im.alt = `${altPrefix} ${i + 1}`;
     im.className = "h-full w-full object-cover";
     thumb.appendChild(im);
     thumb.addEventListener("click", () => {
       big.src = src;
-      big.alt = `Screenshot ${i + 1}`;
+      big.alt = `${altPrefix} ${i + 1}`;
       strip
         .querySelectorAll("[aria-current]")
         .forEach((b) => b.setAttribute("aria-current", "false"));

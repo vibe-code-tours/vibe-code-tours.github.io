@@ -37,6 +37,7 @@ const scriptI18n = JSON.stringify({
   slidesBtn: s.slidesBtn,
   types: s.types,
   countUnit: s.countUnit,
+  shotAlt: s.shotAlt,
 });
 ---
 
@@ -126,6 +127,7 @@ const scriptI18n = JSON.stringify({
     bars: [{ attr: "type" }, { attr: "stack" }],
     countUnit: I18N.countUnit ?? "projects",
     sortSelectId: "project-sort",
+    defaultSort: "chapter",
   });
 
   wireLightbox({
@@ -160,7 +162,7 @@ const scriptI18n = JSON.stringify({
       if (c.slides_raw)
         links.appendChild(linkBtn(I18N.slidesBtn, c.slides_raw));
       media.innerHTML = "";
-      renderShots(media, c.screenshots ?? []);
+      renderShots(media, c.screenshots ?? [], I18N.shotAlt ?? "Screenshot");
       const deckMount = document.createElement("div");
       media.appendChild(deckMount);
       renderDeck(deckMount, c, {

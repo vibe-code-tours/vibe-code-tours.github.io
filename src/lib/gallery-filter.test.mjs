@@ -64,3 +64,11 @@ test("shotCount handles missing", () => {
   assert.equal(shotCount(["a", "b"]), 2);
   assert.equal(shotCount(null), 0);
 });
+
+test("per-gallery default sort: team omitted when it's the default", () => {
+  assert.equal(
+    serializeFilterQuery({ active: {}, query: "", sort: "team" }, "team"),
+    "",
+  );
+  assert.equal(parseFilterQuery("", "team").sort, "team");
+});

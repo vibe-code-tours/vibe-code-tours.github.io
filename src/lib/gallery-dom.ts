@@ -67,6 +67,7 @@ export function wireFilter(opts: {
   bars: { attr: string }[];
   countUnit: string;
   sortSelectId?: string;
+  defaultSort?: string;
 }) {
   const grid = document.getElementById(opts.gridId);
   const cells = Array.from(
@@ -74,7 +75,8 @@ export function wireFilter(opts: {
   );
   cells.forEach((c, i) => (c.dataset.order = String(i)));
 
-  const init = parseFilterQuery(location.search);
+  const defaultSort = opts.defaultSort ?? "chapter";
+  const init = parseFilterQuery(location.search, defaultSort);
   const initActive = init.active as Record<string, string>;
   const active: Record<string, string> = {};
   opts.bars.forEach((b) => (active[b.attr] = initActive[b.attr] ?? "*"));
@@ -82,7 +84,7 @@ export function wireFilter(opts: {
   let sort = init.sort;
 
   function persist() {
-    const q = serializeFilterQuery({ active, query, sort });
+    const q = serializeFilterQuery({ active, query, sort }, defaultSort);
     history.replaceState(null, "", q ? `?${q}` : location.pathname);
   }
 
@@ -310,10 +312,10 @@ export function wireLightbox<T = any>(opts: {
         if ((e.target as HTMLElement).closest("[data-nolightbox]")) return;
         try {
           open(JSON.parse(cell.dataset[opts.datasetKey] ?? "{}"), cell);
-        } catch (e) {
+        } catch (err) {
           console.error(
             `wireLightbox: failed to parse cell dataset.${opts.datasetKey}`,
-            e,
+            err,
           );
         }
       }),

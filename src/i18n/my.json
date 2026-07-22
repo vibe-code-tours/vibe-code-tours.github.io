@@ -478,6 +478,7 @@
     "liveBtn": "Live Site ↗",
     "repoBtn": "Repo ↗",
     "slidesBtn": "Slides ဖွင့်ရန် ↗",
+    "shotAlt": "မျက်နှာပြင်ပုံ",
     "types": {
       "web-app": "Web App",
       "cli": "CLI",

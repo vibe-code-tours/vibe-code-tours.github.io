@@ -20,7 +20,7 @@ export function sortCards(cells, key) {
   return arr;
 }
 
-export function parseFilterQuery(search) {
+export function parseFilterQuery(search, defaultSort = DEFAULT_SORT) {
   const p = new URLSearchParams(search || "");
   const active = {};
   for (const [k, v] of p.entries()) {
@@ -30,21 +30,20 @@ export function parseFilterQuery(search) {
   return {
     active,
     query: p.get("q") ?? "",
-    sort: p.get("sort") ?? DEFAULT_SORT,
+    sort: p.get("sort") ?? defaultSort,
   };
 }
 
-export function serializeFilterQuery({
-  active = {},
-  query = "",
-  sort = DEFAULT_SORT,
-}) {
+export function serializeFilterQuery(
+  { active = {}, query = "", sort = DEFAULT_SORT },
+  defaultSort = DEFAULT_SORT,
+) {
   const p = new URLSearchParams();
   for (const [k, v] of Object.entries(active)) {
     if (v && v !== "*") p.set(k, v);
   }
   if (query) p.set("q", query);
-  if (sort && sort !== DEFAULT_SORT) p.set("sort", sort);
+  if (sort && sort !== defaultSort) p.set("sort", sort);
   return p.toString();
 }
 
