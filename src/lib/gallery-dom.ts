@@ -1,4 +1,10 @@
 // src/lib/gallery-dom.ts — shared client-side gallery behaviors.
+import {
+  parseFilterQuery,
+  serializeFilterQuery,
+  sortCards,
+} from "./gallery-filter.mjs";
+
 export function ogFallback(repoUrl: string): string {
   const m = repoUrl.match(/github\.com\/([^/]+)\/([^/#?]+)/i);
   return m ? `https://opengraph.githubassets.com/1/${m[1]}/${m[2]}` : "";
@@ -60,14 +66,37 @@ export function wireFilter(opts: {
   emptyEl: HTMLElement | null;
   bars: { attr: string }[];
   countUnit: string;
+  sortSelectId?: string;
 }) {
   const grid = document.getElementById(opts.gridId);
   const cells = Array.from(
     grid?.querySelectorAll<HTMLElement>(".project-cell") ?? [],
   );
+  cells.forEach((c, i) => (c.dataset.order = String(i)));
+
+  const init = parseFilterQuery(location.search);
+  const initActive = init.active as Record<string, string>;
   const active: Record<string, string> = {};
-  opts.bars.forEach((b) => (active[b.attr] = "*"));
-  let query = "";
+  opts.bars.forEach((b) => (active[b.attr] = initActive[b.attr] ?? "*"));
+  let query = init.query;
+  let sort = init.sort;
+
+  function persist() {
+    const q = serializeFilterQuery({ active, query, sort });
+    history.replaceState(null, "", q ? `?${q}` : location.pathname);
+  }
+
+  function reorder() {
+    if (!grid) return;
+    const meta = cells.map((cell) => ({
+      cell,
+      title: cell.textContent ?? "",
+      chapter: Number(cell.dataset.chapter ?? "-1"),
+      order: Number(cell.dataset.order ?? "0"),
+    }));
+    for (const m of sortCards(meta, sort)) grid.appendChild(m.cell);
+  }
+
   function apply() {
     let shown = 0;
     for (const cell of cells) {
@@ -80,11 +109,7 @@ export function wireFilter(opts: {
           if (!cellVal.split("|").includes(v)) ok = false;
         } else if (cellVal !== v) ok = false;
       }
-      if (
-        ok &&
-        query &&
-        !(cell.textContent ?? "").toLowerCase().includes(query)
-      )
+      if (ok && query && !(cell.textContent ?? "").toLowerCase().includes(query))
         ok = false;
       cell.classList.toggle("hidden", !ok);
       if (ok) shown++;
@@ -95,9 +120,20 @@ export function wireFilter(opts: {
         shown === cells.length
           ? `${cells.length} ${opts.countUnit}`
           : `${shown} of ${cells.length}`;
+    persist();
   }
+
   for (const b of opts.bars) {
     const bar = document.querySelector<HTMLElement>(`[data-bar="${b.attr}"]`);
+    // hydrate pressed state from URL
+    bar
+      ?.querySelectorAll<HTMLElement>(`[data-${b.attr}]`)
+      .forEach((x) =>
+        x.setAttribute(
+          "aria-pressed",
+          String((x.dataset[b.attr] ?? "*") === active[b.attr]),
+        ),
+      );
     bar?.addEventListener("click", (e) => {
       const btn = (e.target as HTMLElement).closest<HTMLElement>(
         `[data-${b.attr}]`,
@@ -110,13 +146,32 @@ export function wireFilter(opts: {
       apply();
     });
   }
+
   const search = document.getElementById(
     "project-search",
   ) as HTMLInputElement | null;
-  search?.addEventListener("input", () => {
-    query = search.value.trim().toLowerCase();
-    apply();
-  });
+  if (search) {
+    search.value = query;
+    search.addEventListener("input", () => {
+      query = search.value.trim().toLowerCase();
+      apply();
+    });
+  }
+
+  const sortSel = opts.sortSelectId
+    ? (document.getElementById(opts.sortSelectId) as HTMLSelectElement | null)
+    : null;
+  if (sortSel) {
+    sortSel.value = sort;
+    sortSel.addEventListener("change", () => {
+      sort = sortSel.value;
+      reorder();
+      apply();
+    });
+  }
+
+  reorder();
+  apply();
   return { apply };
 }
 
