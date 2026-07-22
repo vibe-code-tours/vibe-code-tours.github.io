@@ -90,6 +90,8 @@ const scriptI18n = JSON.stringify({
               ],
             },
           ]}
+          sortLabel={s.sortLabel}
+          sortOptions={[{ value: "az", label: s.sortAz }]}
         />
         <div
           id="gallery-grid"
@@ -133,6 +135,7 @@ const scriptI18n = JSON.stringify({
     emptyEl: document.getElementById("gallery-empty"),
     bars: [{ attr: "type" }, { attr: "status" }],
     countUnit: I18N.countUnit ?? "teams",
+    sortSelectId: "project-sort",
   });
 
   wireLightbox({

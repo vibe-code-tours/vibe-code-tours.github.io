@@ -76,6 +76,11 @@ const scriptI18n = JSON.stringify({
               options: stacks.map((st) => ({ value: st.name, label: st.name })),
             },
           ]}
+          sortLabel={s.sortLabel}
+          sortOptions={[
+            { value: "chapter", label: s.sortChapter },
+            { value: "az", label: s.sortAz },
+          ]}
         />
         <div
           id="gallery-grid"
@@ -120,6 +125,7 @@ const scriptI18n = JSON.stringify({
     emptyEl: document.getElementById("gallery-empty"),
     bars: [{ attr: "type" }, { attr: "stack" }],
     countUnit: I18N.countUnit ?? "projects",
+    sortSelectId: "project-sort",
   });
 
   wireLightbox({
