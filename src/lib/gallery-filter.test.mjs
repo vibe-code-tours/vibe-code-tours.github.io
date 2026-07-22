@@ -25,11 +25,18 @@ test("sortCards az by title, case-insensitive", () => {
     { title: "Beta", order: 0 },
     { title: "alpha", order: 1 },
   ];
-  assert.deepEqual(sortCards(cells, "az").map((c) => c.title), ["alpha", "Beta"]);
+  assert.deepEqual(
+    sortCards(cells, "az").map((c) => c.title),
+    ["alpha", "Beta"],
+  );
 });
 
 test("URL query round-trips non-default state", () => {
-  const state = { active: { type: "cli", stack: "*" }, query: "bot", sort: "az" };
+  const state = {
+    active: { type: "cli", stack: "*" },
+    query: "bot",
+    sort: "az",
+  };
   const q = serializeFilterQuery(state);
   const back = parseFilterQuery("?" + q);
   assert.equal(back.active.type, "cli");

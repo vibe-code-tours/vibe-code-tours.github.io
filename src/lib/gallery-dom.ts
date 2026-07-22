@@ -109,7 +109,11 @@ export function wireFilter(opts: {
           if (!cellVal.split("|").includes(v)) ok = false;
         } else if (cellVal !== v) ok = false;
       }
-      if (ok && query && !(cell.textContent ?? "").toLowerCase().includes(query))
+      if (
+        ok &&
+        query &&
+        !(cell.textContent ?? "").toLowerCase().includes(query)
+      )
         ok = false;
       cell.classList.toggle("hidden", !ok);
       if (ok) shown++;

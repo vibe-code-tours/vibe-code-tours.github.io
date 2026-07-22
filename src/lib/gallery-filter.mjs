@@ -6,11 +6,15 @@ const DEFAULT_SORT = "chapter";
 export function sortCards(cells, key) {
   const arr = [...cells];
   if (key === "az") {
-    arr.sort((a, b) => a.title.localeCompare(b.title, undefined, { sensitivity: "base" }));
+    arr.sort((a, b) =>
+      a.title.localeCompare(b.title, undefined, { sensitivity: "base" }),
+    );
   } else {
     // chapter desc; ties keep source order (stable)
     arr.sort(
-      (a, b) => (b.chapter ?? -1) - (a.chapter ?? -1) || (a.order ?? 0) - (b.order ?? 0),
+      (a, b) =>
+        (b.chapter ?? -1) - (a.chapter ?? -1) ||
+        (a.order ?? 0) - (b.order ?? 0),
     );
   }
   return arr;
@@ -30,7 +34,11 @@ export function parseFilterQuery(search) {
   };
 }
 
-export function serializeFilterQuery({ active = {}, query = "", sort = DEFAULT_SORT }) {
+export function serializeFilterQuery({
+  active = {},
+  query = "",
+  sort = DEFAULT_SORT,
+}) {
   const p = new URLSearchParams();
   for (const [k, v] of Object.entries(active)) {
     if (v && v !== "*") p.set(k, v);
