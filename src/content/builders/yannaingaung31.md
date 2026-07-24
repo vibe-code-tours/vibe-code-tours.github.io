@@ -8,6 +8,7 @@ skills: ["Vibe Coding", "Business Strategy",  "Claude Code" , "HTML CSS"]
 
 certs:
   claude_101: https://verify.skilljar.com/c/vhi3funz4uhs
+  claude_code_101: https://verify.skilljar.com/c/s85wbnd7zezh
 ---
 
 Hi! I'm Bryan and  currently riding the AI wave as an active learner. I'm deeply passionate about exploring the intersection of business intelligence, AI-powered development, and vibe-coding to quickly bring innovative ideas to life. Excited to connect with fellow makers and build something cool!

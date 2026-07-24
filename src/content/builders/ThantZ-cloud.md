@@ -3,7 +3,7 @@ name: Thant Zin Htun
 github: ThantZ-cloud
 cohort: 1
 role: builder
-skills: ["JavaScript", "MERN", "Claude Code"]
+skills: ["JavaScript", "Typescript","Java","React","Nextjs","Mysql","Express","React native", "Claude Code"]
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

@@ -8,6 +8,12 @@ repo: https://github.com/MyatHtetKyaw/Aquarius.git
 x: ---
 linkedin: Myat Htet Kyaw
 website: ---
+certs:
+  claude_101: https://verify.skilljar.com/c/meosz6iddm9x
+  claude_code_101: https://verify.skilljar.com/c/53dfqs48ci6e
+  agent_skills_intro: https://verify.skilljar.com/c/3iwm4o6pb7dq
+  subagents_intro: https://verify.skilljar.com/c/wzsryhqtko5r
+---
 ---
 
 Hi! I want to learn more about Vibe Coding. My goal is to build something useful. Excited to be part of the Tour.

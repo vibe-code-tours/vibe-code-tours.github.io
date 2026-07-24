@@ -8,6 +8,9 @@ repo: https://github.com/wythwin
 x: waiyanthwin
 linkedin: waiyanthwin
 website: https://blog.waiyanthwin.com
+certs:
+  claude_101: https://verify.skilljar.com/c/bqxyfumtey2e
+  claude_code_101: https://verify.skilljar.com/c/YYYYYYYY
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
