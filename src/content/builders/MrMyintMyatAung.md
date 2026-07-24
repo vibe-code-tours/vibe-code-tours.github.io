@@ -16,7 +16,6 @@ linkedin: https://www.linkedin.com/in/myatgyee/
 website: https://github.com/MrMyintMyatAung
 
 certs:
-
   claude_code_101: https://verify.skilljar.com/c/86pdrhn88frs
   mcp_intro: https://verify.skilljar.com/c/e87bj7tqq222
   agent_skills_intro: https://verify.skilljar.com/c/je8b4n94f475
