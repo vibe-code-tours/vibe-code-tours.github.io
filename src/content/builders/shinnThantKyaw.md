@@ -1,5 +1,5 @@
 ---
-name: Shin Thant Kyaw
+name: ⭐ Shin Thant Kyaw
 github: shinnThantKyaw
 cohort: 1
 role: builder
@@ -7,9 +7,14 @@ skills: ["JavaScript","React","Nodejs"]
 repo: https://github.com/shinnThantKyaw/vibe-code-tours.github.io
 certs:
   claude_101: https://verify.skilljar.com/c/vws6pxjvcx8x
-  claude_code_101: https://verify.skilljar.com/c/qz6auzqhe723
-  agent_skills: https://verify.skilljar.com/c/9o6i2whvjbiv
+  claude_code_101: https://verify.skilljar.com/c/qz6auzqhe723 
   subagents : https://verify.skilljar.com/c/s4viy9q3uq2s
+  agent_skills_intro: https://verify.skilljar.com/c/9o6i2whvjbiv
+  subagents_intro: https://verify.skilljar.com/c/s4viy9q3uq2s
+  mcp_intro: https://verify.skilljar.com/c/42dv4t3duno9
+  building_claude_api: https://verify.skilljar.com/c/cczpy2bg67gf
+  claude_vertex:
+  claude_code_in_action:
 x: 
 linkedin: 
 website: 

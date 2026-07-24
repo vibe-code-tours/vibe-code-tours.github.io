@@ -14,6 +14,7 @@ certs:
   subagents_intro: https://verify.skilljar.com/c/m2iwesgjvaxa
   mcp_intro: https://verify.skilljar.com/c/hfmda9sih4oc
   claude_code_in_action: https://verify.skilljar.com/c/oxnt5x2sdifo
+  claude_platform_101: https://verify.skilljar.com/c/fszbgt7pa8ji
 ---
 
 Mastering AI workflows. I leverage my cloud and frontend experience to ship fast and build in public!
