@@ -20,7 +20,7 @@ Thumbs.db
 .vscode/
 .idea/
 
-# local UI audit screenshots
+# local UI audit ScreenShotsForCh6
 .ui-audit/
 
 # Agent skills (local only)
