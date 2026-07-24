@@ -29,6 +29,7 @@ skills-lock.json
 
 # Superpowers planning artifacts (local only)
 docs/superpowers/
+.superpowers/
 
 # AI agent knowledge (lazy-loaded, not for publish)
 knowledge/

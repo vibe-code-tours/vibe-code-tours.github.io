@@ -11,6 +11,10 @@ export default defineConfig({
   site: "https://vibecode.tours",
   base: "/",
   trailingSlash: "ignore",
+  redirects: {
+    "/gallery": "/projects/personal",
+    "/my/gallery": "/my/projects/personal",
+  },
   i18n: {
     defaultLocale: "en",
     locales: ["en", "my"],

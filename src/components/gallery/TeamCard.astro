@@ -1,0 +1,95 @@
+---
+// src/components/gallery/TeamCard.astro
+import { TEAM_TYPE_LABELS, hasVideo } from "../../lib/teams.mjs";
+interface Props {
+  team: any;
+  demoSoon: string;
+}
+const { team: t, demoSoon } = Astro.props;
+const ogFallback = (repoUrl: string) => {
+  const m = repoUrl.match(/github\.com\/([^/]+)\/([^/#?]+)/i);
+  return m ? `https://opengraph.githubassets.com/1/${m[1]}/${m[2]}` : "";
+};
+const thumb = t.youtube_id
+  ? `https://i.ytimg.com/vi/${t.youtube_id}/hqdefault.jpg`
+  : ogFallback(t.repo_url);
+const video = hasVideo(t);
+const initial = (t.title || t.team || "?").trim().charAt(0).toUpperCase();
+const statuses = [
+  t.live_url ? "live" : null,
+  t.uploaded === "Done" ? "done" : null,
+]
+  .filter(Boolean)
+  .join("|");
+---
+
+<button
+  class="project-cell group relative overflow-hidden rounded-xl border border-t-[3px] border-white/10 border-t-accent-500 bg-white/5 text-left transition hover:-translate-y-1 hover:border-accent-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 motion-reduce:transition-none"
+  data-type={t.type}
+  data-status={statuses}
+  data-team={JSON.stringify(t)}
+>
+  <div class="relative aspect-video overflow-hidden bg-black/40">
+    <div
+      class="gallery-fallback absolute inset-0 hidden items-center justify-center bg-surface-elevated text-gray-500"
+      aria-hidden="true"
+    >
+      <span class="font-mono text-3xl font-bold">{initial}</span>
+    </div>
+    <img
+      src={thumb}
+      alt={`${t.title} demo`}
+      loading="lazy"
+      class="gallery-img h-full w-full object-cover transition duration-300 group-hover:scale-105 motion-reduce:transition-none"
+    />
+    {
+      t.live_url && (
+        <span class="absolute left-2 top-2 rounded-full bg-green-500 px-2 py-0.5 font-mono text-[10px] font-semibold text-black">
+          ● live
+        </span>
+      )
+    }
+    {
+      video ? (
+        <span class="absolute right-2 top-2 rounded-full bg-black/60 px-2 py-0.5 font-mono text-[10px] font-semibold text-white backdrop-blur-sm">
+          ▶
+        </span>
+      ) : (
+        <span class="absolute right-2 top-2 rounded-full bg-accent-500 px-2 py-0.5 font-mono text-[10px] font-semibold text-black">
+          {demoSoon}
+        </span>
+      )
+    }
+    {
+      video && (
+        <span class="pointer-events-none absolute inset-0 flex items-center justify-center text-4xl text-white/85 opacity-0 transition group-hover:opacity-100">
+          ▶
+        </span>
+      )
+    }
+  </div>
+  <div class="p-4">
+    <div class="flex items-center gap-2">
+      <span class="font-mono text-[11px] font-bold text-accent-400"
+        >{t.team}</span
+      >
+      <span class="truncate font-semibold text-white">{t.title}</span>
+    </div>
+    {t.desc && <p class="mt-2 line-clamp-2 text-sm text-gray-500">{t.desc}</p>}
+    <div class="mt-3 flex flex-wrap gap-1.5">
+      <span
+        class="rounded-full bg-accent-500/15 px-2 py-0.5 font-mono text-[10px] font-semibold text-accent-300"
+        >{TEAM_TYPE_LABELS[t.type as keyof typeof TEAM_TYPE_LABELS]}</span
+      >
+      {
+        (t.stack ?? [])
+          .slice(0, 3)
+          .map((tag: string) => (
+            <span class="rounded-full bg-white/5 px-2 py-0.5 font-mono text-[10px] text-gray-400">
+              {tag}
+            </span>
+          ))
+      }
+    </div>
+  </div>
+</button>
