@@ -69,6 +69,12 @@ export const CERT_CATALOG = {
     level: "beginner",
     order: 13,
   },
+  // Non-Skilljar: GitHub Foundations (official GitHub credential, verified on Credly).
+  github_foundations: {
+    label: "GitHub Foundations",
+    level: "intermediate",
+    order: 14,
+  },
 };
 
 // Always-shown core slots (rendered grey when not earned).
@@ -111,6 +117,9 @@ export const CERT_ICONS = {
   // AI Fluency — open book
   ai_fluency:
     '<path d="M4 5a2 2 0 0 1 2-2h6v16H6a2 2 0 0 0-2 2zM20 5a2 2 0 0 0-2-2h-6v16h6a2 2 0 0 1 2 2z"/>',
+  // GitHub Foundations — git branch / merge
+  github_foundations:
+    '<circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="17" cy="8" r="2.5"/><path d="M6 8.5v7M17 10.5c0 3.6-5 2.4-11 4.5"/>',
 };
 // Fallback — medal/seal for any unknown cert id.
 export const DEFAULT_ICON =
@@ -141,6 +150,22 @@ export function normalizeSkilljar(v) {
 
 export const skilljarUrl = (code) => SKILLJAR_VERIFY_BASE + code;
 
+// Some certs (e.g. GitHub Foundations) verify off-Skilljar. Their stored value is
+// the full https URL; build the link as-is. Skilljar codes still expand normally.
+export const certUrl = (code) =>
+  /^https?:\/\//.test(String(code))
+    ? String(code)
+    : SKILLJAR_VERIFY_BASE + code;
+
+// Extract a full http(s) URL from a value or a [md](url) link, else "".
+function extractUrl(v) {
+  if (v == null) return "";
+  let t = String(v).trim();
+  const link = t.match(/^\[[^\]]*\]\(([^)]*)\)$/);
+  if (link) t = link[1].trim();
+  return /^https?:\/\/\S+$/.test(t) ? t : "";
+}
+
 export function certMeta(id) {
   return (
     CERT_CATALOG[id] || {
@@ -157,7 +182,12 @@ export function normalizeCerts(raw) {
   const out = {};
   for (const [id, val] of Object.entries(raw)) {
     const code = normalizeSkilljar(val);
-    if (code) out[String(id).trim()] = code;
+    if (code) {
+      out[String(id).trim()] = code;
+      continue;
+    }
+    const url = extractUrl(val); // non-Skilljar cert (e.g. GitHub Foundations)
+    if (url) out[String(id).trim()] = url;
   }
   return Object.keys(out).length ? out : undefined;
 }
@@ -188,7 +218,7 @@ export function certProgressList(certs, lookahead = 2) {
       earned: !!code,
       code: code || null,
       color: code ? CERT_AMBER : CERT_GREY,
-      url: code ? skilljarUrl(code) : null,
+      url: code ? certUrl(code) : null,
       icon: certIcon(id),
     };
   });
@@ -215,7 +245,7 @@ export function certDisplayList(certs) {
       earned: !!code,
       code: code || null,
       color: code ? CERT_AMBER : CERT_GREY,
-      url: code ? skilljarUrl(code) : null,
+      url: code ? certUrl(code) : null,
       icon: certIcon(id),
     };
   });

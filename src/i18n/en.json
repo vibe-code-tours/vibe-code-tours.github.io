@@ -19,7 +19,9 @@
     "contact": "Contact",
     "setup": "Setup",
     "builders": "Builders",
-    "cohort1": "Cohort 1"
+    "cohort1": "Cohort 1",
+    "gallery": "Gallery",
+    "projects": "Projects"
   },
   "footer": {
     "rights": "© 2026 Vibe Code Tours",
@@ -456,6 +458,36 @@
     "empty": "No builders yet. Be the first — fork the repo and add yourself.",
     "addYourself": "Add yourself → (fork + PR)"
   },
+  "gallery": {
+    "title": "Project Gallery — Vibe Code Tours",
+    "description": "Personal projects shipped by Cohort 1 builders.",
+    "label": "Cohort 1",
+    "heading": "Project Gallery",
+    "intro": "What builders shipped. Click any project to view its slides.",
+    "searchPlaceholder": "Search projects…",
+    "allTypes": "All",
+    "anyStack": "Any stack",
+    "noMatches": "No matches.",
+    "empty": "No projects yet — check back soon.",
+    "countUnit": "projects",
+    "loadingSlides": "Loading slides…",
+    "slidesUnavailable": "Slides unavailable — open on GitHub ↗",
+    "liveBtn": "Live site ↗",
+    "repoBtn": "Repo ↗",
+    "slidesBtn": "Open slides ↗",
+    "types": {
+      "web-app": "Web app",
+      "cli": "CLI",
+      "bot": "Bot",
+      "api": "API",
+      "mobile": "Mobile",
+      "game": "Game",
+      "library": "Library",
+      "other": "Other"
+    },
+    "heroPrev": "Previous project",
+    "heroNext": "Next project"
+  },
   "repoAccess": {
     "title": "Get Your Team Repo — Vibe Code Tours",
     "description": "How to access your team's private GitHub repo: who can join, the /repo-access command, and what's inside.",
@@ -508,5 +540,50 @@
       ]
     },
     "cta": "Stuck? Ask in your team channel or #help."
+  },
+  "projectsHub": {
+    "title": "Projects — Vibe Code Tours",
+    "description": "Personal and team projects shipped by Cohort 1.",
+    "label": "Cohort 1",
+    "heading": "Projects",
+    "intro": "Everything Cohort 1 shipped — from solo builds to team demos.",
+    "personalCard": "Personal projects",
+    "personalDesc": "What each builder shipped solo. Slides included.",
+    "teamsCard": "Team projects",
+    "teamsDesc": "20 teams, live demos and videos."
+  },
+  "teams": {
+    "title": "Team Projects — Vibe Code Tours",
+    "description": "Demos, live sites, and repos from all 20 Cohort 1 teams.",
+    "label": "Cohort 1 · Teams",
+    "heading": "Team Projects",
+    "intro": "Twenty teams, twenty demos. Click any team to watch.",
+    "searchPlaceholder": "Search teams…",
+    "allTypes": "All",
+    "allStatus": "All",
+    "statusLive": "Live",
+    "statusDone": "Demo done",
+    "noMatches": "No matches.",
+    "empty": "No teams yet — check back soon.",
+    "countUnit": "teams",
+    "demoSoon": "demo soon",
+    "watchBtn": "Watch on YouTube ↗",
+    "liveBtn": "Live site ↗",
+    "repoBtn": "Repo ↗",
+    "playerYouTube": "YouTube",
+    "playerDrive": "Drive fallback",
+    "videoUnavailable": "Demo not uploaded yet.",
+    "heroPrev": "Previous project",
+    "heroNext": "Next project",
+    "types": {
+      "web-app": "Web app",
+      "cli": "CLI",
+      "bot": "Bot",
+      "api": "API",
+      "mobile": "Mobile",
+      "game": "Game",
+      "library": "Library",
+      "other": "Other"
+    }
   }
 }
