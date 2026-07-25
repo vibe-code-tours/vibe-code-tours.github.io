@@ -10,6 +10,8 @@ website: https://naitaryu.blogspot.com/
 certs:
   claude_101: x3r4tyqum6qx
   claude_code_101: zqxy55aiha2q
+  claude-code-in-action: jofqn7q7jb5t
+  Introduction_to_agent_skills: gvv3a5f6nt5o
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
