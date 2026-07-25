@@ -4,10 +4,15 @@ github: myoaung
 cohort: 1
 role: builder
 skills: ["JavaScript", "Python", "Claude Code"]
-repo: https://github.com/myoaung/your-project
+repo: https://github.com/myoaung/School-Information-System.git
 x: your-x-handle
 linkedin: linkedin.com/myoaung21
 website: https://your-site.com
+certs:
+  claude_101: https://verify.skilljar.com/c/hnttm3pihbd5
+  claude_code_101: https://verify.skilljar.com/c/57iw49c3pbhg
+  agent_skills_intro: https://verify.skilljar.com/c/8oqrryfmwznv
+  Claude Platform 101: https://verify.skilljar.com/c/wog8ywjw8sxo
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
