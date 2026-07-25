@@ -20,9 +20,23 @@ Thumbs.db
 .vscode/
 .idea/
 
-# local UI audit screenshots
+# local UI audit ScreenShotsForCh6
 .ui-audit/
 
 # Agent skills (local only)
 .agents/
 skills-lock.json
+
+# Superpowers planning artifacts (local only)
+docs/superpowers/
+.superpowers/
+
+# AI agent knowledge (lazy-loaded, not for publish)
+knowledge/
+
+# hero mosaic avatar cache (regenerable)
+scripts/hero/avatars/
+
+# chapter intro render artifacts
+scripts/chapter/out/
+scripts/chapter/chapters.json

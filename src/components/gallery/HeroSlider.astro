@@ -1,0 +1,97 @@
+---
+// src/components/gallery/HeroSlider.astro
+interface Slide {
+  title: string;
+  subtitle: string;
+  thumb: string;
+  hasVideo: boolean;
+}
+interface Props {
+  slides: Slide[];
+  prevLabel: string;
+  nextLabel: string;
+  id?: string;
+}
+const { slides, prevLabel, nextLabel, id = "hero" } = Astro.props;
+---
+
+<div
+  id={id}
+  class="relative mt-8 overflow-hidden rounded-2xl border border-white/10 bg-surface-card"
+>
+  {
+    slides.map((s, i) => (
+      <button
+        class:list={[
+          "hero-slide relative flex aspect-[16/7] w-full items-end p-5 text-left",
+          i !== 0 && "hidden",
+        ]}
+        data-hero-index={i}
+        style={`background:radial-gradient(circle at 80% 20%, rgba(245,158,11,.28), transparent 55%), linear-gradient(120deg,#18181b,#09090b 70%)`}
+      >
+        <div
+          class="gallery-fallback absolute inset-0 hidden items-center justify-center"
+          aria-hidden="true"
+        >
+          <span class="font-mono text-6xl font-black text-white/20">
+            {(s.title || "?").trim().charAt(0).toUpperCase()}
+          </span>
+        </div>
+        <img
+          src={s.thumb}
+          alt=""
+          loading="lazy"
+          class="gallery-img absolute inset-0 h-full w-full object-cover opacity-70"
+        />
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+        {s.hasVideo && (
+          <span class="pointer-events-none absolute inset-0 flex items-center justify-center text-5xl text-white/90">
+            ▶
+          </span>
+        )}
+        <div class="relative">
+          <b class="text-lg font-extrabold text-white">{s.title}</b>
+          <span class="block text-sm text-gray-300">{s.subtitle}</span>
+        </div>
+      </button>
+    ))
+  }
+  <button
+    data-hero-prev
+    aria-label={prevLabel}
+    class="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white hover:bg-black/70"
+    >‹</button
+  >
+  <button
+    data-hero-next
+    aria-label={nextLabel}
+    class="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white hover:bg-black/70"
+    >›</button
+  >
+  <div class="absolute bottom-3 right-4 flex gap-1.5">
+    {
+      slides.map((_, i) => (
+        <button
+          class="hero-dot h-1.5 w-1.5 rounded-full bg-white/40 aria-[current=true]:w-4 aria-[current=true]:bg-white"
+          data-hero-dot={i}
+          aria-current={i === 0}
+        />
+      ))
+    }
+  </div>
+</div>
+
+<script>
+  import { wireSlider } from "../../lib/gallery-dom";
+  document.querySelectorAll<HTMLElement>("[id^='hero']").forEach((root) => {
+    wireSlider(root.id);
+    root.querySelectorAll<HTMLElement>(".hero-slide").forEach((slide) => {
+      slide.addEventListener("click", () => {
+        const idx = Number(slide.dataset.heroIndex);
+        root.dispatchEvent(
+          new CustomEvent("hero-select", { detail: idx, bubbles: true }),
+        );
+      });
+    });
+  });
+</script>

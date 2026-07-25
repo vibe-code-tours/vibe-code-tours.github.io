@@ -7,7 +7,7 @@ skills: ["Flutter", "Dart", "Android", "iOS", "JavaScript", "Firebase"]
 repo: https://github.com/your-github-username/your-project
 x: your-x-handle
 linkedin: yarzarmyomin
-website: https://your-site.com
+website: https://yarzarmyomin.vercel.app/
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship **AI-powered job application platform** by Demo Day. Excited to be part of the Tour.
