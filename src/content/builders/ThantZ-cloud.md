@@ -4,6 +4,12 @@ github: ThantZ-cloud
 cohort: 1
 role: builder
 skills: ["JavaScript", "Typescript","Java","React","Nextjs","Mysql","Express","React native", "Claude Code"]
+certs:
+  claude_101: https://verify.skilljar.com/c/jkr99zn89nvx
+  claude_code_101: https://verify.skilljar.com/c/gi9o7vhadwkb
+  agent_skills_intro: https://verify.skilljar.com/c/m5a5ztoz5mvw
+  subagents_intro: https://verify.skilljar.com/c/tdkf6gtdwgkf
+  mcp_intro: https://verify.skilljar.com/c/a8axyfjnw2g2
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
