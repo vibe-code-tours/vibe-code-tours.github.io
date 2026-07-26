@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#DC3545"/>
+  <!-- Inner circle -->
+  <circle cx="32" cy="32" r="27" fill="#E64655"/>
+
+  <!-- Center person (larger) -->
+  <circle cx="32" cy="22" r="4.2" fill="#FFFFFF"/>
+  <rect x="25.2" y="27.5" width="13.6" height="5.2" rx="3" fill="#FFFFFF"/>
+
+  <!-- Left person -->
+  <circle cx="22" cy="24.5" r="3.2" fill="#FFDCDC"/>
+  <rect x="17.2" y="29" width="9.6" height="4" rx="2.5" fill="#FFDCDC"/>
+
+  <!-- Right person -->
+  <circle cx="42" cy="24.5" r="3.2" fill="#FFDCDC"/>
+  <rect x="37.2" y="29" width="9.6" height="4" rx="2.5" fill="#FFDCDC"/>
+
+  <!-- PWE text -->
+  <text x="32" y="52" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="16" fill="#FFFFFF">PWE</text>
+</svg>
