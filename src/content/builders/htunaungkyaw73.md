@@ -4,6 +4,11 @@ github: HtunAungKyaw73
 cohort: 1
 role: builder
 skills: ["C++", "JavaScript", "Python", "Claude Code"]
+certs:
+  claude_101: https://verify.skilljar.com/c/in4evsmvxha4
+  claude_code_101: https://verify.skilljar.com/c/6szz3rsqqfdx
+  ai_fluency: https://verify.skilljar.com/c/qdaf38toubxn
+  ai_fluency_for_educators: https://verify.skilljar.com/c/pzmmgy3bx7qq
 repo: https://github.com/HtunAungKyaw73/htunaungkyaw73
 linkedin: https://www.linkedin.com/in/htun-aung-kyaw-385285352/
 website: https://htunaungkyaw-portfolio.vercel.app/

@@ -7,6 +7,8 @@ skills: ["PHP","Laravel","JavaScript","Node.js","React","Express.js","Ubuntu","C
 certs:
   claude_101: https://verify.skilljar.com/c/xdmsiqn2yecu
   claude_code_101: https://verify.skilljar.com/c/zpiffvkr3r88
+  agent_skills_intro: https://verify.skilljar.com/c/apturnx87j96
+  subagents_intro: https://verify.skilljar.com/c/e2qw39xnqfnb
 x: zinzinthinzaw
 repo: https://github.com/6rose9/vibe-code-tours
 linkedin: https://www.linkedin.com/in/zin-zin-thin-zaw-1979a7196

@@ -75,6 +75,52 @@ Social fields accept a handle (`kokoye2007`) or a full URL.
 - **No photo needed** — your GitHub avatar is pulled automatically.
 - `role`: leave as `builder` (mentors/instructors set their own).
 
+### 4b. Add your certificates (optional)
+
+Finished a Claude course? Add a `certs:` block and the badge lights up amber on
+your card. Two rules: it goes **under `certs:`, indented 2 spaces**, and you use
+the **short id** — not the course title.
+
+```yaml
+certs:
+  claude_101: 293x3v9qydhx
+  claude_code_101: https://verify.skilljar.com/c/sbdx5cwzjhec
+  agent_skills_intro: https://verify.skilljar.com/c/kfnmyubu3i96
+```
+
+The value is either the bare Skilljar code or the full verify URL — both work.
+Find it on your certificate page: the link ends in `/c/<your-code>`.
+
+**Short id for every cert we track:**
+
+| Course name (as shown on Skilljar)     | Short id to write          |
+| -------------------------------------- | -------------------------- |
+| Claude 101                             | `claude_101`               |
+| Claude Code 101                        | `claude_code_101`          |
+| Introduction to Agent Skills           | `agent_skills_intro`       |
+| Introduction to Subagents              | `subagents_intro`          |
+| Introduction to Model Context Protocol | `mcp_intro`                |
+| Claude Code in Action                  | `claude_code_in_action`    |
+| Building with the Claude API           | `building_claude_api`      |
+| Claude Platform 101                    | `claude_platform_101`      |
+| Introduction to Claude Cowork          | `claude_cowork`            |
+| MCP: Advanced Topics                   | `mcp_advanced`             |
+| Claude with Amazon Bedrock             | `claude_bedrock`           |
+| Claude with Vertex AI                  | `claude_vertex`            |
+| AI Fluency: Framework & Foundations    | `ai_fluency`               |
+| AI Fluency for Educators               | `ai_fluency_for_educators` |
+| GitHub Foundations (Credly)            | `github_foundations`       |
+| Git Essential Training (LinkedIn)      | `git_essential_training`   |
+
+Non-Skilljar certs (GitHub Foundations, Git Essential Training) use the full
+public verify URL as the value — Credly badge link, LinkedIn certificate link.
+
+> **Wrote the course title instead?** It still works. `Introduction to subagents`,
+> `introduction-to-subagents`, and `subagents_intro` all resolve to the same badge —
+> case, spaces, and hyphens don't matter. CI will just nudge you toward the short
+> id. What does **not** work is putting cert ids at the top level instead of under
+> `certs:` — those are silently ignored.
+
 ### 5. Commit
 
 ```bash
@@ -172,6 +218,56 @@ handle (`kokoye2007`) ဒါမှမဟုတ် URL အပြည့် လက�
 - `name`, `github`, `cohort` မဖြစ်မနေ လိုအပ်တယ်။ `repo` က optional။
 - **ဓာတ်ပုံ မလိုပါ** — သင့် GitHub avatar ကို အလိုအလျောက် ဆွဲယူပါမယ်။
 - `role` ကို `builder` အတိုင်း ထားပါ။
+
+### ၄-ခ။ လက်မှတ် (certificate) ထည့်ခြင်း — optional
+
+Claude သင်တန်း ပြီးထားပြီလား? `certs:` block ထည့်လိုက်ရင် သင့် card ပေါ်မှာ
+badge က အဝါရောင် လင်းလာပါမယ်။ စည်းမျဉ်း နှစ်ခုပဲ ရှိတယ် — `certs:` **အောက်မှာ
+space ၂ လုံး ခြားပြီး** ရေးရမယ်၊ ပြီးတော့ သင်တန်းနာမည်အပြည့် မဟုတ်ဘဲ
+**short id** ကို သုံးရမယ်။
+
+```yaml
+certs:
+  claude_101: 293x3v9qydhx
+  claude_code_101: https://verify.skilljar.com/c/sbdx5cwzjhec
+  agent_skills_intro: https://verify.skilljar.com/c/kfnmyubu3i96
+```
+
+တန်ဖိုးက Skilljar code သက်သက်ဖြစ်ဖြစ်၊ verify URL အပြည့်ဖြစ်ဖြစ် ရပါတယ် —
+နှစ်မျိုးလုံး အလုပ်လုပ်တယ်။ သင့် certificate စာမျက်နှာမှာ link အဆုံးက
+`/c/<your-code>` ဆိုတာ ရှာပါ။
+
+**Cert တိုင်းအတွက် short id —**
+
+| သင်တန်းနာမည် (Skilljar မှာ ပြထားသည့်အတိုင်း) | ရေးရမည့် short id          |
+| -------------------------------------------- | -------------------------- |
+| Claude 101                                   | `claude_101`               |
+| Claude Code 101                              | `claude_code_101`          |
+| Introduction to Agent Skills                 | `agent_skills_intro`       |
+| Introduction to Subagents                    | `subagents_intro`          |
+| Introduction to Model Context Protocol       | `mcp_intro`                |
+| Claude Code in Action                        | `claude_code_in_action`    |
+| Building with the Claude API                 | `building_claude_api`      |
+| Claude Platform 101                          | `claude_platform_101`      |
+| Introduction to Claude Cowork                | `claude_cowork`            |
+| MCP: Advanced Topics                         | `mcp_advanced`             |
+| Claude with Amazon Bedrock                   | `claude_bedrock`           |
+| Claude with Vertex AI                        | `claude_vertex`            |
+| AI Fluency: Framework & Foundations          | `ai_fluency`               |
+| AI Fluency for Educators                     | `ai_fluency_for_educators` |
+| GitHub Foundations (Credly)                  | `github_foundations`       |
+| Git Essential Training (LinkedIn)            | `git_essential_training`   |
+
+Skilljar မဟုတ်တဲ့ cert တွေ (GitHub Foundations, Git Essential Training) ကတော့
+verify URL အပြည့် — Credly badge link ဒါမှမဟုတ် LinkedIn certificate link —
+ကို တန်ဖိုးအဖြစ် ထည့်ပါ။
+
+> **သင်တန်းနာမည်အပြည့် ရေးမိပြီလား?** ရပါတယ်၊ အလုပ်လုပ်ပါတယ်။
+> `Introduction to subagents`၊ `introduction-to-subagents`၊ `subagents_intro`
+> သုံးခုလုံး badge တစ်ခုတည်းကို ညွှန်ပါတယ် — စာလုံးအကြီးအသေး၊ space၊ hyphen
+> အရေးမကြီးပါ။ CI က short id သုံးဖို့ သတိပေးရုံပါပဲ။ **အလုပ်မလုပ်တာ** ကတော့
+> cert id တွေကို `certs:` အောက်မှာ မထားဘဲ အပေါ်ဆုံး အဆင့်မှာ ထားလိုက်တာ —
+> အဲဒါဆို တိတ်တိတ်ဆိတ်ဆိတ် ပျောက်သွားပါလိမ့်မယ်။
 
 ### ၅။ Commit
 

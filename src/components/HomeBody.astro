@@ -7,32 +7,32 @@ const s = t(locale).home;
 
 const features = [
   {
-    icon: "⌨️",
+    icon: `<rect width="18" height="18" x="3" y="3" rx="2"/><path d="m7 11 2-2-2-2"/><path d="M11 13h4"/>`,
     title: "Claude Code Deep Dive",
     desc: "Permission modes, CLAUDE.md, cost control, prompting patterns",
   },
   {
-    icon: "🔌",
+    icon: `<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/>`,
     title: "MCP Ecosystem",
     desc: "Context7, claude-mem, custom MCP servers for your workflow",
   },
   {
-    icon: "🤖",
+    icon: `<path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/>`,
     title: "Agents & Skills",
     desc: "Subagents, hooks, SDK, methodologies that multiply output",
   },
   {
-    icon: "🚀",
+    icon: `<path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>`,
     title: "Ship to Production",
     desc: "Real URLs, security audits, deployment — not toy projects",
   },
   {
-    icon: "🧭",
+    icon: `<circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>`,
     title: "Tool Landscape",
     desc: "Beyond Claude: Cursor, Copilot, Aider, Windsurf",
   },
   {
-    icon: "👥",
+    icon: `<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>`,
     title: "Team Build Sprint",
     desc: "Form squads, build together, Demo Day showcase",
   },
@@ -285,6 +285,144 @@ const stats = [
       animation: none;
     }
   }
+
+  /* Bento feature grid */
+  .bento {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    grid-auto-rows: minmax(150px, auto);
+  }
+  .bento-cell {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(255 255 255 / 0.06);
+    background: var(--surface-card, #14181f);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    transition:
+      transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
+      border-color 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+  .bento-cell:hover {
+    transform: translateY(-3px);
+    border-color: rgb(245 158 11 / 0.3);
+    box-shadow: 0 12px 40px -12px rgb(245 158 11 / 0.25);
+  }
+  .bento-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.6rem;
+    border: 1px solid rgb(245 158 11 / 0.2);
+    background: rgb(245 158 11 / 0.1);
+    color: var(--accent-500, #f59e0b);
+    margin-bottom: 1rem;
+  }
+  .bento-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  .bento-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .bento-desc {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #9aa4b3;
+  }
+  @media (min-width: 1024px) {
+    .bento-0 {
+      grid-column: span 2;
+      grid-row: span 2;
+      justify-content: center;
+    }
+    .bento-0 .bento-icon {
+      width: 3rem;
+      height: 3rem;
+    }
+    .bento-0 .bento-icon svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .bento-0 .bento-title {
+      font-size: 1.5rem;
+    }
+    .bento-0 .bento-desc {
+      font-size: 1rem;
+      max-width: 32ch;
+    }
+    .bento-1,
+    .bento-4,
+    .bento-5 {
+      grid-column: span 2;
+    }
+  }
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .bento {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .bento-0 {
+      grid-column: span 2;
+    }
+  }
+  @media (max-width: 639px) {
+    .bento {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Terminal command line — developer-identity motif in the hero */
+  .hero-cmd {
+    margin-top: 1.75rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6ch;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    border-radius: 0.6rem;
+    border: 1px solid rgb(255 255 255 / 0.1);
+    background: #0b0e15;
+    color: #cdd6e4;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04);
+  }
+  .hero-cmd-dollar {
+    color: var(--accent-500, #f59e0b);
+    font-weight: 700;
+  }
+  .hero-cmd-flag {
+    color: #6b7686;
+  }
+  .hero-cmd-cursor {
+    width: 0.55ch;
+    height: 1.05em;
+    margin-left: 0.1ch;
+    background: var(--accent-500, #f59e0b);
+    display: inline-block;
+    animation: heroCaret 1.05s step-end infinite;
+  }
+  @keyframes heroCaret {
+    0%,
+    50% {
+      opacity: 1;
+    }
+    50.01%,
+    100% {
+      opacity: 0;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-cmd-cursor {
+      animation: none;
+    }
+  }
 </style>
 
 <!-- Hero -->
@@ -326,14 +464,15 @@ const stats = [
         >{s.ctaWork}</a
       >
     </div>
-    <div class="hero-tags mt-6 flex flex-wrap justify-center gap-2">
-      {
-        tags.map((tag) => (
-          <span class="rounded-full border border-accent-500/20 bg-accent-500/[0.07] px-3 py-1 font-mono text-xs font-semibold text-accent-500/90 transition-all duration-200 hover:border-accent-500/40 hover:bg-accent-500/10 hover:text-accent-500">
-            {tag}
-          </span>
-        ))
-      }
+    <div
+      class="hero-cmd"
+      role="img"
+      aria-label="npx vibe-code-tours --cohort 2 --free"
+    >
+      <span class="hero-cmd-dollar">$</span>
+      <span class="hero-cmd-text">npx vibe-code-tours</span>
+      <span class="hero-cmd-flag">--cohort 2 --free</span>
+      <span class="hero-cmd-cursor" aria-hidden="true"></span>
     </div>
   </div>
 </section>
@@ -344,28 +483,27 @@ const stats = [
   <h2 class="mt-2 text-center text-3xl font-extrabold sm:text-4xl">
     Build with AI, Not Just About AI
   </h2>
-  <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+  <div class="bento mt-10">
     {
       features.map((f, i) => (
-        <div class="flip-card reveal" style={`transition-delay: ${i * 80}ms`}>
-          <div class="flip-inner">
-            <div class="flip-face flex h-full flex-col rounded-xl border border-white/5 bg-surface-card p-6">
-              <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-lg border border-accent-500/20 bg-accent-500/10 text-xl">
-                {f.icon}
-              </div>
-              <h3 class="text-base font-bold">{f.title}</h3>
-              <p class="mt-auto pt-3 font-mono text-[10px] font-semibold uppercase tracking-widest text-accent-500/50">
-                Hover →
-              </p>
-            </div>
-            <div
-              class="flip-face flip-back flex h-full flex-col justify-center rounded-xl border border-accent-500/25 p-6"
-              style="background: linear-gradient(135deg, #f59e0b14, #09090b)"
+        <div
+          class={`bento-cell reveal bento-${i}`}
+          style={`transition-delay: ${i * 70}ms`}
+        >
+          <div class="bento-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
-              <h3 class="text-sm font-bold text-accent-500">{f.title}</h3>
-              <p class="mt-2 text-sm text-gray-300">{f.desc}</p>
-            </div>
+              <Fragment set:html={f.icon} />
+            </svg>
           </div>
+          <h3 class="bento-title">{f.title}</h3>
+          <p class="bento-desc">{f.desc}</p>
         </div>
       ))
     }

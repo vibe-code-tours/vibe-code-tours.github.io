@@ -9,6 +9,11 @@ linkedin: winttheingiaung
 certs:
   claude_101: xhhdk4m7prsj
   claude_code_101: wghsvu3buyu2
+  agent_skills_intro: khf7i86cdyti
+  subagents_intro: jdg3vz4imaam
+  mcp_intro: yk3vfpi5n37i
+  claude_code_in_action: bxh5ajf78k9a
+  ai_fluency: 2khj2bbwq5nq
 ---
 
 Hi! I'm learning to vibe code with AI. My goal is to build and ship real projects, create things that make me happy, and contribute to others.

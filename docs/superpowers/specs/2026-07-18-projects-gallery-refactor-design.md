@@ -1,0 +1,225 @@
+# Projects Gallery Refactor — Design
+
+**Date:** 2026-07-18
+**Status:** Approved (design), pending implementation plan
+**Scope:** Redesign + code cleanup + add team projects to the gallery
+
+---
+
+## 1. Goal
+
+Refactor the existing single-page personal gallery (`vibecode.tours/gallery`) into a
+bolder, multi-page **Projects** section that showcases both **personal builder projects**
+and **team projects**. Three intertwined deliverables:
+
+1. **Visual redesign** — bolder layout (hero featured slider + grid), stronger use of the
+   existing amber brand accent.
+2. **Code cleanup** — split the 579-line `GalleryBody.astro` monolith into focused,
+   independently-testable components.
+3. **Team projects** — a new video-forward team gallery fed by the demo-tracker Google Sheet.
+
+Non-goals: no new color system (reuse current tokens), no CMS, no auth, no per-project pages
+beyond the lightbox.
+
+---
+
+## 2. Routes
+
+`gallery` naming is retired in favor of `projects`.
+
+| Route | Content |
+|-------|---------|
+| `/projects` | Hub — short intro + two entry cards linking personal / teams |
+| `/projects/personal` | Personal builder gallery (from `projects.json`) |
+| `/projects/teams` | Team gallery (from `teams.json`) |
+| `/my/projects` | MY hub |
+| `/my/projects/personal` | MY personal |
+| `/my/projects/teams` | MY teams |
+| `/gallery`, `/my/gallery` | **Redirect** → `/projects/personal`, `/my/projects/personal` |
+
+Redirects preserve existing inbound links and anything already announced in Discord.
+
+---
+
+## 3. Layout (both galleries — "bolder rework")
+
+Top-to-bottom on each gallery page:
+
+1. **Hero featured slider** — full-width, `16/7`ish aspect.
+   - Personal: loops **all** builder projects. Teams: loops **all 20** teams (fairness —
+     user explicitly chose all-20 over a curated subset).
+   - Autoplay ~6s, pause on hover/focus, prev/next arrows, dot indicators.
+   - Respects `prefers-reduced-motion`: no autoplay, static first slide + arrows only.
+   - A team/builder with no video/screenshot shows its **live-site screenshot** in the hero
+     (never a blank/weak tile). Fallback chain per §6.
+2. **Filter bar** — search input + type chips + (teams only) status chips. See §5.
+3. **Grid** — responsive `grid-cols-1 sm:2 lg:3`, amber accent-stripe cards (§4).
+   (Grid stays a clean even grid — layout option "A". Masonry rejected in favor of A.)
+4. **Empty state** — "no matches" message, reused from current gallery.
+
+Stronger color = lean harder into the existing **amber `#f59e0b`** accent (stripe, pills,
+hero glow), NOT a multi-hue per-type palette. Keeps consistency with current site CSS.
+
+---
+
+## 4. Card anatomy (treatment "A" — amber accent stripe)
+
+Shared shape for personal + team cards; team cards add video affordances.
+
+- Thin **amber top border** (`3px`, `accent-500`).
+- Thumbnail (`16/9`): screenshot / video thumbnail / OG fallback.
+  - **`● live`** green badge top-left when `live_url` present (green = universal status color,
+    the one non-amber allowed).
+  - Team + has video: **`6:12 ▶`** duration badge top-right.
+  - Team + no video: **`demo soon`** amber badge top-right.
+- Body: avatar + title, `Team NN · <name>` or `@github`, 2-line desc,
+  amber **type pill** + up to 3 stack chips (JetBrains Mono).
+
+Design tokens (existing, `tailwind.config.mjs`): accent amber scale, surface
+`#09090b / #0f0f11 / #18181b`, Inter (sans) + JetBrains Mono (mono).
+
+---
+
+## 5. Filters
+
+- **Personal:** search + type chips + top-N stack chips (unchanged behavior from current gallery).
+- **Teams:** search + type chips + **status chips** (`All` · `Live` · `Demo done`).
+  - `Live` = has `live_url`. `Demo done` = `uploaded === "Done"` (has YouTube or Drive video).
+- Client-side filtering only (no server). Same `apply()` show/hide + count pattern as today.
+
+---
+
+## 6. Lightbox (detail view)
+
+Opened on card click. Two variants share the shell (avatar, title, live badge, desc, tags,
+action buttons) but differ in the media region:
+
+- **Personal:** existing Marp **slides deck** renderer (unchanged — lazy Marp import,
+  sandboxed iframe, relative-path rewrite). No regressions.
+- **Teams:** **video player**.
+  - Player fallback chain:
+    1. `youtube_url` → embed YouTube iframe
+    2. else `drive_url` → embed Google Drive `/preview` iframe
+    3. else `live_url` → live screenshot + "Live site" button (no player)
+    4. else → GitHub OG card
+  - If both YT + Drive exist: small **`▶ YouTube` / `Drive fallback`** toggle above player.
+  - Action buttons: `Live site ↗` (primary/amber, if live), `Repo ↗`, `Watch on YouTube ↗`
+    (if YT).
+  - No autoplay of embedded video (user clicks play). Player only loads its iframe when the
+    lightbox opens (lazy), mirroring the deck renderer's lazy pattern.
+
+Escape / backdrop-click / close-button all close; body scroll locked while open
+(existing behavior preserved).
+
+---
+
+## 7. Data
+
+### 7.1 Personal — unchanged
+`src/data/projects.json`, generated by `channels/scripts/export-gallery.mjs`, consumed via
+`src/lib/projects.mjs`. No schema change.
+
+### 7.2 Teams — new
+`src/data/teams.json`, generated by new **`channels/scripts/export-team-gallery.mjs`**:
+
+- Source: demo-tracker Google Sheet, CSV export
+  (`.../export?format=csv&gid=452793459`).
+- Columns → fields:
+
+  | Sheet column | `teams.json` field |
+  |--------------|--------------------|
+  | `Team-NN` (col A) | `team` (`"Team-07"`), `team_no` (`7`) |
+  | Project Title | `title` |
+  | Project Category | `desc` |
+  | YouTube (unlisted) link | `youtube_url` (nullable) |
+  | Drive fallback link | `drive_url` (nullable) |
+  | Uploaded? | `uploaded` (`"Done"` / other) |
+  | Live URL | `live_url` (nullable, trimmed) |
+  | Git Repo URL | `repo_url` |
+  | Notes | `notes` (nullable) |
+
+- Derived at export time: `youtube_id` (parsed from watch/`youtu.be` URLs), `drive_id`
+  (parsed from `/file/d/<id>/`), `type` (best-effort from category text; default `web-app`),
+  `stack` (optional — from repo languages if cheaply available, else `[]`).
+- Validation: drop rows with no `repo_url`. Trim stray whitespace in URLs (sheet has some,
+  e.g. Team-07 live URL has a trailing space). Handle malformed Drive links (Team-13 has a
+  doubled URL) defensively — take the first valid `/file/d/<id>/` match.
+- Committed to the repo like `projects.json`; refreshed by a **6h cron** via the bot's GitHub
+  App Contents API (same mechanism as `export-gallery.mjs`).
+- Consumed via new **`src/lib/teams.mjs`** (mirrors `projects.mjs`: `getTeams()`,
+  `typeBuckets()`, `statusBuckets()`).
+
+---
+
+## 8. Code structure (cleanup)
+
+Break `src/components/GalleryBody.astro` (579 lines, everything) into focused units:
+
+| Unit | Responsibility |
+|------|----------------|
+| `components/gallery/HeroSlider.astro` | Featured slider (markup + slider script) |
+| `components/gallery/FilterBar.astro` | Search + type/status chips + count |
+| `components/gallery/ProjectCard.astro` | Personal card |
+| `components/gallery/TeamCard.astro` | Team (video-forward) card |
+| `components/gallery/Lightbox.astro` | Shared lightbox shell + open/close logic |
+| `components/gallery/DeckRenderer` (script) | Marp deck (personal) — extracted as-is |
+| `components/gallery/VideoPlayer` (script) | YT/Drive embed + fallback (teams) |
+| `components/PersonalGallery.astro` | Composes hero+filter+grid+lightbox for personal |
+| `components/TeamsGallery.astro` | Composes same for teams |
+| `lib/projects.mjs` | Existing personal data helpers |
+| `lib/teams.mjs` | New team data helpers |
+
+Each component: one clear purpose, props-driven, i18n string passed in. Client-side scripts
+stay small and colocated. Target < 300 lines/file.
+
+Shared behavior (filter `apply()`, slider, lightbox open/close) lives in small colocated
+`<script>` modules or a tiny `lib/gallery-dom.ts` helper — not duplicated between personal
+and teams.
+
+---
+
+## 9. i18n
+
+- English + Myanmar, mirroring the existing `t(locale).gallery` structure.
+- New strings: team status labels (`Live`, `Demo done`), player toggle (`YouTube`,
+  `Drive fallback`), `Watch ↗`, `demo soon`, hero controls (aria labels), hub page copy.
+- Add a `t(locale).teams` (or extend `gallery`) namespace in `src/i18n/`.
+
+---
+
+## 10. Accessibility & performance
+
+- Slider: pause on hover/focus, keyboard arrows, `aria-label`s, honors reduced-motion.
+- Video/deck iframes: lazy — only mount when lightbox opens.
+- Images `loading="lazy"`. Sandboxed iframes (deck already `sandbox=""`).
+- `● live` badge has text, not color alone.
+- No layout shift on the even grid.
+
+---
+
+## 11. Execution workflow (implementation phase)
+
+Per user instruction:
+
+1. **Plan + review with zen** (zen planner + zen codereview/consensus). Fallback to
+   opencode/gemini if zen is unavailable or flaky (known-flaky per project memory) — report
+   the fallback.
+2. Build in small increments.
+3. **Code review with opencode (gpt model):** `opencode run "Review the changes... READY_TO_COMMIT"`.
+4. **Loop** review→fix until all reviewers pass / return `READY_TO_COMMIT`.
+5. `shellcheck` the new `.sh`/pipeline scripts before push.
+6. Conventional-commit, no attribution footer (per user global config).
+
+---
+
+## 12. Risks / open questions
+
+- **Sheet volatility:** demo tracker is hand-edited; export must be defensive (whitespace,
+  doubled/blank cells, missing videos). Covered in §7.2.
+- **Google Drive embed:** `/preview` iframes require the file be shared "anyone with link".
+  Some rows may be restricted → player falls through to screenshot. Acceptable.
+- **YouTube "unlisted":** unlisted still embeds fine. Private would not — falls through.
+- **Cron/GitHub-App wiring** for `teams.json` reuses the `export-gallery.mjs` path; verify the
+  bot has sheet access (public CSV export needs no auth) and repo write via the App.
+- **Marp deck** extraction must be byte-for-byte behavior-preserving to avoid personal-gallery
+  regressions.

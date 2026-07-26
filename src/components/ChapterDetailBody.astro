@@ -2,6 +2,7 @@
 import { t, getLocale, localizedPath, type Locale } from "../i18n/utils";
 import { chapters } from "../data/chapters";
 import detail from "../data/chapters-detail.json";
+import ChapterIntro from "./ChapterIntro.astro";
 
 interface Props {
   num: number;
@@ -30,6 +31,18 @@ const blocks =
     href={localizedPath("/curriculum", locale)}
     class="text-sm font-semibold text-accent-500">{s.back}</a
   >
+
+  {
+    chapter && (
+      <ChapterIntro
+        num={chapter.num}
+        title={chapter.title}
+        outcome={chapter.outcome}
+        duration={chapter.duration}
+        tiers={chapter.tiers}
+      />
+    )
+  }
 
   {
     chapter && (
