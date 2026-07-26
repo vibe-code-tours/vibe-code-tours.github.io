@@ -4,12 +4,11 @@ team_no: 6
 name: "QRDine"
 title: "Restaurant QR Order System"
 tagline: "Scan. Order. Dine."            # <- one short line, your pitch
-desc: >
-  QR Dine is a QR-based restaurant ordering platform that lets customers
+desc: "QR Dine is a QR-based restaurant ordering platform that lets customers
   browse the menu, place orders, track order status, and request the bill
-  without downloading an app.
+  without downloading an app."
 type: "web-app"
-stack: [Next.js, Supabase (PostgreSQL), TailwindCSS, Vercel]
+stack: ["Next.js", "Supabase (PostgreSQL)", "TailwindCSS", "Vercel"]
 live_url: "https://qrdine-demo.vercel.app/"
 repo_url: "https://github.com/vibe-code-tours/Team-06-app"
 video:
