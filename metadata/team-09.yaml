@@ -3,7 +3,7 @@ team: "Team-09"
 team_no: 9
 name: "Mhat Tan"
 title: "Mhat Tan"
-tagline: ""            # <- one short line, your pitch
+tagline: "Your voice, your diary."
 desc: "Mhat Tan Mobile App (Android)"
 type: "mobile"
 stack: []
@@ -14,7 +14,7 @@ video:
   youtube_url: "https://youtu.be/KDyi62aT0LM"
   drive_url: "https://drive.google.com/file/d/1zzDWacg2aX1B8DP56HkOsZQZN8_xEG4P/view?usp=sharing"
 logo:                  # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
-  svg: null
+  svg: "/logos/team-09.svg"
   small: "/logos/team-09-64x64.png"
   medium: "/logos/team-09-128x128.png"
   large: "/logos/team-09-256x256.png"
