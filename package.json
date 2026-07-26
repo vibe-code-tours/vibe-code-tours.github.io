@@ -13,6 +13,7 @@
     "check": "astro check",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "test": "node --test src/lib/*.test.mjs",
     "validate:builders": "node scripts/validate-builders.mjs",
     "verify:certs": "node scripts/verify-certs.mjs",
     "hero:mosaic": "node scripts/hero/build-mosaic.mjs",

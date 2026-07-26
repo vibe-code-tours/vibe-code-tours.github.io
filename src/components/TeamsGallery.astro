@@ -62,6 +62,7 @@ const scriptI18n = JSON.stringify({
           nextLabel={s.heroNext}
           id="hero-teams"
         />
+        {/* "team" sort key => source order; getTeams() (teams.mjs) sorts by team_no, so this is team-number order. */}
         <FilterBar
           searchPlaceholder={s.searchPlaceholder}
           count={teams.length}
@@ -89,6 +90,11 @@ const scriptI18n = JSON.stringify({
                 },
               ],
             },
+          ]}
+          sortLabel={s.sortLabel}
+          sortOptions={[
+            { value: "team", label: s.sortTeam },
+            { value: "az", label: s.sortAz },
           ]}
         />
         <div
@@ -133,6 +139,8 @@ const scriptI18n = JSON.stringify({
     emptyEl: document.getElementById("gallery-empty"),
     bars: [{ attr: "type" }, { attr: "status" }],
     countUnit: I18N.countUnit ?? "teams",
+    sortSelectId: "project-sort",
+    defaultSort: "team",
   });
 
   wireLightbox({

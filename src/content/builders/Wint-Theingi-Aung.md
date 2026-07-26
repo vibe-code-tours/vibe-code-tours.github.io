@@ -13,6 +13,9 @@ certs:
   subagents_intro: jdg3vz4imaam
   mcp_intro: yk3vfpi5n37i
   claude_code_in_action: bxh5ajf78k9a
+  ai_fluency: 2khj2bbwq5nq
+  claude_platform_101: 3wetb5hu6b3z
+  
 ---
 
 Hi! I'm learning to vibe code with AI. My goal is to build and ship real projects, create things that make me happy, and contribute to others.
