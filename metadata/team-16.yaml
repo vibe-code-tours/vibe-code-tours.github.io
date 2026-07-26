@@ -3,7 +3,7 @@ team: "Team-16"
 team_no: 16
 name: "NerdQuiz"
 title: "NerdQuiz"
-tagline: ""            # <- one short line, your pitch
+tagline: "" # <- one short line, your pitch
 desc: "ITPEC FE exam preparation website"
 type: "web-app"
 stack: []
@@ -13,7 +13,7 @@ video:
   youtube_id: "dpZXsGV3w5s"
   youtube_url: "https://youtu.be/dpZXsGV3w5s"
   drive_url: "Google Sites"
-logo:                  # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
   svg: null
   small: "/logos/team-16-64x64.png"
   medium: "/logos/team-16-128x128.png"

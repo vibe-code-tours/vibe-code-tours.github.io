@@ -3,7 +3,7 @@ team: "Team-01"
 team_no: 1
 name: "Yay Thal Pya Zat"
 title: "Yay Thal Pya Zat"
-tagline: ""            # <- one short line, your pitch
+tagline: "" # <- one short line, your pitch
 desc: "Water Delivery System (Web + API)"
 type: "api"
 stack: []
@@ -13,7 +13,7 @@ video:
   youtube_id: "PgkMgBNo_CQ"
   youtube_url: "https://youtu.be/PgkMgBNo_CQ"
   drive_url: "https://drive.google.com/file/d/1B4SZmqaO_tcFwbib_mUb0UdQbNtE84So/view?usp=drive_link"
-logo:                  # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
   svg: null
   small: "/logos/team-01-64x64.png"
   medium: "/logos/team-01-128x128.png"
