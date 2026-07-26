@@ -13,6 +13,8 @@ certs:
   claude_code_101: https://verify.skilljar.com/c/57iw49c3pbhg
   agent_skills_intro: https://verify.skilljar.com/c/8oqrryfmwznv
   Claude Platform 101: https://verify.skilljar.com/c/wog8ywjw8sxo
+  mcp_intro: [<paste link here>](https://verify.skilljar.com/c/bkooig5ruh3y)
+  subagents_intro: [<paste link here>](https://verify.skilljar.com/c/q24f96ky5j9e)
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
