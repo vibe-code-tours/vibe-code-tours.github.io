@@ -3,7 +3,7 @@ team: "Team-18"
 team_no: 18
 name: "Fraud Awareness Hub"
 title: "Fraud Awareness Hub"
-tagline: ""            # <- one short line, your pitch
+tagline: "" # <- one short line, your pitch
 desc: null
 type: "web-app"
 stack: []
@@ -13,7 +13,7 @@ video:
   youtube_id: "N66wR8bJDZU"
   youtube_url: "https://youtu.be/N66wR8bJDZU"
   drive_url: null
-logo:                  # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
   svg: null
   small: "/logos/team-18-64x64.png"
   medium: "/logos/team-18-128x128.png"
