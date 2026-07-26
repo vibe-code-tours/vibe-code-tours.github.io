@@ -12,6 +12,8 @@ certs:
   agent_skills_intro: v3kv59kb69e2
   subagents_intro: nii85zjhppw7
   mcp_intro: bg7rusyy4dri
+  claude_code_in_action: fi56pmqt54v7
+  ai_fluency: s4huqhgqdwzj
 ---
 
 I aim to understand AI fundamentals, work with modern AI tools and frameworks, and build intelligent solutions that improve business processes and user experiences.

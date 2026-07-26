@@ -1,0 +1,20 @@
+# team-11.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-11"
+team_no: 11
+name: "Personal Analytics"
+title: "Personal Analytics"
+tagline: "" # <- one short line, your pitch
+desc: "AI-Powered Personal Analytics & Productivity Suite An all-in-one smart dashboard that utilizes edge computer vision and generative AI to seamlessly manage fitness, finances, and cognitive focus."
+type: "web-app"
+stack: []
+live_url: "https://personal-analytics-amber.vercel.app/"
+repo_url: "https://github.com/team11-hub-coder/personal-analytics.git"
+video:
+  youtube_id: "uN-XO4f1miA"
+  youtube_url: "https://www.youtube.com/watch?v=uN-XO4f1miA"
+  drive_url: "https://drive.google.com/file/d/1166TcN4OEdfLvX-HDG3SOekriA8ituGk/view?usp=drive_link"
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: null
+  small: "/logos/team-11-64x64.png"
+  medium: "/logos/team-11-128x128.png"
+  large: "/logos/team-11-256x256.png"
