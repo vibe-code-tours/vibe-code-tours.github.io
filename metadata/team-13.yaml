@@ -3,7 +3,7 @@ team: "Team-13"
 team_no: 13
 name: "Auto Apply"
 title: "Auto Apply"
-tagline: ""            # <- one short line, your pitch
+tagline: "" # <- one short line, your pitch
 desc: "AI powered resume creating platform"
 type: "web-app"
 stack: []
@@ -13,7 +13,7 @@ video:
   youtube_id: "ixVA1mZvpTI"
   youtube_url: "https://youtu.be/ixVA1mZvpTI"
   drive_url: "https://drive.google.com/file/d/11G1Ec8UhT_ccyLNXkDZHM3733wUwmbhR/view?usp=sharing"
-logo:                  # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
   svg: null
   small: "/logos/team-13-64x64.png"
   medium: "/logos/team-13-128x128.png"

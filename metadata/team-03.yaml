@@ -13,7 +13,7 @@ video:
   youtube_id: "liQ1GLD-Yjw"
   youtube_url: "https://youtu.be/liQ1GLD-Yjw"
   drive_url: "https://drive.google.com/file/d/1pZS8YCXFo8GULGedCfor0eimwywvzj3P/view?usp=drive_link"
-logo:                  # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
   svg: "/logos/team-03.svg"
   small: "/logos/team-03-64x64.png"
   medium: "/logos/team-03-128x128.png"
