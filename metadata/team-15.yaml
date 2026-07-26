@@ -3,7 +3,7 @@ team: "Team-15"
 team_no: 15
 name: "ReVive"
 title: "ReVive"
-tagline: ""            # <- one short line, your pitch
+tagline: "a peer-to-peer e-waste platform where users donate, share, and pick up electronics directly from each other. No middleman, no fees — just community-driven recycling."            # <- one short line, your pitch
 desc: "Give Your Old Tech a Second Life"
 type: "web-app"
 stack: []
@@ -14,7 +14,7 @@ video:
   youtube_url: "https://youtu.be/lk3owT9c5NU?si=JBv8OBtGvqxF1Yh_"
   drive_url: null
 logo:                  # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
-  svg: null
-  small: "/logos/team-15-64x64.png"
-  medium: "/logos/team-15-128x128.png"
-  large: "/logos/team-15-256x256.png"
+  svg: "public/logos/team-15.svg"
+  small: "public/logos/team-15-64x64.png"
+  medium: "public/logos/team-15-128x128.png"
+  large: "public/logos/team-15-256x256.png"
