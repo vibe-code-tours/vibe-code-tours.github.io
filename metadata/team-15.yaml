@@ -14,7 +14,7 @@ video:
   youtube_url: "https://youtu.be/lk3owT9c5NU?si=JBv8OBtGvqxF1Yh_"
   drive_url: null
 logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
-  svg: null
+  svg: "/logos/team-15.svg"
   small: "/logos/team-15-64x64.png"
   medium: "/logos/team-15-128x128.png"
   large: "/logos/team-15-256x256.png"
