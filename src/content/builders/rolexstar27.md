@@ -4,7 +4,11 @@ github: rolexstar27
 cohort: 1
 role: builder
 skills: ["JavaScript", "JQuery", "Vue", "UI/UX", "Photoshop"]
-linkedin: Hay Mar Maw
+linkedin: https://www.linkedin.com/in/haymarmaw/
+website: https://hmm-portfolio.vercel.app/
+certs:
+  claude_101: rgxh7gvkri6p
+  claude_code_101: y4gcwywepsvn
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
