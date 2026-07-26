@@ -8,9 +8,13 @@ website:  https://ud.me/nanaungoo.brave
 certs:
   claude_101: https://verify.skilljar.com/c/rsdbx9pzikkk
   claude_code_101: https://verify.skilljar.com/c/sovo9xx54xaz
+  claude_Platform_101: https://verify.skilljar.com/c/o5zev75muxkm
+  claude_cowork_intro: https://verify.skilljar.com/c/wc2vii2gxkmy
+  claude_code_in_action: https://verify.skilljar.com/c/qtu3nqe8qj6x
+  ai_fluency: https://verify.skilljar.com/c/nr4m87ih5snz
+  mcp_intro: https://verify.skilljar.com/c/ydww577oeok7
   agent_skills_intro: https://verify.skilljar.com/c/hi83hjczdzuy
   subagents_intro: https://verify.skilljar.com/c/oh83sinfpszy
-  mcp_intro: https://verify.skilljar.com/c/ydww577oeok7
 
 ---
 

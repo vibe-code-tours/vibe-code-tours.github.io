@@ -6,17 +6,25 @@
     "desc": "A professional networking and marketplace platform for Myanmar's rice industry.",
     "repo_url": "https://github.com/6rose9/rice-agent",
     "live_url": "https://rice-agent.vercel.app/feed",
-    "slides_raw": "https://raw.githubusercontent.com/6rose9/rice-agent/master/slides/tech-stack.md",
+    "slides_raw": "https://raw.githubusercontent.com/6rose9/rice-agent/master/slides/intro.md",
     "slides_base": "https://raw.githubusercontent.com/6rose9/rice-agent/master/slides/",
-    "screenshot_url": null,
-    "screenshots": [],
+    "screenshot_url": "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/01_home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/01_home.png",
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/05_network.png",
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/10_setting.png",
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/04_create_post.png",
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/07_profile_post.png",
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/08_profile_network.png"
+    ],
     "type": "web-app",
     "stack": [
       "TypeScript",
       "Python",
       "PLpgSQL"
     ],
-    "chapter": 5
+    "chapter": 6,
+    "team": 11
   },
   {
     "github": "absolute-aungkomyint",
@@ -42,7 +50,8 @@
       "HTML",
       "CSS"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 2
   },
   {
     "github": "ahk1542001-wq",
@@ -72,15 +81,16 @@
       "JavaScript",
       "HTML"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 2
   },
   {
     "github": "ammdevl",
     "name": "ammdevl",
     "title": "vibe-match",
-    "desc": "A tool for searching MCPs, SKILLs adn AGENTs for Vibe-Code Projects. Describe what you want --> Get what you need.",
+    "desc": "A tool for searching MCPs, SKILLs adn AGENTs for Vibe-Code Projects. Describe what you want --> Get what you need",
     "repo_url": "https://github.com/ammdevl/vibe-match",
-    "live_url": "https://vibe-match-nine.vercel.app",
+    "live_url": "https://vibe-match-ammdevl.vercel.app",
     "slides_raw": "https://raw.githubusercontent.com/ammdevl/vibe-match/main/slides/pitch.md",
     "slides_base": "https://raw.githubusercontent.com/ammdevl/vibe-match/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/ammdevl/vibe-match/main/screenshots/01-landing.png",
@@ -92,11 +102,12 @@
     ],
     "type": "web-app",
     "stack": [
+      "Python",
       "JavaScript",
-      "CSS",
-      "HTML"
+      "CSS"
     ],
-    "chapter": 4
+    "chapter": 5,
+    "team": 12
   },
   {
     "github": "anthtooaung",
@@ -105,7 +116,7 @@
     "desc": "",
     "repo_url": "https://github.com/anthtooaung/my-diary",
     "live_url": "https://my-diary-bqbj.onrender.com/",
-    "slides_raw": "https://raw.githubusercontent.com/anthtooaung/my-diary/main/slides/tech-stack.md",
+    "slides_raw": "https://raw.githubusercontent.com/anthtooaung/my-diary/main/slides/pitch.md",
     "slides_base": "https://raw.githubusercontent.com/anthtooaung/my-diary/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/digit.png",
     "screenshots": [
@@ -114,11 +125,11 @@
       "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/goal-1.png",
       "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/goal-2.png",
       "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/search.png",
+      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/01-login.png",
+      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/04-goals.png",
+      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/07-stats.png",
       "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/calendar.png",
-      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/static-1.png",
-      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/static-2.png",
-      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/static-3.png",
-      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/dashboard.png"
+      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/static-1.png"
     ],
     "type": "web-app",
     "stack": [
@@ -126,16 +137,17 @@
       "CSS",
       "HTML"
     ],
-    "chapter": 5
+    "chapter": 6,
+    "team": 9
   },
   {
     "github": "aungkyawminhtet",
     "name": "aungkyawminhtet",
     "title": "personal-planner",
-    "desc": "An AI-powered personal planner that converts goals into structured, gamified roadmaps with a context-aware study mentor chat.",
+    "desc": "",
     "repo_url": "https://github.com/aungkyawminhtet/personal-planner",
     "live_url": "https://personal-planner-nine-phi.vercel.app/",
-    "slides_raw": "https://raw.githubusercontent.com/aungkyawminhtet/personal-planner/main/slides/pitch.md",
+    "slides_raw": "https://raw.githubusercontent.com/aungkyawminhtet/personal-planner/main/slides/tech-stack.md",
     "slides_base": "https://raw.githubusercontent.com/aungkyawminhtet/personal-planner/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/aungkyawminhtet/personal-planner/main/screenshots/01_map_path.png",
     "screenshots": [
@@ -149,7 +161,8 @@
       "Python",
       "CSS"
     ],
-    "chapter": 4
+    "chapter": 5,
+    "team": 11
   },
   {
     "github": "aungyephyo2215",
@@ -179,16 +192,17 @@
       "Shell",
       "JavaScript"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 14
   },
   {
     "github": "ayenyeinsan22",
     "name": "ayenyeinsan22",
     "title": "linguify",
-    "desc": "Linguify is an AI-powered English learning platform that helps learners improve speaking, writing, grammar, vocabulary, and translation through personalized coaching.",
+    "desc": "Linguify is a platform for English Learners where they can enhance language proficiency.",
     "repo_url": "https://github.com/AyeNyeinSan22/linguify",
-    "live_url": "https://linguify-eta.vercel.app",
-    "slides_raw": "https://raw.githubusercontent.com/AyeNyeinSan22/linguify/main/slides/pitch.md",
+    "live_url": "https://linguify-eta.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/AyeNyeinSan22/linguify/main/slides/tech-stack.md",
     "slides_base": "https://raw.githubusercontent.com/AyeNyeinSan22/linguify/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/AyeNyeinSan22/linguify/main/screenshots/home.png",
     "screenshots": [
@@ -202,20 +216,21 @@
     "type": "web-app",
     "stack": [
       "TypeScript",
-      "CSS",
-      "JavaScript"
+      "Python",
+      "CSS"
     ],
-    "chapter": 4
+    "chapter": 6,
+    "team": 18
   },
   {
     "github": "bhonepyisone",
     "name": "bhonepyisone",
     "title": "PayProof",
-    "desc": "https://payproof-production.up.railway.app/",
+    "desc": "Open-source OCR module that ANY software (POS, ERP, web, mobile) can plug into to read payment confirmation screenshots/photos and link them to orders. Fully on-device, privacy-first, zero cloud dependency.",
     "repo_url": "https://github.com/bhonepyisone/PayProof",
-    "live_url": "https://payproof-production.up.railway.app/",
-    "slides_raw": "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/slides.md",
-    "slides_base": "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/",
+    "live_url": "https://payproof.fly.dev/",
+    "slides_raw": "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/docs/screenshot-scanner.png",
     "screenshots": [
       "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/docs/screenshot-scanner.png",
@@ -231,7 +246,8 @@
       "Python",
       "Shell"
     ],
-    "chapter": 4
+    "chapter": 5,
+    "team": 18
   },
   {
     "github": "bhonewai-bot",
@@ -258,16 +274,17 @@
       "PHP",
       "JavaScript"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 19
   },
   {
     "github": "billy1437",
     "name": "billy1437",
     "title": "kilo_carrier",
-    "desc": "A peer-to-peer cargo marketplace where travellers between Yangon and Bangkok sell their spare luggage space to people who need to send parcels — cheaper than courier, with zero platform fees.",
+    "desc": "",
     "repo_url": "https://github.com/Billy1437/kilo_carrier",
-    "live_url": "https://kilocarrier.com",
-    "slides_raw": "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/slides/pitch.md",
+    "live_url": "https://kilocarrier.com/",
+    "slides_raw": "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/slides/tech-stack.md",
     "slides_base": "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/screenshots/post.png",
     "screenshots": [
@@ -283,16 +300,17 @@
       "CSS",
       "JavaScript"
     ],
-    "chapter": 4
+    "chapter": 5,
+    "team": 10
   },
   {
     "github": "builtby-ap",
     "name": "builtby-ap",
     "title": "beancalculator",
-    "desc": "Bilingual (Burmese/English) settlement calculator for Myanmar farmers and traders to record bean sales, compute weights in viss, and generate invoices.",
+    "desc": "",
     "repo_url": "https://github.com/builtby-ap/beancalculator",
     "live_url": "https://beancalculator.vercel.app",
-    "slides_raw": "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/slides/pitch.md",
+    "slides_raw": "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/slides/tech-stack.md",
     "slides_base": "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/beans.png",
     "screenshots": [
@@ -300,16 +318,21 @@
       "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/login.png",
       "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/history.png",
       "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/invoice.png",
+      "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/01-login.png",
+      "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/06-beans.png",
       "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/dashboard.png",
+      "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/03-invoice.png",
+      "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/05-history.png",
       "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/calculator.png"
     ],
     "type": "web-app",
     "stack": [
       "JavaScript",
-      "HTML",
-      "CSS"
+      "Shell",
+      "HTML"
     ],
-    "chapter": 4
+    "chapter": 5,
+    "team": 19
   },
   {
     "github": "celineyng2-sudo",
@@ -331,7 +354,8 @@
       "HTML",
       "CSS"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 15
   },
   {
     "github": "chanoodev",
@@ -342,18 +366,18 @@
     "live_url": "https://specflow-lite.vercel.app",
     "slides_raw": "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/slides/pitch.md",
     "slides_base": "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/slides/",
-    "screenshot_url": "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/03-dashboard.png",
+    "screenshot_url": "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/03-search.png",
     "screenshots": [
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/03-search.png",
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/02-projects.png",
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/search-page.png",
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/01-dashboard.png",
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/02-dashboard.png",
       "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/03-dashboard.png",
       "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/01-login-page.png",
       "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/14-tasks-list.png",
-      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/06-project-info.png",
-      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/02-projects-list.png",
-      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/12-new-task-form.png",
-      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/04-project-detail.png",
-      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/05-new-project-form.png",
-      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/07-requirements-list.png",
-      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/13-requirement-detail.png"
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/04-search-page.png",
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/05-project-info.png"
     ],
     "type": "web-app",
     "stack": [
@@ -361,7 +385,8 @@
       "Shell",
       "PLpgSQL"
     ],
-    "chapter": 5
+    "chapter": 6,
+    "team": 12
   },
   {
     "github": "cidtechmm002",
@@ -387,7 +412,8 @@
       "CSS",
       "HTML"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 8
   },
   {
     "github": "david-sang96",
@@ -413,7 +439,8 @@
       "CSS",
       "JavaScript"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 6
   },
   {
     "github": "dylanfriday",
@@ -422,13 +449,14 @@
     "desc": "personal project",
     "repo_url": "https://github.com/DylanFriday/flashcard-ai-generator",
     "live_url": "https://flashcard-ai-generator-eyfyydi2d-khezudevs-projects.vercel.app/",
-    "slides_raw": "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/slides/tech-stack.md",
+    "slides_raw": "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/slides/pitch.md",
     "slides_base": "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/screenshots/01.png",
     "screenshots": [
       "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/screenshots/01.png",
       "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/screenshots/02.png",
-      "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/screenshots/03.png"
+      "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/screenshots/03.png",
+      "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/screenshots/04.png"
     ],
     "type": "web-app",
     "stack": [
@@ -436,7 +464,8 @@
       "CSS",
       "JavaScript"
     ],
-    "chapter": 5
+    "chapter": 6,
+    "team": 13
   },
   {
     "github": "furryforwhat",
@@ -457,7 +486,8 @@
     "stack": [
       "HTML"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 2
   },
   {
     "github": "gadayhtun",
@@ -465,9 +495,9 @@
     "title": "warehouse",
     "desc": "",
     "repo_url": "https://github.com/GadayHtun/warehouse",
-    "live_url": "https://warehouse-mesm.onrender.com",
-    "slides_raw": "https://raw.githubusercontent.com/GadayHtun/warehouse/main/slides/tech-stack.md",
-    "slides_base": "https://raw.githubusercontent.com/GadayHtun/warehouse/main/slides/",
+    "live_url": "https://warehouse-mesm.onrender.com/",
+    "slides_raw": "https://raw.githubusercontent.com/GadayHtun/warehouse/main/https://github.com/GadayHtun/warehouse/blob/main/slides/polish.md",
+    "slides_base": "https://raw.githubusercontent.com/GadayHtun/warehouse/main/https://github.com/GadayHtun/warehouse/blob/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/04-stock-in.png",
     "screenshots": [
       "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/04-stock-in.png",
@@ -475,10 +505,11 @@
       "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/02-dashboard.png",
       "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/05-stock-out.png",
       "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/01-login-page.png",
-      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/03-stock-overview.png",
-      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/06-reconciliation.png",
-      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/screenshot-defined.png",
-      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/08-reconciliation-create.png"
+      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/09-mobile-stock.png",
+      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/14-mobile-login.png",
+      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/02-desktop-stock.png",
+      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/07-desktop-login.png",
+      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/03-stock-overview.png"
     ],
     "type": "web-app",
     "stack": [
@@ -486,7 +517,8 @@
       "Blade",
       "JavaScript"
     ],
-    "chapter": 5
+    "chapter": 6,
+    "team": 17
   },
   {
     "github": "hanminmyat",
@@ -510,7 +542,8 @@
       "HTML",
       "Python"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 2
   },
   {
     "github": "haymannko",
@@ -521,11 +554,11 @@
     "live_url": "https://beans-app-iota.vercel.app",
     "slides_raw": "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/slides/tech-stack.md",
     "slides_base": "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/slides/",
-    "screenshot_url": "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/screenshots-documents/voucher1v2.png",
+    "screenshot_url": "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/screenshots/beans1.png",
     "screenshots": [
-      "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/screenshots-documents/voucher1v2.png",
-      "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/screenshots-documents/arrivals1v2.png",
-      "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/screenshots-documents/dashboard1v2.png"
+      "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/screenshots/beans1.png",
+      "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/screenshots/beans2.png",
+      "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/screenshots/beans3.png"
     ],
     "type": "web-app",
     "stack": [
@@ -533,7 +566,8 @@
       "Python",
       "Shell"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 1
   },
   {
     "github": "haymarhlaing",
@@ -558,16 +592,17 @@
       "CSS",
       "HTML"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 2
   },
   {
     "github": "heinhtet-zaw12",
     "name": "heinhtet-zaw12",
     "title": "BiteBalance",
-    "desc": "Bite Balance is an AI-powered food tracker that analyzes your meals, calculates calories, and provides personalized health insights based on your BMI.",
+    "desc": "AI-powered calorie tracking app that analyzes meals from photos or text, classifies healthy vs junk food, tracks daily and monthly calorie intake, and provides BMI-based health insights with smart notifications.",
     "repo_url": "https://github.com/heinhtet-zaw12/BiteBalance",
-    "live_url": "https://bite-balance-88.vercel.app/",
-    "slides_raw": "https://raw.githubusercontent.com/heinhtet-zaw12/BiteBalance/main/slides/pitch.md",
+    "live_url": "https://bite-balance-88.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/heinhtet-zaw12/BiteBalance/main/slides/tech-stack.md",
     "slides_base": "https://raw.githubusercontent.com/heinhtet-zaw12/BiteBalance/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/heinhtet-zaw12/BiteBalance/main/assets/screenshots/01.png",
     "screenshots": [
@@ -584,7 +619,8 @@
       "JavaScript",
       "HTML"
     ],
-    "chapter": 4
+    "chapter": 6,
+    "team": 8
   },
   {
     "github": "heinkhantphyoe",
@@ -612,7 +648,8 @@
       "CSS",
       "HTML"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 3
   },
   {
     "github": "heinthaw-dev",
@@ -642,25 +679,30 @@
       "TypeScript",
       "CSS"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 9
   },
   {
     "github": "hlahtunthein09",
     "name": "hlahtunthein09",
     "title": "kill_the_laziness",
-    "desc": "A gamified productivity dashboard + browser extension that blocks distractions and tracks focus time through timed tasks with XP rewards.",
+    "desc": "Parent project repository created via GitHub MCP server",
     "repo_url": "https://github.com/hlahtunthein09/kill_the_laziness",
     "live_url": "https://kill-the-laziness.vercel.app",
-    "slides_raw": "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/slides/pitch.md",
+    "slides_raw": "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/slides/tech-stack.md",
     "slides_base": "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/slides/",
-    "screenshot_url": "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Timer.png",
+    "screenshot_url": "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Timer_dark mode.png",
     "screenshots": [
-      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Timer.png",
-      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Setting.png",
-      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Projects.png",
-      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Dashboard.png",
-      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Extension_Popup.png",
-      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Extension_Notification.png"
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Timer_dark mode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Timer_lightmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Projects_darkmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Settings_darkmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Dashboard_darkmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Projects_lightmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Settings_lightmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Dashboard_lightmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Extension_notifications_darkmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Extension_notifications_lightmode.png"
     ],
     "type": "web-app",
     "stack": [
@@ -668,7 +710,34 @@
       "HTML",
       "CSS"
     ],
-    "chapter": 4
+    "chapter": 6,
+    "team": 6
+  },
+  {
+    "github": "hlaingthinphyu",
+    "name": "hlaingthinphyu",
+    "title": "skincare-bestie",
+    "desc": "",
+    "repo_url": "https://github.com/HlaingThinPhyu/skincare-bestie",
+    "live_url": "https://skincare-bestie.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-homepage.jpg",
+    "screenshots": [
+      "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-homepage.jpg",
+      "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-languages.jpg",
+      "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-recommendProducts-1.jpg",
+      "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-recommendProducts-2.jpg",
+      "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-recommendProducts-3.jpg"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "chapter": 5,
+    "team": 11
   },
   {
     "github": "htetaungkyaw-gicjp",
@@ -698,7 +767,8 @@
       "JavaScript",
       "PLpgSQL"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 14
   },
   {
     "github": "htetlin27",
@@ -723,7 +793,8 @@
       "CSS",
       "JavaScript"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 16
   },
   {
     "github": "htunaungkyaw73",
@@ -747,7 +818,8 @@
       "CSS",
       "JavaScript"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 19
   },
   {
     "github": "iamyeaung",
@@ -777,7 +849,8 @@
       "Shell",
       "PowerShell"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 10
   },
   {
     "github": "jolly30",
@@ -798,7 +871,8 @@
     "stack": [
       "Python"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 11
   },
   {
     "github": "kaung-myat-code",
@@ -824,7 +898,8 @@
       "CSS",
       "HTML"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 8
   },
   {
     "github": "kaung101",
@@ -850,7 +925,8 @@
       "JavaScript",
       "C#"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 16
   },
   {
     "github": "kaykhaingmyint6170",
@@ -880,7 +956,8 @@
       "PHP",
       "JavaScript"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 14
   },
   {
     "github": "khinmyatthu2193",
@@ -903,7 +980,8 @@
       "JavaScript",
       "HTML"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 8
   },
   {
     "github": "kingquiet-bot",
@@ -930,22 +1008,26 @@
       "Python",
       "Dockerfile"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 18
   },
   {
     "github": "kizinno",
     "name": "kizinno",
     "title": "MINOS",
-    "desc": "MINOS — Auto-Triage SOC Bot MINOS extracts Indicators of Compromise (IoCs) from raw security logs, queries them against threat intelligence APIs, and produces a clean, scorable triage report — in Markdown or JSON.",
+    "desc": "MINOS — Auto-Triage SOC Bot MINOS extracts Indicators of Compromise (IoCs) from raw security logs, queries them against threat intelligence APIs, and produces a clean, scorable triage report — in Markdown or JSON.  Named after the mythological king who judged the dead. MINOS judges your logs.",
     "repo_url": "https://github.com/KiZINnO/MINOS",
     "live_url": "https://minos-mu.vercel.app",
-    "slides_raw": "https://raw.githubusercontent.com/KiZINnO/MINOS/main/https://github.com/KiZINnO/MINOS/blob/main/slides/pitch.md",
-    "slides_base": "https://raw.githubusercontent.com/KiZINnO/MINOS/main/https://github.com/KiZINnO/MINOS/blob/main/slides/",
+    "slides_raw": "https://raw.githubusercontent.com/KiZINnO/MINOS/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/KiZINnO/MINOS/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/KiZINnO/MINOS/main/screenshots/about.png",
     "screenshots": [
       "https://raw.githubusercontent.com/KiZINnO/MINOS/main/screenshots/about.png",
       "https://raw.githubusercontent.com/KiZINnO/MINOS/main/screenshots/analyze.png",
-      "https://raw.githubusercontent.com/KiZINnO/MINOS/main/screenshots/desktop.png"
+      "https://raw.githubusercontent.com/KiZINnO/MINOS/main/screenshots/desktop.png",
+      "https://raw.githubusercontent.com/KiZINnO/MINOS/main/screenshots/home-1280x800.png",
+      "https://raw.githubusercontent.com/KiZINnO/MINOS/main/screenshots/about-1280x800.png",
+      "https://raw.githubusercontent.com/KiZINnO/MINOS/main/screenshots/analyze-1280x800.png"
     ],
     "type": "web-app",
     "stack": [
@@ -953,7 +1035,8 @@
       "TypeScript",
       "CSS"
     ],
-    "chapter": 4
+    "chapter": 6,
+    "team": 7
   },
   {
     "github": "kohtun386",
@@ -976,16 +1059,17 @@
       "HTML",
       "PLpgSQL"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 7
   },
   {
     "github": "kokaunghtet",
     "name": "kokaunghtet",
     "title": "vibecode-dailyplanner",
-    "desc": "A personal daily planner with task management, calendar view, and dark/light mode, backed by Firebase Firestore.",
+    "desc": "VibeCodeTour Personal Project",
     "repo_url": "https://github.com/kokaunghtet/vibecode-dailyplanner",
     "live_url": "https://vibecode-dailyplanner.web.app/",
-    "slides_raw": "https://raw.githubusercontent.com/kokaunghtet/vibecode-dailyplanner/master/slides/intro.md",
+    "slides_raw": "https://raw.githubusercontent.com/kokaunghtet/vibecode-dailyplanner/master/slides/tech-stack.md",
     "slides_base": "https://raw.githubusercontent.com/kokaunghtet/vibecode-dailyplanner/master/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/kokaunghtet/vibecode-dailyplanner/master/screenshots/login.png",
     "screenshots": [
@@ -995,11 +1079,12 @@
     ],
     "type": "web-app",
     "stack": [
-      "TypeScript",
       "Vue",
+      "TypeScript",
       "JavaScript"
     ],
-    "chapter": 4
+    "chapter": 5,
+    "team": 13
   },
   {
     "github": "komyo335",
@@ -1027,26 +1112,8 @@
       "CSS",
       "JavaScript"
     ],
-    "chapter": 5
-  },
-  {
-    "github": "kyawminht",
-    "name": "kyawminht",
-    "title": "road-safety",
-    "desc": "A mobile-first learning app that teaches road safety to Myanmar children through visual flip cards and interactive games",
-    "repo_url": "https://github.com/kyawminht/road-safety",
-    "live_url": "https://road-safety-mm.vercel.app",
-    "slides_raw": "https://raw.githubusercontent.com/kyawminht/road-safety/main/slides/pitch.md",
-    "slides_base": "https://raw.githubusercontent.com/kyawminht/road-safety/main/slides/",
-    "screenshot_url": null,
-    "screenshots": [],
-    "type": "web-app",
-    "stack": [
-      "JavaScript",
-      "HTML",
-      "CSS"
-    ],
-    "chapter": 4
+    "chapter": 5,
+    "team": 19
   },
   {
     "github": "linletlettun",
@@ -1071,7 +1138,8 @@
       "Python",
       "Dockerfile"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 1
   },
   {
     "github": "lwinmoe51",
@@ -1098,7 +1166,8 @@
       "HTML",
       "JavaScript"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 20
   },
   {
     "github": "mangsuan",
@@ -1128,7 +1197,8 @@
       "C",
       "Cython"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 3
   },
   {
     "github": "mhkaungpyae",
@@ -1151,30 +1221,30 @@
       "Python",
       "CSS"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 6
   },
   {
     "github": "milefisher",
     "name": "milefisher",
     "title": "daily-tech-digest",
-    "desc": "Fetches top tech stories from Hacker News and Lobsters, filters out the noise, and writes a clean markdown digest — in English and Burmese",
+    "desc": "",
     "repo_url": "https://github.com/MileFisher/daily-tech-digest",
     "live_url": "https://milefisher.github.io/daily-tech-digest/",
     "slides_raw": "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/slides/pechakucha.md",
     "slides_base": "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/slides/",
-    "screenshot_url": "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/screenshots/mobile-dark.png",
+    "screenshot_url": "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/screenshots/mobile-390x844.png",
     "screenshots": [
-      "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/screenshots/mobile-dark.png",
-      "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/screenshots/desktop-dark.png",
-      "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/screenshots/mobile-light.png",
-      "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/screenshots/desktop-light.png",
-      "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/screenshots/desktop-burmese.png"
+      "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/screenshots/mobile-390x844.png",
+      "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/screenshots/desktop-1280x800.png",
+      "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/screenshots/desktop-dark-1280x800.png"
     ],
     "type": "web-app",
     "stack": [
       "JavaScript"
     ],
-    "chapter": 4
+    "chapter": 6,
+    "team": 17
   },
   {
     "github": "minntayza",
@@ -1182,8 +1252,8 @@
     "title": "pdf_summarizer",
     "desc": "",
     "repo_url": "https://github.com/minntayza/pdf_summarizer",
-    "live_url": "https://pdf-summarizer-topaz.vercel.app",
-    "slides_raw": "https://raw.githubusercontent.com/minntayza/pdf_summarizer/main/slides/tech-stack.md",
+    "live_url": "https://pdf-summarizer-topaz.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/minntayza/pdf_summarizer/main/slides/pitch.md",
     "slides_base": "https://raw.githubusercontent.com/minntayza/pdf_summarizer/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/minntayza/pdf_summarizer/main/screenshots/01.png",
     "screenshots": [
@@ -1199,7 +1269,8 @@
       "JavaScript",
       "CSS"
     ],
-    "chapter": 5
+    "chapter": 6,
+    "team": 9
   },
   {
     "github": "mrmyintmyataung",
@@ -1224,19 +1295,23 @@
       "HTML",
       "PLpgSQL"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 15
   },
   {
     "github": "mrmyothet",
     "name": "mrmyothet",
     "title": "zach-hair-studio",
-    "desc": "Zach Hair Studio — A full-stack salon platform for booking hair styling/coloring appointments, managing staff schedules, and selling hair products.",
+    "desc": "Vibe Code Tours - Personal Project",
     "repo_url": "https://github.com/mrmyothet/zach-hair-studio",
     "live_url": "https://zachhairstudio.vercel.app/",
     "slides_raw": "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/slides/pitch.md",
     "slides_base": "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/slides/",
-    "screenshot_url": "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/landing-page/screenshots/screenshot-1.png",
+    "screenshot_url": "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/screenshots/screenshot-1.jpg",
     "screenshots": [
+      "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/screenshots/screenshot-1.jpg",
+      "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/screenshots/screenshot-2.jpg",
+      "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/screenshots/screenshot-3.jpg",
       "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/landing-page/screenshots/screenshot-1.png",
       "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/landing-page/screenshots/screenshot-2.png",
       "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/landing-page/screenshots/screenshot-3.png",
@@ -1249,7 +1324,8 @@
       "C#",
       "TypeScript"
     ],
-    "chapter": 4
+    "chapter": 6,
+    "team": 15
   },
   {
     "github": "mryeminaung",
@@ -1275,7 +1351,8 @@
       "CSS",
       "HTML"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 17
   },
   {
     "github": "mshninwuttyi",
@@ -1298,7 +1375,8 @@
       "CSS",
       "HTML"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 17
   },
   {
     "github": "myathtetkyaw",
@@ -1323,7 +1401,8 @@
       "EJS",
       "JavaScript"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 18
   },
   {
     "github": "myatsumon253",
@@ -1352,7 +1431,8 @@
       "CSS",
       "JavaScript"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 16
   },
   {
     "github": "myoaung",
@@ -1382,7 +1462,8 @@
       "Python",
       "PLpgSQL"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 18
   },
   {
     "github": "myominlin",
@@ -1408,7 +1489,8 @@
       "HTML",
       "Shell"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 16
   },
   {
     "github": "naitar",
@@ -1435,7 +1517,8 @@
       "HTML",
       "CSS"
     ],
-    "chapter": 5
+    "chapter": 6,
+    "team": 15
   },
   {
     "github": "nanaungoo",
@@ -1465,7 +1548,8 @@
       "CSS",
       "HTML"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 14
   },
   {
     "github": "naw2",
@@ -1486,7 +1570,8 @@
     "stack": [
       "Python"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 13
   },
   {
     "github": "noobfrommm",
@@ -1508,7 +1593,8 @@
       "Python",
       "HTML"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 12
   },
   {
     "github": "nyein-sat-thaw",
@@ -1531,13 +1617,14 @@
       "CSS",
       "HTML"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 20
   },
   {
     "github": "nyeinchan-lwin",
     "name": "nyeinchan-lwin",
     "title": "wordguess",
-    "desc": "A browser-based Wordle-style game where you guess a hidden 5-letter word in six tries, with colour-coded letter feedback.",
+    "desc": "Wordle-style word-guessing game",
     "repo_url": "https://github.com/nyeinchan-lwin/wordguess",
     "live_url": "https://nyeinchan-lwin.github.io/wordguess/",
     "slides_raw": "https://raw.githubusercontent.com/nyeinchan-lwin/wordguess/main/slides/intro.md",
@@ -1546,7 +1633,9 @@
     "screenshots": [
       "https://raw.githubusercontent.com/nyeinchan-lwin/wordguess/main/screenshots/01-menu.png",
       "https://raw.githubusercontent.com/nyeinchan-lwin/wordguess/main/screenshots/02-game.png",
-      "https://raw.githubusercontent.com/nyeinchan-lwin/wordguess/main/screenshots/03-result.png"
+      "https://raw.githubusercontent.com/nyeinchan-lwin/wordguess/main/screenshots/03-result.png",
+      "https://raw.githubusercontent.com/nyeinchan-lwin/wordguess/main/screenshots/04-mobile-menu.png",
+      "https://raw.githubusercontent.com/nyeinchan-lwin/wordguess/main/screenshots/05-mobile-game.png"
     ],
     "type": "web-app",
     "stack": [
@@ -1554,7 +1643,8 @@
       "CSS",
       "HTML"
     ],
-    "chapter": 4
+    "chapter": 6,
+    "team": 11
   },
   {
     "github": "oliverhenry-dev",
@@ -1577,7 +1667,33 @@
       "CSS",
       "HTML"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 7
+  },
+  {
+    "github": "phyophyo2397",
+    "name": "phyophyo2397",
+    "title": "YT-Japanese-flashcard",
+    "desc": "",
+    "repo_url": "https://github.com/PHYOPHYO2397/YT-Japanese-flashcard",
+    "live_url": "https://yt-japanese-flashcard.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/PHYOPHYO2397/YT-Japanese-flashcard/main/slides/slides.md",
+    "slides_base": "https://raw.githubusercontent.com/PHYOPHYO2397/YT-Japanese-flashcard/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/PHYOPHYO2397/YT-Japanese-flashcard/main/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/PHYOPHYO2397/YT-Japanese-flashcard/main/screenshots/01.png",
+      "https://raw.githubusercontent.com/PHYOPHYO2397/YT-Japanese-flashcard/main/screenshots/02.png",
+      "https://raw.githubusercontent.com/PHYOPHYO2397/YT-Japanese-flashcard/main/screenshots/03.png",
+      "https://raw.githubusercontent.com/PHYOPHYO2397/YT-Japanese-flashcard/main/screenshots/04.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Shell",
+      "Python",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 6
   },
   {
     "github": "phyu1788",
@@ -1601,7 +1717,8 @@
       "CSS",
       "HTML"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 3
   },
   {
     "github": "pyone-cho",
@@ -1631,16 +1748,17 @@
       "Python",
       "Shell"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 3
   },
   {
     "github": "rolexstar27",
     "name": "rolexstar27",
     "title": "Portfolio",
-    "desc": "A modern, animated personal portfolio website built with Next.js 14, Tailwind CSS, and Framer Motion.",
+    "desc": "Modern animated portfolio built with Next.js 14, Tailwind CSS & Framer Motion — featuring light/dark themes, glassmorphism, and smooth scroll animations.",
     "repo_url": "https://github.com/rolexstar27/Portfolio",
     "live_url": "https://hmm-portfolio.vercel.app/",
-    "slides_raw": "https://raw.githubusercontent.com/rolexstar27/Portfolio/main/slides/intro.md",
+    "slides_raw": "https://raw.githubusercontent.com/rolexstar27/Portfolio/main/slides/tech-stack.md",
     "slides_base": "https://raw.githubusercontent.com/rolexstar27/Portfolio/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/rolexstar27/Portfolio/main/screenshots/portfolio.png",
     "screenshots": [
@@ -1661,7 +1779,8 @@
       "JavaScript",
       "CSS"
     ],
-    "chapter": 4
+    "chapter": 5,
+    "team": 20
   },
   {
     "github": "rover-aungkhine",
@@ -1684,7 +1803,8 @@
       "CSS",
       "Python"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 6
   },
   {
     "github": "royallyre7",
@@ -1701,12 +1821,8 @@
       "https://raw.githubusercontent.com/royallyre7/lumeokids/main/screenshots/01-landing.png",
       "https://raw.githubusercontent.com/royallyre7/lumeokids/main/screenshots/03-register.png",
       "https://raw.githubusercontent.com/royallyre7/lumeokids/main/screenshots/04-dashboard.png",
-      "https://raw.githubusercontent.com/royallyre7/lumeokids/main/screenshots/15-error-logs.png",
       "https://raw.githubusercontent.com/royallyre7/lumeokids/main/screenshots/05-child-detail.png",
-      "https://raw.githubusercontent.com/royallyre7/lumeokids/main/screenshots/14-results-full.png",
-      "https://raw.githubusercontent.com/royallyre7/lumeokids/main/screenshots/ui-update-02-login.png",
-      "https://raw.githubusercontent.com/royallyre7/lumeokids/main/screenshots/07-pdf-results-page.png",
-      "https://raw.githubusercontent.com/royallyre7/lumeokids/main/screenshots/17-form-submit-test.png"
+      "https://raw.githubusercontent.com/royallyre7/lumeokids/main/screenshots/06-assessment-results.png"
     ],
     "type": "web-app",
     "stack": [
@@ -1714,7 +1830,8 @@
       "CSS",
       "JavaScript"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 3
   },
   {
     "github": "saiwaiyanphyo",
@@ -1733,7 +1850,8 @@
       "PLpgSQL",
       "CSS"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 4
   },
   {
     "github": "samm24tt",
@@ -1756,7 +1874,8 @@
       "CSS",
       "HTML"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 5
   },
   {
     "github": "sandar577",
@@ -1780,7 +1899,8 @@
       "TypeScript",
       "JavaScript"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 16
   },
   {
     "github": "sandarma",
@@ -1806,7 +1926,8 @@
       "TypeScript",
       "JavaScript"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 20
   },
   {
     "github": "shinnthantkyaw",
@@ -1836,16 +1957,17 @@
       "CSS",
       "Python"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 8
   },
   {
     "github": "shirleyshyun-lgtm",
     "name": "shirleyshyun-lgtm",
     "title": "MoodPlaylist",
-    "desc": "Describe your mood in plain English and get a curated playlist of real songs with album art and YouTube links.",
+    "desc": "Playlist based on Mood",
     "repo_url": "https://github.com/shirleyshyun-lgtm/MoodPlaylist",
-    "live_url": "https://mood-playlist-tan.vercel.app/",
-    "slides_raw": "https://raw.githubusercontent.com/shirleyshyun-lgtm/MoodPlaylist/main/slides/intro.md",
+    "live_url": "https://moodplaylist.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/shirleyshyun-lgtm/MoodPlaylist/main/slides/tech-stack.md",
     "slides_base": "https://raw.githubusercontent.com/shirleyshyun-lgtm/MoodPlaylist/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/shirleyshyun-lgtm/MoodPlaylist/main/public/screenshots/home.png",
     "screenshots": [
@@ -1859,7 +1981,8 @@
       "JavaScript",
       "CSS"
     ],
-    "chapter": 4
+    "chapter": 5,
+    "team": 11
   },
   {
     "github": "soe-yee-mon-htet",
@@ -1888,7 +2011,8 @@
       "CSS",
       "HTML"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 14
   },
   {
     "github": "susandarlin",
@@ -1910,15 +2034,16 @@
       "JavaScript",
       "HTML"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 17
   },
   {
     "github": "swan1792",
     "name": "swan1792",
     "title": "PA",
-    "desc": "A full-stack personal productivity platform that consolidates task management, habit tracking, goal setting, journaling, expense tracking, and more into a single unified Neobrutalism-styled web application.",
+    "desc": "this project is for personal use",
     "repo_url": "https://github.com/swan1792/PA",
-    "live_url": "https://frontend-psi-sage-11.vercel.app/",
+    "live_url": "https://pa-app.vercel.app",
     "slides_raw": "https://raw.githubusercontent.com/swan1792/PA/main/slides/pitch.md",
     "slides_base": "https://raw.githubusercontent.com/swan1792/PA/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/swan1792/PA/main/screenshots/01-home.png",
@@ -1937,10 +2062,11 @@
     "type": "web-app",
     "stack": [
       "TypeScript",
-      "CSS",
-      "JavaScript"
+      "JavaScript",
+      "CSS"
     ],
-    "chapter": 4
+    "chapter": 6,
+    "team": 18
   },
   {
     "github": "swezinpreciousai-sys",
@@ -1963,37 +2089,8 @@
       "JavaScript",
       "CSS"
     ],
-    "chapter": 5
-  },
-  {
-    "github": "thantz-cloud",
-    "name": "thantz-cloud",
-    "title": "Earthquake-Recovery",
-    "desc": "school website",
-    "repo_url": "https://github.com/ThantZ-cloud/Earthquake-Recovery",
-    "live_url": "https://earthquake-recovery-six.vercel.app/",
-    "slides_raw": "https://raw.githubusercontent.com/ThantZ-cloud/Earthquake-Recovery/main/slides/tech-stack.md",
-    "slides_base": "https://raw.githubusercontent.com/ThantZ-cloud/Earthquake-Recovery/main/slides/",
-    "screenshot_url": "https://raw.githubusercontent.com/ThantZ-cloud/Earthquake-Recovery/main/screenshots/Screenshot (42).png",
-    "screenshots": [
-      "https://raw.githubusercontent.com/ThantZ-cloud/Earthquake-Recovery/main/screenshots/Screenshot (42).png",
-      "https://raw.githubusercontent.com/ThantZ-cloud/Earthquake-Recovery/main/screenshots/Screenshot (43).png",
-      "https://raw.githubusercontent.com/ThantZ-cloud/Earthquake-Recovery/main/screenshots/Screenshot (44).png",
-      "https://raw.githubusercontent.com/ThantZ-cloud/Earthquake-Recovery/main/screenshots/Screenshot (45).png",
-      "https://raw.githubusercontent.com/ThantZ-cloud/Earthquake-Recovery/main/screenshots/Screenshot (46).png",
-      "https://raw.githubusercontent.com/ThantZ-cloud/Earthquake-Recovery/main/screenshots/Screenshot (47).png",
-      "https://raw.githubusercontent.com/ThantZ-cloud/Earthquake-Recovery/main/screenshots/Screenshot (48).png",
-      "https://raw.githubusercontent.com/ThantZ-cloud/Earthquake-Recovery/main/screenshots/Screenshot (49).png",
-      "https://raw.githubusercontent.com/ThantZ-cloud/Earthquake-Recovery/main/screenshots/Screenshot (50).png",
-      "https://raw.githubusercontent.com/ThantZ-cloud/Earthquake-Recovery/main/screenshots/Screenshot (51).png"
-    ],
-    "type": "web-app",
-    "stack": [
-      "JavaScript",
-      "CSS",
-      "HTML"
-    ],
-    "chapter": 5
+    "chapter": 6,
+    "team": 19
   },
   {
     "github": "thaz1naung",
@@ -2021,16 +2118,17 @@
       "CSS",
       "JavaScript"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 17
   },
   {
     "github": "thedevpp",
     "name": "thedevpp",
     "title": "quiz-generator",
-    "desc": "A health education quiz platform for teenagers in Myanmar that generates doctor-reviewed multiple-choice, true/false, and scenario questions from verified medical handbooks using Claude API — with zero user data collection.",
+    "desc": "Health education quiz platform for teenagers in Myanmar — doctor-reviewed questions, Claude API, MCP server, zero data collection",
     "repo_url": "https://github.com/TheDevPP/quiz-generator",
-    "live_url": "https://quiz-generator-rugz.onrender.com/",
-    "slides_raw": "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/slides/intro.md",
+    "live_url": "https://quiz-generator-rugz.onrender.com",
+    "slides_raw": "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/slides/tech-stack.md",
     "slides_base": "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/screenshots/quiz-screen.png",
     "screenshots": [
@@ -2047,10 +2145,11 @@
     "type": "web-app",
     "stack": [
       "JavaScript",
-      "CSS",
-      "HTML"
+      "Shell",
+      "CSS"
     ],
-    "chapter": 4
+    "chapter": 5,
+    "team": 10
   },
   {
     "github": "thet-naing-lin",
@@ -2080,7 +2179,8 @@
       "PHP",
       "Blade"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 9
   },
   {
     "github": "thetzinsoe",
@@ -2109,7 +2209,8 @@
       "C#",
       "HTML"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 13
   },
   {
     "github": "thuyein-thet",
@@ -2132,7 +2233,8 @@
       "TypeScript",
       "CSS"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 7
   },
   {
     "github": "thuzarthaungsein",
@@ -2161,16 +2263,17 @@
       "TypeScript",
       "Dockerfile"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 6
   },
   {
     "github": "wailynn351",
     "name": "wailynn351",
     "title": "wc2026-world-cup-predictor",
-    "desc": "WC2026 Live score and Predictor",
+    "desc": "",
     "repo_url": "https://github.com/Wailynn351/wc2026-world-cup-predictor",
-    "live_url": "https://github.com/Wailynn351/wc2026-world-cup-predictor/releases",
-    "slides_raw": "https://raw.githubusercontent.com/Wailynn351/wc2026-world-cup-predictor/main/slides/intro.md",
+    "live_url": "https://wailynn351.github.io/wc2026-world-cup-predictor/",
+    "slides_raw": "https://raw.githubusercontent.com/Wailynn351/wc2026-world-cup-predictor/main/slides/tech-stack.md",
     "slides_base": "https://raw.githubusercontent.com/Wailynn351/wc2026-world-cup-predictor/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/Wailynn351/wc2026-world-cup-predictor/main/screenshots/127.0.0.1_8080_.png",
     "screenshots": [
@@ -2185,7 +2288,8 @@
       "Python",
       "HTML"
     ],
-    "chapter": 4
+    "chapter": 5,
+    "team": 1
   },
   {
     "github": "winnaingsoe6666",
@@ -2210,7 +2314,8 @@
       "Kotlin",
       "HTML"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 5
   },
   {
     "github": "winpapathu1994",
@@ -2240,7 +2345,8 @@
       "HTML",
       "CSS"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 6
   },
   {
     "github": "wint-theingi-aung",
@@ -2251,8 +2357,9 @@
     "live_url": "https://ubuntu-localization.vercel.app",
     "slides_raw": "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/slides/slides.html",
     "slides_base": "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/slides/",
-    "screenshot_url": "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/guide-page.png",
+    "screenshot_url": "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/shot.png",
     "screenshots": [
+      "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/shot.png",
       "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/guide-page.png",
       "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/guide-karen.png",
       "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/template-shan.png",
@@ -2261,8 +2368,7 @@
       "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/translate-page.png",
       "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/contributors-mm.png",
       "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/dashboard-mobile.png",
-      "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/dashboard-dark-en.png",
-      "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/dashboard-screenshot.png"
+      "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/dashboard-dark-en.png"
     ],
     "type": "web-app",
     "stack": [
@@ -2270,7 +2376,8 @@
       "TypeScript",
       "Python"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 7
   },
   {
     "github": "wythwin",
@@ -2292,13 +2399,14 @@
       "HTML",
       "JavaScript"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 1
   },
   {
     "github": "yarzarmyomin97",
     "name": "yarzarmyomin97",
     "title": "dev_portfolio",
-    "desc": "A modern developer portfolio built with Next.js 16, React 19, and Tailwind CSS 4 — featuring glassmorphism design, animated aurora gradients, and a 3-theme system with light/dark mode.<!-- what your project does, in one plain sentence -->",
+    "desc": "A modern developer portfolio built with Next.js 16, React 19, and Tailwind CSS 4 — featuring glassmorphism design, animated aurora gradients, and a 3-theme system with light/dark mode.",
     "repo_url": "https://github.com/Yarzarmyomin97/dev_portfolio",
     "live_url": "https://yarzarmyomin.vercel.app",
     "slides_raw": "https://raw.githubusercontent.com/Yarzarmyomin97/dev_portfolio/main/slides/intro.md",
@@ -2320,9 +2428,10 @@
     "stack": [
       "HTML",
       "Python",
-      "Shell"
+      "TypeScript"
     ],
-    "chapter": 4
+    "chapter": 6,
+    "team": 13
   },
   {
     "github": "ye-lynn-htet",
@@ -2345,7 +2454,8 @@
       "CSS",
       "JavaScript"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 15
   },
   {
     "github": "yeminko-me",
@@ -2373,29 +2483,30 @@
     "stack": [
       "Java"
     ],
-    "chapter": 5
+    "chapter": 5,
+    "team": 16
   },
   {
     "github": "youuu199",
     "name": "youuu199",
     "title": "phyat-paing",
-    "desc": "AI-powered bill organizer that extracts data from utility bill photos using OCR and AI, with real-time currency conversion and spending analytics.",
+    "desc": "",
     "repo_url": "https://github.com/youuu199/phyat-paing",
     "live_url": "https://phyat-paing.vercel.app/",
-    "slides_raw": "https://raw.githubusercontent.com/youuu199/phyat-paing/main/slides/presentation.md",
+    "slides_raw": "https://raw.githubusercontent.com/youuu199/phyat-paing/main/slides/tech-stack.md",
     "slides_base": "https://raw.githubusercontent.com/youuu199/phyat-paing/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/01-login.png",
     "screenshots": [
       "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/01-login.png",
       "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/03-bills.png",
       "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/04-upload.png",
-      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/07-search.png",
-      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/06-sidebar.png",
       "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/08-profile.png",
       "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/06-calendar.png",
       "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/07-settings.png",
       "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/02-dashboard.png",
-      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/05-analytics.png"
+      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/05-analytics.png",
+      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/slides/screenshots/01-login.png",
+      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/slides/screenshots/03-bills.png"
     ],
     "type": "web-app",
     "stack": [
@@ -2403,7 +2514,8 @@
       "JavaScript",
       "CSS"
     ],
-    "chapter": 4
+    "chapter": 6,
+    "team": 19
   },
   {
     "github": "zawthetzt",
@@ -2425,7 +2537,8 @@
       "Python",
       "Shell"
     ],
-    "chapter": 4
+    "chapter": 4,
+    "team": 16
   },
   {
     "github": "zinmar2626",
@@ -2453,7 +2566,8 @@
       "CSS",
       "JavaScript"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 14
   },
   {
     "github": "zinmimi",
@@ -2477,6 +2591,7 @@
       "CSS",
       "HTML"
     ],
-    "chapter": 6
+    "chapter": 6,
+    "team": 13
   }
 ]

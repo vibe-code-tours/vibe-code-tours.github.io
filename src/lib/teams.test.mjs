@@ -1,6 +1,13 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { getTeams, typeBuckets, statusBuckets, hasVideo } from "./teams.mjs";
+import {
+  getTeams,
+  typeBuckets,
+  statusBuckets,
+  hasVideo,
+  teamTag,
+  teamTitles,
+} from "./teams.mjs";
 
 test("getTeams returns validated, team_no-sorted list", () => {
   const teams = getTeams();
@@ -32,4 +39,19 @@ test("hasVideo true when a video id exists", () => {
 test("typeBuckets sorted by count desc", () => {
   const b = typeBuckets(getTeams());
   for (let i = 1; i < b.length; i++) assert.ok(b[i - 1].count >= b[i].count);
+});
+
+test("teamTag zero-pads to the roster's T0N form", () => {
+  assert.equal(teamTag(1), "T01");
+  assert.equal(teamTag(20), "T20");
+  assert.equal(teamTag(0), null);
+  assert.equal(teamTag(null), null);
+  assert.equal(teamTag(undefined), null);
+});
+
+test("teamTitles maps every team_no to its project title", () => {
+  const m = teamTitles();
+  const teams = getTeams();
+  assert.equal(m.size, teams.length);
+  for (const t of teams) assert.equal(m.get(t.team_no), t.title);
 });
