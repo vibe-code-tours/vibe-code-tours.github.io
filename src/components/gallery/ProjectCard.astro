@@ -3,11 +3,19 @@
 import CardShell from "./CardShell.astro";
 import RankBadge from "../RankBadge.astro";
 import { TYPE_LABELS } from "../../lib/projects.mjs";
+import { teamTag } from "../../lib/teams.mjs";
 import { shotCount } from "../../lib/gallery-filter.mjs";
 interface Props {
   project: any;
+  teamsHref?: string;
+  teamTitle?: string | null;
 }
-const { project: c } = Astro.props;
+const {
+  project: c,
+  teamsHref = "/projects/teams",
+  teamTitle = null,
+} = Astro.props;
+const tag = teamTag(c.team);
 const ogFallback = (repoUrl: string) => {
   const m = repoUrl.match(/github\.com\/([^/]+)\/([^/#?]+)/i);
   return m ? `https://opengraph.githubassets.com/1/${m[1]}/${m[2]}` : "";
@@ -19,6 +27,7 @@ const dataAttrs = {
   "data-type": c.type,
   "data-stack": (c.stack ?? []).join("|"),
   "data-chapter": String(c.chapter ?? -1),
+  "data-team": tag ?? "",
   "data-project": JSON.stringify(c),
 };
 ---
@@ -64,12 +73,28 @@ const dataAttrs = {
       />
       <span class="truncate font-semibold text-white">{c.title}</span>
     </div>
-    <span
-      data-nolightbox
-      data-href={`https://github.com/${c.github}`}
-      class="mt-1 block w-fit cursor-pointer truncate text-sm text-gray-400 transition hover:text-accent-300"
-      >@{c.name}</span
-    >
+    <div class="mt-1 flex items-center gap-2">
+      <span
+        data-nolightbox
+        data-href={`https://github.com/${c.github}`}
+        class="w-fit min-w-0 cursor-pointer truncate text-sm text-gray-400 transition hover:text-accent-300"
+        >@{c.name}</span
+      >
+      {
+        tag && (
+          // Anchor with no data-href: the lightbox handler bails out and the
+          // browser follows the link in the same tab.
+          <a
+            data-nolightbox
+            href={teamsHref}
+            title={teamTitle ? `${tag} · ${teamTitle}` : tag}
+            class="shrink-0 rounded-full border border-white/10 bg-white/5 px-2 py-0.5 font-mono text-[10px] font-semibold text-gray-300 transition hover:border-accent-500/40 hover:text-accent-300"
+          >
+            {tag}
+          </a>
+        )
+      }
+    </div>
     {c.desc && <p class="mt-2 line-clamp-2 text-sm text-gray-500">{c.desc}</p>}
   </Fragment>
 </CardShell>

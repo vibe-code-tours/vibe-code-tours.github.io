@@ -470,6 +470,7 @@
     "sortAz": "A–Z",
     "allTypes": "All",
     "anyStack": "Any stack",
+    "anyTeam": "Any team",
     "noMatches": "No matches.",
     "empty": "No projects yet — check back soon.",
     "countUnit": "projects",

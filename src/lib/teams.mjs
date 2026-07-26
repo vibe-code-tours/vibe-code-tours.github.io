@@ -33,6 +33,16 @@ export function getTeams() {
     .sort((a, b) => (a.team_no ?? 999) - (b.team_no ?? 999));
 }
 
+// "T05" — the label the roster, Discord channels and booth signage all use.
+export function teamTag(no) {
+  return Number(no) ? `T${String(no).padStart(2, "0")}` : null;
+}
+
+// team_no -> project title, for labelling a personal card's owning team.
+export function teamTitles() {
+  return new Map(getTeams().map((t) => [t.team_no, t.title]));
+}
+
 export function typeBuckets(teams) {
   const m = new Map();
   for (const t of teams) m.set(t.type, (m.get(t.type) || 0) + 1);
