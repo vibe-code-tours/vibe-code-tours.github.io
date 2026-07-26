@@ -21,17 +21,39 @@ HOW TO ADD YOURSELF
 4. OPTIONAL — add a line ONLY if you have one. Otherwise leave it out entirely.
    DO NOT leave blank or "your-..." placeholder values — just delete the line.
 
-   CLAUDE CERTIFICATIONS (optional) — add a `certs:` block with the ones you
-   earned. Value = the Skilljar code OR the full verify URL. Known ids:
-     claude_101, claude_code_101, agent_skills_intro, subagents_intro,
-     mcp_intro, claude_code_in_action, building_claude_api, claude_platform_101,
-     claude_cowork, mcp_advanced, claude_bedrock, claude_vertex, ai_fluency
+   CERTIFICATIONS (optional) — add a `certs:` block with the ones you earned.
+   Value = the Skilljar code OR the full verify URL. Use the SHORT ID on the
+   left, NOT the course title:
+
+     course on Skilljar                     ->  id to write
+     ------------------------------------------------------------
+     Claude 101                             ->  claude_101
+     Claude Code 101                        ->  claude_code_101
+     Introduction to Agent Skills           ->  agent_skills_intro
+     Introduction to Subagents              ->  subagents_intro
+     Introduction to Model Context Protocol ->  mcp_intro
+     Claude Code in Action                  ->  claude_code_in_action
+     Building with the Claude API           ->  building_claude_api
+     Claude Platform 101                    ->  claude_platform_101
+     Introduction to Claude Cowork          ->  claude_cowork
+     MCP: Advanced Topics                   ->  mcp_advanced
+     Claude with Amazon Bedrock             ->  claude_bedrock
+     Claude with Vertex AI                  ->  claude_vertex
+     AI Fluency: Framework & Foundations    ->  ai_fluency
+     AI Fluency for Educators               ->  ai_fluency_for_educators
+     GitHub Foundations (Credly)            ->  github_foundations
+     Git Essential Training (LinkedIn)      ->  git_essential_training
+
    Example:
      certs:
-       claude_101:      <skilljar-code>
-       claude_code_101: <verify-url>
-   Earned certs light up as colored stars on your card (grey = not yet).
-   ⚠ Cert ids go UNDER `certs:` (indented). At the top level they're ignored.
+       claude_101: 293x3v9qydhx
+       claude_code_101: https://verify.skilljar.com/c/sbdx5cwzjhec
+       github_foundations: https://www.credly.com/badges/<your-badge-id>
+
+   Earned certs light up as amber badges on your card (grey = not yet earned).
+   Writing the course title instead of the short id still works — it's mapped
+   automatically — but CI will nudge you toward the short id.
+   ⚠ Cert ids go UNDER `certs:` (indented 2 spaces). At the top level they're ignored.
      skills:   ["Python", "React", "MCP"]
      repo:     https://github.com/<you>/<your-project>
      x:        your-x-handle            (handle or full URL)
