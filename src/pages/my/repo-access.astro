@@ -1,0 +1,10 @@
+---
+import Base from "../../layouts/Base.astro";
+import RepoAccessBody from "../../components/RepoAccessBody.astro";
+import { t } from "../../i18n/utils";
+const s = t("my").repoAccess;
+---
+
+<Base title={s.title} description={s.description} noindex={true}>
+  <RepoAccessBody />
+</Base>

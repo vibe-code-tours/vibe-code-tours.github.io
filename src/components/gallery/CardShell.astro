@@ -1,0 +1,69 @@
+---
+// src/components/gallery/CardShell.astro
+// Shared card shell for ProjectCard + TeamCard. Slots supply the differences.
+import { stackDisplay } from "../../lib/gallery-filter.mjs";
+interface Props {
+  dataAttrs: Record<string, string>;
+  thumb: string | null;
+  alt: string;
+  initial: string;
+  typeLabel: string;
+  stack: string[];
+  sortTitle: string;
+}
+const { dataAttrs, thumb, alt, initial, typeLabel, stack, sortTitle } =
+  Astro.props;
+const { shown, extra } = stackDisplay(stack, 3);
+---
+
+<button
+  class="project-cell group relative overflow-hidden rounded-xl border border-t-[3px] border-white/10 border-t-accent-500 bg-surface-card text-left transition duration-200 hover:-translate-y-1 hover:border-accent-500/40 hover:shadow-[0_12px_40px_-12px_rgba(245,158,11,0.35)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+  data-title={sortTitle}
+  {...dataAttrs}
+>
+  <div class="relative aspect-video overflow-hidden bg-black/40">
+    <div
+      class:list={[
+        "gallery-fallback absolute inset-0 items-center justify-center bg-surface-elevated text-gray-500",
+        thumb ? "hidden" : "flex",
+      ]}
+      aria-hidden="true"
+    >
+      <span class="font-mono text-3xl font-bold">{initial}</span>
+    </div>
+    {
+      thumb && (
+        <img
+          src={thumb}
+          alt={alt}
+          loading="lazy"
+          class="gallery-img h-full w-full object-cover transition duration-300 group-hover:scale-105 motion-reduce:transition-none"
+        />
+      )
+    }
+    <slot name="thumb-overlay" />
+  </div>
+  <div class="p-4">
+    <slot name="meta" />
+    <div class="mt-3 flex flex-wrap gap-1.5">
+      <span
+        class="rounded-full bg-accent-500/15 px-2 py-0.5 font-mono text-[10px] font-semibold text-accent-300"
+        >{typeLabel}</span
+      >
+      {
+        shown.map((tag) => (
+          <span class="rounded-full bg-white/5 px-2 py-0.5 font-mono text-[10px] text-gray-400">
+            {tag}
+          </span>
+        ))
+      }
+      {
+        extra > 0 && (
+          <span class="rounded-full bg-white/5 px-2 py-0.5 font-mono text-[10px] text-gray-500">
+            +{extra}
+          </span>
+        )
+      }
+    </div>
+  </div>
+</button>

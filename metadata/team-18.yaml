@@ -1,0 +1,20 @@
+# team-18.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-18"
+team_no: 18
+name: "Fraud Awareness Hub"
+title: "Fraud Awareness Hub"
+tagline: "Stay safe from scams — learn, spot, and report fraud"
+desc: null
+type: "web-app"
+stack: []
+live_url: "https://fraud-awareness-hub-sable.vercel.app/"
+repo_url: "https://github.com/swan1792/Fraud_Awareness_Hub.git"
+video:
+  youtube_id: "N66wR8bJDZU"
+  youtube_url: "https://youtu.be/N66wR8bJDZU"
+  drive_url: null
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: "/logos/team-18.svg"
+  small: null
+  medium: null
+  large: null

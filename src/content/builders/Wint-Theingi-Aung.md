@@ -3,22 +3,19 @@ name: Wint Theingi Aung
 github: Wint-Theingi-Aung
 cohort: 1
 role: builder
-skills: ["AI Tools", "Laravel", "CSS"]
+skills: ["AI Tools", "Laravel", "Ubuntu"]
+repo: https://github.com/Wint-Theingi-Aung/ubuntu-localization
 linkedin: winttheingiaung
-Repo: https://github.com/Wint-Theingi-Aung/ubuntu-localization
+certs:
+  claude_101: xhhdk4m7prsj
+  claude_code_101: wghsvu3buyu2
+  agent_skills_intro: khf7i86cdyti
+  subagents_intro: jdg3vz4imaam
+  mcp_intro: yk3vfpi5n37i
+  claude_code_in_action: bxh5ajf78k9a
+  ai_fluency: 2khj2bbwq5nq
+  claude_platform_101: 3wetb5hu6b3z
+  
 ---
 
 Hi! I'm learning to vibe code with AI. My goal is to build and ship real projects, create things that make me happy, and contribute to others.
----
-
-<!--
-HOW TO ADD YOURSELF:
-1. Copy this file to src/content/builders/<your-github-username>.md
-2. Edit `name`, `github`, `cohort` (required). Everything else is optional.
-3. skills: list a few (array). repo/x/linkedin/website: handle OR full URL.
-4. Write 2-3 sentences below the --- about yourself.
-5. Your photo is pulled automatically from your GitHub avatar — no upload.
-6. Commit, push to your fork, open a Pull Request.
-Roles: builder (default) | mentor | instructor
-Remove any optional field you don't want to show.
--->

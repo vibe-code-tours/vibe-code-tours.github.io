@@ -1,0 +1,236 @@
+---
+// src/components/PersonalGallery.astro
+import {
+  getProjects,
+  typeBuckets,
+  teamBuckets,
+  stackList,
+  TYPE_LABELS,
+} from "../lib/projects.mjs";
+import { teamTag, teamTitles } from "../lib/teams.mjs";
+import { t } from "../i18n/utils";
+import HeroSlider from "./gallery/HeroSlider.astro";
+import FilterBar from "./gallery/FilterBar.astro";
+import ProjectCard from "./gallery/ProjectCard.astro";
+import Lightbox from "./gallery/Lightbox.astro";
+interface Props {
+  locale?: "en" | "my";
+}
+const { locale = "en" } = Astro.props;
+const s = t(locale).gallery;
+const projects = getProjects();
+const types = typeBuckets(projects);
+const stacks = stackList(projects).slice(0, 12);
+const teams = teamBuckets(projects);
+const titles = teamTitles();
+const teamsHref = locale === "my" ? "/my/projects/teams" : "/projects/teams";
+const ogFallback = (r: string) => {
+  const m = r.match(/github\.com\/([^/]+)\/([^/#?]+)/i);
+  return m ? `https://opengraph.githubassets.com/1/${m[1]}/${m[2]}` : "";
+};
+const slides = projects.map((c) => ({
+  title: c.title,
+  subtitle: `@${c.name}`,
+  thumb: c.screenshot_url ?? ogFallback(c.repo_url),
+  hasVideo: false,
+}));
+const scriptI18n = JSON.stringify({
+  loadingSlides: s.loadingSlides,
+  slidesUnavailable: s.slidesUnavailable,
+  liveBtn: s.liveBtn,
+  repoBtn: s.repoBtn,
+  slidesBtn: s.slidesBtn,
+  types: s.types,
+  countUnit: s.countUnit,
+  shotAlt: s.shotAlt,
+  // team_no -> "T05 · <team project title>" for the lightbox tag row.
+  teamLabels: Object.fromEntries(
+    teams.map((t) => [
+      t.team,
+      titles.get(t.team)
+        ? `${teamTag(t.team)} · ${titles.get(t.team)}`
+        : teamTag(t.team),
+    ]),
+  ),
+});
+---
+
+<section id="personal-gallery" class="mx-auto max-w-6xl px-5 py-12 sm:px-6">
+  <p class="section-label">{s.label}</p>
+  <h1 class="mt-2 text-center text-3xl font-extrabold sm:text-4xl">
+    {s.heading}
+  </h1>
+  <p class="mx-auto mt-3 max-w-xl text-center text-gray-400">{s.intro}</p>
+  {
+    projects.length === 0 ? (
+      <p class="mt-10 text-center text-gray-600">{s.empty}</p>
+    ) : (
+      <>
+        <HeroSlider
+          slides={slides}
+          prevLabel={s.heroPrev}
+          nextLabel={s.heroNext}
+          id="hero-personal"
+        />
+        <FilterBar
+          searchPlaceholder={s.searchPlaceholder}
+          count={projects.length}
+          countUnit={s.countUnit}
+          bars={[
+            {
+              attr: "type",
+              allLabel: s.allTypes,
+              options: types.map((ty) => ({
+                value: ty.type,
+                label: `${TYPE_LABELS[ty.type as keyof typeof TYPE_LABELS]} · ${ty.count}`,
+              })),
+            },
+            {
+              attr: "stack",
+              allLabel: s.anyStack,
+              options: stacks.map((st) => ({ value: st.name, label: st.name })),
+            },
+            {
+              attr: "team",
+              allLabel: s.anyTeam,
+              options: teams.map((tm) => ({
+                value: teamTag(tm.team) as string,
+                label: `${teamTag(tm.team)} · ${tm.count}`,
+              })),
+            },
+          ]}
+          sortLabel={s.sortLabel}
+          sortOptions={[
+            { value: "chapter", label: s.sortChapter },
+            { value: "az", label: s.sortAz },
+          ]}
+        />
+        <div
+          id="gallery-grid"
+          class="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
+          data-i18n={scriptI18n}
+        >
+          {projects.map((c) => (
+            <ProjectCard
+              project={c}
+              teamsHref={teamsHref}
+              teamTitle={c.team ? (titles.get(c.team) ?? null) : null}
+            />
+          ))}
+        </div>
+        <p id="gallery-empty" class="mt-10 text-center text-gray-600" hidden>
+          {s.noMatches}
+        </p>
+      </>
+    )
+  }
+  <Lightbox />
+</section>
+
+<script>
+  import {
+    wireFilter,
+    fadeInOnScroll,
+    wireImageFallback,
+    wireLightbox,
+    linkBtn,
+  } from "../lib/gallery-dom";
+  import { renderDeck } from "./gallery/deck-renderer";
+  import { renderShots } from "./gallery/shots-strip";
+  const grid = document.getElementById("gallery-grid");
+  let I18N: any = { types: {} };
+  try {
+    I18N = JSON.parse(grid?.dataset.i18n ?? "{}");
+  } catch (e) {
+    console.error("PersonalGallery: failed to parse grid dataset.i18n", e);
+  }
+  fadeInOnScroll("#gallery-grid .project-cell");
+  wireImageFallback("#personal-gallery");
+  wireFilter({
+    gridId: "gallery-grid",
+    countEl: document.getElementById("project-count"),
+    emptyEl: document.getElementById("gallery-empty"),
+    bars: [{ attr: "type" }, { attr: "stack" }, { attr: "team" }],
+    countUnit: I18N.countUnit ?? "projects",
+    sortSelectId: "project-sort",
+    defaultSort: "chapter",
+  });
+
+  wireLightbox({
+    heroId: "hero-personal",
+    datasetKey: "project",
+    populate(media, c: any) {
+      (document.getElementById("lb-avatar") as HTMLImageElement).src =
+        `https://github.com/${c.github}.png`;
+      document.getElementById("lb-title")!.textContent = c.title;
+      const nm = document.getElementById("lb-name") as HTMLAnchorElement;
+      nm.textContent = `@${c.github}`;
+      nm.href = `https://github.com/${c.github}`;
+      document.getElementById("lb-desc")!.textContent = c.desc ?? "";
+      const tags = document.getElementById("lb-tags")!;
+      tags.innerHTML = "";
+      const ty = document.createElement("span");
+      ty.className =
+        "rounded-full bg-accent-500/15 px-2 py-0.5 font-mono text-[10px] font-semibold text-accent-300";
+      ty.textContent = I18N.types?.[c.type] ?? c.type;
+      tags.appendChild(ty);
+      // Owning team, so a visitor can trace the builder back to their booth.
+      const teamLabel = c.team ? I18N.teamLabels?.[c.team] : null;
+      if (teamLabel) {
+        const tm = document.createElement("span");
+        tm.className =
+          "rounded-full border border-white/10 bg-white/5 px-2 py-0.5 font-mono text-[10px] font-semibold text-gray-300";
+        tm.textContent = teamLabel;
+        tags.appendChild(tm);
+      }
+      for (const st of c.stack ?? []) {
+        const el = document.createElement("span");
+        el.className =
+          "rounded-full bg-white/5 px-2 py-0.5 font-mono text-[10px] text-gray-400";
+        el.textContent = st;
+        tags.appendChild(el);
+      }
+      const links = document.getElementById("lb-links")!;
+      links.innerHTML = "";
+      if (c.live_url) links.appendChild(linkBtn(I18N.liveBtn, c.live_url));
+      links.appendChild(linkBtn(I18N.repoBtn, c.repo_url));
+      if (c.slides_raw)
+        links.appendChild(linkBtn(I18N.slidesBtn, c.slides_raw));
+      media.innerHTML = "";
+      renderShots(media, c.screenshots ?? [], I18N.shotAlt ?? "Screenshot");
+      const deckMount = document.createElement("div");
+      media.appendChild(deckMount);
+      renderDeck(deckMount, c, {
+        loadingSlides: I18N.loadingSlides,
+        slidesUnavailable: I18N.slidesUnavailable,
+      });
+    },
+  });
+</script>
+
+<style>
+  .project-cell {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  .project-cell.in {
+    opacity: 1;
+    transform: none;
+    transition:
+      opacity 0.5s ease,
+      transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .project-cell {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+  @media (scripting: none) {
+    .project-cell {
+      opacity: 1;
+      transform: none;
+    }
+  }
+</style>

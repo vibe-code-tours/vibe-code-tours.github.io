@@ -1,0 +1,20 @@
+# team-04.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-04"
+team_no: 4
+name: "Job Your Love"
+title: "Job Your Love"
+tagline: "" # <- one short line, your pitch
+desc: "Spreadsheet like job tracking platform"
+type: "web-app"
+stack: []
+live_url: "https://job-your-love.megiapps.workers.dev/"
+repo_url: "https://github.com/saiwaiyanphyo/job-your-love"
+video:
+  youtube_id: "vUt2PTLdMFk"
+  youtube_url: "https://youtu.be/vUt2PTLdMFk"
+  drive_url: "Demo.mov"
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: null
+  small: "/logos/team-04-64x64.png"
+  medium: "/logos/team-04-128x128.png"
+  large: "/logos/team-04-256x256.png"

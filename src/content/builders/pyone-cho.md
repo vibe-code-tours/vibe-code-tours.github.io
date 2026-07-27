@@ -3,11 +3,11 @@ name: Pyone Cho
 github: pyone-cho
 cohort: 1
 role: builder
-skills: ["JavaScript", "Python", "Claude Code"]
+skills: ["C", "C++", "Bash", "Ubuntu-Linux", "Claude Code"]
 repo: https://github.com/pyone-cho/pyone-cho
-x: your-x-handle
-linkedin: your-linkedin-username
-website: https://your-site.com
+linkedin: https://www.linkedin.com/in/pyone-cho-6671a9114/
+certs:
+  claude_code_101: https://verify.skilljar.com/c/pwfdhm93rxjy
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
