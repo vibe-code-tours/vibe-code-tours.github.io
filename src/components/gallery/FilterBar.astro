@@ -1,0 +1,77 @@
+---
+// src/components/gallery/FilterBar.astro
+interface Bar {
+  attr: string;
+  allLabel: string;
+  options: { value: string; label: string }[];
+}
+interface SortOpt {
+  value: string;
+  label: string;
+}
+interface Props {
+  searchPlaceholder: string;
+  count: number;
+  countUnit: string;
+  bars: Bar[];
+  sortLabel?: string;
+  sortOptions?: SortOpt[];
+}
+const { searchPlaceholder, count, countUnit, bars, sortLabel, sortOptions } =
+  Astro.props;
+const CHIP =
+  "cursor-pointer rounded-full border border-white/10 bg-white/5 px-3 py-1 font-mono text-xs font-semibold text-gray-400 transition hover:text-white aria-pressed:border-accent-500 aria-pressed:bg-accent-500 aria-pressed:text-black";
+---
+
+<div class="mt-8 flex flex-col items-center gap-3">
+  <input
+    id="project-search"
+    type="search"
+    placeholder={searchPlaceholder}
+    aria-label={searchPlaceholder}
+    class="w-full max-w-sm rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm text-white placeholder:text-gray-500 focus:border-accent-500 focus:outline-none"
+  />
+  {
+    bars.map((bar) => (
+      <div data-bar={bar.attr} class="flex flex-wrap justify-center gap-2">
+        <button
+          class={CHIP}
+          data-set={bar.attr}
+          {...{ [`data-${bar.attr}`]: "*" }}
+          aria-pressed="true"
+        >
+          {bar.allLabel}
+        </button>
+        {bar.options.map((o) => (
+          <button
+            class={CHIP}
+            {...{ [`data-${bar.attr}`]: o.value }}
+            aria-pressed="false"
+          >
+            {o.label}
+          </button>
+        ))}
+      </div>
+    ))
+  }
+  <p id="project-count" class="font-mono text-xs text-gray-500">
+    {count}
+    {countUnit}
+  </p>
+  {
+    sortOptions && sortOptions.length > 0 && (
+      <label class="flex items-center gap-2 font-mono text-xs text-gray-500">
+        {sortLabel}
+        {/* id "project-sort" is the contract passed as sortSelectId to wireFilter */}
+        <select
+          id="project-sort"
+          class="rounded-lg border border-white/10 bg-surface-elevated px-2 py-1 text-xs text-gray-300 focus:border-accent-500 focus:outline-none"
+        >
+          {sortOptions.map((o) => (
+            <option value={o.value}>{o.label}</option>
+          ))}
+        </select>
+      </label>
+    )
+  }
+</div>

@@ -74,4 +74,4 @@ When the domain is purchased and pointed at GitHub Pages:
 
 - Curriculum content: CC-BY-SA 4.0
 - Code: MIT
-- Logo + visuals: CC-BY-SA 4.0
+- Logo + visuals: CC-BY-SA 4.0.

@@ -8,7 +8,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import yaml from "js-yaml";
-import { normalizeCerts, skilljarUrl } from "../src/lib/certs.mjs";
+import { normalizeCerts, certUrl } from "../src/lib/certs.mjs";
 
 const dir = "src/content/builders";
 const TIMEOUT_MS = 12000;
@@ -31,7 +31,8 @@ for (const f of fs
   const certs = normalizeCerts(data?.certs);
   if (!certs) continue;
   for (const [id, code] of Object.entries(certs)) {
-    jobs.push({ file: f, id, code, url: skilljarUrl(code) });
+    // certUrl, not skilljarUrl — non-Skilljar certs store a full URL as the code.
+    jobs.push({ file: f, id, code, url: certUrl(code) });
   }
 }
 

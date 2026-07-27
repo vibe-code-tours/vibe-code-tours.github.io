@@ -1,0 +1,20 @@
+# team-17.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-17"
+team_no: 17
+name: "Adaptive Interview Assessment Platform"
+title: "Adaptive Interview Assessment Platform"
+tagline: "" # <- one short line, your pitch
+desc: null
+type: "web-app"
+stack: []
+live_url: "https://team-17-app-dulg.vercel.app"
+repo_url: "https://github.com/GadayHtun/team-17-app"
+video:
+  youtube_id: "mSDow1yT1nY"
+  youtube_url: "https://youtu.be/mSDow1yT1nY"
+  drive_url: "https://drive.google.com/file/d/1b3CP4V5iRLtm0ZUQ7TXm8zKG7kIe9UP2/view?usp=sharing"
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: null
+  small: "/logos/team-17-64x64.png"
+  medium: "/logos/team-17-128x128.png"
+  large: "/logos/team-17-256x256.png"

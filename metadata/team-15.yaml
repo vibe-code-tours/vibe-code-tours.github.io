@@ -1,0 +1,20 @@
+# team-15.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-15"
+team_no: 15
+name: "ReVive"
+title: "ReVive"
+tagline: "" # <- one short line, your pitch
+desc: "Give Your Old Tech a Second Life"
+type: "web-app"
+stack: []
+live_url: "https://team-15-app.vercel.app/"
+repo_url: "https://github.com/vibe-code-tours/Team-15-app"
+video:
+  youtube_id: "lk3owT9c5NU"
+  youtube_url: "https://youtu.be/lk3owT9c5NU?si=JBv8OBtGvqxF1Yh_"
+  drive_url: null
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: "/logos/team-15.svg"
+  small: "/logos/team-15-64x64.png"
+  medium: "/logos/team-15-128x128.png"
+  large: "/logos/team-15-256x256.png"
