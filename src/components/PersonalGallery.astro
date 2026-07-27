@@ -3,9 +3,11 @@
 import {
   getProjects,
   typeBuckets,
+  teamBuckets,
   stackList,
   TYPE_LABELS,
 } from "../lib/projects.mjs";
+import { teamTag, teamTitles } from "../lib/teams.mjs";
 import { t } from "../i18n/utils";
 import HeroSlider from "./gallery/HeroSlider.astro";
 import FilterBar from "./gallery/FilterBar.astro";
@@ -19,6 +21,9 @@ const s = t(locale).gallery;
 const projects = getProjects();
 const types = typeBuckets(projects);
 const stacks = stackList(projects).slice(0, 12);
+const teams = teamBuckets(projects);
+const titles = teamTitles();
+const teamsHref = locale === "my" ? "/my/projects/teams" : "/projects/teams";
 const ogFallback = (r: string) => {
   const m = r.match(/github\.com\/([^/]+)\/([^/#?]+)/i);
   return m ? `https://opengraph.githubassets.com/1/${m[1]}/${m[2]}` : "";
@@ -37,6 +42,16 @@ const scriptI18n = JSON.stringify({
   slidesBtn: s.slidesBtn,
   types: s.types,
   countUnit: s.countUnit,
+  shotAlt: s.shotAlt,
+  // team_no -> "T05 · <team project title>" for the lightbox tag row.
+  teamLabels: Object.fromEntries(
+    teams.map((t) => [
+      t.team,
+      titles.get(t.team)
+        ? `${teamTag(t.team)} · ${titles.get(t.team)}`
+        : teamTag(t.team),
+    ]),
+  ),
 });
 ---
 
@@ -75,6 +90,19 @@ const scriptI18n = JSON.stringify({
               allLabel: s.anyStack,
               options: stacks.map((st) => ({ value: st.name, label: st.name })),
             },
+            {
+              attr: "team",
+              allLabel: s.anyTeam,
+              options: teams.map((tm) => ({
+                value: teamTag(tm.team) as string,
+                label: `${teamTag(tm.team)} · ${tm.count}`,
+              })),
+            },
+          ]}
+          sortLabel={s.sortLabel}
+          sortOptions={[
+            { value: "chapter", label: s.sortChapter },
+            { value: "az", label: s.sortAz },
           ]}
         />
         <div
@@ -83,7 +111,11 @@ const scriptI18n = JSON.stringify({
           data-i18n={scriptI18n}
         >
           {projects.map((c) => (
-            <ProjectCard project={c} />
+            <ProjectCard
+              project={c}
+              teamsHref={teamsHref}
+              teamTitle={c.team ? (titles.get(c.team) ?? null) : null}
+            />
           ))}
         </div>
         <p id="gallery-empty" class="mt-10 text-center text-gray-600" hidden>
@@ -104,6 +136,7 @@ const scriptI18n = JSON.stringify({
     linkBtn,
   } from "../lib/gallery-dom";
   import { renderDeck } from "./gallery/deck-renderer";
+  import { renderShots } from "./gallery/shots-strip";
   const grid = document.getElementById("gallery-grid");
   let I18N: any = { types: {} };
   try {
@@ -117,8 +150,10 @@ const scriptI18n = JSON.stringify({
     gridId: "gallery-grid",
     countEl: document.getElementById("project-count"),
     emptyEl: document.getElementById("gallery-empty"),
-    bars: [{ attr: "type" }, { attr: "stack" }],
+    bars: [{ attr: "type" }, { attr: "stack" }, { attr: "team" }],
     countUnit: I18N.countUnit ?? "projects",
+    sortSelectId: "project-sort",
+    defaultSort: "chapter",
   });
 
   wireLightbox({
@@ -139,6 +174,15 @@ const scriptI18n = JSON.stringify({
         "rounded-full bg-accent-500/15 px-2 py-0.5 font-mono text-[10px] font-semibold text-accent-300";
       ty.textContent = I18N.types?.[c.type] ?? c.type;
       tags.appendChild(ty);
+      // Owning team, so a visitor can trace the builder back to their booth.
+      const teamLabel = c.team ? I18N.teamLabels?.[c.team] : null;
+      if (teamLabel) {
+        const tm = document.createElement("span");
+        tm.className =
+          "rounded-full border border-white/10 bg-white/5 px-2 py-0.5 font-mono text-[10px] font-semibold text-gray-300";
+        tm.textContent = teamLabel;
+        tags.appendChild(tm);
+      }
       for (const st of c.stack ?? []) {
         const el = document.createElement("span");
         el.className =
@@ -153,7 +197,10 @@ const scriptI18n = JSON.stringify({
       if (c.slides_raw)
         links.appendChild(linkBtn(I18N.slidesBtn, c.slides_raw));
       media.innerHTML = "";
-      renderDeck(media, c, {
+      renderShots(media, c.screenshots ?? [], I18N.shotAlt ?? "Screenshot");
+      const deckMount = document.createElement("div");
+      media.appendChild(deckMount);
+      renderDeck(deckMount, c, {
         loadingSlides: I18N.loadingSlides,
         slidesUnavailable: I18N.slidesUnavailable,
       });

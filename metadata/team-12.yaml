@@ -1,0 +1,20 @@
+# team-12.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-12"
+team_no: 12
+name: "Dr.Note"
+title: "Dr.Note"
+tagline: "" # <- one short line, your pitch
+desc: null
+type: "web-app"
+stack: []
+live_url: "https://dr-note-demo.vercel.app/login"
+repo_url: "https://github.com/vibe-code-tours/Team-12-app"
+video:
+  youtube_id: "yt_O3LG9xvU"
+  youtube_url: "https://youtu.be/yt_O3LG9xvU"
+  drive_url: null
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: null
+  small: "/logos/team-12-64x64.png"
+  medium: "/logos/team-12-128x128.png"
+  large: "/logos/team-12-256x256.png"

@@ -1,0 +1,20 @@
+# team-20.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-20"
+team_no: 20
+name: "Kone Sone Sine"
+title: "Kone Sone Sine"
+tagline: "" # <- one short line, your pitch
+desc: "Fundraising Event Management System"
+type: "web-app"
+stack: []
+live_url: "https://develop-konesonesine.netlify.app/"
+repo_url: "https://github.com/vibe-code-tours/Team-20-app"
+video:
+  youtube_id: "Dha-jETmrks"
+  youtube_url: "https://youtu.be/Dha-jETmrks"
+  drive_url: "https://drive.google.com/file/d/1sb_xsoirJwjey73vbUlnocHn2GJWmFKf/view?usp=drive_link"
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: null
+  small: "/logos/team-20-64x64.png"
+  medium: "/logos/team-20-128x128.png"
+  large: "/logos/team-20-256x256.png"

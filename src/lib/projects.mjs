@@ -26,8 +26,25 @@ function valid(c) {
 export function getProjects() {
   return (Array.isArray(data) ? data : [])
     .filter(valid)
-    .map((c) => ({ ...c, stack: Array.isArray(c.stack) ? c.stack : [] }))
+    .map((c) => ({
+      ...c,
+      stack: Array.isArray(c.stack) ? c.stack : [],
+      team: Number(c.team) || null,
+    }))
     .sort((a, b) => (a.name || a.github).localeCompare(b.name || b.github));
+}
+
+// Teams that own at least one personal project, ascending by team number.
+// Drives the gallery's team filter; cards with no roster row are excluded.
+export function teamBuckets(cards) {
+  const m = new Map();
+  for (const c of cards) {
+    if (!c.team) continue;
+    m.set(c.team, (m.get(c.team) || 0) + 1);
+  }
+  return [...m.entries()]
+    .map(([team, count]) => ({ team, count }))
+    .sort((a, b) => a.team - b.team);
 }
 
 export function typeBuckets(cards) {

@@ -1,0 +1,20 @@
+# team-08.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-08"
+team_no: 8
+name: "TheChosenOne"
+title: "TheChosenOne"
+tagline: "" # <- one short line, your pitch
+desc: "Multiplayer Party Game App"
+type: "game"
+stack: []
+live_url: "https://vibecode.tours/team-08-app/"
+repo_url: "https://github.com/vibe-code-tours/Team-08-app"
+video:
+  youtube_id: "8BOzHHbaYcY"
+  youtube_url: "https://youtu.be/8BOzHHbaYcY"
+  drive_url: "https://drive.google.com/file/d/1BoZKejN8HtReKjx8X3V-a2Hkc30hv5gi/view?usp=drive_link"
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: null
+  small: "/logos/team-08-64x64.png"
+  medium: "/logos/team-08-128x128.png"
+  large: "/logos/team-08-256x256.png"

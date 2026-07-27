@@ -1,53 +1,67 @@
 ---
 // src/components/gallery/ProjectCard.astro
+import CardShell from "./CardShell.astro";
+import RankBadge from "../RankBadge.astro";
 import { TYPE_LABELS } from "../../lib/projects.mjs";
+import { teamTag } from "../../lib/teams.mjs";
+import { shotCount } from "../../lib/gallery-filter.mjs";
 interface Props {
   project: any;
+  teamsHref?: string;
+  teamTitle?: string | null;
 }
-const { project: c } = Astro.props;
+const {
+  project: c,
+  teamsHref = "/projects/teams",
+  teamTitle = null,
+} = Astro.props;
+const tag = teamTag(c.team);
 const ogFallback = (repoUrl: string) => {
   const m = repoUrl.match(/github\.com\/([^/]+)\/([^/#?]+)/i);
   return m ? `https://opengraph.githubassets.com/1/${m[1]}/${m[2]}` : "";
 };
 const shot = c.screenshot_url ?? ogFallback(c.repo_url);
 const initial = (c.title || c.name || "?").trim().charAt(0).toUpperCase();
+const shots = shotCount(c.screenshots);
+const dataAttrs = {
+  "data-type": c.type,
+  "data-stack": (c.stack ?? []).join("|"),
+  "data-chapter": String(c.chapter ?? -1),
+  "data-team": tag ?? "",
+  "data-project": JSON.stringify(c),
+};
 ---
 
-<button
-  class="project-cell group relative overflow-hidden rounded-xl border border-t-[3px] border-white/10 border-t-accent-500 bg-white/5 text-left transition hover:-translate-y-1 hover:border-accent-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
-  data-type={c.type}
-  data-stack={(c.stack ?? []).join("|")}
-  data-project={JSON.stringify(c)}
+<CardShell
+  dataAttrs={dataAttrs}
+  thumb={shot || null}
+  alt={`${c.title} screenshot`}
+  initial={initial}
+  typeLabel={TYPE_LABELS[c.type as keyof typeof TYPE_LABELS]}
+  stack={c.stack ?? []}
+  sortTitle={c.title}
 >
-  <div class="relative aspect-video overflow-hidden bg-black/40">
-    <div
-      class:list={[
-        "gallery-fallback absolute inset-0 items-center justify-center bg-surface-elevated text-gray-500",
-        shot ? "hidden" : "flex",
-      ]}
-      aria-hidden="true"
-    >
-      <span class="font-mono text-3xl font-bold">{initial}</span>
-    </div>
+  <Fragment slot="thumb-overlay">
     {
-      shot && (
-        <img
-          src={shot}
-          alt={`${c.title} screenshot`}
-          loading="lazy"
-          class="gallery-img h-full w-full object-cover transition duration-300 group-hover:scale-105 motion-reduce:transition-none"
-        />
-      )
-    }
-    {
-      c.chapter && (
-        <span class="absolute right-2 top-2 rounded-full bg-black/60 px-2 py-0.5 font-mono text-[10px] font-semibold text-white backdrop-blur-sm">
-          Ch {c.chapter}
+      typeof c.chapter === "number" && (
+        <span class="absolute left-2 top-2 drop-shadow">
+          <RankBadge
+            level={c.chapter}
+            size={34}
+            title={`Level ${c.chapter + 1}`}
+          />
         </span>
       )
     }
-  </div>
-  <div class="p-4">
+    {
+      shots > 1 && (
+        <span class="absolute right-2 top-2 flex items-center gap-1 rounded-full bg-black/60 px-2 py-0.5 font-mono text-[10px] font-semibold text-white backdrop-blur-sm">
+          ▦ {shots}
+        </span>
+      )
+    }
+  </Fragment>
+  <Fragment slot="meta">
     <div class="flex items-center gap-2">
       <img
         src={`https://github.com/${c.github}.png`}
@@ -59,26 +73,28 @@ const initial = (c.title || c.name || "?").trim().charAt(0).toUpperCase();
       />
       <span class="truncate font-semibold text-white">{c.title}</span>
     </div>
-    <p
-      class="mt-1 truncate text-sm text-gray-400 transition group-hover:text-accent-300"
-    >
-      @{c.name}
-    </p>
-    {c.desc && <p class="mt-2 line-clamp-2 text-sm text-gray-500">{c.desc}</p>}
-    <div class="mt-3 flex flex-wrap gap-1.5">
+    <div class="mt-1 flex items-center gap-2">
       <span
-        class="rounded-full bg-accent-500/15 px-2 py-0.5 font-mono text-[10px] font-semibold text-accent-300"
-        >{TYPE_LABELS[c.type as keyof typeof TYPE_LABELS]}</span
+        data-nolightbox
+        data-href={`https://github.com/${c.github}`}
+        class="w-fit min-w-0 cursor-pointer truncate text-sm text-gray-400 transition hover:text-accent-300"
+        >@{c.name}</span
       >
       {
-        (c.stack ?? [])
-          .slice(0, 3)
-          .map((tag: string) => (
-            <span class="rounded-full bg-white/5 px-2 py-0.5 font-mono text-[10px] text-gray-400">
-              {tag}
-            </span>
-          ))
+        tag && (
+          // Anchor with no data-href: the lightbox handler bails out and the
+          // browser follows the link in the same tab.
+          <a
+            data-nolightbox
+            href={teamsHref}
+            title={teamTitle ? `${tag} · ${teamTitle}` : tag}
+            class="shrink-0 rounded-full border border-white/10 bg-white/5 px-2 py-0.5 font-mono text-[10px] font-semibold text-gray-300 transition hover:border-accent-500/40 hover:text-accent-300"
+          >
+            {tag}
+          </a>
+        )
       }
     </div>
-  </div>
-</button>
+    {c.desc && <p class="mt-2 line-clamp-2 text-sm text-gray-500">{c.desc}</p>}
+  </Fragment>
+</CardShell>

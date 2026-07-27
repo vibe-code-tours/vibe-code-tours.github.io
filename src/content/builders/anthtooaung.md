@@ -4,6 +4,11 @@ github: anthtooaung
 cohort: 1
 role: builder
 skills: ["JavaScript", "PHP", "Java", "Laravel"]
+certs:
+  claude_101: kss3uqvjvr7h
+  claude_code_101: gu2huv8wu79r
+  agent_skills_intro: txdjx8tkhpfb
+  subagents_intro: m4aup67k7vr7
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to create websites and applications that are useful and beneficial to society. I'm excited to be part of this tour, and I'll give my best effort to learn new skills, collaborate with others, and build something meaningful.
