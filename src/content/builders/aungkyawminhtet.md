@@ -7,7 +7,7 @@ skills: ["React", "TypeScript", "Next.js", "Node.js", "Claude Code", ]
 repo: https://github.com/aungkyawminhtet
 linkedin: https://www.linkedin.com/in/aung-kyaw-min-htet-3b359b23b/
 certs:
-  AI Fluency: Framework & Foundations: https://verify.skilljar.com/c/phatovsc5u2t
+  "AI Fluency: Framework & Foundations": https://verify.skilljar.com/c/phatovsc5u2t
   Claude Code in Action: https://verify.skilljar.com/c/ep76ko6o4qci
 ---
 
