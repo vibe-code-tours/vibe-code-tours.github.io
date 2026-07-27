@@ -49,6 +49,11 @@ team-NN.svg  →  team-NN-256/128/64 png  →  repo og:image  →  site favicon 
 
 So a team with **no** logo still renders a clean numbered badge; adding files upgrades it automatically.
 
+The site resolves these **from disk**, not from the yaml — `src/lib/team-meta.mjs` looks for the
+files that actually exist in `public/logos/` at build time, so a stub path pointing at a file you
+never shipped is simply ignored. One exception: an `.svg` over 40 KB is skipped in favour of the
+PNGs, because a traced-raster "svg" is too heavy for a 24 px card badge.
+
 ## metadata schema (`team-NN.yaml`)
 
 See any `team-NN.yaml`. Fields: `team, team_no, name, title, tagline, desc, type, stack,

@@ -2,6 +2,7 @@
 // src/components/gallery/TeamCard.astro
 import CardShell from "./CardShell.astro";
 import { TEAM_TYPE_LABELS, hasVideo } from "../../lib/teams.mjs";
+import { pickLogo } from "../../lib/team-meta.mjs";
 interface Props {
   team: any;
   demoSoon: string;
@@ -15,6 +16,8 @@ const thumb = t.youtube_id
   ? `https://i.ytimg.com/vi/${t.youtube_id}/hqdefault.jpg`
   : ogFallback(t.repo_url);
 const video = hasVideo(t);
+// The team's own mark, when they shipped one — see metadata/README.md.
+const logo = pickLogo(t.logo, "small");
 const initial = (t.title || t.team || "?").trim().charAt(0).toUpperCase();
 const statuses = [
   t.live_url ? "live" : null,
@@ -67,6 +70,18 @@ const dataAttrs = {
   </Fragment>
   <Fragment slot="meta">
     <div class="flex items-center gap-2">
+      {
+        logo && (
+          <img
+            src={logo}
+            alt=""
+            width="24"
+            height="24"
+            loading="lazy"
+            class="h-6 w-6 shrink-0 rounded bg-white/5 object-contain"
+          />
+        )
+      }
       <span
         class="font-mono text-[11px] font-bold uppercase tracking-wide text-accent-400"
       >
@@ -74,6 +89,12 @@ const dataAttrs = {
       </span>
       <span class="truncate font-semibold text-white">{t.title}</span>
     </div>
-    {t.desc && <p class="mt-2 line-clamp-2 text-sm text-gray-500">{t.desc}</p>}
+    {
+      (t.tagline || t.desc) && (
+        <p class="mt-2 line-clamp-2 text-sm text-gray-500">
+          {t.tagline || t.desc}
+        </p>
+      )
+    }
   </Fragment>
 </CardShell>

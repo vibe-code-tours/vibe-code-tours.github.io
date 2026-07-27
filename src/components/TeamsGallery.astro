@@ -6,6 +6,7 @@ import {
   statusBuckets,
   TEAM_TYPE_LABELS,
 } from "../lib/teams.mjs";
+import { pickLogo, prefixLogo } from "../lib/team-meta.mjs";
 import { t } from "../i18n/utils";
 import HeroSlider from "./gallery/HeroSlider.astro";
 import FilterBar from "./gallery/FilterBar.astro";
@@ -16,7 +17,13 @@ interface Props {
 }
 const { locale = "en" } = Astro.props;
 const s = t(locale).teams;
-const teams = getTeams();
+// Logo paths come out of metadata/ site-root-relative; re-root them on the
+// configured base, and pre-pick the lightbox tier here so the client script
+// never has to duplicate the fallback chain.
+const teams = getTeams().map((t2) => {
+  const logo = prefixLogo(t2.logo, import.meta.env.BASE_URL);
+  return { ...t2, logo, logo_lb: pickLogo(logo, "medium") };
+});
 const types = typeBuckets(teams);
 const status = statusBuckets(teams);
 // NOTE: written multiline deliberately — a dense one-line arrow with this
@@ -147,14 +154,22 @@ const scriptI18n = JSON.stringify({
     heroId: "hero-teams",
     datasetKey: "team",
     populate(media, t2: any) {
-      (document.getElementById("lb-avatar") as HTMLImageElement).src =
+      // Every team repo sits under the same org, so the org avatar is identical
+      // on all 20 cards — the team's own logo wins whenever they shipped one.
+      const avatar = document.getElementById("lb-avatar") as HTMLImageElement;
+      avatar.src =
+        t2.logo_lb ||
         `https://github.com/${(t2.repo_url.match(/github\.com\/([^/]+)/i) || [])[1] ?? "vibe-code-tours"}.png`;
+      avatar.className = t2.logo_lb
+        ? "h-8 w-8 rounded-lg border border-white/10 bg-white/5 object-contain"
+        : "h-8 w-8 rounded-full border border-white/10";
       document.getElementById("lb-title")!.textContent =
         `${t2.team} · ${t2.title}`;
       const nm = document.getElementById("lb-name") as HTMLAnchorElement;
       nm.textContent = t2.repo_url.replace(/^https?:\/\//, "");
       nm.href = t2.repo_url;
-      document.getElementById("lb-desc")!.textContent = t2.desc ?? "";
+      document.getElementById("lb-desc")!.textContent =
+        t2.tagline || t2.desc || "";
       const tags = document.getElementById("lb-tags")!;
       tags.innerHTML = "";
       if (t2.live_url) {

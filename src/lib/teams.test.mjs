@@ -23,6 +23,17 @@ test("getTeams returns validated, team_no-sorted list", () => {
   );
 });
 
+test("getTeams carries the metadata logo through to the gallery", () => {
+  const teams = getTeams();
+  for (const t of teams) {
+    assert.ok(t.logo, `${t.team} lost its logo variants`);
+    assert.ok(
+      t.logo.svg || t.logo.small || t.logo.medium || t.logo.large,
+      `${t.team} resolved no logo file`,
+    );
+  }
+});
+
 test("statusBuckets counts live and done", () => {
   const b = statusBuckets(getTeams());
   const live = b.find((x) => x.status === "live");
