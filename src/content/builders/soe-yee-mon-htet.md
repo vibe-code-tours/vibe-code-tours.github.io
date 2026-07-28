@@ -4,7 +4,7 @@ github: Soe-Yee-Mon-Htet
 cohort: 1
 role: builder
 skills: ["JavaScript", "Reactjs"]
-repo: https://github.com/Soe-Yee-Mon-Htet/vibe-code-tours.github.io/tree/main
+repo: https://github.com/Soe-Yee-Mon-Htet/vibe-code-tours.github.io
 linkedin: https://www.linkedin.com/in/soe-yee-mon-htet-symh-636674284/
 certs:
   claude_101: ufr57jjc62x4
