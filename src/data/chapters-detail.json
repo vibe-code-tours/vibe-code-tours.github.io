@@ -241,37 +241,37 @@
         "title": "A — Problem Statement",
         "dur": "20 min",
         "tier": "C",
-        "outcome": "Students can name the context problem, recognize its symptoms, and see the four-category solution map."
+        "outcome": "Students can name the context problem, spot its symptoms, and map the four solution categories."
       },
       {
         "title": "B — MCP Basics + Install Methods",
         "dur": "25 min",
         "tier": "BC",
-        "outcome": "Students understand MCP architecture and can install MCP servers through both available methods."
+        "outcome": "Students understand MCP and can install servers through both methods."
       },
       {
         "title": "C — Context7 Demo",
         "dur": "15 min",
         "tier": "C",
-        "outcome": "Students have seen Context7 solve the hallucination problem for library documentation in real time."
+        "outcome": "Students have seen Context7 fix library-doc hallucinations in real time."
       },
       {
         "title": "D — claude-mem Demo",
         "dur": "15 min",
         "tier": "C",
-        "outcome": "Students understand how memory persistence works across sessions and have seen claude-mem in action."
+        "outcome": "Students have seen claude-mem persist memory across sessions."
       },
       {
         "title": "E — LLM Wiki Pattern",
         "dur": "10 min",
         "tier": "C",
-        "outcome": "Students understand the LLM Wiki pattern and can start one immediately with zero tooling."
+        "outcome": "Students can start an LLM Wiki immediately, with zero tooling."
       },
       {
         "title": "F — Try What's Interesting",
         "dur": "15 min",
         "tier": "C",
-        "outcome": "Students have self-selected what to explore and optionally started trying something."
+        "outcome": "Students have picked something to explore and started trying it."
       },
       {
         "title": "A — Recap + Galleries Tour",
@@ -283,19 +283,19 @@
         "title": "B — Custom MCP Concept",
         "dur": "20 min",
         "tier": "C",
-        "outcome": "Students understand MCP server structure and see that building one is within reach."
+        "outcome": "Students understand how an MCP server is built — and see it's within reach."
       },
       {
         "title": "C — Team Build Session",
         "dur": "60 min",
         "tier": "C",
-        "outcome": "Each team has integrated at least one context tool into their project workflow and made tangible build progress."
+        "outcome": "Each team has wired at least one context tool into their workflow and made real build progress."
       },
       {
         "title": "D — Share-out + Reflection",
         "dur": "15 min",
         "tier": "B",
-        "outcome": "Teams learn from each other's experience with context tools and share progress."
+        "outcome": "Teams share what worked and learn from each other's context-tool experience."
       },
       {
         "title": "E — Wrap + Homework",

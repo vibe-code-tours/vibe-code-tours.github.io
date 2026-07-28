@@ -1,0 +1,20 @@
+# team-19.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-19"
+team_no: 19
+name: "SoulScript"
+title: "SoulScript"
+tagline: "" # <- one short line, your pitch
+desc: "Web Application – AI Mood Journal"
+type: "web-app"
+stack: []
+live_url: "https://soul-script-nu.vercel.app/"
+repo_url: "https://github.com/vibe-code-tours/Team-19-app"
+video:
+  youtube_id: "rKaBqSJWF9s"
+  youtube_url: "https://youtu.be/rKaBqSJWF9s"
+  drive_url: "https://drive.google.com/file/d/1PrFuxy40udwo6ZCPzrRacIj1Ur3akHpy/view?usp=drive_link"
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: null
+  small: "/logos/team-19-64x64.png"
+  medium: "/logos/team-19-128x128.png"
+  large: "/logos/team-19-256x256.png"
