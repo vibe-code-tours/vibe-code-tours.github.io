@@ -3,10 +3,11 @@ name: Aung Myint Myat
 github: ammdevl
 cohort: 1
 role: builder
-skills: ["Still Learning"]
+skills: ["Python", "JavaScript", "Linux", "Git", "Claude Code"]
 repo: https://github.com/vibe-code-tours/team-12
 x: amm1106_
 linkedin: ammdevl
+website: https://ammdevl.onrender.com
 certs:
     claude_101: https://verify.skilljar.com/c/ix73n6aqfno8
     claude_code_101: https://verify.skilljar.com/c/qd9atonpwzya
