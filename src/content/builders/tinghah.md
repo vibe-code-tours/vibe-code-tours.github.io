@@ -25,6 +25,16 @@ certs:
   ai_capabilities_and_limitations: https://verify.skilljar.com/c/tx5swyigdwr3
   ai_fluency_for_small_businesses: https://verify.skilljar.com/c/kjcg6jgjfit3
   ai_fluency_for_builders: https://verify.skilljar.com/c/nin9gsifp3eg
+
+# ============ Course progress (comments only, no build impact) ============
+# 16/22 courses completed.
+# progress: 73 %
+# what_course_still_needs?
+# AI Fluency for educators              : https://anthropic.skilljar.com/ai-fluency-for-educators
+# AI Fluency for students               : https://anthropic.skilljar.com/ai-fluency-for-students
+# Teaching AI Fluency                   : https://anthropic.skilljar.com/teaching-ai-fluency
+# AI Fluency for nonprofits             : https://anthropic.skilljar.com/ai-fluency-for-nonprofits
+# AI Fluency for pK-12 Educators (2 courses) : https://anthropic.skilljar.com/path/ai-fluency-for-pk-12-educators
 ---
 IT 工程師｜SAP ERP 與 MES 系統支援｜自動化流程與跨國資料視覺化｜RPA 與 AI 工具愛好者｜n8n 開發者
 Right now, I am exploring the boundaries of AI-assisted software engineering (vibe-coding).
