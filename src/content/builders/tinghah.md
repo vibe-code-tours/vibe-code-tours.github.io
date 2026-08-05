@@ -26,6 +26,10 @@ certs:
   ai_fluency_for_small_businesses: https://verify.skilljar.com/c/kjcg6jgjfit3
   ai_fluency_for_builders: https://verify.skilljar.com/c/nin9gsifp3eg
 
+# Git-related certs (optional, commented out — not yet earned):
+# github_foundations: https://www.credly.com/badges/github-foundations
+# git_essential_training: https://www.linkedin.com/learning/git-essential-training
+
 # ============ Course progress (comments only, no build impact) ============
 # 16/22 courses completed.
 # progress: 73 %
