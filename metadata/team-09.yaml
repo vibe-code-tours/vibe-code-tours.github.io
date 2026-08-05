@@ -1,0 +1,20 @@
+# team-09.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-09"
+team_no: 9
+name: "Mhat Tan"
+title: "Mhat Tan"
+tagline: "" # <- one short line, your pitch
+desc: "Mhat Tan Mobile App (Android)"
+type: "mobile"
+stack: []
+live_url: "https://expo.dev/accounts/thet-naing/projects/mhat-tan/builds/6932f97e-ac8b-4fb2-98ef-0a07fbccef21"
+repo_url: "https://github.com/vibe-code-tours/Team-09-app"
+video:
+  youtube_id: "KDyi62aT0LM"
+  youtube_url: "https://youtu.be/KDyi62aT0LM"
+  drive_url: "https://drive.google.com/file/d/1zzDWacg2aX1B8DP56HkOsZQZN8_xEG4P/view?usp=sharing"
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: null
+  small: "/logos/team-09-64x64.png"
+  medium: "/logos/team-09-128x128.png"
+  large: "/logos/team-09-256x256.png"
