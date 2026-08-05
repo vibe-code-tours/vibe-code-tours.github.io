@@ -5,7 +5,7 @@ cohort: 1
 role: builder
 skills: ["AI Agents", "DevOps", "PostgreSQL", "Automation", "TypeScript", "Python", "Linux", "GCP", "Cloud", "Fortinet", "n8n" ]
 linkedin: tinghah
-repo: https://github.com/tinghah/vibe-code-tours.github.io
+repo: https://github.com/tinghah/app.myanmardev.com
 website: https://app.myanmardev.com
 certs:
   claude_101: https://verify.skilljar.com/c/b8n2bf78rpsv
