@@ -21,21 +21,20 @@ certs:
   claude_cowork: https://verify.skilljar.com/c/wywh7h55h683
   mcp_advanced: https://verify.skilljar.com/c/39zmfhrujpin
   claude_bedrock: https://verify.skilljar.com/c/3hie88nnc5cg
-
   ai_capabilities_and_limitations: https://verify.skilljar.com/c/tx5swyigdwr3
   ai_fluency_for_small_businesses: https://verify.skilljar.com/c/kjcg6jgjfit3
   ai_fluency_for_builders: https://verify.skilljar.com/c/nin9gsifp3eg
+  ai_fluency_for_educators: https://verify.skilljar.com/c/izff4qvmrgc2
+  ai_fluency_for_students: https://verify.skilljar.com/c/cqgeyrsxq3rb
 
 # Git-related certs (optional, commented out — not yet earned):
 # github_foundations: https://www.credly.com/badges/github-foundations
 # git_essential_training: https://www.linkedin.com/learning/git-essential-training
 
 # ============ Course progress (comments only, no build impact) ============
-# 16/22 courses completed.
-# progress: 73 %
+# 18/22 courses completed.
+# progress: 82 %
 # what_course_still_needs?
-# AI Fluency for educators              : https://anthropic.skilljar.com/ai-fluency-for-educators
-# AI Fluency for students               : https://anthropic.skilljar.com/ai-fluency-for-students
 # Teaching AI Fluency                   : https://anthropic.skilljar.com/teaching-ai-fluency
 # AI Fluency for nonprofits             : https://anthropic.skilljar.com/ai-fluency-for-nonprofits
 # AI Fluency for pK-12 Educators (2 courses) : https://anthropic.skilljar.com/path/ai-fluency-for-pk-12-educators
