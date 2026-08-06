@@ -2534,7 +2534,8 @@
     ],
     "type": "bot",
     "stack": [
-      "JavaScript"
+      "JavaScript",
+      "HTML"
     ],
     "chapter": 5,
     "team": 14

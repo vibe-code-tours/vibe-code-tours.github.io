@@ -3,11 +3,21 @@ name: UlayAung
 github: royallyre7
 cohort: 1
 role: builder
-skills: ["Python", "Claude Code", "Network", "Security"]
-linkedin: aungzawtun305
+skills: ["Python", "Claude Code","Network","Security","AWS"]
+linkedin: https://sg.linkedin.com/in/aungzawtun3052025
+certs:
+  claude_101: https://verify.skilljar.com/c/knixrmjrx8df
+  claude_code_101: https://verify.skilljar.com/c/zm5mfv4kre95
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build automation skill set with AI and to undersatand how can us AI in infrastructure and build and test some idea.
+Hi there 👋 I'm Aung Zaw Tun
+Senior Network Engineer | CCIE Enterprise Infrastructure | Cloud & Automation Enthusiast
+
+Network infrastructure doesn't fail quietly — and for more than 15Singapore years, I've been designing, operating, and automating the systems that keep businesses running.
+
+Currently based in Auckland, New Zealand, I support large-scale global enterprise infrastructure spanning multiple continents, hybrid cloud environments, and multi-vendor network ecosystems.
+
+My experience covers enterprise networking, security, cloud infrastructure, and automation, with a strong focus on building resilient, scalable, and operationally efficient solutions.
 
 <!--
 HOW TO ADD YOURSELF:
