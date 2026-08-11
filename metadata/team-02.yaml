@@ -1,0 +1,20 @@
+# team-02.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-02"
+team_no: 2
+name: "SonicSavor"
+title: "SonicSavor"
+tagline: "" # <- one short line, your pitch
+desc: "mood-driven dining web app that turns a user's emotional state into a personalized 3-course meal and matching Music ambience."
+type: "mobile"
+stack: []
+live_url: null
+repo_url: "https://github.com/vibe-code-tours/Team-02-app"
+video:
+  youtube_id: null
+  youtube_url: null
+  drive_url: null
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: null
+  small: "/logos/team-02-64x64.png"
+  medium: "/logos/team-02-128x128.png"
+  large: "/logos/team-02-256x256.png"

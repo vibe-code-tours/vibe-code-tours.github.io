@@ -1,0 +1,20 @@
+# team-06.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-06"
+team_no: 6
+name: "QRDine"
+title: "QRDine"
+tagline: "" # <- one short line, your pitch
+desc: "Restaurant QR Order System"
+type: "web-app"
+stack: []
+live_url: "https://qrdine-demo.vercel.app/"
+repo_url: "https://github.com/vibe-code-tours/Team-06-app"
+video:
+  youtube_id: "TYp_2D272RA"
+  youtube_url: "https://youtu.be/TYp_2D272RA"
+  drive_url: "https://drive.google.com/file/d/1e5Briv5I1BX2IbRhRFd4QBrs5XeoNqGs/view?usp=drive_link"
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: null
+  small: "/logos/team-06-64x64.png"
+  medium: "/logos/team-06-128x128.png"
+  large: "/logos/team-06-256x256.png"

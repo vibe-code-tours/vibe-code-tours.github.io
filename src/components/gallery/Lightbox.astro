@@ -1,0 +1,48 @@
+---
+// src/components/gallery/Lightbox.astro — shared modal shell for personal + team detail.
+---
+
+<div
+  id="lightbox"
+  class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Project detail"
+  aria-labelledby="lb-title"
+>
+  <div
+    class="relative flex max-h-[90vh] w-full max-w-3xl flex-col overflow-hidden rounded-2xl border border-white/10 bg-surface-card"
+  >
+    <button
+      id="lightbox-close"
+      class="absolute right-3 top-3 z-10 rounded-full bg-white/10 p-2 text-white transition hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500"
+      aria-label="Close">✕</button
+    >
+    <div class="overflow-y-auto p-5">
+      <div id="lb-media" class="mb-4"></div>
+      <div class="flex items-center gap-3">
+        <img
+          id="lb-avatar"
+          src=""
+          alt=""
+          width="32"
+          height="32"
+          class="h-8 w-8 rounded-full border border-white/10"
+        />
+        <div>
+          <h2 id="lb-title" class="text-lg font-bold text-white"></h2>
+          <a
+            id="lb-name"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm text-gray-400 transition hover:text-accent-300 hover:underline"
+          ></a>
+        </div>
+      </div>
+      <p id="lb-desc" class="mt-3 text-sm text-gray-300"></p>
+      <div id="lb-tags" class="mt-3 flex flex-wrap gap-1.5"></div>
+      <div id="lb-links" class="mt-5 flex flex-wrap gap-3"></div>
+    </div>
+  </div>
+</div>

@@ -4,7 +4,67 @@
 import fs from "node:fs";
 import path from "node:path";
 import yaml from "js-yaml";
-import { identityProblems } from "../src/lib/builder-identity.mjs";
+import {
+  identityProblems,
+  normalizeGithub,
+} from "../src/lib/builder-identity.mjs";
+import { CERT_CATALOG, canonicalCertId } from "../src/lib/certs.mjs";
+
+// Forward-only filename rule: a builder file MUST be named <github-handle>.md so
+// filename, frontmatter github, and the level key (levels.json is keyed by
+// github) are ONE identity — no drift (see lwinmoe51/FurryForWhat incident).
+// These 10 pre-date the rule and are verified self-authored (filename = display
+// name, github = their real account). Grandfathered so the gate never breaks
+// them; everything NEW must match. Do not extend this list — rename instead.
+const FILENAME_GRANDFATHERED = new Set([
+  "AungKyaw",
+  "Davd-Sang96",
+  "aungheinkyaw",
+  "bhonewai",
+  "kaykhaingmyint",
+  "kyawmyokhaing199",
+  "swezin.preciousai-sys",
+  "thirithansin",
+  "youuu19",
+  "zinmar",
+]);
+
+// Schema-recognized top-level keys. Anything else is silently dropped by the
+// tolerant content schema — we WARN (never fail) so contributors notice.
+const SCHEMA_KEYS = new Set([
+  "name",
+  "github",
+  "cohort",
+  "role",
+  "skills",
+  "repo",
+  "x",
+  "linkedin",
+  "website",
+  "certs",
+]);
+// Curated near-miss aliases -> correct field (no fuzzy matching = no false positives).
+const FIELD_ALIASES = {
+  web: "website",
+  site: "website",
+  url: "website",
+  homepage: "website",
+  portfolio: "website",
+  git: "github",
+  gh: "github",
+  twitter: "x",
+  tw: "x",
+  linkedln: "linkedin",
+  "linked-in": "linkedin",
+  skill: "skills",
+  tags: "skills",
+  repository: "repo",
+  project: "repo",
+  cert: "certs",
+  certifications: "certs",
+  certs_list: "certs",
+};
+const CERT_IDS = new Set(Object.keys(CERT_CATALOG));
 
 const dir = "src/content/builders";
 const files = fs
@@ -12,6 +72,7 @@ const files = fs
   .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
 
 const problems = [];
+const warnings = [];
 const seenGithub = new Map();
 
 for (const f of files) {
@@ -52,6 +113,71 @@ for (const f of files) {
       );
     else if (key) seenGithub.set(key, f);
   }
+
+  // Filename must equal the github handle (forward-only; grandfathered legacy).
+  if (typeof data.github === "string") {
+    const base = f.replace(/\.md$/, "");
+    const handle = normalizeGithub(data.github);
+    if (
+      handle &&
+      base.toLowerCase() !== handle.toLowerCase() &&
+      !FILENAME_GRANDFATHERED.has(base)
+    )
+      problems.push(
+        `${f}: filename must match your github handle — rename to '${handle}.md' ` +
+          `(file is '${base}', github is '${handle}'). Keeps your level badge linked.`,
+      );
+  }
+
+  // --- Non-fatal warnings: schema-valid but likely-misplaced data (silent-loss guard) ---
+  for (const key of Object.keys(data)) {
+    if (SCHEMA_KEYS.has(key)) continue;
+    const lc = key.toLowerCase();
+    if (CERT_IDS.has(canonicalCertId(key)))
+      warnings.push(
+        `${f}: '${key}' is a Claude cert id at the TOP LEVEL — it won't show. ` +
+          `Nest it under a 'certs:' block (certs: then indented ` +
+          `'${canonicalCertId(key)}: <code>').`,
+      );
+    else if (FIELD_ALIASES[lc])
+      warnings.push(
+        `${f}: unknown key '${key}' — did you mean '${FIELD_ALIASES[lc]}'? (ignored as written)`,
+      );
+    else
+      warnings.push(`${f}: unrecognized key '${key}' — this field is ignored.`);
+  }
+  // A cert id that isn't the canonical spelling still renders (aliases resolve at
+  // build time) — say so, and name the id to use. One that resolves to nothing is
+  // a likely typo and renders with a default label instead of its real badge.
+  if (
+    data.certs &&
+    typeof data.certs === "object" &&
+    !Array.isArray(data.certs)
+  ) {
+    for (const cid of Object.keys(data.certs)) {
+      if (CERT_IDS.has(cid)) continue;
+      const canonical = canonicalCertId(cid);
+      if (CERT_IDS.has(canonical))
+        warnings.push(
+          `${f}: cert id '${cid}' resolves to '${canonical}' — it displays correctly, ` +
+            `but prefer the short id '${canonical}' (see BUILDERS.md).`,
+        );
+      else
+        warnings.push(
+          `${f}: cert id '${cid}' not in catalog — check spelling (renders with a default label).`,
+        );
+    }
+  }
+}
+
+if (warnings.length) {
+  console.warn(
+    `\n⚠ ${warnings.length} builder profile warning(s) — non-blocking, but this data may not display:\n`,
+  );
+  for (const w of warnings) console.warn("  - " + w);
+  console.warn(
+    `\nFix nesting/spelling if these fields were intended. The build still succeeds.\n`,
+  );
 }
 
 if (problems.length) {

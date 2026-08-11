@@ -4,12 +4,11 @@ github: thet-naing-lin
 cohort: 1
 role: builder
 skills: ["JavaScript", "HTML", "CSS", "Tailwind", "React JS", "PHP", "Laravel"]
-repo: https://github.com/thet-naing-lin/resume-screening-api
-linkedin: Thet Naing Lin
+repo: https://github.com/thet-naing-lin
+linkedin: https://www.linkedin.com/in/thet-naing-lin-954b61269/
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
-real by Demo Day. Excited to be part of the Tour.
+Happy to learn the vibe code with Oo Lay Ko Ko Ye. Good Luck!
 
 <!--
 HOW TO ADD YOURSELF:

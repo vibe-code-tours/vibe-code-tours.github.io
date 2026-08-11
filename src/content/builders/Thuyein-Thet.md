@@ -3,6 +3,11 @@ name: Thuyein Thet
 github: Thuyein-Thet
 cohort: 1
 role: builder
+certs:
+  claude_101: https://verify.skilljar.com/c/m3cnu77ufysp
+  claude_code_101: https://verify.skilljar.com/c/oozwewpg9269
+  agent_skills_intro: https://verify.skilljar.com/c/dipouwtr6yah
+  subagents_intro: https://verify.skilljar.com/c/wri2gkvqn2rm
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
