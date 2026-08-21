@@ -9,6 +9,7 @@ repo: https://github.com/bhonewai-bot
 certs:
   claude_101: https://verify.skilljar.com/c/qyz5vwojckf4
   claude_code_101: https://verify.skilljar.com/c/d8x44hhiarrm
+  claude_platform_101: https://verify.skilljar.com/c/gwmymrjk9cje
 ---
 
 I enjoy learning about software architecture, system design, and modern development practices. I also like building toy projects to apply what I learn and explore new technologies.
