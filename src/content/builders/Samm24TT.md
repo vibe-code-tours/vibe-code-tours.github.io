@@ -4,6 +4,9 @@ github: Samm24TT
 cohort: 1
 role: builder
 skills: ["JavaScript", "Python", "Java", "Claude Code", "Tailwind", "HTML", "CSS", "REACTJS"]
+certs:
+  claude_101: https://verify.skilljar.com/c/savskg9w7yby
+  claude_code_101: https://verify.skilljar.com/c/ghq6t39tifi4
 ---
 
 I'm a computer science student with a strong focus on full-stack web development. I'm excited to be here to collaborate on open-source, refine my skills, and build some interesting projects with the cohort!

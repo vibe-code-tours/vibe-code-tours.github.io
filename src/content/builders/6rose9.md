@@ -9,6 +9,12 @@ certs:
   claude_code_101: https://verify.skilljar.com/c/zpiffvkr3r88
   agent_skills_intro: https://verify.skilljar.com/c/apturnx87j96
   subagents_intro: https://verify.skilljar.com/c/e2qw39xnqfnb
+  mcp_intro: https://verify.skilljar.com/c/4g4i7thuzsj5
+  claude_code_in_action: https://verify.skilljar.com/c/x9jq67fiydzt
+  building_claude_api: https://verify.skilljar.com/c/haks9cmwdynq
+  claude_platform_101: https://verify.skilljar.com/c/x9pkamibtidt
+  claude_cowork: https://verify.skilljar.com/c/uwihj9k5d6hd
+
 x: zinzinthinzaw
 repo: https://github.com/6rose9/vibe-code-tours
 linkedin: https://www.linkedin.com/in/zin-zin-thin-zaw-1979a7196

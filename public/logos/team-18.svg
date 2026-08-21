@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Gradient for the N letter -->
+    <linearGradient id="nGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0077b6"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+
+    <!-- Cyan ring gradient -->
+    <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c8e8"/>
+      <stop offset="50%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#00a8cc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer cyan ring -->
+  <circle cx="32" cy="32" r="30" fill="url(#ringGradient)"/>
+
+  <!-- Dark inner circle -->
+  <circle cx="32" cy="32" r="25" fill="#080c12"/>
+
+  <!-- Stylized N letter - matching original -->
+  <g transform="translate(32, 32)">
+    <!-- Left vertical bar -->
+    <rect x="-13" y="-16" width="5" height="32" fill="url(#nGradient)"/>
+
+    <!-- Right vertical bar -->
+    <rect x="8" y="-16" width="5" height="32" fill="url(#nGradient)"/>
+
+    <!-- Diagonal bar (bottom-left to top-right) -->
+    <polygon points="-8,16 -3,16 8,-16 13,-16 13,-10 9,-10 -3,10 -8,10" fill="url(#nGradient)"/>
+  </g>
+</svg>

@@ -3,11 +3,16 @@ name: Aye Gaday Htun
 github: GadayHtun
 cohort: 1
 role: builder
-skills: ["JavaScript", "Python", "Claude Code"]
-repo: https://github.com/GadayHtun/vibe-code-tours-kky
+skills: ["JavaScript", "PHP", "Claude Code", "Cursor"]
+repo: https://github.com/GadayHtun
 x: your-x-handle
 linkedin: Kaday Htun
 website: no-website
+
+certs:
+  claude_101: https://verify.skilljar.com/c/kamiqgx8cfeu
+  claude_code_101: https://verify.skilljar.com/c/jif2qzjeh5uw
+
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

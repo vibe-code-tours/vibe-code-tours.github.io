@@ -1,0 +1,20 @@
+# team-05.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-05"
+team_no: 5
+name: "CrossMart"
+title: "CrossMart"
+tagline: "From World to Doorstep, Without Friction"
+desc: "A comprehensive cross-border e-commerce marketplace tailored for Myanmar"
+type: "web-app"
+stack: []
+live_url: "https://team-05-app.vercel.app"
+repo_url: "https://github.com/vibe-code-tours/Team-05-app"
+video:
+  youtube_id: V2qlEuZ9qgw
+  youtube_url: https://youtu.be/V2qlEuZ9qgw
+  drive_url: https://drive.google.com/file/d/1DHXdJXlNnCJKavr-lg7GoRr2xiPvgWdL/view?usp=sharing
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: null
+  small: "/logos/team-05-64x64.png"
+  medium: "/logos/team-05-128x128.png"
+  large: "/logos/team-05-256x256.png"

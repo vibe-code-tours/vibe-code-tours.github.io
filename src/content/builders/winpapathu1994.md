@@ -4,8 +4,18 @@ github: winpapathu1994
 cohort: 1
 role: builder
 skills: ["PHP", "Laravel", "Node.js", "React", "Javasctipt"]
-repo: https://github.com/winpapathu1994
+repo: https://github.com/winpapathu1994/meet-tab
 linkedin: https://www.linkedin.com/in/win-pa-pa-thu/
+certs:
+  claude_101: uejzfr42g26z
+  claude_code_101: o5tbdn3w7yyt
+  mcp_intro: ddu3wneupquc
+  agent_skills_intro: m786d5yg2nzg
+  subagents_intro: qid8wjsk3axm
+  ai_fluency: qoock5o9gbej
+  claude_code_in_action: z4xyr2htpzsg
+  claude_cowork_intro:
+  claude_Platform_101:
 
 ---
 

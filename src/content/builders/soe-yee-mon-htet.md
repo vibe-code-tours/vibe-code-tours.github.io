@@ -4,10 +4,12 @@ github: Soe-Yee-Mon-Htet
 cohort: 1
 role: builder
 skills: ["JavaScript", "Reactjs"]
-repo: 
-x:
-linkedin: 
-website: 
+repo: https://github.com/Soe-Yee-Mon-Htet/vibe-code-tours.github.io
+linkedin: https://www.linkedin.com/in/soe-yee-mon-htet-symh-636674284/
+certs:
+  claude_101: ufr57jjc62x4
+  claude_code_101: cv4tqu4w3o7q
+  claude_platform_101: ujroudzpxwvq
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
