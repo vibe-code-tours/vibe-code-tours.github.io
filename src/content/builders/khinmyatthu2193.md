@@ -7,6 +7,11 @@ role: builder
 skills: ["JavaScript", "Python", "React", "React Native", "Firebase", "Django", "Claude Code"]
 
 repo: https://github.com/khinmyatthu2193
+certs:
+  ai_fluency: https://verify.skilljar.com/c/3yuvuevbz58d
+  claude_101: https://verify.skilljar.com/c/2e3m9ph7v2jb
+  claude_code_101: https://verify.skilljar.com/c/2cj7h4upxrc7
+  claude_code_in_action: https://verify.skilljar.com/c/zm4owcmcyraw
 linkedin: https://www.linkedin.com/in/khin-myat-thu-837892352/
 
 ---
