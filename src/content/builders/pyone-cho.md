@@ -8,9 +8,11 @@ repo: https://github.com/pyone-cho/pyone-cho
 linkedin: https://www.linkedin.com/in/pyone-cho-6671a9114/
 certs:
   claude_code_101: https://verify.skilljar.com/c/pwfdhm93rxjy
+  Introduction_to_Model_Context_Protocol: https://verify.skilljar.com/c/tmqv6f2gp2xc
+  Introduction_to_agent_skills: https://verify.skilljar.com/c/ymz9ss7iqfm2
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
+Hi! I'm learning to vibe-code with AI. My goal is t[text](pyone-cho.md)o build and ship something
 real by Demo Day. Excited to be part of the Tour.
 
 <!--
