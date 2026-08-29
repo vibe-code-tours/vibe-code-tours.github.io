@@ -11,6 +11,7 @@ certs:
   agent_skills_intro: https://verify.skilljar.com/c/bkopoahocads
   subagents_intro: https://verify.skilljar.com/c/bvu7xdeha3cy
   ai_fluency: https://verify.skilljar.com/c/i9yu72szefoy
+  claude_code_in_action: https://verify.skilljar.com/c/s94dv3jkevhh
 ---
 
 Hi! I'm Thuzar, a software engineer exploring AI-powered development and vibe-coding. I'm excited to explore vibe-coding, meet other makers, and turn an idea into something people can actually use. Looking forward to building and shipping a project by Demo Day!
