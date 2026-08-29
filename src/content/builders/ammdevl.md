@@ -14,9 +14,12 @@ certs:
     agent_skills_intro: https://verify.skilljar.com/c/dvi9jfhf99p6
     subagents_intro: https://verify.skilljar.com/c/smw4fhfgk5bx
     mcp_intro: https://verify.skilljar.com/c/esdzzvmraivm
+    claude_platform_101: https://verify.skilljar.com/c/viioo4rtn75g
+    claude_code_in_action: https://verify.skilljar.com/c/f9qnt4rzy3gn
+    claude_cowork: https://verify.skilljar.com/c/7wca2r8xip3e
 ---
 
-Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
+Hi! I'm Aung Myint Myat learning to vibe-code with AI. My goal is to build and ship something
 real by Demo Day. Excited to be part of the Tour.
 
 <!--
