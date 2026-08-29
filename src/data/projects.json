@@ -1,0 +1,2737 @@
+[
+  {
+    "github": "6rose9",
+    "name": "6rose9",
+    "title": "rice-agent",
+    "desc": "A professional networking and marketplace platform for Myanmar's rice industry.",
+    "repo_url": "https://github.com/6rose9/rice-agent",
+    "live_url": "https://rice-agent.vercel.app/feed",
+    "slides_raw": "https://raw.githubusercontent.com/6rose9/rice-agent/master/slides/intro.md",
+    "slides_base": "https://raw.githubusercontent.com/6rose9/rice-agent/master/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/01_home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/01_home.png",
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/05_network.png",
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/10_setting.png",
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/04_create_post.png",
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/07_profile_post.png",
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/08_profile_network.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "Python",
+      "PLpgSQL"
+    ],
+    "chapter": 6,
+    "team": 11
+  },
+  {
+    "github": "absolute-aungkomyint",
+    "name": "absolute-aungkomyint",
+    "title": "athapyar-htote-web",
+    "desc": "A fast, lightweight, offline-first personal budget management application designed specifically for Myanmar citizens.",
+    "repo_url": "https://github.com/absolute-aungkomyint/athapyar-htote-web",
+    "live_url": "https://absolute-aungkomyint.github.io/athapyar-htote-web/",
+    "slides_raw": "https://raw.githubusercontent.com/absolute-aungkomyint/athapyar-htote-web/main/slides/atph.md",
+    "slides_base": "https://raw.githubusercontent.com/absolute-aungkomyint/athapyar-htote-web/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/absolute-aungkomyint/athapyar-htote-web/main/assets/screenshots/Debt.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/absolute-aungkomyint/athapyar-htote-web/main/assets/screenshots/Debt.png",
+      "https://raw.githubusercontent.com/absolute-aungkomyint/athapyar-htote-web/main/assets/screenshots/Budget.png",
+      "https://raw.githubusercontent.com/absolute-aungkomyint/athapyar-htote-web/main/assets/screenshots/settings.png",
+      "https://raw.githubusercontent.com/absolute-aungkomyint/athapyar-htote-web/main/assets/screenshots/Dashboard.png",
+      "https://raw.githubusercontent.com/absolute-aungkomyint/athapyar-htote-web/main/assets/screenshots/Transaction.png",
+      "https://raw.githubusercontent.com/absolute-aungkomyint/athapyar-htote-web/main/assets/screenshots/Financial_Goal.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "chapter": 4,
+    "team": 2
+  },
+  {
+    "github": "ahk1542001-wq",
+    "name": "ahk1542001-wq",
+    "title": "url-shortener-api",
+    "desc": "",
+    "repo_url": "https://github.com/ahk1542001-wq/url-shortener-api",
+    "live_url": "https://swoo-sh.onrender.com",
+    "slides_raw": "https://raw.githubusercontent.com/ahk1542001-wq/url-shortener-api/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/ahk1542001-wq/url-shortener-api/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/ahk1542001-wq/url-shortener-api/main/screenshots/02_login_mobile.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ahk1542001-wq/url-shortener-api/main/screenshots/02_login_mobile.png",
+      "https://raw.githubusercontent.com/ahk1542001-wq/url-shortener-api/main/screenshots/02_login_desktop.png",
+      "https://raw.githubusercontent.com/ahk1542001-wq/url-shortener-api/main/screenshots/01_landing_mobile.png",
+      "https://raw.githubusercontent.com/ahk1542001-wq/url-shortener-api/main/screenshots/01_landing_desktop.png",
+      "https://raw.githubusercontent.com/ahk1542001-wq/url-shortener-api/main/screenshots/10_qr_modal_mobile.png",
+      "https://raw.githubusercontent.com/ahk1542001-wq/url-shortener-api/main/screenshots/08_shortener_mobile.png",
+      "https://raw.githubusercontent.com/ahk1542001-wq/url-shortener-api/main/screenshots/09_portfolio_mobile.png",
+      "https://raw.githubusercontent.com/ahk1542001-wq/url-shortener-api/main/screenshots/10_qr_modal_desktop.png",
+      "https://raw.githubusercontent.com/ahk1542001-wq/url-shortener-api/main/screenshots/11_edit_link_mobile.png",
+      "https://raw.githubusercontent.com/ahk1542001-wq/url-shortener-api/main/screenshots/08_shortener_desktop.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Python",
+      "JavaScript",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 2
+  },
+  {
+    "github": "ammdevl",
+    "name": "ammdevl",
+    "title": "vibe-match",
+    "desc": "A tool for searching MCPs, SKILLs adn AGENTs for Vibe-Code Projects. Describe what you want --> Get what you need",
+    "repo_url": "https://github.com/ammdevl/vibe-match",
+    "live_url": "https://vibe-match-nine.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/ammdevl/vibe-match/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/ammdevl/vibe-match/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/ammdevl/vibe-match/main/screenshots/01-landing.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ammdevl/vibe-match/main/screenshots/01-landing.png",
+      "https://raw.githubusercontent.com/ammdevl/vibe-match/main/screenshots/02-results-mcps.png",
+      "https://raw.githubusercontent.com/ammdevl/vibe-match/main/screenshots/03-results-skills.png",
+      "https://raw.githubusercontent.com/ammdevl/vibe-match/main/screenshots/04-results-agents.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Python",
+      "JavaScript",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 12
+  },
+  {
+    "github": "anthtooaung",
+    "name": "anthtooaung",
+    "title": "my-diary",
+    "desc": "",
+    "repo_url": "https://github.com/anthtooaung/my-diary",
+    "live_url": "https://my-diary-bqbj.onrender.com/",
+    "slides_raw": "https://raw.githubusercontent.com/anthtooaung/my-diary/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/anthtooaung/my-diary/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/digit.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/digit.png",
+      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/login.png",
+      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/goal-1.png",
+      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/goal-2.png",
+      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/search.png",
+      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/01-login.png",
+      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/04-goals.png",
+      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/07-stats.png",
+      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/calendar.png",
+      "https://raw.githubusercontent.com/anthtooaung/my-diary/main/screenshots/static-1.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 9
+  },
+  {
+    "github": "aungkyawminhtet",
+    "name": "aungkyawminhtet",
+    "title": "personal-planner",
+    "desc": "",
+    "repo_url": "https://github.com/aungkyawminhtet/personal-planner",
+    "live_url": "https://personal-planner-nine-phi.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/aungkyawminhtet/personal-planner/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/aungkyawminhtet/personal-planner/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/aungkyawminhtet/personal-planner/main/screenshots/01_map_path.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/aungkyawminhtet/personal-planner/main/screenshots/01_map_path.png",
+      "https://raw.githubusercontent.com/aungkyawminhtet/personal-planner/main/screenshots/03_dashboard.png",
+      "https://raw.githubusercontent.com/aungkyawminhtet/personal-planner/main/screenshots/02_roadmap_checklist.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "Python",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 11
+  },
+  {
+    "github": "aungyephyo2215",
+    "name": "aungyephyo2215",
+    "title": "vct-visitor-registration-system",
+    "desc": "",
+    "repo_url": "https://github.com/aungyephyo2215/vct-visitor-registration-system",
+    "live_url": "https://vct-visitor-registration-system.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/aungyephyo2215/vct-visitor-registration-system/main/slides/ch3-pechakucha-20x20.md",
+    "slides_base": "https://raw.githubusercontent.com/aungyephyo2215/vct-visitor-registration-system/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/aungyephyo2215/vct-visitor-registration-system/main/docs/screenshots/01-login.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/aungyephyo2215/vct-visitor-registration-system/main/docs/screenshots/01-login.png",
+      "https://raw.githubusercontent.com/aungyephyo2215/vct-visitor-registration-system/main/docs/screenshots/dashboard.png",
+      "https://raw.githubusercontent.com/aungyephyo2215/vct-visitor-registration-system/main/docs/screenshots/03-visitors.png",
+      "https://raw.githubusercontent.com/aungyephyo2215/vct-visitor-registration-system/main/docs/screenshots/08-vehicles.png",
+      "https://raw.githubusercontent.com/aungyephyo2215/vct-visitor-registration-system/main/docs/screenshots/02-dashboard.png",
+      "https://raw.githubusercontent.com/aungyephyo2215/vct-visitor-registration-system/main/docs/screenshots/10-visit-detail.png",
+      "https://raw.githubusercontent.com/aungyephyo2215/vct-visitor-registration-system/main/docs/screenshots/06-security-scan.png",
+      "https://raw.githubusercontent.com/aungyephyo2215/vct-visitor-registration-system/main/docs/screenshots/09-notifications.png",
+      "https://raw.githubusercontent.com/aungyephyo2215/vct-visitor-registration-system/main/docs/screenshots/invitation-detail.png",
+      "https://raw.githubusercontent.com/aungyephyo2215/vct-visitor-registration-system/main/docs/screenshots/notification-bell.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "Shell",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 14
+  },
+  {
+    "github": "ayenyeinsan22",
+    "name": "ayenyeinsan22",
+    "title": "linguify",
+    "desc": "Linguify is a platform for English Learners where they can enhance language proficiency.",
+    "repo_url": "https://github.com/AyeNyeinSan22/linguify",
+    "live_url": "https://linguify-eta.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/AyeNyeinSan22/linguify/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/AyeNyeinSan22/linguify/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/AyeNyeinSan22/linguify/main/screenshots/home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/AyeNyeinSan22/linguify/main/screenshots/home.png",
+      "https://raw.githubusercontent.com/AyeNyeinSan22/linguify/main/screenshots/coach.png",
+      "https://raw.githubusercontent.com/AyeNyeinSan22/linguify/main/screenshots/practice.png",
+      "https://raw.githubusercontent.com/AyeNyeinSan22/linguify/main/screenshots/translate.png",
+      "https://raw.githubusercontent.com/AyeNyeinSan22/linguify/main/screenshots/flashcards.png",
+      "https://raw.githubusercontent.com/AyeNyeinSan22/linguify/main/screenshots/voicecoach.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "Python",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 18
+  },
+  {
+    "github": "bhonepyisone",
+    "name": "bhonepyisone",
+    "title": "PayProof",
+    "desc": "Open-source OCR module that ANY software (POS, ERP, web, mobile) can plug into to read payment confirmation screenshots/photos and link them to orders. Fully on-device, privacy-first, zero cloud dependency.",
+    "repo_url": "https://github.com/bhonepyisone/PayProof",
+    "live_url": "https://pay-proof-xi.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/slides.md",
+    "slides_base": "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/",
+    "screenshot_url": "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/docs/screenshot-scanner.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/docs/screenshot-scanner.png",
+      "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/docs/screenshot-sidebar.png",
+      "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/docs/screenshot-categories.png",
+      "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/docs/screenshot-mobile-ocr.png",
+      "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/docs/screenshot-desktop-ocr.png",
+      "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/docs/screenshot-desktop-pokedex.png",
+      "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/docs/screenshot-mobile-archieve.png",
+      "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/docs/screenshot-mobile-expenses.png",
+      "https://raw.githubusercontent.com/bhonepyisone/PayProof/main/docs/screenshot-desktop-expenses.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "Python",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 18
+  },
+  {
+    "github": "bhonewai-bot",
+    "name": "bhonewai-bot",
+    "title": "Laravel-Multi-Tenancy",
+    "desc": "",
+    "repo_url": "https://github.com/bhonewai-bot/Laravel-Multi-Tenancy",
+    "live_url": "https://demo.tenantsmith.bhonewai.cc.cd/",
+    "slides_raw": "https://raw.githubusercontent.com/bhonewai-bot/Laravel-Multi-Tenancy/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/bhonewai-bot/Laravel-Multi-Tenancy/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/bhonewai-bot/Laravel-Multi-Tenancy/main/screenshots/tenant-roles.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/bhonewai-bot/Laravel-Multi-Tenancy/main/screenshots/tenant-roles.png",
+      "https://raw.githubusercontent.com/bhonewai-bot/Laravel-Multi-Tenancy/main/screenshots/tenant-domains.png",
+      "https://raw.githubusercontent.com/bhonewai-bot/Laravel-Multi-Tenancy/main/screenshots/tenant-modules.png",
+      "https://raw.githubusercontent.com/bhonewai-bot/Laravel-Multi-Tenancy/main/screenshots/central-modules.png",
+      "https://raw.githubusercontent.com/bhonewai-bot/Laravel-Multi-Tenancy/main/screenshots/central-tenants.png",
+      "https://raw.githubusercontent.com/bhonewai-bot/Laravel-Multi-Tenancy/main/screenshots/tenant-dashboard.png",
+      "https://raw.githubusercontent.com/bhonewai-bot/Laravel-Multi-Tenancy/main/screenshots/central-create-tenant.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Blade",
+      "PHP",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 19
+  },
+  {
+    "github": "billy1437",
+    "name": "billy1437",
+    "title": "kilo_carrier",
+    "desc": "",
+    "repo_url": "https://github.com/Billy1437/kilo_carrier",
+    "live_url": "https://kilocarrier.com/",
+    "slides_raw": "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/screenshots/post.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/screenshots/post.png",
+      "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/screenshots/login.png",
+      "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/screenshots/browse.png",
+      "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/screenshots/landing.png",
+      "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/screenshots/trip-detail.png",
+      "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/screenshots/login-mobile-390x844.png",
+      "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/screenshots/browse-mobile-390x844.png",
+      "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/screenshots/landing-mobile-390x844.png",
+      "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/screenshots/login-desktop-1280x800.png",
+      "https://raw.githubusercontent.com/Billy1437/kilo_carrier/main/screenshots/browse-desktop-1280x800.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 10
+  },
+  {
+    "github": "builtby-ap",
+    "name": "builtby-ap",
+    "title": "beancalculator",
+    "desc": "A Myanmar bean trading calculator that helps calculate weight, price, and total cost quickly and accurately.",
+    "repo_url": "https://github.com/builtby-ap/beancalculator",
+    "live_url": "https://beancalculator.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/05-beans.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/05-beans.png",
+      "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/02-invoice.png",
+      "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/04-history.png",
+      "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/01-dashboard.png",
+      "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/03-calculator.png",
+      "https://raw.githubusercontent.com/builtby-ap/beancalculator/main/screenshots/06-transactions.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "Shell",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 19
+  },
+  {
+    "github": "celineyng2-sudo",
+    "name": "celineyng2-sudo",
+    "title": "celine-portfolio",
+    "desc": "",
+    "repo_url": "https://github.com/celineyng2-sudo/celine-portfolio",
+    "live_url": "https://my-personal-project-sigma.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/celineyng2-sudo/celine-portfolio/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/celineyng2-sudo/celine-portfolio/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/celineyng2-sudo/celine-portfolio/main/screenshots/hero.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/celineyng2-sudo/celine-portfolio/main/screenshots/hero.png",
+      "https://raw.githubusercontent.com/celineyng2-sudo/celine-portfolio/main/screenshots/skills.png",
+      "https://raw.githubusercontent.com/celineyng2-sudo/celine-portfolio/main/screenshots/projects.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "chapter": 5,
+    "team": 15
+  },
+  {
+    "github": "chanoodev",
+    "name": "chanoodev",
+    "title": "specflow-lite",
+    "desc": "specflow-lite",
+    "repo_url": "https://github.com/ChanOoDev/specflow-lite",
+    "live_url": "https://specflow-lite.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/03-search.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/03-search.png",
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/02-projects.png",
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/search-page.png",
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/01-dashboard.png",
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/02-dashboard.png",
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/03-dashboard.png",
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/01-login-page.png",
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/14-tasks-list.png",
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/04-search-page.png",
+      "https://raw.githubusercontent.com/ChanOoDev/specflow-lite/main/screenshots/05-project-info.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "Shell",
+      "PLpgSQL"
+    ],
+    "chapter": 6,
+    "team": 12
+  },
+  {
+    "github": "cidtechmm002",
+    "name": "cidtechmm002",
+    "title": "cloudsec-sentinel",
+    "desc": "",
+    "repo_url": "https://github.com/cidtechmm002/cloudsec-sentinel",
+    "live_url": "https://cidtechmm002.github.io/cloudsec-sentinel/",
+    "slides_raw": "https://raw.githubusercontent.com/cidtechmm002/cloudsec-sentinel/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/cidtechmm002/cloudsec-sentinel/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/cidtechmm002/cloudsec-sentinel/main/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/cidtechmm002/cloudsec-sentinel/main/screenshots/01.png",
+      "https://raw.githubusercontent.com/cidtechmm002/cloudsec-sentinel/main/screenshots/02.png",
+      "https://raw.githubusercontent.com/cidtechmm002/cloudsec-sentinel/main/screenshots/03.png",
+      "https://raw.githubusercontent.com/cidtechmm002/cloudsec-sentinel/main/assets/dashboard_screenshot_1.png",
+      "https://raw.githubusercontent.com/cidtechmm002/cloudsec-sentinel/main/assets/dashboard_screenshot_2.png",
+      "https://raw.githubusercontent.com/cidtechmm002/cloudsec-sentinel/main/assets/dashboard_screenshot_3.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "chapter": 5,
+    "team": 8
+  },
+  {
+    "github": "david-sang96",
+    "name": "david-sang96",
+    "title": "devnest",
+    "desc": "A browser-based developer workspace with rich notes, Kanban boards, a JSON formatter, and a password generator — all stored locally via IndexedDB.",
+    "repo_url": "https://github.com/David-Sang96/devnest",
+    "live_url": "https://devnest.davidsang.dev/",
+    "slides_raw": "https://raw.githubusercontent.com/David-Sang96/devnest/main/slides/devnest.md",
+    "slides_base": "https://raw.githubusercontent.com/David-Sang96/devnest/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/David-Sang96/devnest/main/screenshots/03-json.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/David-Sang96/devnest/main/screenshots/03-json.png",
+      "https://raw.githubusercontent.com/David-Sang96/devnest/main/screenshots/01-notes.png",
+      "https://raw.githubusercontent.com/David-Sang96/devnest/main/screenshots/02-kanban.png",
+      "https://raw.githubusercontent.com/David-Sang96/devnest/main/screenshots/03-settings.png",
+      "https://raw.githubusercontent.com/David-Sang96/devnest/main/screenshots/04-settings.png",
+      "https://raw.githubusercontent.com/David-Sang96/devnest/main/screenshots/05-password.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "chapter": 4,
+    "team": 6
+  },
+  {
+    "github": "dylanfriday",
+    "name": "dylanfriday",
+    "title": "flashcard-ai-generator",
+    "desc": "personal project",
+    "repo_url": "https://github.com/DylanFriday/flashcard-ai-generator",
+    "live_url": "https://flashcard-ai-generator-eyfyydi2d-khezudevs-projects.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/screenshots/01.png",
+      "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/screenshots/02.png",
+      "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/screenshots/03.png",
+      "https://raw.githubusercontent.com/DylanFriday/flashcard-ai-generator/main/screenshots/04.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 13
+  },
+  {
+    "github": "furryforwhat",
+    "name": "furryforwhat",
+    "title": "EazyPortfolio",
+    "desc": "An agent pipeline that turns commit history into a portfolio",
+    "repo_url": "https://github.com/FurryForWhat/EazyPortfolio",
+    "live_url": "https://eazy-portfolio-rho.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/FurryForWhat/EazyPortfolio/main/slides/intro.md",
+    "slides_base": "https://raw.githubusercontent.com/FurryForWhat/EazyPortfolio/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/FurryForWhat/EazyPortfolio/main/slides/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/FurryForWhat/EazyPortfolio/main/slides/screenshots/01.png",
+      "https://raw.githubusercontent.com/FurryForWhat/EazyPortfolio/main/slides/screenshots/02.png",
+      "https://raw.githubusercontent.com/FurryForWhat/EazyPortfolio/main/slides/screenshots/03.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "JavaScript",
+      "HTML"
+    ],
+    "chapter": 4,
+    "team": 2
+  },
+  {
+    "github": "gadayhtun",
+    "name": "gadayhtun",
+    "title": "warehouse",
+    "desc": "",
+    "repo_url": "https://github.com/GadayHtun/warehouse",
+    "live_url": "https://warehouse-mesm.onrender.com/",
+    "slides_raw": "https://raw.githubusercontent.com/GadayHtun/warehouse/main/https://github.com/GadayHtun/warehouse/blob/main/slides/polish.md",
+    "slides_base": "https://raw.githubusercontent.com/GadayHtun/warehouse/main/https://github.com/GadayHtun/warehouse/blob/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/04-stock-in.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/04-stock-in.png",
+      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/07-findings.png",
+      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/02-dashboard.png",
+      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/05-stock-out.png",
+      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/01-login-page.png",
+      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/09-mobile-stock.png",
+      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/14-mobile-login.png",
+      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/02-desktop-stock.png",
+      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/07-desktop-login.png",
+      "https://raw.githubusercontent.com/GadayHtun/warehouse/main/screenshots/03-stock-overview.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "PHP",
+      "Blade",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 17
+  },
+  {
+    "github": "hanminmyat",
+    "name": "hanminmyat",
+    "title": "komorebi",
+    "desc": "Turn your stories into living memory capsules — structured archives of voice recordings, photos, and the moments that made them matter.",
+    "repo_url": "https://github.com/hanminmyat/komorebi",
+    "live_url": "https://komorebi-one-sable.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/hanminmyat/komorebi/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/hanminmyat/komorebi/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/hanminmyat/komorebi/main/screenshots/dashboard.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/hanminmyat/komorebi/main/screenshots/dashboard.png",
+      "https://raw.githubusercontent.com/hanminmyat/komorebi/main/screenshots/public_view.png",
+      "https://raw.githubusercontent.com/hanminmyat/komorebi/main/screenshots/landing_page.png",
+      "https://raw.githubusercontent.com/hanminmyat/komorebi/main/screenshots/detail_memory.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "HTML",
+      "Python"
+    ],
+    "chapter": 4,
+    "team": 2
+  },
+  {
+    "github": "haymannko",
+    "name": "haymannko",
+    "title": "Beans-Inventory",
+    "desc": "",
+    "repo_url": "https://github.com/haymannko/Beans-Inventory",
+    "live_url": "https://beans-app-iota.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/screenshots/03-ledger.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/screenshots/03-ledger.png",
+      "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/screenshots/01-dashboard.png",
+      "https://raw.githubusercontent.com/haymannko/Beans-Inventory/main/screenshots/02-weight-master.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "Python",
+      "Shell"
+    ],
+    "chapter": 6,
+    "team": 1
+  },
+  {
+    "github": "haymarhlaing",
+    "name": "haymarhlaing",
+    "title": "todolist",
+    "desc": "<!-- what your project does, in one plain sentence -->",
+    "repo_url": "https://github.com/haymarhlaing/todolist",
+    "live_url": "https://todolist-kappa-coral-43.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/haymarhlaing/todolist/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/haymarhlaing/todolist/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/haymarhlaing/todolist/main/screenshots/Login.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/haymarhlaing/todolist/main/screenshots/Login.png",
+      "https://raw.githubusercontent.com/haymarhlaing/todolist/main/screenshots/NewTask.png",
+      "https://raw.githubusercontent.com/haymarhlaing/todolist/main/screenshots/Register.png",
+      "https://raw.githubusercontent.com/haymarhlaing/todolist/main/screenshots/Dashboard.png",
+      "https://raw.githubusercontent.com/haymarhlaing/todolist/main/screenshots/PendingTash.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "chapter": 4,
+    "team": 2
+  },
+  {
+    "github": "heinhtet-zaw12",
+    "name": "heinhtet-zaw12",
+    "title": "BiteBalance",
+    "desc": "AI-powered calorie tracking app that analyzes meals from photos or text, classifies healthy vs junk food, tracks daily and monthly calorie intake, and provides BMI-based health insights with smart notifications.",
+    "repo_url": "https://github.com/heinhtet-zaw12/BiteBalance",
+    "live_url": "https://bite-balance-88.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/heinhtet-zaw12/BiteBalance/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/heinhtet-zaw12/BiteBalance/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/heinhtet-zaw12/BiteBalance/main/assets/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/heinhtet-zaw12/BiteBalance/main/assets/screenshots/01.png",
+      "https://raw.githubusercontent.com/heinhtet-zaw12/BiteBalance/main/assets/screenshots/02.png",
+      "https://raw.githubusercontent.com/heinhtet-zaw12/BiteBalance/main/assets/screenshots/03.png",
+      "https://raw.githubusercontent.com/heinhtet-zaw12/BiteBalance/main/assets/screenshots/Login.png",
+      "https://raw.githubusercontent.com/heinhtet-zaw12/BiteBalance/main/assets/screenshots/log_food.png",
+      "https://raw.githubusercontent.com/heinhtet-zaw12/BiteBalance/main/assets/screenshots/daily_analytics.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Dart",
+      "JavaScript",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 8
+  },
+  {
+    "github": "heinkhantphyoe",
+    "name": "heinkhantphyoe",
+    "title": "Trip-Genie",
+    "desc": "TripGenie — a React single-page application for trip/travel planning",
+    "repo_url": "https://github.com/Heinkhantphyoe/Trip-Genie",
+    "live_url": "https://ai-trip-genie-77.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/Heinkhantphyoe/Trip-Genie/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/Heinkhantphyoe/Trip-Genie/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/Heinkhantphyoe/Trip-Genie/main/screenshots/home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Heinkhantphyoe/Trip-Genie/main/screenshots/home.png",
+      "https://raw.githubusercontent.com/Heinkhantphyoe/Trip-Genie/main/screenshots/budget.png",
+      "https://raw.githubusercontent.com/Heinkhantphyoe/Trip-Genie/main/screenshots/choose_date.png",
+      "https://raw.githubusercontent.com/Heinkhantphyoe/Trip-Genie/main/screenshots/travel_plan.png",
+      "https://raw.githubusercontent.com/Heinkhantphyoe/Trip-Genie/main/screenshots/result_overview.png",
+      "https://raw.githubusercontent.com/Heinkhantphyoe/Trip-Genie/main/screenshots/choose_travelers.png",
+      "https://raw.githubusercontent.com/Heinkhantphyoe/Trip-Genie/main/screenshots/choose_destination.png",
+      "https://raw.githubusercontent.com/Heinkhantphyoe/Trip-Genie/main/screenshots/tips_and_userfulPhrases.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Python",
+      "JavaScript",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 3
+  },
+  {
+    "github": "heinthaw-dev",
+    "name": "heinthaw-dev",
+    "title": "blood-help",
+    "desc": "Blood Help is a free app that instantly connects someone who urgently needs blood with nearby donors of the same blood type, built with ReactJS and Supabase",
+    "repo_url": "https://github.com/heinthaw-dev/blood-help",
+    "live_url": "https://blood-help-ten.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/heinthaw-dev/blood-help/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/heinthaw-dev/blood-help/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/heinthaw-dev/blood-help/main/screenshots/01-phone-entry.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/heinthaw-dev/blood-help/main/screenshots/01-phone-entry.png",
+      "https://raw.githubusercontent.com/heinthaw-dev/blood-help/main/screenshots/14-leaderboard.png",
+      "https://raw.githubusercontent.com/heinthaw-dev/blood-help/main/screenshots/03-intent-choice.png",
+      "https://raw.githubusercontent.com/heinthaw-dev/blood-help/main/screenshots/05-donor-thankyou.png",
+      "https://raw.githubusercontent.com/heinthaw-dev/blood-help/main/screenshots/13-donor-congrats.png",
+      "https://raw.githubusercontent.com/heinthaw-dev/blood-help/main/screenshots/02-otp-verification.png",
+      "https://raw.githubusercontent.com/heinthaw-dev/blood-help/main/screenshots/04-donor-setup-filled.png",
+      "https://raw.githubusercontent.com/heinthaw-dev/blood-help/main/screenshots/11-requester-qr-scanner.png",
+      "https://raw.githubusercontent.com/heinthaw-dev/blood-help/main/screenshots/12-donor-profile-screen.png",
+      "https://raw.githubusercontent.com/heinthaw-dev/blood-help/main/screenshots/06-requester-form-filled.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "TypeScript",
+      "CSS"
+    ],
+    "chapter": 5,
+    "team": 9
+  },
+  {
+    "github": "hlahtunthein09",
+    "name": "hlahtunthein09",
+    "title": "kill_the_laziness",
+    "desc": "Parent project repository created via GitHub MCP server",
+    "repo_url": "https://github.com/hlahtunthein09/kill_the_laziness",
+    "live_url": "https://kill-the-laziness.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Timer_dark mode.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Timer_dark mode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Timer_lightmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Projects_darkmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Settings_darkmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Dashboard_darkmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Projects_lightmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Settings_lightmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Dashboard_lightmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Extension_notifications_darkmode.png",
+      "https://raw.githubusercontent.com/hlahtunthein09/kill_the_laziness/main/screenshots/Extension_notifications_lightmode.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "HTML",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 6
+  },
+  {
+    "github": "hlaingthinphyu",
+    "name": "hlaingthinphyu",
+    "title": "skincare-bestie",
+    "desc": "",
+    "repo_url": "https://github.com/HlaingThinPhyu/skincare-bestie",
+    "live_url": "https://skincare-bestie.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/slides/intro.md",
+    "slides_base": "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-homepage.jpg",
+    "screenshots": [
+      "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-homepage.jpg",
+      "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-languages.jpg",
+      "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-homepage-dark.jpg",
+      "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-homepage-light.jpg",
+      "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-resultProducts-1.jpg",
+      "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-resultProducts-2.jpg",
+      "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-recommendProducts-1.jpg",
+      "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-recommendProducts-2.jpg",
+      "https://raw.githubusercontent.com/HlaingThinPhyu/skincare-bestie/main/screenshots/screenshot-recommendProducts-3.jpg"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 11
+  },
+  {
+    "github": "htetaungkyaw-gicjp",
+    "name": "htetaungkyaw-gicjp",
+    "title": "webcomms-pay",
+    "desc": "WebComms & Pay is a multi-tenant, passwordless (Email OTP) parent-communication and payments platform for schools, gyms, and clubs — Stripe payments, calendar, parent–teacher booking, and announcements, with tenant isolation enforced in the database by Postgres RLS.",
+    "repo_url": "https://github.com/htetaungkyaw-gicjp/webcomms-pay",
+    "live_url": "https://htetaungkyaw-gicjp.github.io/webcomms-pay/",
+    "slides_raw": "https://raw.githubusercontent.com/htetaungkyaw-gicjp/webcomms-pay/main/slides/webcomms-pay-pechakucha.md",
+    "slides_base": "https://raw.githubusercontent.com/htetaungkyaw-gicjp/webcomms-pay/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/htetaungkyaw-gicjp/webcomms-pay/main/docs/screenshots/landing.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/htetaungkyaw-gicjp/webcomms-pay/main/docs/screenshots/landing.png",
+      "https://raw.githubusercontent.com/htetaungkyaw-gicjp/webcomms-pay/main/docs/screenshots/system-admin.png",
+      "https://raw.githubusercontent.com/htetaungkyaw-gicjp/webcomms-pay/main/docs/screenshots/parent-portal.png",
+      "https://raw.githubusercontent.com/htetaungkyaw-gicjp/webcomms-pay/main/docs/screenshots/ui-polish-after/after-login.png",
+      "https://raw.githubusercontent.com/htetaungkyaw-gicjp/webcomms-pay/main/docs/screenshots/ui-polish-after/after-landing.png",
+      "https://raw.githubusercontent.com/htetaungkyaw-gicjp/webcomms-pay/main/docs/screenshots/ui-polish-before/before-landing.png",
+      "https://raw.githubusercontent.com/htetaungkyaw-gicjp/webcomms-pay/main/docs/screenshots/ui-polish-before/reference-login.png",
+      "https://raw.githubusercontent.com/htetaungkyaw-gicjp/webcomms-pay/main/docs/screenshots/ui-polish-after/after-payment-success.png",
+      "https://raw.githubusercontent.com/htetaungkyaw-gicjp/webcomms-pay/main/docs/screenshots/ui-polish-after/after-payment-cancelled.png",
+      "https://raw.githubusercontent.com/htetaungkyaw-gicjp/webcomms-pay/main/docs/screenshots/ui-polish-before/before-payment-success.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "JavaScript",
+      "PLpgSQL"
+    ],
+    "chapter": 4,
+    "team": 14
+  },
+  {
+    "github": "htetlin27",
+    "name": "htetlin27",
+    "title": "vct-ai-english-journal",
+    "desc": "A bilingual (English + Myanmar) AI English-teacher journaling web app for Myanmar English learners, built spec-first with Claude Code, Next.js, Supabase, and Gemini.",
+    "repo_url": "https://github.com/HtetLin27/vct-ai-english-journal",
+    "live_url": "https://vct-ai-english-journal.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/HtetLin27/vct-ai-english-journal/main/slides/presentation.md",
+    "slides_base": "https://raw.githubusercontent.com/HtetLin27/vct-ai-english-journal/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/HtetLin27/vct-ai-english-journal/main/docs/screenshots/mobile.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/HtetLin27/vct-ai-english-journal/main/docs/screenshots/mobile.png",
+      "https://raw.githubusercontent.com/HtetLin27/vct-ai-english-journal/main/docs/screenshots/dashboard.png",
+      "https://raw.githubusercontent.com/HtetLin27/vct-ai-english-journal/main/docs/screenshots/entry-view.png",
+      "https://raw.githubusercontent.com/HtetLin27/vct-ai-english-journal/main/docs/screenshots/vocabulary.png",
+      "https://raw.githubusercontent.com/HtetLin27/vct-ai-english-journal/main/docs/screenshots/ai-feedback.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "chapter": 4,
+    "team": 16
+  },
+  {
+    "github": "htetlinlinnaing",
+    "name": "htetlinlinnaing",
+    "title": "DevPath-AI",
+    "desc": "",
+    "repo_url": "https://github.com/HtetLinLinNaing/DevPath-AI",
+    "live_url": "https://devpath-ai-three.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/HtetLinLinNaing/DevPath-AI/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/HtetLinLinNaing/DevPath-AI/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/HtetLinLinNaing/DevPath-AI/main/screenshots/Dev1.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/HtetLinLinNaing/DevPath-AI/main/screenshots/Dev1.png",
+      "https://raw.githubusercontent.com/HtetLinLinNaing/DevPath-AI/main/screenshots/Dev2.png",
+      "https://raw.githubusercontent.com/HtetLinLinNaing/DevPath-AI/main/screenshots/Dev3.png",
+      "https://raw.githubusercontent.com/HtetLinLinNaing/DevPath-AI/main/screenshots/Dev4.png",
+      "https://raw.githubusercontent.com/HtetLinLinNaing/DevPath-AI/main/screenshots/Dev5.png",
+      "https://raw.githubusercontent.com/HtetLinLinNaing/DevPath-AI/main/screenshots/Dev6.png",
+      "https://raw.githubusercontent.com/HtetLinLinNaing/DevPath-AI/main/screenshots/Dev7.png",
+      "https://raw.githubusercontent.com/HtetLinLinNaing/DevPath-AI/main/screenshots/Dev8.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 17
+  },
+  {
+    "github": "htunaungkyaw73",
+    "name": "htunaungkyaw73",
+    "title": "Learn-Programming-Easily",
+    "desc": "",
+    "repo_url": "https://github.com/HtunAungKyaw73/Learn-Programming-Easily",
+    "live_url": "https://articles.htunaungkyaw.online",
+    "slides_raw": "https://raw.githubusercontent.com/HtunAungKyaw73/Learn-Programming-Easily/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/HtunAungKyaw73/Learn-Programming-Easily/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/HtunAungKyaw73/Learn-Programming-Easily/main/screenshots/home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/HtunAungKyaw73/Learn-Programming-Easily/main/screenshots/home.png",
+      "https://raw.githubusercontent.com/HtunAungKyaw73/Learn-Programming-Easily/main/screenshots/home-dark.png",
+      "https://raw.githubusercontent.com/HtunAungKyaw73/Learn-Programming-Easily/main/screenshots/admin-login.png",
+      "https://raw.githubusercontent.com/HtunAungKyaw73/Learn-Programming-Easily/main/screenshots/article-react.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 19
+  },
+  {
+    "github": "iamyeaung",
+    "name": "iamyeaung",
+    "title": "yeaung",
+    "desc": "",
+    "repo_url": "https://github.com/iamyeaung/yeaung",
+    "live_url": "https://yeaung.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/iamyeaung/yeaung/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/iamyeaung/yeaung/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/iamyeaung/yeaung/main/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/iamyeaung/yeaung/main/screenshots/01.png",
+      "https://raw.githubusercontent.com/iamyeaung/yeaung/main/screenshots/02.png",
+      "https://raw.githubusercontent.com/iamyeaung/yeaung/main/screenshots/03.png",
+      "https://raw.githubusercontent.com/iamyeaung/yeaung/main/screenshots/login.png",
+      "https://raw.githubusercontent.com/iamyeaung/yeaung/main/screenshots/01-mobile.png",
+      "https://raw.githubusercontent.com/iamyeaung/yeaung/main/screenshots/02-mobile.png",
+      "https://raw.githubusercontent.com/iamyeaung/yeaung/main/screenshots/03-mobile.png",
+      "https://raw.githubusercontent.com/iamyeaung/yeaung/main/screenshots/dashboard.png",
+      "https://raw.githubusercontent.com/iamyeaung/yeaung/main/screenshots/landing-1.png",
+      "https://raw.githubusercontent.com/iamyeaung/yeaung/main/screenshots/landing-2.png"
+    ],
+    "type": "other",
+    "stack": [
+      "TypeScript",
+      "Shell",
+      "PowerShell"
+    ],
+    "chapter": 6,
+    "team": 10
+  },
+  {
+    "github": "jolly30",
+    "name": "jolly30",
+    "title": "Quote-Auto-Poster",
+    "desc": "",
+    "repo_url": "https://github.com/Jolly30/Quote-Auto-Poster",
+    "live_url": "https://www.tiktok.com/@mr.cheese202",
+    "slides_raw": "https://raw.githubusercontent.com/Jolly30/Quote-Auto-Poster/main/slides/intro.md",
+    "slides_base": "https://raw.githubusercontent.com/Jolly30/Quote-Auto-Poster/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/Jolly30/Quote-Auto-Poster/main/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Jolly30/Quote-Auto-Poster/main/screenshots/01.png",
+      "https://raw.githubusercontent.com/Jolly30/Quote-Auto-Poster/main/screenshots/02.png",
+      "https://raw.githubusercontent.com/Jolly30/Quote-Auto-Poster/main/screenshots/03.png"
+    ],
+    "type": "other",
+    "stack": [
+      "Python"
+    ],
+    "chapter": 6,
+    "team": 11
+  },
+  {
+    "github": "kaung-myat-code",
+    "name": "kaung-myat-code",
+    "title": "applytrail",
+    "desc": "",
+    "repo_url": "https://github.com/kaung-myat-code/applytrail",
+    "live_url": "https://applytrail.onrender.com",
+    "slides_raw": "https://raw.githubusercontent.com/kaung-myat-code/applytrail/main/slides/deck.md",
+    "slides_base": "https://raw.githubusercontent.com/kaung-myat-code/applytrail/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/kaung-myat-code/applytrail/main/docs/screenshots/analysis.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/kaung-myat-code/applytrail/main/docs/screenshots/analysis.png",
+      "https://raw.githubusercontent.com/kaung-myat-code/applytrail/main/docs/screenshots/dashboard.png",
+      "https://raw.githubusercontent.com/kaung-myat-code/applytrail/main/docs/screenshots/applications.png",
+      "https://raw.githubusercontent.com/kaung-myat-code/applytrail/main/docs/screenshots/resume-editor.png",
+      "https://raw.githubusercontent.com/kaung-myat-code/applytrail/main/docs/screenshots/resume-library.png",
+      "https://raw.githubusercontent.com/kaung-myat-code/applytrail/main/docs/screenshots/review-suggestions.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 8
+  },
+  {
+    "github": "kaung101",
+    "name": "kaung101",
+    "title": "guided-up",
+    "desc": "Two-track mentorship platform connecting Myanmar professionals and students with mentors through structured, goal-oriented sessions every two weeks.",
+    "repo_url": "https://github.com/Kaung101/guided-up",
+    "live_url": "https://guided-up.onrender.com/",
+    "slides_raw": "https://raw.githubusercontent.com/Kaung101/guided-up/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/Kaung101/guided-up/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/Kaung101/guided-up/main/screenshots/02-dashboard.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Kaung101/guided-up/main/screenshots/02-dashboard.png",
+      "https://raw.githubusercontent.com/Kaung101/guided-up/main/screenshots/01-landing-page.png",
+      "https://raw.githubusercontent.com/Kaung101/guided-up/main/screenshots/03-prep-session-form.png",
+      "https://raw.githubusercontent.com/Kaung101/guided-up/main/screenshots/06-generated-agenda-top.png",
+      "https://raw.githubusercontent.com/Kaung101/guided-up/main/screenshots/05-generated-agenda-bottom.png",
+      "https://raw.githubusercontent.com/Kaung101/guided-up/main/screenshots/04-prep-session-form-bottom.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "CSS",
+      "JavaScript",
+      "C#"
+    ],
+    "chapter": 4,
+    "team": 16
+  },
+  {
+    "github": "kaykhaingmyint6170",
+    "name": "kaykhaingmyint6170",
+    "title": "attendance_management",
+    "desc": "",
+    "repo_url": "https://github.com/kaykhaingmyint6170/attendance_management",
+    "live_url": "https://attendance-8eb.pages.dev",
+    "slides_raw": "https://raw.githubusercontent.com/kaykhaingmyint6170/attendance_management/master/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/kaykhaingmyint6170/attendance_management/master/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/kaykhaingmyint6170/attendance_management/master/screenshots/login.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/kaykhaingmyint6170/attendance_management/master/screenshots/login.png",
+      "https://raw.githubusercontent.com/kaykhaingmyint6170/attendance_management/master/screenshots/check-in.png",
+      "https://raw.githubusercontent.com/kaykhaingmyint6170/attendance_management/master/screenshots/register.png",
+      "https://raw.githubusercontent.com/kaykhaingmyint6170/attendance_management/master/screenshots/dashboard.png",
+      "https://raw.githubusercontent.com/kaykhaingmyint6170/attendance_management/master/screenshots/my-leaves.png",
+      "https://raw.githubusercontent.com/kaykhaingmyint6170/attendance_management/master/screenshots/all-leaves.png",
+      "https://raw.githubusercontent.com/kaykhaingmyint6170/attendance_management/master/screenshots/all-records.png",
+      "https://raw.githubusercontent.com/kaykhaingmyint6170/attendance_management/master/screenshots/login-mobile.png",
+      "https://raw.githubusercontent.com/kaykhaingmyint6170/attendance_management/master/screenshots/my-attendance.png",
+      "https://raw.githubusercontent.com/kaykhaingmyint6170/attendance_management/master/screenshots/dashboard-mobile.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Vue",
+      "PHP",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 14
+  },
+  {
+    "github": "khinmyatthu2193",
+    "name": "khinmyatthu2193",
+    "title": "May_Mays_Latt_Swal-Cooking-Assistant-Web-App",
+    "desc": "AI-powered Myanmar recipe assistant using MCP + Claude Agent for fast meal decisions.",
+    "repo_url": "https://github.com/khinmyatthu2193/May_Mays_Latt_Swal-Cooking-Assistant-Web-App",
+    "live_url": "https://may-mays-latt-swal-cooking-assistan-two.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/khinmyatthu2193/May_Mays_Latt_Swal-Cooking-Assistant-Web-App/main/slides/6x20.md",
+    "slides_base": "https://raw.githubusercontent.com/khinmyatthu2193/May_Mays_Latt_Swal-Cooking-Assistant-Web-App/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/khinmyatthu2193/May_Mays_Latt_Swal-Cooking-Assistant-Web-App/main/screenshots/01-home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/khinmyatthu2193/May_Mays_Latt_Swal-Cooking-Assistant-Web-App/main/screenshots/01-home.png",
+      "https://raw.githubusercontent.com/khinmyatthu2193/May_Mays_Latt_Swal-Cooking-Assistant-Web-App/main/screenshots/03-results.png",
+      "https://raw.githubusercontent.com/khinmyatthu2193/May_Mays_Latt_Swal-Cooking-Assistant-Web-App/main/screenshots/02-thinking.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "CSS",
+      "JavaScript",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 8
+  },
+  {
+    "github": "kingquiet-bot",
+    "name": "kingquiet-bot",
+    "title": "qr-training-manager",
+    "desc": "",
+    "repo_url": "https://github.com/kingquiet-bot/qr-training-manager",
+    "live_url": "https://qr-training-manager.onrender.com",
+    "slides_raw": "https://raw.githubusercontent.com/kingquiet-bot/qr-training-manager/main/presentation.md",
+    "slides_base": "https://raw.githubusercontent.com/kingquiet-bot/qr-training-manager/main/",
+    "screenshot_url": "https://raw.githubusercontent.com/kingquiet-bot/qr-training-manager/main/screenshots/06-scanner-mobile.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/kingquiet-bot/qr-training-manager/main/screenshots/06-scanner-mobile.png",
+      "https://raw.githubusercontent.com/kingquiet-bot/qr-training-manager/main/screenshots/05-dashboard-mobile.png",
+      "https://raw.githubusercontent.com/kingquiet-bot/qr-training-manager/main/screenshots/01-dashboard-desktop.png",
+      "https://raw.githubusercontent.com/kingquiet-bot/qr-training-manager/main/screenshots/07-self-checkin-mobile.png",
+      "https://raw.githubusercontent.com/kingquiet-bot/qr-training-manager/main/screenshots/02-create-event-desktop.png",
+      "https://raw.githubusercontent.com/kingquiet-bot/qr-training-manager/main/screenshots/03-event-detail-desktop.png",
+      "https://raw.githubusercontent.com/kingquiet-bot/qr-training-manager/main/screenshots/04-self-checkin-desktop.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "HTML",
+      "Python",
+      "Dockerfile"
+    ],
+    "chapter": 6,
+    "team": 18
+  },
+  {
+    "github": "kizinno",
+    "name": "kizinno",
+    "title": "MINOS",
+    "desc": "MINOS — Auto-Triage SOC Bot MINOS extracts Indicators of Compromise (IoCs) from raw security logs, queries them against threat intelligence APIs, and produces a clean, scorable triage report — in Markdown or JSON.  Named after the mythological king who judged the dead. MINOS judges your logs.",
+    "repo_url": "https://github.com/KiZINnO/MINOS",
+    "live_url": "https://minos-mu.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/KiZINnO/MINOS/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/KiZINnO/MINOS/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/KiZINnO/MINOS/main/screenshots/about.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/KiZINnO/MINOS/main/screenshots/about.png",
+      "https://raw.githubusercontent.com/KiZINnO/MINOS/main/screenshots/analyze.png",
+      "https://raw.githubusercontent.com/KiZINnO/MINOS/main/screenshots/desktop.png",
+      "https://raw.githubusercontent.com/KiZINnO/MINOS/main/screenshots/home-1280x800.png",
+      "https://raw.githubusercontent.com/KiZINnO/MINOS/main/screenshots/about-1280x800.png",
+      "https://raw.githubusercontent.com/KiZINnO/MINOS/main/screenshots/analyze-1280x800.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Python",
+      "TypeScript",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 7
+  },
+  {
+    "github": "kohtun386",
+    "name": "kohtun386",
+    "title": "POS-system",
+    "desc": "A point-of-sale (POS) system is the hardware and software that enables you to make sales, accept payments, and check out customers.Whether you want to open a retail store,you need a POS system to accept payments and sell in person             Email- inctimo.pvt.ltd@gmail.com  password- inctimo",
+    "repo_url": "https://github.com/kohtun386/POS-system",
+    "live_url": "https://pos-system-gilt-mu.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/kohtun386/POS-system/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/kohtun386/POS-system/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/kohtun386/POS-system/main/docs/screenshots/reports.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/kohtun386/POS-system/main/docs/screenshots/reports.png",
+      "https://raw.githubusercontent.com/kohtun386/POS-system/main/docs/screenshots/checkout.png",
+      "https://raw.githubusercontent.com/kohtun386/POS-system/main/docs/screenshots/pos-terminal.png",
+      "https://raw.githubusercontent.com/kohtun386/POS-system/main/docs/screenshots/pos-desktop-1280x800.png",
+      "https://raw.githubusercontent.com/kohtun386/POS-system/main/docs/screenshots/reports-mobile-390x844.png",
+      "https://raw.githubusercontent.com/kohtun386/POS-system/main/docs/screenshots/alerts-desktop-1280x800.png",
+      "https://raw.githubusercontent.com/kohtun386/POS-system/main/docs/screenshots/reports-desktop-1280x800.png",
+      "https://raw.githubusercontent.com/kohtun386/POS-system/main/docs/screenshots/customers-desktop-1280x800.png",
+      "https://raw.githubusercontent.com/kohtun386/POS-system/main/docs/screenshots/inventory-desktop-1280x800.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "Python",
+      "PLpgSQL"
+    ],
+    "chapter": 6,
+    "team": 7
+  },
+  {
+    "github": "kokaunghtet",
+    "name": "kokaunghtet",
+    "title": "vibecode-dailyplanner",
+    "desc": "VibeCodeTour Personal Project",
+    "repo_url": "https://github.com/kokaunghtet/vibecode-dailyplanner",
+    "live_url": "https://vibecode-dailyplanner.web.app",
+    "slides_raw": "https://raw.githubusercontent.com/kokaunghtet/vibecode-dailyplanner/master/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/kokaunghtet/vibecode-dailyplanner/master/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/kokaunghtet/vibecode-dailyplanner/master/screenshots/01-login.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/kokaunghtet/vibecode-dailyplanner/master/screenshots/01-login.png",
+      "https://raw.githubusercontent.com/kokaunghtet/vibecode-dailyplanner/master/screenshots/02-today.png",
+      "https://raw.githubusercontent.com/kokaunghtet/vibecode-dailyplanner/master/screenshots/03-calendar.png",
+      "https://raw.githubusercontent.com/kokaunghtet/vibecode-dailyplanner/master/screenshots/04-login-mobile.png",
+      "https://raw.githubusercontent.com/kokaunghtet/vibecode-dailyplanner/master/screenshots/05-today-mobile.png",
+      "https://raw.githubusercontent.com/kokaunghtet/vibecode-dailyplanner/master/screenshots/06-calendar-mobile.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Vue",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 13
+  },
+  {
+    "github": "komyo335",
+    "name": "komyo335",
+    "title": "M-Pro",
+    "desc": "",
+    "repo_url": "https://github.com/komyo335/M-Pro",
+    "live_url": "https://m-pro-git-main-myo335074-6768s-projects.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/komyo335/M-Pro/main/Slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/komyo335/M-Pro/main/Slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/komyo335/M-Pro/main/screenshots/1.Login Form.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/komyo335/M-Pro/main/screenshots/1.Login Form.png",
+      "https://raw.githubusercontent.com/komyo335/M-Pro/main/screenshots/4.Order Page.png",
+      "https://raw.githubusercontent.com/komyo335/M-Pro/main/screenshots/Add-New-Item.png",
+      "https://raw.githubusercontent.com/komyo335/M-Pro/main/screenshots/8.Report page.png",
+      "https://raw.githubusercontent.com/komyo335/M-Pro/main/screenshots/Checkout-Page.png",
+      "https://raw.githubusercontent.com/komyo335/M-Pro/main/screenshots/5.POS Dashboard.png",
+      "https://raw.githubusercontent.com/komyo335/M-Pro/main/screenshots/6.Checkout Page.png",
+      "https://raw.githubusercontent.com/komyo335/M-Pro/main/screenshots/7.Customer Page.png",
+      "https://raw.githubusercontent.com/komyo335/M-Pro/main/screenshots/3.Food Item Page.png",
+      "https://raw.githubusercontent.com/komyo335/M-Pro/main/screenshots/Staff-Management.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 19
+  },
+  {
+    "github": "linletlettun",
+    "name": "linletlettun",
+    "title": "Klock",
+    "desc": "Kubernetes Configuration Management",
+    "repo_url": "https://github.com/linletlettun/Klock",
+    "live_url": "https://klock-portal.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/linletlettun/Klock/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/linletlettun/Klock/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/linletlettun/Klock/main/screenshots/gitops.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/linletlettun/Klock/main/screenshots/gitops.png",
+      "https://raw.githubusercontent.com/linletlettun/Klock/main/screenshots/clusters.png",
+      "https://raw.githubusercontent.com/linletlettun/Klock/main/screenshots/deployment.png",
+      "https://raw.githubusercontent.com/linletlettun/Klock/main/screenshots/application.png",
+      "https://raw.githubusercontent.com/linletlettun/Klock/main/screenshots/config-deploy.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "Python",
+      "Dockerfile"
+    ],
+    "chapter": 6,
+    "team": 1
+  },
+  {
+    "github": "lwinmoe51",
+    "name": "lwinmoe51",
+    "title": "pisilist",
+    "desc": "Google Keep-inspired collaborative task management app — React Native, Expo, Firebase. Chapter 3 Assignment for Vibe Code Tours bootcamp.",
+    "repo_url": "https://github.com/lwinmoe51/pisilist",
+    "live_url": "https://pisilist-app.web.app/",
+    "slides_raw": "https://raw.githubusercontent.com/lwinmoe51/pisilist/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/lwinmoe51/pisilist/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/lwinmoe51/pisilist/main/screenshots/01_login.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/lwinmoe51/pisilist/main/screenshots/01_login.png",
+      "https://raw.githubusercontent.com/lwinmoe51/pisilist/main/screenshots/02_signup.png",
+      "https://raw.githubusercontent.com/lwinmoe51/pisilist/main/screenshots/07_profile.png",
+      "https://raw.githubusercontent.com/lwinmoe51/pisilist/main/screenshots/03_reset_password.png",
+      "https://raw.githubusercontent.com/lwinmoe51/pisilist/main/screenshots/06_card_detail_done_task.png",
+      "https://raw.githubusercontent.com/lwinmoe51/pisilist/main/screenshots/04_home_page_card_preview.png",
+      "https://raw.githubusercontent.com/lwinmoe51/pisilist/main/screenshots/05_card_detail_collab_reminder.png"
+    ],
+    "type": "mobile",
+    "stack": [
+      "TypeScript",
+      "HTML",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 20
+  },
+  {
+    "github": "mangsuan",
+    "name": "mangsuan",
+    "title": "bwai-stock-research",
+    "desc": "",
+    "repo_url": "https://github.com/mangsuan/bwai-stock-research",
+    "live_url": "https://mangsuan.github.io/bwai-stock-research",
+    "slides_raw": "https://raw.githubusercontent.com/mangsuan/bwai-stock-research/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/mangsuan/bwai-stock-research/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/mangsuan/bwai-stock-research/main/screenshots/01-home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/mangsuan/bwai-stock-research/main/screenshots/01-home.png",
+      "https://raw.githubusercontent.com/mangsuan/bwai-stock-research/main/screenshots/03-login.png",
+      "https://raw.githubusercontent.com/mangsuan/bwai-stock-research/main/screenshots/login-dark.png",
+      "https://raw.githubusercontent.com/mangsuan/bwai-stock-research/main/screenshots/02-research.png",
+      "https://raw.githubusercontent.com/mangsuan/bwai-stock-research/main/screenshots/04-register.png",
+      "https://raw.githubusercontent.com/mangsuan/bwai-stock-research/main/screenshots/login-light.png",
+      "https://raw.githubusercontent.com/mangsuan/bwai-stock-research/main/screenshots/register-dark.png",
+      "https://raw.githubusercontent.com/mangsuan/bwai-stock-research/main/screenshots/05-mobile-home.png",
+      "https://raw.githubusercontent.com/mangsuan/bwai-stock-research/main/screenshots/login-light-v2.png",
+      "https://raw.githubusercontent.com/mangsuan/bwai-stock-research/main/screenshots/register-light.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Python",
+      "C",
+      "Cython"
+    ],
+    "chapter": 6,
+    "team": 3
+  },
+  {
+    "github": "mhkaungpyae",
+    "name": "mhkaungpyae",
+    "title": "Medical_Citation_Chatbot",
+    "desc": "Generative RAG chatbot that answers any medical question using live Wikipedia and OpenFDA data, streamed through a local MedGemma model with clickable citations.",
+    "repo_url": "https://github.com/MHKaungPyae/Medical_Citation_Chatbot",
+    "live_url": "https://medical-citation-chatbot.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/MHKaungPyae/Medical_Citation_Chatbot/main/slides/intro.md",
+    "slides_base": "https://raw.githubusercontent.com/MHKaungPyae/Medical_Citation_Chatbot/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/MHKaungPyae/Medical_Citation_Chatbot/main/screenshots/home-page.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/MHKaungPyae/Medical_Citation_Chatbot/main/screenshots/home-page.png",
+      "https://raw.githubusercontent.com/MHKaungPyae/Medical_Citation_Chatbot/main/screenshots/login-page.png",
+      "https://raw.githubusercontent.com/MHKaungPyae/Medical_Citation_Chatbot/main/screenshots/register-page.png"
+    ],
+    "type": "other",
+    "stack": [
+      "TypeScript",
+      "Python",
+      "CSS"
+    ],
+    "chapter": 4,
+    "team": 6
+  },
+  {
+    "github": "milefisher",
+    "name": "milefisher",
+    "title": "daily-tech-digest",
+    "desc": "",
+    "repo_url": "https://github.com/MileFisher/daily-tech-digest",
+    "live_url": "https://milefisher.github.io/daily-tech-digest/",
+    "slides_raw": "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/slides/pechakucha.md",
+    "slides_base": "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/screenshots/mobile-390x844.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/screenshots/mobile-390x844.png",
+      "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/screenshots/desktop-1280x800.png",
+      "https://raw.githubusercontent.com/MileFisher/daily-tech-digest/main/screenshots/desktop-dark-1280x800.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 17
+  },
+  {
+    "github": "minntayza",
+    "name": "minntayza",
+    "title": "pdf_summarizer",
+    "desc": "",
+    "repo_url": "https://github.com/minntayza/pdf_summarizer",
+    "live_url": "https://pdf-summarizer-topaz.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/minntayza/pdf_summarizer/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/minntayza/pdf_summarizer/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/minntayza/pdf_summarizer/main/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/minntayza/pdf_summarizer/main/screenshots/01.png",
+      "https://raw.githubusercontent.com/minntayza/pdf_summarizer/main/screenshots/02.png",
+      "https://raw.githubusercontent.com/minntayza/pdf_summarizer/main/screenshots/03.png",
+      "https://raw.githubusercontent.com/minntayza/pdf_summarizer/main/screenshots/04.png",
+      "https://raw.githubusercontent.com/minntayza/pdf_summarizer/main/screenshots/05.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 9
+  },
+  {
+    "github": "mrmyintmyataung",
+    "name": "mrmyintmyataung",
+    "title": "bookwithyou",
+    "desc": "A social reading tracker. Create reading sessions with chapter progress tracking, flat discussion threads, and emoji reactions — built with React, TypeScript, and Supabase.",
+    "repo_url": "https://github.com/MrMyintMyatAung/bookwithyou",
+    "live_url": "https://mrmyintmyataung.github.io/bookwithyou/",
+    "slides_raw": "https://raw.githubusercontent.com/MrMyintMyatAung/bookwithyou/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/MrMyintMyatAung/bookwithyou/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/MrMyintMyatAung/bookwithyou/main/screenshots/login.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/MrMyintMyatAung/bookwithyou/main/screenshots/login.png",
+      "https://raw.githubusercontent.com/MrMyintMyatAung/bookwithyou/main/screenshots/mobile.png",
+      "https://raw.githubusercontent.com/MrMyintMyatAung/bookwithyou/main/screenshots/landing.png",
+      "https://raw.githubusercontent.com/MrMyintMyatAung/bookwithyou/main/screenshots/sessions.png",
+      "https://raw.githubusercontent.com/MrMyintMyatAung/bookwithyou/main/screenshots/session-detail.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "HTML",
+      "PLpgSQL"
+    ],
+    "chapter": 6,
+    "team": 15
+  },
+  {
+    "github": "mrmyothet",
+    "name": "mrmyothet",
+    "title": "zach-hair-studio",
+    "desc": "Vibe Code Tours - Personal Project",
+    "repo_url": "https://github.com/mrmyothet/zach-hair-studio",
+    "live_url": "https://zachhairstudio.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/screenshots/screenshot-1.jpg",
+    "screenshots": [
+      "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/screenshots/screenshot-1.jpg",
+      "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/screenshots/screenshot-2.jpg",
+      "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/screenshots/screenshot-3.jpg",
+      "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/landing-page/screenshots/screenshot-1.png",
+      "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/landing-page/screenshots/screenshot-2.png",
+      "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/landing-page/screenshots/screenshot-3.png",
+      "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/landing-page/screenshots/screenshot-4.png",
+      "https://raw.githubusercontent.com/mrmyothet/zach-hair-studio/main/landing-page/screenshots/screenshot-5.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "C#",
+      "TypeScript"
+    ],
+    "chapter": 6,
+    "team": 15
+  },
+  {
+    "github": "mryeminaung",
+    "name": "mryeminaung",
+    "title": "documentation-assistant",
+    "desc": "A lightweight developer utility built with React, Node.js, and Express that wraps the Anthropic Claude API for seamless, zero-config code documentation and analysis.",
+    "repo_url": "https://github.com/mryeminaung/documentation-assistant",
+    "live_url": "https://documentation-assistant.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/mryeminaung/documentation-assistant/main/slides/project-intro.md",
+    "slides_base": "https://raw.githubusercontent.com/mryeminaung/documentation-assistant/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/mryeminaung/documentation-assistant/main/screenshots/01-explain-code.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/mryeminaung/documentation-assistant/main/screenshots/01-explain-code.png",
+      "https://raw.githubusercontent.com/mryeminaung/documentation-assistant/main/screenshots/03-generate-docs.png",
+      "https://raw.githubusercontent.com/mryeminaung/documentation-assistant/main/screenshots/04-summarize-file.png",
+      "https://raw.githubusercontent.com/mryeminaung/documentation-assistant/main/screenshots/05-refactor-names.png",
+      "https://raw.githubusercontent.com/mryeminaung/documentation-assistant/main/screenshots/00-about-assistant.png",
+      "https://raw.githubusercontent.com/mryeminaung/documentation-assistant/main/screenshots/02-generate-comments.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 17
+  },
+  {
+    "github": "mshninwuttyi",
+    "name": "mshninwuttyi",
+    "title": "Student_Coding_Stress_Tracker",
+    "desc": "Student Coding Stress Tracker",
+    "repo_url": "https://github.com/mshninwuttyi/Student_Coding_Stress_Tracker",
+    "live_url": "https://student-coding-stress-tracker.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/mshninwuttyi/Student_Coding_Stress_Tracker/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/mshninwuttyi/Student_Coding_Stress_Tracker/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/mshninwuttyi/Student_Coding_Stress_Tracker/main/screenshots/1-start-page.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/mshninwuttyi/Student_Coding_Stress_Tracker/main/screenshots/1-start-page.png",
+      "https://raw.githubusercontent.com/mshninwuttyi/Student_Coding_Stress_Tracker/main/screenshots/4-start-page.png",
+      "https://raw.githubusercontent.com/mshninwuttyi/Student_Coding_Stress_Tracker/main/screenshots/3-after-analyze.png",
+      "https://raw.githubusercontent.com/mshninwuttyi/Student_Coding_Stress_Tracker/main/screenshots/2-before-analyze.png",
+      "https://raw.githubusercontent.com/mshninwuttyi/Student_Coding_Stress_Tracker/main/screenshots/5-before-analyze.png",
+      "https://raw.githubusercontent.com/mshninwuttyi/Student_Coding_Stress_Tracker/main/screenshots/6-softened-stress-gauge.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 17
+  },
+  {
+    "github": "myathtetkyaw",
+    "name": "myathtetkyaw",
+    "title": "ai-news-digest",
+    "desc": "Fetches the top 10 trending Hacker News stories, groups them by topic and displays them in a dark-themed web page.",
+    "repo_url": "https://github.com/MyatHtetKyaw/ai-news-digest",
+    "live_url": "https://ai-tech-news-digest.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/MyatHtetKyaw/ai-news-digest/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/MyatHtetKyaw/ai-news-digest/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/MyatHtetKyaw/ai-news-digest/main/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/MyatHtetKyaw/ai-news-digest/main/screenshots/01.png",
+      "https://raw.githubusercontent.com/MyatHtetKyaw/ai-news-digest/main/screenshots/02.png",
+      "https://raw.githubusercontent.com/MyatHtetKyaw/ai-news-digest/main/screenshots/03.png",
+      "https://raw.githubusercontent.com/MyatHtetKyaw/ai-news-digest/main/screenshots/04.png",
+      "https://raw.githubusercontent.com/MyatHtetKyaw/ai-news-digest/main/screenshots/05.png"
+    ],
+    "type": "api",
+    "stack": [
+      "TypeScript",
+      "EJS",
+      "JavaScript"
+    ],
+    "chapter": 4,
+    "team": 18
+  },
+  {
+    "github": "myatsumon253",
+    "name": "myatsumon253",
+    "title": "charm-and-crumb",
+    "desc": "Customized clay jewelry website",
+    "repo_url": "https://github.com/MyatSuMon253/charm-and-crumb",
+    "live_url": "https://charm-and-crumb.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/MyatSuMon253/charm-and-crumb/main/slides/gallery.md",
+    "slides_base": "https://raw.githubusercontent.com/MyatSuMon253/charm-and-crumb/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/MyatSuMon253/charm-and-crumb/main/screenshots/step-1.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/MyatSuMon253/charm-and-crumb/main/screenshots/step-1.png",
+      "https://raw.githubusercontent.com/MyatSuMon253/charm-and-crumb/main/screenshots/step-2.png",
+      "https://raw.githubusercontent.com/MyatSuMon253/charm-and-crumb/main/screenshots/step-3.png",
+      "https://raw.githubusercontent.com/MyatSuMon253/charm-and-crumb/main/screenshots/step-4.png",
+      "https://raw.githubusercontent.com/MyatSuMon253/charm-and-crumb/main/screenshots/01-home.png",
+      "https://raw.githubusercontent.com/MyatSuMon253/charm-and-crumb/main/screenshots/04-placement.png",
+      "https://raw.githubusercontent.com/MyatSuMon253/charm-and-crumb/main/screenshots/03-charms-tray.png",
+      "https://raw.githubusercontent.com/MyatSuMon253/charm-and-crumb/main/screenshots/05-confirmation.png",
+      "https://raw.githubusercontent.com/MyatSuMon253/charm-and-crumb/main/screenshots/02-base-material.png",
+      "https://raw.githubusercontent.com/MyatSuMon253/charm-and-crumb/main/screenshots/ch6-mobile-collection.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 16
+  },
+  {
+    "github": "myoaung",
+    "name": "myoaung",
+    "title": "School-Information-System",
+    "desc": "Full-stack School Information System with AI-powered chatbot, natural language queries, predictive analytics, report generation, and auto scheduling. Built for Myanmar schools.",
+    "repo_url": "https://github.com/myoaung/School-Information-System",
+    "live_url": "https://schoolhub-mm.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/myoaung/School-Information-System/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/myoaung/School-Information-System/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/myoaung/School-Information-System/main/screenshots/02-login.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/myoaung/School-Information-System/main/screenshots/02-login.png",
+      "https://raw.githubusercontent.com/myoaung/School-Information-System/main/screenshots/05-classes.png",
+      "https://raw.githubusercontent.com/myoaung/School-Information-System/main/screenshots/06-contact.png",
+      "https://raw.githubusercontent.com/myoaung/School-Information-System/main/screenshots/01-homepage.png",
+      "https://raw.githubusercontent.com/myoaung/School-Information-System/main/screenshots/03-register.png",
+      "https://raw.githubusercontent.com/myoaung/School-Information-System/main/screenshots/07-dashboard.png",
+      "https://raw.githubusercontent.com/myoaung/School-Information-System/main/screenshots/04-announcements.png",
+      "https://raw.githubusercontent.com/myoaung/School-Information-System/main/ch-6/myoaung/screenshots/02-login.png",
+      "https://raw.githubusercontent.com/myoaung/School-Information-System/main/ch-6/myoaung/screenshots/06-contact.png",
+      "https://raw.githubusercontent.com/myoaung/School-Information-System/main/ch-6/myoaung/screenshots/01-homepage.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "HTML",
+      "JavaScript",
+      "Python"
+    ],
+    "chapter": 6,
+    "team": 18
+  },
+  {
+    "github": "myominlin",
+    "name": "myominlin",
+    "title": "mood-flow",
+    "desc": "",
+    "repo_url": "https://github.com/MyoMinLin/mood-flow",
+    "live_url": "https://myominlin.github.io/mood-flow/",
+    "slides_raw": "https://raw.githubusercontent.com/MyoMinLin/mood-flow/master/slides/pechakucha-6x20.md",
+    "slides_base": "https://raw.githubusercontent.com/MyoMinLin/mood-flow/master/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/MyoMinLin/mood-flow/master/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/MyoMinLin/mood-flow/master/screenshots/01.png",
+      "https://raw.githubusercontent.com/MyoMinLin/mood-flow/master/screenshots/02.png",
+      "https://raw.githubusercontent.com/MyoMinLin/mood-flow/master/screenshots/03.png",
+      "https://raw.githubusercontent.com/MyoMinLin/mood-flow/master/screenshots/04.png",
+      "https://raw.githubusercontent.com/MyoMinLin/mood-flow/master/screenshots/05.png",
+      "https://raw.githubusercontent.com/MyoMinLin/mood-flow/master/screenshots/06.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "HTML",
+      "Shell"
+    ],
+    "chapter": 6,
+    "team": 16
+  },
+  {
+    "github": "naitar",
+    "name": "naitar",
+    "title": "income-expense-app",
+    "desc": "မြန်မာကျပ်ငွေ (MMK) ဖြင့် ဝင်ငွေ/ထွက်ငွေ မှတ်တမ်းတင်ပြီး  မိမိ၏ဝင်ငွေကို စီမံခန့်ခွဲနိုင်ပါသည်။",
+    "repo_url": "https://github.com/naitar/income-expense-app",
+    "live_url": "https://mmbalance.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/naitar/income-expense-app/Main/slides/intro.md",
+    "slides_base": "https://raw.githubusercontent.com/naitar/income-expense-app/Main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/naitar/income-expense-app/Main/screenshots/login.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/naitar/income-expense-app/Main/screenshots/login.png",
+      "https://raw.githubusercontent.com/naitar/income-expense-app/Main/screenshots/reports.png",
+      "https://raw.githubusercontent.com/naitar/income-expense-app/Main/screenshots/register.png",
+      "https://raw.githubusercontent.com/naitar/income-expense-app/Main/screenshots/settings.png",
+      "https://raw.githubusercontent.com/naitar/income-expense-app/Main/screenshots/dashboard.png",
+      "https://raw.githubusercontent.com/naitar/income-expense-app/Main/screenshots/categories.png",
+      "https://raw.githubusercontent.com/naitar/income-expense-app/Main/screenshots/transactions.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 15
+  },
+  {
+    "github": "nanaungoo",
+    "name": "nanaungoo",
+    "title": "latrinalia",
+    "desc": "Digital toilet graffiti wall — a PWA for anonymous stall-side scribbling",
+    "repo_url": "https://github.com/nanaungoo/latrinalia",
+    "live_url": "https://latrinalia.nannaungoo.workers.dev",
+    "slides_raw": "https://raw.githubusercontent.com/nanaungoo/latrinalia/main/slides/pechakucha-6x20.md",
+    "slides_base": "https://raw.githubusercontent.com/nanaungoo/latrinalia/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/nanaungoo/latrinalia/main/public/screenshot-lobby.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/nanaungoo/latrinalia/main/public/screenshot-lobby.png",
+      "https://raw.githubusercontent.com/nanaungoo/latrinalia/main/public/screenshot-stall.png",
+      "https://raw.githubusercontent.com/nanaungoo/latrinalia/main/public/screenshot-stall2.png",
+      "https://raw.githubusercontent.com/nanaungoo/latrinalia/main/public/screenshot-compose.png",
+      "https://raw.githubusercontent.com/nanaungoo/latrinalia/main/public/screenshot-janitor.png",
+      "https://raw.githubusercontent.com/nanaungoo/latrinalia/main/public/screenshot-lobby-mobile.png",
+      "https://raw.githubusercontent.com/nanaungoo/latrinalia/main/public/screenshot-stall-mobile.png",
+      "https://raw.githubusercontent.com/nanaungoo/latrinalia/main/public/screenshot-lobby-desktop.png",
+      "https://raw.githubusercontent.com/nanaungoo/latrinalia/main/public/screenshot-stall-desktop.png",
+      "https://raw.githubusercontent.com/nanaungoo/latrinalia/main/public/screenshot-stall2-mobile.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 14
+  },
+  {
+    "github": "naw2",
+    "name": "naw2",
+    "title": "ds_quiz_generator",
+    "desc": "",
+    "repo_url": "https://github.com/naw2/ds_quiz_generator",
+    "live_url": "https://dsquizgenerator-selht4jqurewdvmusqxkvg.streamlit.app/",
+    "slides_raw": "https://raw.githubusercontent.com/naw2/ds_quiz_generator/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/naw2/ds_quiz_generator/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/naw2/ds_quiz_generator/main/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/naw2/ds_quiz_generator/main/screenshots/01.png",
+      "https://raw.githubusercontent.com/naw2/ds_quiz_generator/main/screenshots/02.png",
+      "https://raw.githubusercontent.com/naw2/ds_quiz_generator/main/screenshots/03.png"
+    ],
+    "type": "other",
+    "stack": [
+      "Python"
+    ],
+    "chapter": 5,
+    "team": 13
+  },
+  {
+    "github": "noobfrommm",
+    "name": "noobfrommm",
+    "title": "NoobFromMM",
+    "desc": "",
+    "repo_url": "https://github.com/NoobFromMM/NoobFromMM",
+    "live_url": "https://noobfrommm.github.io/NoobFromMM",
+    "slides_raw": "https://raw.githubusercontent.com/NoobFromMM/NoobFromMM/main/slides/product-intro.md",
+    "slides_base": "https://raw.githubusercontent.com/NoobFromMM/NoobFromMM/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/NoobFromMM/NoobFromMM/main/screenshots/home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/NoobFromMM/NoobFromMM/main/screenshots/home.png",
+      "https://raw.githubusercontent.com/NoobFromMM/NoobFromMM/main/screenshots/profile.png",
+      "https://raw.githubusercontent.com/NoobFromMM/NoobFromMM/main/screenshots/evidence.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Python",
+      "HTML"
+    ],
+    "chapter": 4,
+    "team": 12
+  },
+  {
+    "github": "nyan-dev",
+    "name": "nyan-dev",
+    "title": "wishing-well",
+    "desc": "a digital wishing well",
+    "repo_url": "https://github.com/nyan-dev/wishing-well",
+    "live_url": "https://nyan-dev.github.io/wishing-well/",
+    "slides_raw": "https://raw.githubusercontent.com/nyan-dev/wishing-well/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/nyan-dev/wishing-well/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/nyan-dev/wishing-well/main/screenshots/screen01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/nyan-dev/wishing-well/main/screenshots/screen01.png",
+      "https://raw.githubusercontent.com/nyan-dev/wishing-well/main/screenshots/screen02.png",
+      "https://raw.githubusercontent.com/nyan-dev/wishing-well/main/screenshots/screen03.png",
+      "https://raw.githubusercontent.com/nyan-dev/wishing-well/main/screenshots/screen04.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 12
+  },
+  {
+    "github": "nyein-sat-thaw",
+    "name": "nyein-sat-thaw",
+    "title": "myanmar-quiz-game",
+    "desc": "A fun quiz game testing your knowledge of Myanmar across history, culture, geography, and food.",
+    "repo_url": "https://github.com/Nyein-Sat-Thaw/myanmar-quiz-game",
+    "live_url": "https://nyein-sat-thaw.github.io/myanmar-quiz-game/",
+    "slides_raw": "https://raw.githubusercontent.com/Nyein-Sat-Thaw/myanmar-quiz-game/main/slides/intro.md",
+    "slides_base": "https://raw.githubusercontent.com/Nyein-Sat-Thaw/myanmar-quiz-game/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/Nyein-Sat-Thaw/myanmar-quiz-game/main/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Nyein-Sat-Thaw/myanmar-quiz-game/main/screenshots/01.png",
+      "https://raw.githubusercontent.com/Nyein-Sat-Thaw/myanmar-quiz-game/main/screenshots/02.png",
+      "https://raw.githubusercontent.com/Nyein-Sat-Thaw/myanmar-quiz-game/main/screenshots/03.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "chapter": 4,
+    "team": 20
+  },
+  {
+    "github": "nyeinchan-lwin",
+    "name": "nyeinchan-lwin",
+    "title": "wordguess",
+    "desc": "Wordle-style word-guessing game",
+    "repo_url": "https://github.com/nyeinchan-lwin/wordguess",
+    "live_url": "https://nyeinchan-lwin.github.io/wordguess/",
+    "slides_raw": "https://raw.githubusercontent.com/nyeinchan-lwin/wordguess/main/slides/intro.md",
+    "slides_base": "https://raw.githubusercontent.com/nyeinchan-lwin/wordguess/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/nyeinchan-lwin/wordguess/main/screenshots/01-menu.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/nyeinchan-lwin/wordguess/main/screenshots/01-menu.png",
+      "https://raw.githubusercontent.com/nyeinchan-lwin/wordguess/main/screenshots/02-game.png",
+      "https://raw.githubusercontent.com/nyeinchan-lwin/wordguess/main/screenshots/03-result.png",
+      "https://raw.githubusercontent.com/nyeinchan-lwin/wordguess/main/screenshots/04-mobile-menu.png",
+      "https://raw.githubusercontent.com/nyeinchan-lwin/wordguess/main/screenshots/05-mobile-game.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 11
+  },
+  {
+    "github": "oliverhenry-dev",
+    "name": "oliverhenry-dev",
+    "title": "calendar-app-demo",
+    "desc": "",
+    "repo_url": "https://github.com/oliverhenry-dev/calendar-app-demo",
+    "live_url": "https://calendar-app-demo-test-claude.netlify.app/",
+    "slides_raw": "https://raw.githubusercontent.com/oliverhenry-dev/calendar-app-demo/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/oliverhenry-dev/calendar-app-demo/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/oliverhenry-dev/calendar-app-demo/main/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/oliverhenry-dev/calendar-app-demo/main/screenshots/01.png",
+      "https://raw.githubusercontent.com/oliverhenry-dev/calendar-app-demo/main/screenshots/02.png",
+      "https://raw.githubusercontent.com/oliverhenry-dev/calendar-app-demo/main/screenshots/03.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "chapter": 5,
+    "team": 7
+  },
+  {
+    "github": "phyophyo2397",
+    "name": "phyophyo2397",
+    "title": "YT-Japanese-flashcard",
+    "desc": "",
+    "repo_url": "https://github.com/PHYOPHYO2397/YT-Japanese-flashcard",
+    "live_url": "https://yt-japanese-flashcard.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/PHYOPHYO2397/YT-Japanese-flashcard/main/slides/slides.md",
+    "slides_base": "https://raw.githubusercontent.com/PHYOPHYO2397/YT-Japanese-flashcard/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/PHYOPHYO2397/YT-Japanese-flashcard/main/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/PHYOPHYO2397/YT-Japanese-flashcard/main/screenshots/01.png",
+      "https://raw.githubusercontent.com/PHYOPHYO2397/YT-Japanese-flashcard/main/screenshots/02.png",
+      "https://raw.githubusercontent.com/PHYOPHYO2397/YT-Japanese-flashcard/main/screenshots/03.png",
+      "https://raw.githubusercontent.com/PHYOPHYO2397/YT-Japanese-flashcard/main/screenshots/04.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Shell",
+      "Python",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 6
+  },
+  {
+    "github": "phyu1788",
+    "name": "phyu1788",
+    "title": "phyu-portfolio",
+    "desc": "A responsive developer portfolio website showcasing projects, skills, and contact information with smooth scroll animations.",
+    "repo_url": "https://github.com/Phyu1788/phyu-portfolio",
+    "live_url": "https://phyu-portfolio.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/Phyu1788/phyu-portfolio/main/slides/presentation.md",
+    "slides_base": "https://raw.githubusercontent.com/Phyu1788/phyu-portfolio/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/Phyu1788/phyu-portfolio/main/screenshots/01-hero-dark.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Phyu1788/phyu-portfolio/main/screenshots/01-hero-dark.png",
+      "https://raw.githubusercontent.com/Phyu1788/phyu-portfolio/main/screenshots/03-hero-light.png",
+      "https://raw.githubusercontent.com/Phyu1788/phyu-portfolio/main/screenshots/04-skills-light.png",
+      "https://raw.githubusercontent.com/Phyu1788/phyu-portfolio/main/screenshots/02-projects-dark.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "chapter": 4,
+    "team": 3
+  },
+  {
+    "github": "pyone-cho",
+    "name": "pyone-cho",
+    "title": "second-brain-claude",
+    "desc": "",
+    "repo_url": "https://github.com/pyone-cho/second-brain-claude",
+    "live_url": "https://second-brain-claude.vercel.app/login",
+    "slides_raw": "https://raw.githubusercontent.com/pyone-cho/second-brain-claude/main/slides/product-intro.md",
+    "slides_base": "https://raw.githubusercontent.com/pyone-cho/second-brain-claude/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/pyone-cho/second-brain-claude/main/screenshots/03-todo.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/pyone-cho/second-brain-claude/main/screenshots/03-todo.png",
+      "https://raw.githubusercontent.com/pyone-cho/second-brain-claude/main/screenshots/05-memo.png",
+      "https://raw.githubusercontent.com/pyone-cho/second-brain-claude/main/screenshots/01-login.png",
+      "https://raw.githubusercontent.com/pyone-cho/second-brain-claude/main/screenshots/04-process.png",
+      "https://raw.githubusercontent.com/pyone-cho/second-brain-claude/main/screenshots/02-dashboard.png",
+      "https://raw.githubusercontent.com/pyone-cho/second-brain-claude/main/docs/screenshots/todo-mobile.png",
+      "https://raw.githubusercontent.com/pyone-cho/second-brain-claude/main/docs/screenshots/todo-desktop.png",
+      "https://raw.githubusercontent.com/pyone-cho/second-brain-claude/main/docs/screenshots/kanban-mobile.png",
+      "https://raw.githubusercontent.com/pyone-cho/second-brain-claude/main/docs/screenshots/login-desktop.png",
+      "https://raw.githubusercontent.com/pyone-cho/second-brain-claude/main/docs/screenshots/kanban-desktop.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "Python",
+      "Shell"
+    ],
+    "chapter": 6,
+    "team": 3
+  },
+  {
+    "github": "rolexstar27",
+    "name": "rolexstar27",
+    "title": "Portfolio",
+    "desc": "Modern animated portfolio built with Next.js 14, Tailwind CSS & Framer Motion — featuring light/dark themes, glassmorphism, and smooth scroll animations.",
+    "repo_url": "https://github.com/rolexstar27/Portfolio",
+    "live_url": "https://hmm-portfolio.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/rolexstar27/Portfolio/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/rolexstar27/Portfolio/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/rolexstar27/Portfolio/main/screenshots/01-hero.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/rolexstar27/Portfolio/main/screenshots/01-hero.png",
+      "https://raw.githubusercontent.com/rolexstar27/Portfolio/main/screenshots/02-about.png",
+      "https://raw.githubusercontent.com/rolexstar27/Portfolio/main/screenshots/03-skills.png",
+      "https://raw.githubusercontent.com/rolexstar27/Portfolio/main/screenshots/05-contact.png",
+      "https://raw.githubusercontent.com/rolexstar27/Portfolio/main/screenshots/04-projects.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Python",
+      "JavaScript",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 20
+  },
+  {
+    "github": "rover-aungkhine",
+    "name": "rover-aungkhine",
+    "title": "mini-ai-marketing-agency",
+    "desc": "A browser-only agency management dashboard with client CRM, content calendar, creative tracking, and AI-powered marketing content generation — no backend, no framework, no API key.",
+    "repo_url": "https://github.com/rover-aungkhine/mini-ai-marketing-agency",
+    "live_url": "https://rover-aungkhine.github.io/mini-ai-marketing-agency/",
+    "slides_raw": "https://raw.githubusercontent.com/rover-aungkhine/mini-ai-marketing-agency/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/rover-aungkhine/mini-ai-marketing-agency/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/rover-aungkhine/mini-ai-marketing-agency/main/screenshots/dashboard.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/rover-aungkhine/mini-ai-marketing-agency/main/screenshots/dashboard.png",
+      "https://raw.githubusercontent.com/rover-aungkhine/mini-ai-marketing-agency/main/screenshots/client_overview.png",
+      "https://raw.githubusercontent.com/rover-aungkhine/mini-ai-marketing-agency/main/screenshots/content_calendar.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "Python"
+    ],
+    "chapter": 4,
+    "team": 6
+  },
+  {
+    "github": "saiwaiyanphyo",
+    "name": "saiwaiyanphyo",
+    "title": "job-your-love",
+    "desc": "Job Your Love is a full-stack, spreadsheet-style job application tracker built with modern web technologies. It provides a clean, intuitive interface for managing and organizing your job search journey.",
+    "repo_url": "https://github.com/saiwaiyanphyo/job-your-love",
+    "live_url": "https://job-your-love.megiapps.workers.dev/",
+    "slides_raw": "https://raw.githubusercontent.com/saiwaiyanphyo/job-your-love/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/saiwaiyanphyo/job-your-love/main/slides/",
+    "screenshot_url": null,
+    "screenshots": [],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "PLpgSQL",
+      "CSS"
+    ],
+    "chapter": 5,
+    "team": 4
+  },
+  {
+    "github": "samm24tt",
+    "name": "samm24tt",
+    "title": "Personal-Project",
+    "desc": "",
+    "repo_url": "https://github.com/Samm24TT/Personal-Project",
+    "live_url": "https://personal-project-xi-coral.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/Samm24TT/Personal-Project/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/Samm24TT/Personal-Project/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/Samm24TT/Personal-Project/main/screenshots/game-play.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Samm24TT/Personal-Project/main/screenshots/game-play.png",
+      "https://raw.githubusercontent.com/Samm24TT/Personal-Project/main/screenshots/leaderboard.png",
+      "https://raw.githubusercontent.com/Samm24TT/Personal-Project/main/screenshots/start-screen.png",
+      "https://raw.githubusercontent.com/Samm24TT/Personal-Project/main/screenshots/custome-player.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 5
+  },
+  {
+    "github": "sandar577",
+    "name": "sandar577",
+    "title": "cinema-song-requests",
+    "desc": "",
+    "repo_url": "https://github.com/sandar577/cinema-song-requests",
+    "live_url": "https://sandar577.github.io/cinema-song-requests/#/projector",
+    "slides_raw": "https://raw.githubusercontent.com/sandar577/cinema-song-requests/main/slides/pechakucha-6x20.md",
+    "slides_base": "https://raw.githubusercontent.com/sandar577/cinema-song-requests/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/sandar577/cinema-song-requests/main/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/sandar577/cinema-song-requests/main/screenshots/01.png",
+      "https://raw.githubusercontent.com/sandar577/cinema-song-requests/main/screenshots/02.png",
+      "https://raw.githubusercontent.com/sandar577/cinema-song-requests/main/screenshots/03.png",
+      "https://raw.githubusercontent.com/sandar577/cinema-song-requests/main/screenshots/04.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Vue",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 16
+  },
+  {
+    "github": "sandarma",
+    "name": "sandarma",
+    "title": "Interview-Coach-AI",
+    "desc": "AI-powered technical interview practice platform that helps developers improve their understanding, explanation skills, and interview confidence through interactive coaching powered by Claude.",
+    "repo_url": "https://github.com/sandarma/Interview-Coach-AI",
+    "live_url": "https://interview-coach-ai-rouge.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/sandarma/Interview-Coach-AI/main/https://github.com/sandarma/Interview-Coach-AI/blob/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/sandarma/Interview-Coach-AI/main/https://github.com/sandarma/Interview-Coach-AI/blob/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/sandarma/Interview-Coach-AI/main/screenshots/Welcome_Screen.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/sandarma/Interview-Coach-AI/main/screenshots/Welcome_Screen.png",
+      "https://raw.githubusercontent.com/sandarma/Interview-Coach-AI/main/screenshots/Feedback_Screen.png",
+      "https://raw.githubusercontent.com/sandarma/Interview-Coach-AI/main/screenshots/Practice_Screen.png",
+      "https://raw.githubusercontent.com/sandarma/Interview-Coach-AI/main/old_screenshots/question_screen.png",
+      "https://raw.githubusercontent.com/sandarma/Interview-Coach-AI/main/old_screenshots/evaluation_screen.png",
+      "https://raw.githubusercontent.com/sandarma/Interview-Coach-AI/main/old_screenshots/followup_question.jpeg"
+    ],
+    "type": "web-app",
+    "stack": [
+      "HTML",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 20
+  },
+  {
+    "github": "shinnthantkyaw",
+    "name": "shinnthantkyaw",
+    "title": "Wishire",
+    "desc": "The Bitthday Wish Maker.",
+    "repo_url": "https://github.com/shinnThantKyaw/Wishire",
+    "live_url": "https://wishire-by-stk.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/shinnThantKyaw/Wishire/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/shinnThantKyaw/Wishire/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/shinnThantKyaw/Wishire/main/ScreenShotsForCh4/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/shinnThantKyaw/Wishire/main/ScreenShotsForCh4/01.png",
+      "https://raw.githubusercontent.com/shinnThantKyaw/Wishire/main/ScreenShotsForCh4/02.png",
+      "https://raw.githubusercontent.com/shinnThantKyaw/Wishire/main/ScreenShotsForCh4/03.png",
+      "https://raw.githubusercontent.com/shinnThantKyaw/Wishire/main/ScreenShotsForCh4/04.png",
+      "https://raw.githubusercontent.com/shinnThantKyaw/Wishire/main/ScreenShotsForCh4/05.png",
+      "https://raw.githubusercontent.com/shinnThantKyaw/Wishire/main/ScreenShotsForCh6/01.png",
+      "https://raw.githubusercontent.com/shinnThantKyaw/Wishire/main/ScreenShotsForCh6/02.png",
+      "https://raw.githubusercontent.com/shinnThantKyaw/Wishire/main/ScreenShotsForCh6/03.png",
+      "https://raw.githubusercontent.com/shinnThantKyaw/Wishire/main/client/public/ScreenShotsForReadme/CreateForm.png",
+      "https://raw.githubusercontent.com/shinnThantKyaw/Wishire/main/client/public/ScreenShotsForReadme/GiftBoxPage.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "Python"
+    ],
+    "chapter": 6,
+    "team": 8
+  },
+  {
+    "github": "shirleyshyun-lgtm",
+    "name": "shirleyshyun-lgtm",
+    "title": "MoodPlaylist",
+    "desc": "Playlist based on Mood",
+    "repo_url": "https://github.com/shirleyshyun-lgtm/MoodPlaylist",
+    "live_url": "https://moodplaylist.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/shirleyshyun-lgtm/MoodPlaylist/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/shirleyshyun-lgtm/MoodPlaylist/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/shirleyshyun-lgtm/MoodPlaylist/main/public/screenshots/home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/shirleyshyun-lgtm/MoodPlaylist/main/public/screenshots/home.png",
+      "https://raw.githubusercontent.com/shirleyshyun-lgtm/MoodPlaylist/main/public/screenshots/admin.png",
+      "https://raw.githubusercontent.com/shirleyshyun-lgtm/MoodPlaylist/main/public/screenshots/history.png",
+      "https://raw.githubusercontent.com/shirleyshyun-lgtm/MoodPlaylist/main/public/screenshots/home-mobile.png",
+      "https://raw.githubusercontent.com/shirleyshyun-lgtm/MoodPlaylist/main/public/screenshots/home-desktop.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 11
+  },
+  {
+    "github": "soe-yee-mon-htet",
+    "name": "soe-yee-mon-htet",
+    "title": "symh-portfolio",
+    "desc": "MCP, SKILLS, AGENTS",
+    "repo_url": "https://github.com/Soe-Yee-Mon-Htet/symh-portfolio",
+    "live_url": "https://symh-portfolio.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/Soe-Yee-Mon-Htet/symh-portfolio/main/slides/pechakucha-6x20.md",
+    "slides_base": "https://raw.githubusercontent.com/Soe-Yee-Mon-Htet/symh-portfolio/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/Soe-Yee-Mon-Htet/symh-portfolio/main/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Soe-Yee-Mon-Htet/symh-portfolio/main/screenshots/01.png",
+      "https://raw.githubusercontent.com/Soe-Yee-Mon-Htet/symh-portfolio/main/screenshots/02.png",
+      "https://raw.githubusercontent.com/Soe-Yee-Mon-Htet/symh-portfolio/main/screenshots/home.png",
+      "https://raw.githubusercontent.com/Soe-Yee-Mon-Htet/symh-portfolio/main/screenshots/about.png",
+      "https://raw.githubusercontent.com/Soe-Yee-Mon-Htet/symh-portfolio/main/screenshots/skill.png",
+      "https://raw.githubusercontent.com/Soe-Yee-Mon-Htet/symh-portfolio/main/screenshots/mobile.png",
+      "https://raw.githubusercontent.com/Soe-Yee-Mon-Htet/symh-portfolio/main/screenshots/contact.png",
+      "https://raw.githubusercontent.com/Soe-Yee-Mon-Htet/symh-portfolio/main/screenshots/project.png",
+      "https://raw.githubusercontent.com/Soe-Yee-Mon-Htet/symh-portfolio/main/screenshots/full-page.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 14
+  },
+  {
+    "github": "susandarlin",
+    "name": "susandarlin",
+    "title": "trip_planner",
+    "desc": "",
+    "repo_url": "https://github.com/susandarlin/trip_planner",
+    "live_url": "https://trip-planner-mu-taupe.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/susandarlin/trip_planner/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/susandarlin/trip_planner/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/susandarlin/trip_planner/main/screenshots/screenshot-daily-plan.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/susandarlin/trip_planner/main/screenshots/screenshot-daily-plan.png",
+      "https://raw.githubusercontent.com/susandarlin/trip_planner/main/screenshots/screenshot-sample-data.png",
+      "https://raw.githubusercontent.com/susandarlin/trip_planner/main/screenshots/screenshot-default-view.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 17
+  },
+  {
+    "github": "swan1792",
+    "name": "swan1792",
+    "title": "PA",
+    "desc": "this project is for personal use",
+    "repo_url": "https://github.com/swan1792/PA",
+    "live_url": "https://pa-app.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/swan1792/PA/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/swan1792/PA/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/swan1792/PA/main/screenshots/01-home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/swan1792/PA/main/screenshots/01-home.png",
+      "https://raw.githubusercontent.com/swan1792/PA/main/screenshots/02-login.png",
+      "https://raw.githubusercontent.com/swan1792/PA/main/screenshots/04-tasks.png",
+      "https://raw.githubusercontent.com/swan1792/PA/main/screenshots/08-goals.png",
+      "https://raw.githubusercontent.com/swan1792/PA/main/screenshots/05-kanban.png",
+      "https://raw.githubusercontent.com/swan1792/PA/main/screenshots/07-journal.png",
+      "https://raw.githubusercontent.com/swan1792/PA/main/screenshots/06-calendar.png",
+      "https://raw.githubusercontent.com/swan1792/PA/main/screenshots/09-expenses.png",
+      "https://raw.githubusercontent.com/swan1792/PA/main/screenshots/10-settings.png",
+      "https://raw.githubusercontent.com/swan1792/PA/main/screenshots/03-dashboard.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "JavaScript",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 18
+  },
+  {
+    "github": "swezinpreciousai-sys",
+    "name": "swezinpreciousai-sys",
+    "title": "Project-Idea-Scorer",
+    "desc": "Score your project idea before you build it",
+    "repo_url": "https://github.com/swezinpreciousai-sys/Project-Idea-Scorer",
+    "live_url": "https://ai-project-idea-scorer.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/swezinpreciousai-sys/Project-Idea-Scorer/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/swezinpreciousai-sys/Project-Idea-Scorer/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/swezinpreciousai-sys/Project-Idea-Scorer/main/screenshots/mobile-home-375x812.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/swezinpreciousai-sys/Project-Idea-Scorer/main/screenshots/mobile-home-375x812.png",
+      "https://raw.githubusercontent.com/swezinpreciousai-sys/Project-Idea-Scorer/main/screenshots/tablet-home-768x1024.png",
+      "https://raw.githubusercontent.com/swezinpreciousai-sys/Project-Idea-Scorer/main/screenshots/desktop-home-1280x800.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "JavaScript",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 19
+  },
+  {
+    "github": "tainsinmoe04",
+    "name": "tainsinmoe04",
+    "title": "wutt",
+    "desc": "AI-powered personal fashion companion for wardrobe management and personalized outfit recommendations.",
+    "repo_url": "https://github.com/tainsinmoe04/wutt",
+    "live_url": "https://wutt-frontend.onrender.com/",
+    "slides_raw": "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/screenshots/login.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/screenshots/login.png",
+      "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/screenshots/landing.png",
+      "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/screenshots/profile.png",
+      "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/screenshots/wardrobe.png",
+      "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/screenshots/shoppingnoti.png",
+      "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/screenshots/aistylistchat.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Python",
+      "CSS",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 19
+  },
+  {
+    "github": "thaz1naung",
+    "name": "thaz1naung",
+    "title": "Pomodoro-Timer",
+    "desc": "a Pomodoro Timer with Vibes — single page web app",
+    "repo_url": "https://github.com/thaz1naung/Pomodoro-Timer",
+    "live_url": "https://pomodoro-vibes.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/thaz1naung/Pomodoro-Timer/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/thaz1naung/Pomodoro-Timer/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/thaz1naung/Pomodoro-Timer/main/screenshots/mobile-focus.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/thaz1naung/Pomodoro-Timer/main/screenshots/mobile-focus.png",
+      "https://raw.githubusercontent.com/thaz1naung/Pomodoro-Timer/main/screenshots/mobile-light.png",
+      "https://raw.githubusercontent.com/thaz1naung/Pomodoro-Timer/main/screenshots/desktop-break.png",
+      "https://raw.githubusercontent.com/thaz1naung/Pomodoro-Timer/main/screenshots/desktop-chill.png",
+      "https://raw.githubusercontent.com/thaz1naung/Pomodoro-Timer/main/screenshots/desktop-focus.png",
+      "https://raw.githubusercontent.com/thaz1naung/Pomodoro-Timer/main/screenshots/desktop-light.png",
+      "https://raw.githubusercontent.com/thaz1naung/Pomodoro-Timer/main/screenshots/desktop-deepwork.png",
+      "https://raw.githubusercontent.com/thaz1naung/Pomodoro-Timer/main/screenshots/desktop-break-dialog.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 17
+  },
+  {
+    "github": "thedevpp",
+    "name": "thedevpp",
+    "title": "quiz-generator",
+    "desc": "Health education quiz platform for teenagers in Myanmar — doctor-reviewed questions, Claude API, MCP server, zero data collection",
+    "repo_url": "https://github.com/TheDevPP/quiz-generator",
+    "live_url": "https://quiz-generator-rugz.onrender.com",
+    "slides_raw": "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/slides/intro.md",
+    "slides_base": "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/screenshots/quiz-screen.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/screenshots/quiz-screen.png",
+      "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/screenshots/05-completion.png",
+      "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/screenshots/correct-answer.png",
+      "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/screenshots/04-wrong-answer.png",
+      "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/screenshots/incorrect-answer.png",
+      "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/screenshots/03-correct-answer.png",
+      "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/screenshots/difficulty-change.png",
+      "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/screenshots/01-category-screen.png",
+      "https://raw.githubusercontent.com/TheDevPP/quiz-generator/main/screenshots/02-multiple-choice.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "Shell",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 10
+  },
+  {
+    "github": "thet-naing-lin",
+    "name": "thet-naing-lin",
+    "title": "resume-screening",
+    "desc": "",
+    "repo_url": "https://github.com/thet-naing-lin/resume-screening",
+    "live_url": "https://resume-screening-vibe-code-tour.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/thet-naing-lin/resume-screening/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/thet-naing-lin/resume-screening/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/thet-naing-lin/resume-screening/main/screenshots/03-jobs.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/thet-naing-lin/resume-screening/main/screenshots/03-jobs.png",
+      "https://raw.githubusercontent.com/thet-naing-lin/resume-screening/main/screenshots/05-resumes.png",
+      "https://raw.githubusercontent.com/thet-naing-lin/resume-screening/main/screenshots/08-reports.png",
+      "https://raw.githubusercontent.com/thet-naing-lin/resume-screening/main/screenshots/02-dashboard.png",
+      "https://raw.githubusercontent.com/thet-naing-lin/resume-screening/main/screenshots/01-login-page.png",
+      "https://raw.githubusercontent.com/thet-naing-lin/resume-screening/main/screenshots/04-jobs-create.png",
+      "https://raw.githubusercontent.com/thet-naing-lin/resume-screening/main/screenshots/09-admin-users.png",
+      "https://raw.githubusercontent.com/thet-naing-lin/resume-screening/main/screenshots/06-resumes-upload.png",
+      "https://raw.githubusercontent.com/thet-naing-lin/resume-screening/main/screenshots/11-forgot-password.png",
+      "https://raw.githubusercontent.com/thet-naing-lin/resume-screening/main/screenshots/10-admin-audit-logs.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "PHP",
+      "Blade"
+    ],
+    "chapter": 6,
+    "team": 9
+  },
+  {
+    "github": "thetzinsoe",
+    "name": "thetzinsoe",
+    "title": "ServiceCity",
+    "desc": "A web-based air conditioning service booking platform where users can schedule repairs and maintenance with a single service shop, and the admin can accept, decline, or schedule visit times with in-app notifications.",
+    "repo_url": "https://github.com/thetzinsoe/ServiceCity",
+    "live_url": "https://servicecity-production.up.railway.app/",
+    "slides_raw": "https://raw.githubusercontent.com/thetzinsoe/ServiceCity/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/thetzinsoe/ServiceCity/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/thetzinsoe/ServiceCity/main/screenshots/07-admin-home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/thetzinsoe/ServiceCity/main/screenshots/07-admin-home.png",
+      "https://raw.githubusercontent.com/thetzinsoe/ServiceCity/main/screenshots/11-signin-page.png",
+      "https://raw.githubusercontent.com/thetzinsoe/ServiceCity/main/screenshots/12-visitor-view.png",
+      "https://raw.githubusercontent.com/thetzinsoe/ServiceCity/main/screenshots/06-customer-list.png",
+      "https://raw.githubusercontent.com/thetzinsoe/ServiceCity/main/screenshots/10-register-page.png",
+      "https://raw.githubusercontent.com/thetzinsoe/ServiceCity/main/screenshots/08-booking-detail.png",
+      "https://raw.githubusercontent.com/thetzinsoe/ServiceCity/main/screenshots/04-booking-confirm.png",
+      "https://raw.githubusercontent.com/thetzinsoe/ServiceCity/main/screenshots/05-customer-detail.png",
+      "https://raw.githubusercontent.com/thetzinsoe/ServiceCity/main/screenshots/09-admin-customer-detail.png"
+    ],
+    "type": "other",
+    "stack": [
+      "JavaScript",
+      "C#",
+      "HTML"
+    ],
+    "chapter": 5,
+    "team": 13
+  },
+  {
+    "github": "thuyein-thet",
+    "name": "thuyein-thet",
+    "title": "promoSuperComo",
+    "desc": "",
+    "repo_url": "https://github.com/Thuyein-Thet/promoSuperComo",
+    "live_url": "https://comodi-iida-flyer-map.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/Thuyein-Thet/promoSuperComo/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/Thuyein-Thet/promoSuperComo/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/Thuyein-Thet/promoSuperComo/main/screenshots/03-result.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Thuyein-Thet/promoSuperComo/main/screenshots/03-result.png",
+      "https://raw.githubusercontent.com/Thuyein-Thet/promoSuperComo/main/screenshots/01-homepage.png",
+      "https://raw.githubusercontent.com/Thuyein-Thet/promoSuperComo/main/screenshots/02-main-feature.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "HTML",
+      "TypeScript",
+      "CSS"
+    ],
+    "chapter": 5,
+    "team": 7
+  },
+  {
+    "github": "thuzarthaungsein",
+    "name": "thuzarthaungsein",
+    "title": "csv-cleaner",
+    "desc": "A CSV Cleaner & Reports (A lightweight ETL)",
+    "repo_url": "https://github.com/thuzarthaungsein/csv-cleaner",
+    "live_url": "https://csv-cleaner-qrqn.onrender.com",
+    "slides_raw": "https://raw.githubusercontent.com/thuzarthaungsein/csv-cleaner/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/thuzarthaungsein/csv-cleaner/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/thuzarthaungsein/csv-cleaner/main/screenshots/1.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/thuzarthaungsein/csv-cleaner/main/screenshots/1.png",
+      "https://raw.githubusercontent.com/thuzarthaungsein/csv-cleaner/main/screenshots/2.png",
+      "https://raw.githubusercontent.com/thuzarthaungsein/csv-cleaner/main/screenshots/3.png",
+      "https://raw.githubusercontent.com/thuzarthaungsein/csv-cleaner/main/screenshots/4.png",
+      "https://raw.githubusercontent.com/thuzarthaungsein/csv-cleaner/main/screenshots/dark-mobile-0.png",
+      "https://raw.githubusercontent.com/thuzarthaungsein/csv-cleaner/main/screenshots/dark-mobile-1.png",
+      "https://raw.githubusercontent.com/thuzarthaungsein/csv-cleaner/main/screenshots/dark-desktop-0.png",
+      "https://raw.githubusercontent.com/thuzarthaungsein/csv-cleaner/main/screenshots/dark-desktop-1.png",
+      "https://raw.githubusercontent.com/thuzarthaungsein/csv-cleaner/main/screenshots/light-mobile-0.png",
+      "https://raw.githubusercontent.com/thuzarthaungsein/csv-cleaner/main/screenshots/light-mobile-1.png"
+    ],
+    "type": "other",
+    "stack": [
+      "TypeScript",
+      "Dockerfile"
+    ],
+    "chapter": 6,
+    "team": 6
+  },
+  {
+    "github": "vibecode-ting",
+    "name": "vibecode-ting",
+    "title": "myanmardev.com",
+    "desc": "",
+    "repo_url": "https://github.com/vibecode-ting/myanmardev.com",
+    "live_url": "https://app.myanmardev.com",
+    "slides_raw": "https://raw.githubusercontent.com/vibecode-ting/myanmardev.com/main/archive/slides/intro.md",
+    "slides_base": "https://raw.githubusercontent.com/vibecode-ting/myanmardev.com/main/archive/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/vibecode-ting/myanmardev.com/main/screenshots/02_cmd.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/vibecode-ting/myanmardev.com/main/screenshots/02_cmd.png",
+      "https://raw.githubusercontent.com/vibecode-ting/myanmardev.com/main/screenshots/01_main.png",
+      "https://raw.githubusercontent.com/vibecode-ting/myanmardev.com/main/screenshots/04_check.png",
+      "https://raw.githubusercontent.com/vibecode-ting/myanmardev.com/main/screenshots/01_main_mm.png",
+      "https://raw.githubusercontent.com/vibecode-ting/myanmardev.com/main/screenshots/07_roadmap.png",
+      "https://raw.githubusercontent.com/vibecode-ting/myanmardev.com/main/screenshots/09_DOMAINS.png",
+      "https://raw.githubusercontent.com/vibecode-ting/myanmardev.com/main/screenshots/10_DNS_Records.png",
+      "https://raw.githubusercontent.com/vibecode-ting/myanmardev.com/main/screenshots/03_what_we_ship.png",
+      "https://raw.githubusercontent.com/vibecode-ting/myanmardev.com/main/screenshots/05_avaliable_domains.png",
+      "https://raw.githubusercontent.com/vibecode-ting/myanmardev.com/main/screenshots/08_cloudflare_wokers.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "Astro",
+      "Shell"
+    ],
+    "chapter": 6,
+    "team": 5
+  },
+  {
+    "github": "wailynn351",
+    "name": "wailynn351",
+    "title": "wc2026-world-cup-predictor",
+    "desc": "",
+    "repo_url": "https://github.com/Wailynn351/wc2026-world-cup-predictor",
+    "live_url": "https://wailynn351.github.io/wc2026-world-cup-predictor/",
+    "slides_raw": "https://raw.githubusercontent.com/Wailynn351/wc2026-world-cup-predictor/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/Wailynn351/wc2026-world-cup-predictor/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/Wailynn351/wc2026-world-cup-predictor/main/screenshots/127.0.0.1_8080_.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Wailynn351/wc2026-world-cup-predictor/main/screenshots/127.0.0.1_8080_.png",
+      "https://raw.githubusercontent.com/Wailynn351/wc2026-world-cup-predictor/main/screenshots/127.0.0.1_8080_teams.png",
+      "https://raw.githubusercontent.com/Wailynn351/wc2026-world-cup-predictor/main/screenshots/127.0.0.1_8080_groups.png",
+      "https://raw.githubusercontent.com/Wailynn351/wc2026-world-cup-predictor/main/screenshots/127.0.0.1_8080_matches.png",
+      "https://raw.githubusercontent.com/Wailynn351/wc2026-world-cup-predictor/main/screenshots/127.0.0.1_8080_predict.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Python",
+      "HTML"
+    ],
+    "chapter": 5,
+    "team": 1
+  },
+  {
+    "github": "winnaingsoe6666",
+    "name": "winnaingsoe6666",
+    "title": "ShareShelf",
+    "desc": "ShareShelf is a community-powered tool library that helps people borrow and lend rarely used tools and equipment within their neighborhood, apartment, university, or local community. Instead of buying items used only a few times a year, members can share resources, save money, and reduce waste together.",
+    "repo_url": "https://github.com/winnaingsoe6666/ShareShelf",
+    "live_url": "https://share-shelf-ashen.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/winnaingsoe6666/ShareShelf/main/slides/ShareShelf_product_intro.md",
+    "slides_base": "https://raw.githubusercontent.com/winnaingsoe6666/ShareShelf/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/winnaingsoe6666/ShareShelf/main/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/winnaingsoe6666/ShareShelf/main/screenshots/01.png",
+      "https://raw.githubusercontent.com/winnaingsoe6666/ShareShelf/main/screenshots/02.png",
+      "https://raw.githubusercontent.com/winnaingsoe6666/ShareShelf/main/screenshots/03.png",
+      "https://raw.githubusercontent.com/winnaingsoe6666/ShareShelf/main/screenshots/04-borrow.png",
+      "https://raw.githubusercontent.com/winnaingsoe6666/ShareShelf/main/screenshots/05-profile.png",
+      "https://raw.githubusercontent.com/winnaingsoe6666/ShareShelf/main/screenshots/01-homepage.png",
+      "https://raw.githubusercontent.com/winnaingsoe6666/ShareShelf/main/screenshots/03-item-detail.png",
+      "https://raw.githubusercontent.com/winnaingsoe6666/ShareShelf/main/screenshots/02-items-listing.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "Kotlin",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 5
+  },
+  {
+    "github": "winpapathu1994",
+    "name": "winpapathu1994",
+    "title": "meet-tab",
+    "desc": "A privacy-first meeting cost timer. Pick roles, not salaries. Share a link, hit start.",
+    "repo_url": "https://github.com/winpapathu1994/meet-tab",
+    "live_url": "https://meet-tab.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/winpapathu1994/meet-tab/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/winpapathu1994/meet-tab/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/winpapathu1994/meet-tab/main/screenshots/01.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/winpapathu1994/meet-tab/main/screenshots/01.png",
+      "https://raw.githubusercontent.com/winpapathu1994/meet-tab/main/screenshots/02.png",
+      "https://raw.githubusercontent.com/winpapathu1994/meet-tab/main/screenshots/03.png",
+      "https://raw.githubusercontent.com/winpapathu1994/meet-tab/main/screenshots/04.png",
+      "https://raw.githubusercontent.com/winpapathu1994/meet-tab/main/screenshots/05.png",
+      "https://raw.githubusercontent.com/winpapathu1994/meet-tab/main/screenshots/06.png",
+      "https://raw.githubusercontent.com/winpapathu1994/meet-tab/main/screenshots/07.png",
+      "https://raw.githubusercontent.com/winpapathu1994/meet-tab/main/screenshots/02-meet-mobile.png",
+      "https://raw.githubusercontent.com/winpapathu1994/meet-tab/main/screenshots/01-meet-desktop.png",
+      "https://raw.githubusercontent.com/winpapathu1994/meet-tab/main/screenshots/07-meet-desktop.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "HTML",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 6
+  },
+  {
+    "github": "wint-theingi-aung",
+    "name": "wint-theingi-aung",
+    "title": "ubuntu-localization",
+    "desc": "",
+    "repo_url": "https://github.com/Wint-Theingi-Aung/ubuntu-localization",
+    "live_url": "https://ubuntu-localization.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/slides/slides.html",
+    "slides_base": "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/shot.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/shot.png",
+      "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/guide-page.png",
+      "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/guide-karen.png",
+      "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/template-shan.png",
+      "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/translate-mon.png",
+      "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/templates-page.png",
+      "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/translate-page.png",
+      "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/contributors-mm.png",
+      "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/dashboard-mobile.png",
+      "https://raw.githubusercontent.com/Wint-Theingi-Aung/ubuntu-localization/main/screenshots/dashboard-dark-en.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "HTML",
+      "TypeScript",
+      "Python"
+    ],
+    "chapter": 6,
+    "team": 7
+  },
+  {
+    "github": "wythwin",
+    "name": "wythwin",
+    "title": "your-marketer",
+    "desc": "AI-powered marketing quiz that gives small business owners a personalized start point + to-do checklist, emails it to them, and captures them as leads. Node/Express + Groq, deployed on Vercel.",
+    "repo_url": "https://github.com/wythwin/your-marketer",
+    "live_url": "https://your-marketer.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/wythwin/your-marketer/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/wythwin/your-marketer/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/wythwin/your-marketer/main/screenshots/home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/wythwin/your-marketer/main/screenshots/home.png",
+      "https://raw.githubusercontent.com/wythwin/your-marketer/main/screenshots/quiz.png",
+      "https://raw.githubusercontent.com/wythwin/your-marketer/main/screenshots/checklist.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "HTML",
+      "JavaScript"
+    ],
+    "chapter": 5,
+    "team": 1
+  },
+  {
+    "github": "yarzarmyomin97",
+    "name": "yarzarmyomin97",
+    "title": "dev_portfolio",
+    "desc": "A modern developer portfolio built with Next.js 16, React 19, and Tailwind CSS 4 — featuring glassmorphism design, animated aurora gradients, and a 3-theme system with light/dark mode.",
+    "repo_url": "https://github.com/Yarzarmyomin97/dev_portfolio",
+    "live_url": "https://yarzarmyomin.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/Yarzarmyomin97/dev_portfolio/main/slides/intro.md",
+    "slides_base": "https://raw.githubusercontent.com/Yarzarmyomin97/dev_portfolio/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/Yarzarmyomin97/dev_portfolio/main/screenshots/mobile-hero.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Yarzarmyomin97/dev_portfolio/main/screenshots/mobile-hero.png",
+      "https://raw.githubusercontent.com/Yarzarmyomin97/dev_portfolio/main/screenshots/desktop-hero.png",
+      "https://raw.githubusercontent.com/Yarzarmyomin97/dev_portfolio/main/screenshots/mobile-about.png",
+      "https://raw.githubusercontent.com/Yarzarmyomin97/dev_portfolio/main/screenshots/desktop-about.png",
+      "https://raw.githubusercontent.com/Yarzarmyomin97/dev_portfolio/main/screenshots/mobile-contact.png",
+      "https://raw.githubusercontent.com/Yarzarmyomin97/dev_portfolio/main/screenshots/portfolio-full.png",
+      "https://raw.githubusercontent.com/Yarzarmyomin97/dev_portfolio/main/screenshots/desktop-contact.png",
+      "https://raw.githubusercontent.com/Yarzarmyomin97/dev_portfolio/main/screenshots/mobile-projects.png",
+      "https://raw.githubusercontent.com/Yarzarmyomin97/dev_portfolio/main/screenshots/desktop-projects.png",
+      "https://raw.githubusercontent.com/Yarzarmyomin97/dev_portfolio/main/screenshots/mobile-experience.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "HTML",
+      "Python",
+      "TypeScript"
+    ],
+    "chapter": 6,
+    "team": 13
+  },
+  {
+    "github": "yayyaylay1996",
+    "name": "yayyaylay1996",
+    "title": "DigitalSellingProduct-bot",
+    "desc": "A Telegram bot for selling digital products and managing orders automatically.",
+    "repo_url": "https://github.com/yayyaylay1996/DigitalSellingProduct-bot",
+    "live_url": "https://github.com/yayyaylay1996/DigitalSellingProduct-bot",
+    "slides_raw": "https://raw.githubusercontent.com/yayyaylay1996/DigitalSellingProduct-bot/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/yayyaylay1996/DigitalSellingProduct-bot/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/yayyaylay1996/DigitalSellingProduct-bot/main/screenshots/1.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/yayyaylay1996/DigitalSellingProduct-bot/main/screenshots/1.png",
+      "https://raw.githubusercontent.com/yayyaylay1996/DigitalSellingProduct-bot/main/screenshots/2.png",
+      "https://raw.githubusercontent.com/yayyaylay1996/DigitalSellingProduct-bot/main/screenshots/3.png",
+      "https://raw.githubusercontent.com/yayyaylay1996/DigitalSellingProduct-bot/main/screenshots/4.png",
+      "https://raw.githubusercontent.com/yayyaylay1996/DigitalSellingProduct-bot/main/screenshots/5.png",
+      "https://raw.githubusercontent.com/yayyaylay1996/DigitalSellingProduct-bot/main/screenshots/7.png",
+      "https://raw.githubusercontent.com/yayyaylay1996/DigitalSellingProduct-bot/main/screenshots/9.png",
+      "https://raw.githubusercontent.com/yayyaylay1996/DigitalSellingProduct-bot/main/screenshots/10.png"
+    ],
+    "type": "bot",
+    "stack": [
+      "JavaScript",
+      "HTML"
+    ],
+    "chapter": 5,
+    "team": 14
+  },
+  {
+    "github": "ye-lynn-htet",
+    "name": "ye-lynn-htet",
+    "title": "ylh-portfolio",
+    "desc": "",
+    "repo_url": "https://github.com/ye-lynn-htet/ylh-portfolio",
+    "live_url": "https://ye-lynn-htet.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/ye-lynn-htet/ylh-portfolio/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/ye-lynn-htet/ylh-portfolio/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/ye-lynn-htet/ylh-portfolio/main/screenshots/home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ye-lynn-htet/ylh-portfolio/main/screenshots/home.png",
+      "https://raw.githubusercontent.com/ye-lynn-htet/ylh-portfolio/main/screenshots/skills.png",
+      "https://raw.githubusercontent.com/ye-lynn-htet/ylh-portfolio/main/screenshots/projects.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "chapter": 5,
+    "team": 15
+  },
+  {
+    "github": "yeminko-me",
+    "name": "yeminko-me",
+    "title": "attendance-system",
+    "desc": "Java Project",
+    "repo_url": "https://github.com/yeminko-me/attendance-system",
+    "live_url": "https://github.com/yeminko-me/attendance-system/releases/download/v1.0.0/attendance-system-v1.0.jar",
+    "slides_raw": "https://raw.githubusercontent.com/yeminko-me/attendance-system/master/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/yeminko-me/attendance-system/master/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/yeminko-me/attendance-system/master/screenshots/home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/yeminko-me/attendance-system/master/screenshots/home.png",
+      "https://raw.githubusercontent.com/yeminko-me/attendance-system/master/screenshots/salarycount.png",
+      "https://raw.githubusercontent.com/yeminko-me/attendance-system/master/screenshots/userhomepage.png",
+      "https://raw.githubusercontent.com/yeminko-me/attendance-system/master/screenshots/スクリーンショット 2025-09-10 121512.png",
+      "https://raw.githubusercontent.com/yeminko-me/attendance-system/master/screenshots/スクリーンショット 2025-09-11 143625.png",
+      "https://raw.githubusercontent.com/yeminko-me/attendance-system/master/screenshots/スクリーンショット 2025-09-12 114716.png",
+      "https://raw.githubusercontent.com/yeminko-me/attendance-system/master/screenshots/スクリーンショット 2025-09-18 110846.png",
+      "https://raw.githubusercontent.com/yeminko-me/attendance-system/master/screenshots/スクリーンショット 2025-10-23 094907.png",
+      "https://raw.githubusercontent.com/yeminko-me/attendance-system/master/screenshots/スクリーンショット 2025-10-23 094910.png",
+      "https://raw.githubusercontent.com/yeminko-me/attendance-system/master/screenshots/スクリーンショット 2025-10-23 094923.png"
+    ],
+    "type": "other",
+    "stack": [
+      "Java"
+    ],
+    "chapter": 5,
+    "team": 16
+  },
+  {
+    "github": "youuu199",
+    "name": "youuu199",
+    "title": "phyat-paing",
+    "desc": "",
+    "repo_url": "https://github.com/youuu199/phyat-paing",
+    "live_url": "https://phyat-paing.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/youuu199/phyat-paing/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/youuu199/phyat-paing/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/01-login.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/01-login.png",
+      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/03-bills.png",
+      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/04-upload.png",
+      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/08-profile.png",
+      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/06-calendar.png",
+      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/07-settings.png",
+      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/02-dashboard.png",
+      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/screenshots/05-analytics.png",
+      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/slides/screenshots/01-login.png",
+      "https://raw.githubusercontent.com/youuu199/phyat-paing/main/slides/screenshots/03-bills.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "JavaScript",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 19
+  },
+  {
+    "github": "zawthetzt",
+    "name": "zawthetzt",
+    "title": "netkit",
+    "desc": "One CLI to ping, scan, trace, query, and probe your network — replaces 10+ traditional tools with a single, async Python toolkit.",
+    "repo_url": "https://github.com/zawthetzt/netkit",
+    "live_url": "https://github.com/zawthetzt/netkit/releases/tag/v0.1.0",
+    "slides_raw": "https://raw.githubusercontent.com/zawthetzt/netkit/main/slides/intro.md",
+    "slides_base": "https://raw.githubusercontent.com/zawthetzt/netkit/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/zawthetzt/netkit/main/screenshots/01-help.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/zawthetzt/netkit/main/screenshots/01-help.png",
+      "https://raw.githubusercontent.com/zawthetzt/netkit/main/screenshots/02-local-ports.png",
+      "https://raw.githubusercontent.com/zawthetzt/netkit/main/screenshots/03-down-detector.png"
+    ],
+    "type": "other",
+    "stack": [
+      "Python",
+      "Shell"
+    ],
+    "chapter": 4,
+    "team": 16
+  },
+  {
+    "github": "zinmar2626",
+    "name": "zinmar2626",
+    "title": "my-protfolio",
+    "desc": "My protfolio",
+    "repo_url": "https://github.com/zinmar2626/my-protfolio",
+    "live_url": "https://zinmarwin.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/zinmar2626/my-protfolio/main/slides/pechakucha-6x20.md",
+    "slides_base": "https://raw.githubusercontent.com/zinmar2626/my-protfolio/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/zinmar2626/my-protfolio/main/screenshots/home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/zinmar2626/my-protfolio/main/screenshots/home.png",
+      "https://raw.githubusercontent.com/zinmar2626/my-protfolio/main/screenshots/about.png",
+      "https://raw.githubusercontent.com/zinmar2626/my-protfolio/main/screenshots/contact.png",
+      "https://raw.githubusercontent.com/zinmar2626/my-protfolio/main/screenshots/project.png",
+      "https://raw.githubusercontent.com/zinmar2626/my-protfolio/main/screenshots/v2/home.png",
+      "https://raw.githubusercontent.com/zinmar2626/my-protfolio/main/screenshots/v2/about.png",
+      "https://raw.githubusercontent.com/zinmar2626/my-protfolio/main/screenshots/experience.png",
+      "https://raw.githubusercontent.com/zinmar2626/my-protfolio/main/screenshots/v2/project.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 14
+  },
+  {
+    "github": "zinmimi",
+    "name": "zinmimi",
+    "title": "ai-maintenance-ticket-assistant",
+    "desc": "Live Demo",
+    "repo_url": "https://github.com/ZinMiMi/ai-maintenance-ticket-assistant",
+    "live_url": "https://zinmimi.github.io/ai-maintenance-ticket-assistant/",
+    "slides_raw": "https://raw.githubusercontent.com/ZinMiMi/ai-maintenance-ticket-assistant/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/ZinMiMi/ai-maintenance-ticket-assistant/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/ZinMiMi/ai-maintenance-ticket-assistant/main/docs/screenshots/login.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ZinMiMi/ai-maintenance-ticket-assistant/main/docs/screenshots/login.png",
+      "https://raw.githubusercontent.com/ZinMiMi/ai-maintenance-ticket-assistant/main/docs/screenshots/dashboard.png",
+      "https://raw.githubusercontent.com/ZinMiMi/ai-maintenance-ticket-assistant/main/docs/screenshots/new-ticket.png",
+      "https://raw.githubusercontent.com/ZinMiMi/ai-maintenance-ticket-assistant/main/docs/screenshots/guest-portal.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 13
+  }
+]

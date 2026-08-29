@@ -1,0 +1,201 @@
+<!doctype html>
+<html
+  lang="en"
+  data-composition-variables='[
+    {"id":"num","type":"number","label":"Chapter number","default":2},
+    {"id":"tag","type":"string","label":"Tag (ASYNC / DEEP DIVE / empty)","default":"DEEP DIVE"},
+    {"id":"title","type":"string","label":"Title","default":"Claude Code Deep Dive"},
+    {"id":"outcome","type":"string","label":"Outcome","default":"Permission modes · CLAUDE.md · costs · prompting"},
+    {"id":"duration","type":"string","label":"Duration","default":"2 sessions · 4 hours"},
+    {"id":"tiers","type":"string","label":"Tiers (comma separated)","default":"B, C"}
+  ]'
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>Chapter Intro</title>
+    <style>
+      :root {
+        --bg: #09090b;
+        --card: #0f0f11;
+        --elevated: #18181b;
+        --amber: #f59e0b;
+        --amber-bright: #fbbf24;
+        --blue: #3b82f6;
+        --text: #ffffff;
+        --muted: #9ca3af;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; background: var(--bg);
+        font-family: "Inter", "Helvetica Neue", Arial, sans-serif; color: var(--text); overflow: hidden;
+      }
+      #root {
+        position: relative; width: 1920px; height: 1080px;
+        background: radial-gradient(1300px 800px at 28% 30%, #1a1206 0%, transparent 60%), var(--bg);
+      }
+      #root::before {
+        content: ""; position: absolute; inset: 0;
+        background-image: linear-gradient(#ffffff08 1px, transparent 1px), linear-gradient(90deg, #ffffff08 1px, transparent 1px);
+        background-size: 52px 52px; pointer-events: none;
+      }
+      #bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+      #bg .bgGrid {
+        position: absolute;
+        inset: -60px;
+        background-image:
+          linear-gradient(#ffffff0a 1px, transparent 1px),
+          linear-gradient(90deg, #ffffff0a 1px, transparent 1px);
+        background-size: 54px 54px;
+        will-change: transform;
+      }
+      #bg .bgGlow {
+        position: absolute;
+        left: 24%;
+        top: 40%;
+        width: 1200px;
+        height: 900px;
+        transform: translate(-50%, -50%);
+        background: radial-gradient(closest-side, #f59e0b22, transparent 70%);
+        will-change: transform, opacity;
+      }
+      #bg .bgSweep {
+        position: absolute;
+        top: -200px;
+        bottom: -200px;
+        width: 320px;
+        left: -480px;
+        background: linear-gradient(100deg, transparent, #f59e0b12, transparent);
+        transform: skewX(-12deg);
+        will-change: transform;
+      }
+      #card {
+        z-index: 1;
+        position: absolute; inset: 0; display: grid; grid-template-columns: 560px 1fr;
+        align-items: center; gap: 60px; padding: 130px 150px;
+      }
+      /* Left — big number */
+      .numcol { display: flex; flex-direction: column; align-items: flex-start; }
+      .eyebrow {
+        font-family: "JetBrains Mono", monospace; font-size: 30px; letter-spacing: 0.22em;
+        text-transform: uppercase; color: var(--amber); font-weight: 600; margin-bottom: -10px;
+      }
+      .bignum {
+        font-size: 440px; font-weight: 900; line-height: 0.82; letter-spacing: -0.04em;
+        color: var(--amber); text-shadow: 0 0 70px #f59e0b44; will-change: transform, opacity, filter;
+      }
+      /* Right — detail */
+      .detailcol { display: flex; flex-direction: column; align-items: flex-start; gap: 26px; }
+      .badge {
+        font-family: "JetBrains Mono", monospace; font-size: 26px; font-weight: 700;
+        letter-spacing: 0.14em; text-transform: uppercase; padding: 10px 22px; border-radius: 999px;
+        will-change: transform, opacity;
+      }
+      .badge.async { color: var(--amber); background: #f59e0b1a; border: 1px solid #f59e0b55; }
+      .badge.deep { color: var(--blue); background: #3b82f61a; border: 1px solid #3b82f655; }
+      .title {
+        font-size: 92px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.04;
+        max-width: 1050px; will-change: transform, opacity;
+      }
+      .outcome {
+        font-size: 38px; color: var(--muted); font-weight: 500; line-height: 1.3;
+        max-width: 980px; will-change: transform, opacity;
+      }
+      .meta { display: flex; align-items: center; gap: 26px; margin-top: 12px; }
+      .duration {
+        font-family: "JetBrains Mono", monospace; font-size: 28px; color: var(--text); font-weight: 600;
+        will-change: transform, opacity;
+      }
+      .tiers { display: flex; gap: 10px; }
+      .tier {
+        width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;
+        font-size: 26px; font-weight: 800; border: 1px solid #f59e0b44; color: var(--amber); background: #f59e0b12;
+        will-change: transform, opacity;
+      }
+      .footer {
+        position: absolute; bottom: 64px; left: 150px; font-family: "JetBrains Mono", monospace;
+        font-size: 24px; color: var(--muted); letter-spacing: 0.14em; will-change: opacity;
+      }
+      .footer .dot { color: var(--amber); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="root" data-width="1920" data-height="1080" data-start="0" data-duration="5.5" data-track-index="0">
+      <div id="bg"><div class="bgGrid"></div><div class="bgGlow"></div><div class="bgSweep"></div></div>
+      <div id="card">
+        <div class="numcol">
+          <div class="eyebrow" id="eyebrow">Chapter</div>
+          <div class="bignum" id="bignum">2</div>
+        </div>
+        <div class="detailcol">
+          <div class="badge" id="badge">DEEP DIVE</div>
+          <div class="title" id="title">Claude Code Deep Dive</div>
+          <div class="outcome" id="outcome">Permission modes · CLAUDE.md · costs · prompting</div>
+          <div class="meta">
+            <div class="duration" id="duration">2 sessions · 4 hours</div>
+            <div class="tiers" id="tiers"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">vibe code<span class="dot">.tours</span> · 8-WEEK TOUR</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      (function () {
+        const v = window.__hyperframes.getVariables();
+        function esc(s) {
+          return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+        }
+
+        document.getElementById("bignum").textContent = String(v.num);
+        document.getElementById("title").textContent = v.title;
+        document.getElementById("outcome").textContent = v.outcome;
+        document.getElementById("duration").textContent = v.duration;
+
+        const badge = document.getElementById("badge");
+        const tag = String(v.tag || "").trim();
+        if (!tag) {
+          badge.style.display = "none";
+        } else {
+          badge.textContent = tag;
+          badge.className = "badge " + (/deep/i.test(tag) ? "deep" : "async");
+        }
+
+        const tiers = String(v.tiers || "").split(",").map((s) => s.trim()).filter(Boolean);
+        document.getElementById("tiers").innerHTML = tiers
+          .map((t) => `<div class="tier">${esc(t)}</div>`)
+          .join("");
+
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // Animated background — grid drift + glow pulse + light sweep
+        tl.fromTo("#bg .bgGrid", { y: 0 }, { y: -54, duration: 5.5, ease: "none" }, 0);
+        tl.fromTo("#bg .bgGlow", { scale: 1, opacity: 0.55 }, { scale: 1.16, opacity: 1, duration: 2.75, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+        tl.fromTo("#bg .bgSweep", { x: 0 }, { x: 2900, duration: 5, ease: "power1.inOut" }, 0.3);
+
+        tl.from("#eyebrow", { x: -24, opacity: 0, duration: 0.5, ease: "power2.out" }, 0.15);
+        tl.from("#bignum", { scale: 1.4, opacity: 0, filter: "blur(20px)", duration: 0.7, ease: "back.out(1.6)" }, 0.25);
+        if (tag) tl.from("#badge", { y: -20, opacity: 0, scale: 0.85, duration: 0.5, ease: "back.out(1.9)" }, 0.55);
+        tl.from("#title", { x: 50, opacity: 0, duration: 0.6, ease: "power3.out" }, 0.7);
+        tl.from("#outcome", { x: 40, opacity: 0, duration: 0.55, ease: "power2.out" }, 0.95);
+        tl.from("#duration", { y: 24, opacity: 0, duration: 0.5, ease: "power2.out" }, 1.2);
+        tl.from("#tiers .tier", { y: 26, opacity: 0, scale: 0.7, duration: 0.45, ease: "back.out(2)", stagger: 0.09 }, 1.3);
+        tl.from(".footer", { opacity: 0, duration: 0.6, ease: "power2.out" }, 1.5);
+
+        // gentle number breathe (finite)
+        tl.to("#bignum", { scale: 1.03, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 1.8);
+
+        // final fade (last scene — exit allowed)
+        tl.to("#card", { opacity: 0, duration: 0.5, ease: "power2.in" }, 5.0);
+        tl.to(".footer", { opacity: 0, duration: 0.5, ease: "power2.in" }, 5.0);
+
+        window.__timelines["root"] = tl;
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+---
+name: Myat Htet Kyaw
+github: MyatHtetKyaw
+cohort: 1
+role: builder
+skills: ["Cloud", "DevOps", "Test Automation", "CICD", "K8s", "Python"]
+repo: https://github.com/MyatHtetKyaw/Aquarius.git
+x: ---
+linkedin: Myat Htet Kyaw
+website: ---
+certs:
+  claude_101: https://verify.skilljar.com/c/meosz6iddm9x
+  claude_code_101: https://verify.skilljar.com/c/53dfqs48ci6e
+  agent_skills_intro: https://verify.skilljar.com/c/3iwm4o6pb7dq
+  subagents_intro: https://verify.skilljar.com/c/wzsryhqtko5r
+---
+---
+
+Hi! I want to learn more about Vibe Coding. My goal is to build something useful. Excited to be part of the Tour.
+
+<!--
+HOW TO ADD YOURSELF:
+1. Copy this file to src/content/builders/<your-github-username>.md
+2. Edit `name`, `github`, `cohort` (required). Everything else is optional.
+3. skills: list a few (array). repo/x/linkedin/website: handle OR full URL.
+4. Write 2-3 sentences below the --- about yourself.
+5. Your photo is pulled automatically from your GitHub avatar — no upload.
+6. Commit, push to your fork, open a Pull Request.
+Roles: builder (default) | mentor | instructor
+Remove any optional field you don't want to show.
+-->
