@@ -1,0 +1,100 @@
+---
+// src/components/gallery/TeamCard.astro
+import CardShell from "./CardShell.astro";
+import { TEAM_TYPE_LABELS, hasVideo } from "../../lib/teams.mjs";
+import { pickLogo } from "../../lib/team-meta.mjs";
+interface Props {
+  team: any;
+  demoSoon: string;
+}
+const { team: t, demoSoon } = Astro.props;
+const ogFallback = (repoUrl: string) => {
+  const m = repoUrl.match(/github\.com\/([^/]+)\/([^/#?]+)/i);
+  return m ? `https://opengraph.githubassets.com/1/${m[1]}/${m[2]}` : "";
+};
+const thumb = t.youtube_id
+  ? `https://i.ytimg.com/vi/${t.youtube_id}/hqdefault.jpg`
+  : ogFallback(t.repo_url);
+const video = hasVideo(t);
+// The team's own mark, when they shipped one — see metadata/README.md.
+const logo = pickLogo(t.logo, "small");
+const initial = (t.title || t.team || "?").trim().charAt(0).toUpperCase();
+const statuses = [
+  t.live_url ? "live" : null,
+  t.uploaded === "Done" ? "done" : null,
+]
+  .filter(Boolean)
+  .join("|");
+const dataAttrs = {
+  "data-type": t.type,
+  "data-status": statuses,
+  "data-team": JSON.stringify(t),
+};
+---
+
+<CardShell
+  dataAttrs={dataAttrs}
+  thumb={thumb || null}
+  alt={`${t.title} demo`}
+  initial={initial}
+  typeLabel={TEAM_TYPE_LABELS[t.type as keyof typeof TEAM_TYPE_LABELS]}
+  stack={t.stack ?? []}
+  sortTitle={t.title}
+>
+  <Fragment slot="thumb-overlay">
+    {
+      t.live_url && (
+        <span class="absolute left-2 top-2 rounded-full bg-green-500 px-2 py-0.5 font-mono text-[10px] font-semibold text-black">
+          ● live
+        </span>
+      )
+    }
+    {
+      video ? (
+        <span class="absolute right-2 top-2 rounded-full bg-black/60 px-2 py-0.5 font-mono text-[10px] font-semibold text-white backdrop-blur-sm">
+          ▶ demo
+        </span>
+      ) : (
+        <span class="absolute right-2 top-2 rounded-full bg-accent-500 px-2 py-0.5 font-mono text-[10px] font-semibold text-black">
+          {demoSoon}
+        </span>
+      )
+    }
+    {
+      video && (
+        <span class="pointer-events-none absolute inset-0 flex items-center justify-center text-4xl text-white/85 opacity-0 transition group-hover:opacity-100">
+          ▶
+        </span>
+      )
+    }
+  </Fragment>
+  <Fragment slot="meta">
+    <div class="flex items-center gap-2">
+      {
+        logo && (
+          <img
+            src={logo}
+            alt=""
+            width="24"
+            height="24"
+            loading="lazy"
+            class="h-6 w-6 shrink-0 rounded bg-white/5 object-contain"
+          />
+        )
+      }
+      <span
+        class="font-mono text-[11px] font-bold uppercase tracking-wide text-accent-400"
+      >
+        {t.team}
+      </span>
+      <span class="truncate font-semibold text-white">{t.title}</span>
+    </div>
+    {
+      (t.tagline || t.desc) && (
+        <p class="mt-2 line-clamp-2 text-sm text-gray-500">
+          {t.tagline || t.desc}
+        </p>
+      )
+    }
+  </Fragment>
+</CardShell>

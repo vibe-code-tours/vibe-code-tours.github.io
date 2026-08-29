@@ -16,7 +16,14 @@ const { name, github, role, skills, repo, x, linkedin, website, certs } =
 
 import { certProgressList } from "../lib/certs.mjs";
 const certList = certProgressList(certs); // earned (amber) + next 2 unearned (grey)
-const hasCert = certList.some((c) => c.earned);
+import { levelOf, levelMeta } from "../lib/levels.mjs";
+import RankBadge from "./RankBadge.astro";
+const level = levelOf(github); // highest passed chapter (0..8) or null — from progression DB
+const lvl = levelMeta(level);
+// Level border + glow, derived purely from Discord-verified progress (not self-declared).
+const lvlStyle = lvl
+  ? `border-color:${lvl.color};box-shadow:0 0 0 1px ${lvl.color}33,0 0 14px ${lvl.color}40`
+  : undefined;
 
 const avatar = `https://github.com/${github}.png?size=160`;
 const roleClass =
@@ -68,7 +75,7 @@ const links = [
     ]}
   >
     <div class="flex items-center gap-3">
-      <div class:list={["avatar-wrap", hasCert && "is-certified"]}>
+      <div class="avatar-wrap" style={lvlStyle}>
         <img
           src={avatar}
           alt={`${name} avatar`}
@@ -89,8 +96,19 @@ const links = [
           @{github}
         </a>
       </div>
+      {
+        lvl && (
+          <span class="ml-auto inline-flex shrink-0" aria-label={lvl.label}>
+            <RankBadge
+              level={level!}
+              size={40}
+              title={`${lvl.label} reached`}
+            />
+          </span>
+        )
+      }
       <span
-        class:list={["tier", roleClass, "ml-auto shrink-0"]}
+        class:list={["tier", roleClass, "shrink-0", !lvl && "ml-auto"]}
         title={role}
         aria-label={`Role: ${role}`}
       >
@@ -209,16 +227,14 @@ const links = [
     height: 100%;
     object-fit: cover;
     border-radius: 30%;
-    border: 1px solid rgb(245 158 11 / 0.3);
     background: var(--surface-elevated, #18181b);
   }
-  .avatar-wrap.is-certified .avatar-img {
-    border: 2px solid #f59e0b;
-    box-shadow:
-      0 0 0 2px rgb(245 158 11 / 0.22),
-      0 0 12px rgb(245 158 11 / 0.35);
+  /* Level ring lives on the wrap (driven by inline lvlStyle from JS). */
+  .avatar-wrap {
+    border-radius: 32%;
+    padding: 2px;
+    border: 2px solid transparent;
   }
-
   /* ---- Cert icons (icon only, branded amber) ---- */
   .cert-ico-link {
     display: inline-flex;

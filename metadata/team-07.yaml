@@ -1,0 +1,20 @@
+# team-07.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-07"
+team_no: 7
+name: "ARGUS"
+title: "ARGUS"
+tagline: "" # <- one short line, your pitch
+desc: "Decentralized Shadow AI Scanner"
+type: "web-app"
+stack: []
+live_url: "https://argus-scanner.duckdns.org/"
+repo_url: "https://github.com/vibecode-team7/ARGUS"
+video:
+  youtube_id: "l21W5o0iajs"
+  youtube_url: "https://youtu.be/l21W5o0iajs?si=gM5eV38VaYZSTq3U"
+  drive_url: "https://drive.google.com/file/d/1q-tgnnJ7Y5XTcYR8hmcra2wtL0wBj7cB/view?usp=sharing"
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: null
+  small: "/logos/team-07-64x64.png"
+  medium: "/logos/team-07-128x128.png"
+  large: "/logos/team-07-256x256.png"

@@ -1,10 +1,16 @@
 ---
+
 name: Naw Naw
 github: naw2
 cohort: 1
 role: builder
 skills: ["Java", "Python", "Claude Code"]
 linkedin: naw-naw-7b660870
+
+certs:
+  claude_101: https://verify.skilljar.com/c/g6u4zpyuj7j7
+  claude_code_101: https://verify.skilljar.com/c/yoajc8tmq7qa
+  agent_skills_intro: https://verify.skilljar.com/c/vh57447fz8f7
 
 ---
 
@@ -21,3 +27,4 @@ HOW TO ADD YOURSELF:
 Roles: builder (default) | mentor | instructor
 Remove any optional field you don't want to show.
 -->
+

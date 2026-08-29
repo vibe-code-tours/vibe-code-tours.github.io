@@ -1,0 +1,20 @@
+# team-03.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-03"
+team_no: 3
+name: "Pwe"
+title: "Pwe"
+tagline: "" # <- one short line, your pitch
+desc: "Event Handling web platform"
+type: "web-app"
+stack: []
+live_url: "https://dev.pwe-mm.site/"
+repo_url: "https://github.com/pyone-cho/pwe"
+video:
+  youtube_id: "liQ1GLD-Yjw"
+  youtube_url: "https://youtu.be/liQ1GLD-Yjw"
+  drive_url: "https://drive.google.com/file/d/1pZS8YCXFo8GULGedCfor0eimwywvzj3P/view?usp=drive_link"
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: null
+  small: "/logos/team-03-64x64.png"
+  medium: "/logos/team-03-128x128.png"
+  large: "/logos/team-03-256x256.png"

@@ -6,4 +6,4 @@ role: builder
 skills: ["JavaScript", "Python", "Claude Code"]
 ---
 
-Hi! 2–3 sentences about you — why you're here, what you want to build.
+Myanmar developer learning AI-assisted coding with Vibe Code Tours.

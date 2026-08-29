@@ -4,6 +4,10 @@ github: thaz1naung
 cohort: 1
 role: builder
 skills:  [".Net", "C#", "Angular","MSSQL","MySQL"]
+certs:
+  claude_101: ittuo4fqj4hq
+  claude_code_101: fyav2toct6u8
+  agent_skills_intro : hvczbrssokwu
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something

@@ -19,7 +19,9 @@
     "contact": "ဆက်သွယ်ရန်",
     "setup": "ပြင်ဆင်ရန်",
     "builders": "Builders",
-    "cohort1": "Cohort 1"
+    "cohort1": "Cohort 1",
+    "gallery": "ပရောဂျက်ပြခန်း",
+    "projects": "ပရောဂျက်များ"
   },
   "footer": {
     "rights": "© 2026 Vibe Code Tours",
@@ -456,6 +458,41 @@
     "empty": "Builders မရှိသေးပါ။ ပထမဆုံးသူ ဖြစ်ပါ — repo ကို fork လုပ်ပြီး ကိုယ့်ကိုယ်ကို ထည့်ပါ။",
     "addYourself": "မိမိပရိုဖိုင်ထည့်ရန် → (fork + PR)"
   },
+  "gallery": {
+    "title": "ပရောဂျက်ပြခန်း — Vibe Code Tours",
+    "description": "Cohort 1 builder များ တည်ဆောက်ခဲ့သော ကိုယ်ပိုင်ပရောဂျက်များ။",
+    "label": "Cohort 1",
+    "heading": "ပရောဂျက်ပြခန်း",
+    "intro": "Builder များ ဖန်တီးခဲ့သော ပရောဂျက်များ။ Slides ကြည့်ရှုရန် ပရောဂျက်တစ်ခုခုကို နှိပ်ပါ။",
+    "searchPlaceholder": "ပရောဂျက်များ ရှာရန်…",
+    "sortLabel": "စဉ်ရန်",
+    "sortChapter": "အခန်း",
+    "sortAz": "A–Z",
+    "allTypes": "အားလုံး",
+    "anyStack": "မည်သည့် Stack မဆို",
+    "anyTeam": "မည်သည့်အသင်းမဆို",
+    "noMatches": "ကိုက်ညီမှု မရှိပါ။",
+    "empty": "ပရောဂျက်များ မရှိသေးပါ — မကြာမီ ပြန်လာကြည့်ပါ။",
+    "countUnit": "ပရောဂျက်",
+    "loadingSlides": "Slides များ ဖွင့်နေသည်…",
+    "slidesUnavailable": "Slides မရနိုင်ပါ — GitHub တွင် ဖွင့်ကြည့်ပါ ↗",
+    "liveBtn": "Live Site ↗",
+    "repoBtn": "Repo ↗",
+    "slidesBtn": "Slides ဖွင့်ရန် ↗",
+    "shotAlt": "မျက်နှာပြင်ပုံ",
+    "types": {
+      "web-app": "Web App",
+      "cli": "CLI",
+      "bot": "Bot",
+      "api": "API",
+      "mobile": "မိုဘိုင်း",
+      "game": "ဂိမ်း",
+      "library": "Library",
+      "other": "အခြား"
+    },
+    "heroPrev": "Previous project",
+    "heroNext": "Next project"
+  },
   "repoAccess": {
     "title": "သင့်အသင်း Repo ရယူရန် — Vibe Code Tours",
     "description": "သင့်အသင်း၏ private GitHub repo ကို ဘယ်လိုရယူမလဲ — ဘယ်သူဝင်နိုင်လဲ၊ /repo-access command နဲ့ ထဲမှာ ဘာတွေပါလဲ။",
@@ -508,5 +545,53 @@
       ]
     },
     "cta": "အခက်အခဲရှိရင် သင့်အသင်း channel သို့မဟုတ် #help မှာ မေးပါ။"
+  },
+  "projectsHub": {
+    "title": "Projects — Vibe Code Tours",
+    "description": "Personal and team projects shipped by Cohort 1.",
+    "label": "Cohort 1",
+    "heading": "ပရောဂျက်များ",
+    "intro": "Everything Cohort 1 shipped — from solo builds to team demos.",
+    "personalCard": "Personal projects",
+    "personalDesc": "What each builder shipped solo. Slides included.",
+    "teamsCard": "Team projects",
+    "teamsDesc": "20 teams, live demos and videos."
+  },
+  "teams": {
+    "title": "Team Projects — Vibe Code Tours",
+    "description": "Demos, live sites, and repos from all 20 Cohort 1 teams.",
+    "label": "Cohort 1 · Teams",
+    "heading": "အသင်းပရောဂျက်များ",
+    "intro": "Twenty teams, twenty demos. Click any team to watch.",
+    "searchPlaceholder": "Search teams…",
+    "sortLabel": "စဉ်ရန်",
+    "sortTeam": "အသင်းစဉ်",
+    "sortAz": "A–Z",
+    "allTypes": "All",
+    "allStatus": "All",
+    "statusLive": "တိုက်ရိုက်",
+    "statusDone": "ဒီမိုပြီး",
+    "noMatches": "No matches.",
+    "empty": "No teams yet — check back soon.",
+    "countUnit": "အသင်း",
+    "demoSoon": "ဒီမိုမကြာမီ",
+    "watchBtn": "Watch on YouTube ↗",
+    "liveBtn": "Live site ↗",
+    "repoBtn": "Repo ↗",
+    "playerYouTube": "YouTube",
+    "playerDrive": "Drive fallback",
+    "videoUnavailable": "Demo not uploaded yet.",
+    "heroPrev": "Previous project",
+    "heroNext": "Next project",
+    "types": {
+      "web-app": "Web app",
+      "cli": "CLI",
+      "bot": "Bot",
+      "api": "API",
+      "mobile": "Mobile",
+      "game": "Game",
+      "library": "Library",
+      "other": "Other"
+    }
   }
 }

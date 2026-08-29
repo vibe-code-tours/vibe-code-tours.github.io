@@ -1,0 +1,100 @@
+---
+// src/components/gallery/ProjectCard.astro
+import CardShell from "./CardShell.astro";
+import RankBadge from "../RankBadge.astro";
+import { TYPE_LABELS } from "../../lib/projects.mjs";
+import { teamTag } from "../../lib/teams.mjs";
+import { shotCount } from "../../lib/gallery-filter.mjs";
+interface Props {
+  project: any;
+  teamsHref?: string;
+  teamTitle?: string | null;
+}
+const {
+  project: c,
+  teamsHref = "/projects/teams",
+  teamTitle = null,
+} = Astro.props;
+const tag = teamTag(c.team);
+const ogFallback = (repoUrl: string) => {
+  const m = repoUrl.match(/github\.com\/([^/]+)\/([^/#?]+)/i);
+  return m ? `https://opengraph.githubassets.com/1/${m[1]}/${m[2]}` : "";
+};
+const shot = c.screenshot_url ?? ogFallback(c.repo_url);
+const initial = (c.title || c.name || "?").trim().charAt(0).toUpperCase();
+const shots = shotCount(c.screenshots);
+const dataAttrs = {
+  "data-type": c.type,
+  "data-stack": (c.stack ?? []).join("|"),
+  "data-chapter": String(c.chapter ?? -1),
+  "data-team": tag ?? "",
+  "data-project": JSON.stringify(c),
+};
+---
+
+<CardShell
+  dataAttrs={dataAttrs}
+  thumb={shot || null}
+  alt={`${c.title} screenshot`}
+  initial={initial}
+  typeLabel={TYPE_LABELS[c.type as keyof typeof TYPE_LABELS]}
+  stack={c.stack ?? []}
+  sortTitle={c.title}
+>
+  <Fragment slot="thumb-overlay">
+    {
+      typeof c.chapter === "number" && (
+        <span class="absolute left-2 top-2 drop-shadow">
+          <RankBadge
+            level={c.chapter}
+            size={34}
+            title={`Level ${c.chapter + 1}`}
+          />
+        </span>
+      )
+    }
+    {
+      shots > 1 && (
+        <span class="absolute right-2 top-2 flex items-center gap-1 rounded-full bg-black/60 px-2 py-0.5 font-mono text-[10px] font-semibold text-white backdrop-blur-sm">
+          ▦ {shots}
+        </span>
+      )
+    }
+  </Fragment>
+  <Fragment slot="meta">
+    <div class="flex items-center gap-2">
+      <img
+        src={`https://github.com/${c.github}.png`}
+        alt=""
+        width="24"
+        height="24"
+        loading="lazy"
+        class="h-6 w-6 rounded-full border border-white/10"
+      />
+      <span class="truncate font-semibold text-white">{c.title}</span>
+    </div>
+    <div class="mt-1 flex items-center gap-2">
+      <span
+        data-nolightbox
+        data-href={`https://github.com/${c.github}`}
+        class="w-fit min-w-0 cursor-pointer truncate text-sm text-gray-400 transition hover:text-accent-300"
+        >@{c.name}</span
+      >
+      {
+        tag && (
+          // Anchor with no data-href: the lightbox handler bails out and the
+          // browser follows the link in the same tab.
+          <a
+            data-nolightbox
+            href={teamsHref}
+            title={teamTitle ? `${tag} · ${teamTitle}` : tag}
+            class="shrink-0 rounded-full border border-white/10 bg-white/5 px-2 py-0.5 font-mono text-[10px] font-semibold text-gray-300 transition hover:border-accent-500/40 hover:text-accent-300"
+          >
+            {tag}
+          </a>
+        )
+      }
+    </div>
+    {c.desc && <p class="mt-2 line-clamp-2 text-sm text-gray-500">{c.desc}</p>}
+  </Fragment>
+</CardShell>

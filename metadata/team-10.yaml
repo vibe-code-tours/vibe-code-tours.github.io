@@ -1,0 +1,20 @@
+# team-10.yaml — edit "tagline" + "logo"; the rest syncs from src/data/teams.json
+team: "Team-10"
+team_no: 10
+name: "Yoe Yar Zay"
+title: "Yoe Yar Zay"
+tagline: "" # <- one short line, your pitch
+desc: "Myanmar Local Product Directory & E-Commerce"
+type: "web-app"
+stack: []
+live_url: "https://yoeyarzay.vercel.app/"
+repo_url: "https://github.com/vibe-code-tours/Team-10-app"
+video:
+  youtube_id: "Ri1Lsn1pFu4"
+  youtube_url: "https://youtu.be/Ri1Lsn1pFu4"
+  drive_url: "https://drive.google.com/file/d/1S2PY9HFPbZYAE99SxNt88mob0xa1FloE/view?usp=drive_link"
+logo: # <- drop files in public/logos/ (see README); svg preferred, overrides pngs
+  svg: null
+  small: "/logos/team-10-64x64.png"
+  medium: "/logos/team-10-128x128.png"
+  large: "/logos/team-10-256x256.png"
