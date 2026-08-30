@@ -15,6 +15,7 @@ certs:
   mcp_intro: w34j6jan9aif
   subagents_intro: ttrh4oku935b
   claude_code_in_action: 6dupbcadso9n
+  building_claude_api: a32whp8q9xyr
 ---
 
 Hi! I am here to learn vibe coding in this tour and build my own projects using AI assistants.

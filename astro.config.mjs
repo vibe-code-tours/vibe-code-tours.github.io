@@ -18,8 +18,8 @@ export default defineConfig({
   trailingSlash: "ignore",
   redirects: {
     // Redirect destinations are not base-aware, so prefix them manually.
-"/gallery": `${forkBase.replace(/\/$/, "")}/projects/personal`,
-"/my/gallery": `${forkBase.replace(/\/$/, "")}/my/projects/personal`
+    "/gallery": `${forkBase.replace(/\/$/, "")}/projects/personal`,
+    "/my/gallery": `${forkBase.replace(/\/$/, "")}/my/projects/personal`,
   },
   i18n: {
     defaultLocale: "en",
