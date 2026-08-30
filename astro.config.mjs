@@ -7,13 +7,19 @@ import sitemap from "@astrojs/sitemap";
 // When the custom domain (vibecode.tours) is live, set:
 //   site: "https://vibecode.tours", base: "/"
 // The link helper in src/i18n/utils.ts reads BASE_URL, so links adapt automatically.
+// Fork previews are served from <owner>.github.io/<repo>/ and need that
+// subpath as base; the vibe-code-tours org repo and local builds keep "/".
+const [ghOwner, ghRepo] = (process.env.GITHUB_REPOSITORY ?? "/").split("/");
+const forkBase = ghOwner && ghOwner !== "vibe-code-tours" ? `/${ghRepo}` : "/";
+
 export default defineConfig({
   site: "https://vibecode.tours",
-  base: "/",
+  base: forkBase,
   trailingSlash: "ignore",
   redirects: {
-    "/gallery": "/projects/personal",
-    "/my/gallery": "/my/projects/personal",
+    // Redirect destinations are not base-aware, so prefix them manually.
+    "/gallery": `${forkBase.replace(/\/$/, "")}/projects/personal`,
+    "/my/gallery": `${forkBase.replace(/\/$/, "")}/my/projects/personal`,
   },
   i18n: {
     defaultLocale: "en",
