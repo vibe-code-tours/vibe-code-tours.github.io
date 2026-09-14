@@ -20,6 +20,14 @@ certs:
     mcp_advanced: https://verify.skilljar.com/c/kgioemupyz4c
     ai_fluency_for_students: https://verify.skilljar.com/c/p6rrb5ewa35r
     building_claude_api: https://verify.skilljar.com/c/2p7pid566u29
+    ai_fluency_framework_foundations: https://verify.skilljar.com/c/idj2wqxzawnp
+    ai_fluency_for_educators: https://verify.skilljar.com/c/43frs7rf8gro
+    teaching_ai_fluency: https://verify.skilljar.com/c/dffv9rp3ndq6
+    ai_fluency_for_nonprofits: https://verify.skilljar.com/c/t4cbhmr7ptvq
+    ai_capabilities_and_limitations: https://verify.skilljar.com/c/hvvoyakyvwb5
+    ai_fluency_for_small_businesses: https://verify.skilljar.com/c/rr526yk9ur6v
+    ai_fluency_for_builders: https://verify.skilljar.com/c/2wgpgma2dwj9
+    ai_fluency_for_creative_work: https://verify.skilljar.com/c/8mfvagjyfme7
 ---
 
 Hi! I'm Aung Myint Myat learning to vibe-code with AI. My goal is to build and ship something
