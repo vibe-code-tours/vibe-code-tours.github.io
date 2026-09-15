@@ -28,8 +28,8 @@ certs:
     ai_fluency_for_small_businesses: https://verify.skilljar.com/c/rr526yk9ur6v
     ai_fluency_for_builders: https://verify.skilljar.com/c/2wgpgma2dwj9
     ai_fluency_for_creative_work: https://verify.skilljar.com/c/8mfvagjyfme7
-    claude_in_amazon_bedrock: https://verify.skilljar.com/c/w976mo2rwf69
-    claude_with_google_vertex: https://verify.skilljar.com/c/a8fvpxja3b27
+    claude_bedrock: https://verify.skilljar.com/c/w976mo2rwf69
+    claude_vertex: https://verify.skilljar.com/c/a8fvpxja3b27
 ---
 
 Hi! I'm Aung Myint Myat learning to vibe-code with AI. My goal is to build and ship something
