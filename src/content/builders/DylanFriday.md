@@ -3,14 +3,17 @@ name: Sitt Hmue Eain
 github: DylanFriday
 cohort: 1
 role: builder
-skills: ["JavaScript", "TypeScript", "nodejs", "aws"]
+skills: ["JavaScript", "TypeScript", "nodejs", "aws","claude"]
 repo: "https://github.com/DylanFriday/vibe-code-tours.github.io.git"
 linkedin: "https://www.linkedin.com/in/sitt-hmue-eain-5a883721b/"
 
 certs:
   claude_101: https://verify.skilljar.com/c/wn597ee9xcka
   claude_code_101: https://verify.skilljar.com/c/5auoszqwaam4
-
+  claude_code_in_action : https://verify.skilljar.com/c/fpd82pjtfu5j
+  introduction_to_agent_skills : https://verify.skilljar.com/c/tbc85m37x4vc
+  introduction_to_model_context_protocol : https://verify.skilljar.com/c/nvkwcf8xg6zt
+  building_with_claude_api : https://verify.skilljar.com/c/ahcaeakoba9x
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship 
@@ -27,4 +30,3 @@ HOW TO ADD YOURSELF:
 Roles: builder (default) | mentor | instructor
 Remove any optional field you don't want to show.
 -->
-

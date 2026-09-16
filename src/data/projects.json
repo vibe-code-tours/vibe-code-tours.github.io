@@ -1895,8 +1895,8 @@
     "type": "web-app",
     "stack": [
       "TypeScript",
-      "PLpgSQL",
-      "CSS"
+      "CSS",
+      "JavaScript"
     ],
     "chapter": 5,
     "team": 4
