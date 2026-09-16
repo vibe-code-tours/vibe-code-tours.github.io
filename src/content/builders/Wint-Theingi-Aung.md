@@ -23,6 +23,8 @@ certs:
   ai_fluency_for_builders: 7d7727efak87
   teaching_ai_fluency_framework: 94g4oq7cwfwi
   ai_fluency_for_nonprofits: ynnai7sjm37o
+  ai_fluency_for_creative_work: suz45vtjg58j
+  ai_fluency_for_small_businesses: ac6bjjm63bqa
 
   
 ---
