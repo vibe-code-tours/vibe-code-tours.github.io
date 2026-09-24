@@ -9,8 +9,10 @@ x: KiZINnO
 linkedin: Saw Kapaw Say
 website: https://github.com/KiZINnO
 certs: 
+  claude_101: https://verify.skilljar.com/c/3nepb7xkd935
   claude_code_101: https://verify.skilljar.com/c/7uprzmdpbbo4
   subagents_intro: https://verify.skilljar.com/c/x6433o6wrtnx
+  claude_platform_101: https://verify.skilljar.com/c/9bpn3k8c88z7
 ---
 
 Hi! I'm learning to vibe-code with AI. My goal is to build and ship something
