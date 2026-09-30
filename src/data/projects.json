@@ -479,7 +479,7 @@
     "desc": "",
     "repo_url": "https://github.com/FurryForWhat/EazyPortfolio",
     "live_url": "https://eazy-portfolio-eight.vercel.app",
-    "slides_raw": "https://raw.githubusercontent.com/FurryForWhat/EazyPortfolio/main/slides/tech-stack.md",
+    "slides_raw": "https://raw.githubusercontent.com/FurryForWhat/EazyPortfolio/main/slides/gallery.md",
     "slides_base": "https://raw.githubusercontent.com/FurryForWhat/EazyPortfolio/main/slides/",
     "screenshot_url": "https://raw.githubusercontent.com/FurryForWhat/EazyPortfolio/main/slides/screenshots/01.png",
     "screenshots": [
@@ -500,7 +500,7 @@
       "JavaScript",
       "HTML"
     ],
-    "chapter": 5,
+    "chapter": 6,
     "team": 2
   },
   {
