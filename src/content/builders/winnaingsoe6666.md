@@ -16,6 +16,7 @@ certs:
   claude_code_in_action: https://verify.skilljar.com/c/oxnt5x2sdifo
   claude_platform_101: https://verify.skilljar.com/c/fszbgt7pa8ji
   building_claude_api: https://verify.skilljar.com/c/74m8xcsm7w3m
+  mcp_advanced: https://verify.skilljar.com/c/qeernwoq5k5y
 ---
 
 Mastering AI workflows. I leverage my cloud and backend experience to ship fast and build in public!
