@@ -6,7 +6,7 @@ role: builder
 skills: [ "Java", "Python", "Automation", "Microservices", "Cloud"]
 x: winnaingso91457
 linkedin: win-naing-soe
-website: https://winnaingsoe.vercel.app
+website: https://win-backend-developer.vercel.app
 certs:
   claude_101: https://verify.skilljar.com/c/5wysaarxqp7s
   claude_code_101: https://verify.skilljar.com/c/xgfkiaqpzzer
@@ -15,9 +15,10 @@ certs:
   mcp_intro: https://verify.skilljar.com/c/hfmda9sih4oc
   claude_code_in_action: https://verify.skilljar.com/c/oxnt5x2sdifo
   claude_platform_101: https://verify.skilljar.com/c/fszbgt7pa8ji
+  building_claude_api: https://verify.skilljar.com/c/74m8xcsm7w3m
 ---
 
-Mastering AI workflows. I leverage my cloud and frontend experience to ship fast and build in public!
+Mastering AI workflows. I leverage my cloud and backend experience to ship fast and build in public!
 
 <!--
 HOW TO ADD YOURSELF:
