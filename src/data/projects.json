@@ -1,5 +1,32 @@
 [
   {
+    "github": "6rose9",
+    "name": "6rose9",
+    "title": "rice-agent",
+    "desc": "A professional networking and marketplace platform for Myanmar's rice industry.",
+    "repo_url": "https://github.com/6rose9/rice-agent",
+    "live_url": "https://rice-agent.vercel.app/feed",
+    "slides_raw": "https://raw.githubusercontent.com/6rose9/rice-agent/master/slides/intro.md",
+    "slides_base": "https://raw.githubusercontent.com/6rose9/rice-agent/master/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/01_home.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/01_home.png",
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/05_network.png",
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/10_setting.png",
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/04_create_post.png",
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/07_profile_post.png",
+      "https://raw.githubusercontent.com/6rose9/rice-agent/master/screenshots/08_profile_network.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "Python",
+      "PLpgSQL"
+    ],
+    "chapter": 6,
+    "team": 11
+  },
+  {
     "github": "absolute-aungkomyint",
     "name": "absolute-aungkomyint",
     "title": "athapyar-htote-web",
