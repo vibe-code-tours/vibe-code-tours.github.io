@@ -2073,6 +2073,29 @@
     "team": 14
   },
   {
+    "github": "susandarlin",
+    "name": "susandarlin",
+    "title": "trip_planner",
+    "desc": "",
+    "repo_url": "https://github.com/susandarlin/trip_planner",
+    "live_url": "https://trip-planner-mu-taupe.vercel.app/",
+    "slides_raw": "https://raw.githubusercontent.com/susandarlin/trip_planner/main/slides/pitch.md",
+    "slides_base": "https://raw.githubusercontent.com/susandarlin/trip_planner/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/susandarlin/trip_planner/main/screenshots/screenshot-daily-plan.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/susandarlin/trip_planner/main/screenshots/screenshot-daily-plan.png",
+      "https://raw.githubusercontent.com/susandarlin/trip_planner/main/screenshots/screenshot-sample-data.png",
+      "https://raw.githubusercontent.com/susandarlin/trip_planner/main/screenshots/screenshot-default-view.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "JavaScript",
+      "HTML"
+    ],
+    "chapter": 6,
+    "team": 17
+  },
+  {
     "github": "swan1792",
     "name": "swan1792",
     "title": "PA",
@@ -2102,6 +2125,57 @@
     ],
     "chapter": 6,
     "team": 18
+  },
+  {
+    "github": "swezinpreciousai-sys",
+    "name": "swezinpreciousai-sys",
+    "title": "Project-Idea-Scorer",
+    "desc": "Score your project idea before you build it",
+    "repo_url": "https://github.com/swezinpreciousai-sys/Project-Idea-Scorer",
+    "live_url": "https://ai-project-idea-scorer.vercel.app",
+    "slides_raw": "https://raw.githubusercontent.com/swezinpreciousai-sys/Project-Idea-Scorer/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/swezinpreciousai-sys/Project-Idea-Scorer/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/swezinpreciousai-sys/Project-Idea-Scorer/main/screenshots/mobile-home-375x812.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/swezinpreciousai-sys/Project-Idea-Scorer/main/screenshots/mobile-home-375x812.png",
+      "https://raw.githubusercontent.com/swezinpreciousai-sys/Project-Idea-Scorer/main/screenshots/tablet-home-768x1024.png",
+      "https://raw.githubusercontent.com/swezinpreciousai-sys/Project-Idea-Scorer/main/screenshots/desktop-home-1280x800.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "TypeScript",
+      "JavaScript",
+      "CSS"
+    ],
+    "chapter": 6,
+    "team": 19
+  },
+  {
+    "github": "tainsinmoe04",
+    "name": "tainsinmoe04",
+    "title": "wutt",
+    "desc": "AI-powered personal fashion companion for wardrobe management and personalized outfit recommendations.",
+    "repo_url": "https://github.com/tainsinmoe04/wutt",
+    "live_url": "https://wutt-frontend.onrender.com/",
+    "slides_raw": "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/slides/tech-stack.md",
+    "slides_base": "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/slides/",
+    "screenshot_url": "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/screenshots/login.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/screenshots/login.png",
+      "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/screenshots/landing.png",
+      "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/screenshots/profile.png",
+      "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/screenshots/wardrobe.png",
+      "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/screenshots/shoppingnoti.png",
+      "https://raw.githubusercontent.com/tainsinmoe04/wutt/main/screenshots/aistylistchat.png"
+    ],
+    "type": "web-app",
+    "stack": [
+      "Python",
+      "CSS",
+      "JavaScript"
+    ],
+    "chapter": 6,
+    "team": 19
   },
   {
     "github": "thaz1naung",
