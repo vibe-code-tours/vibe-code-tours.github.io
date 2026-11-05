@@ -30,6 +30,7 @@ certs:
     ai_fluency_for_creative_work: https://verify.skilljar.com/c/8mfvagjyfme7
     claude_bedrock: https://verify.skilljar.com/c/w976mo2rwf69
     claude_vertex: https://verify.skilljar.com/c/a8fvpxja3b27
+    git_essential_training: https://www.linkedin.com/learning/certificates/1de76587f9a3555c2d152ab9323ecc3733955353f88bba45641acd2ed02dfcb8?trk=share_certificate
 ---
 
 Hi! I'm Aung Myint Myat learning to vibe-code with AI. My goal is to build and ship something
